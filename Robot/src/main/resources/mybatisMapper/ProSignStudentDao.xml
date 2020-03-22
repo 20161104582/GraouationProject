@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.web.sys.dao.ProSignStudentDao">
+  <resultMap id="BaseResultMap" type="com.web.sys.bean.ProSignStudent">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="sign_id" jdbcType="BIGINT" property="signId" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from pro_sign_student
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select id, sign_id, user_id
+    from pro_sign_student
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, sign_id, user_id
+    from pro_sign_student
+      <where>
+		<if test="id!=null "> and id = #{id,jdbcType=BIGINT}</if>
+		<if test="signId!=null "> and sign_id = #{signId,jdbcType=BIGINT}</if>
+		<if test="userId!=null "> and user_id = #{userId,jdbcType=BIGINT}</if>
+ 	</where> 
+ <if test="orderByString!=null and orderByString!=''"> 
+	 ${orderByString} 
+ </if>
+  </select>
+  <select id="queryByCondition" resultMap="BaseResultMap">
+    select id,sign_id,user_id
+ 	from  pro_sign_student 
+	<where>
+		<if test="id!=null "> and id = #{id,jdbcType=BIGINT}</if>
+		<if test="signId!=null "> and sign_id = #{signId,jdbcType=BIGINT}</if>
+		<if test="userId!=null "> and user_id = #{userId,jdbcType=BIGINT}</if>
+ 	</where> 
+ <if test="orderByString!=null and orderByString!=''"> 
+	 ${orderByString} 
+ </if>
+  </select>
+  <insert id="insert" keyColumn="id" keyProperty="id" useGeneratedKeys="true">
+    insert into pro_sign_student (id,sign_id,user_id)
+ values ( #{id,jdbcType=BIGINT}, #{signId,jdbcType=BIGINT}, #{userId,jdbcType=BIGINT})
+  </insert>
+  <update id="update">
+    update  	pro_sign_student 
+	<set>
+		<if test="id!=null ">id = #{id,jdbcType=BIGINT}, </if>
+		<if test="signId!=null ">sign_id = #{signId,jdbcType=BIGINT}, </if>
+		<if test="userId!=null ">user_id = #{userId,jdbcType=BIGINT} </if>
+ 	</set>
+	where id=#{id}
+  </update>
+</mapper>

@@ -1,0 +1,1049 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta charset="UTF-8" /><title>
+	山西青少年科技教育和科普活动云服务平台
+</title>
+    <!--通用部分-->
+    <link rel="stylesheet" href="/Other/shanxi/css/font-awesome.css" /><link rel="stylesheet" href="/Other/shanxi/css/common.css" />
+    <script src="/Other/shanxi/js/main.js"></script>
+
+    <!--个性部分-->
+    <link rel="stylesheet" href="/Other/shanxi/sourceshanxi/css/base.css">
+    <link rel="stylesheet" href="/Other/shanxi/sourceshanxi/css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="/Other/shanxi/sourceshanxi/css/index.css">
+    <link rel="stylesheet" href="/Other/shanxi/sourceshanxi/css/main.css">
+    <link rel="stylesheet" href="/Other/shanxi/sourceshanxi/css/page.css">
+    <script src="/Other/shanxi/sourceshanxi/js/jquery-1.11.3.min.js"></script>
+
+    <script src="/Other/shanxi/sourceshanxi/js/swiper-3.4.2.min.js"></script>
+    <script src="/Other/shanxi/sourceshanxi/js/main.js"></script>
+    <script src="/Other/shanxi/sourceshanxi/js/visitCount.js"></script>
+    <script src="/Other/shanxi/sourceshanxi/js/commonFunction.js"></script>
+
+    <!--活动日历-->
+    <script src="/Other/shanxi/js/datePickerForAct.js"></script>
+    <link rel="stylesheet" href="/Other/shanxi/css/datePickerForAct.css" /></head>
+<body>
+    <form method="post" action="/Other/shanxi/index.html" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTE4MjA1NTg5MQ8WAh4NZnJvbnRDb2x1bW5JRAUEMzMwMBYCAgMPZBYaAgEPZBYCAgEPFgIeC18hSXRlbUNvdW50AgsWFmYPZBYCAgEPFgQeDWRhdGEtY29sdW1uaWQFBDMzMDAeBWNsYXNzBQdjdXJyZW50FgJmDxUDCy9pbmRleC5hc3B4CGljb24tYWN0BummlumhtWQCAQ9kFgICAQ8WAh8CBQQzMzAxFgJmDxUDDS9BYm91dFVzLmFzcHgADOWFs+S6juaIkeS7rGQCAg9kFgICAQ8WAh8CBQQzMzA0FgJmDxUDEy9hY3RpdmUvYWN0aXZlLmFzcHgADOWTgeeJjOa0u+WKqGQCAw9kFgICAQ8WAh8CBQQzMzAyFgJmDxUDFi9uZXdzL25vdGljZUluZGV4LmFzcHgADOaWh+S7tumAmuefpWQCBA9kFgICAQ8WAh8CBQQzMzAzFgJmDxUDFC9uZXdzL25ld3NJbmRleC5hc3B4AAzmlrDpl7vmiqXpgZNkAgUPZBYCAgEPFgIfAgUEMzMwNRYCZg8VAxYvRXhoaWJpdGlvbi9pbmRleC5hc3B4AAzlnKjnur/lsZXljoVkAgYPZBYCAgEPFgIfAgUEMzMwNhYCZg8VAwkvNDA0LmFzcHgADOS6pOa1geWIhuS6q2QCBw9kFgICAQ8WAh8CBQQzMzA3FgJmDxUDCS80MDQuYXNweAAM5Lq65omN5Z+55YW7ZAIID2QWAgIBDxYCHwIFBDMzMDgWAmYPFQMJLzQwNC5hc3B4AAzpmJ/kvI3lu7rorr5kAgkPZBYCAgEPFgIfAgUEMzMwORYCZg8VAwkvNDA0LmFzcHgADOWIm+aWsOWtpumZomQCCg9kFgICAQ8WAh8CBQQzMzEwFgJmDxUDEy9TZXJ2aWNlL2xvZ2luLmFzcHgADOWPguS4jua0u+WKqGQCAg8WAh4HVmlzaWJsZWcWAgIBDxYCHwECAhYEZg9kFgJmDxUENi4uL05ld3MvQXJ0aWNsZVZpZXcuYXNweD9BSUQ9MjQ0ODgzJkZyb250Q29sdW1uSUQ9MzMwMDYuLi8uLi9BdHRhY2hGaWxlLzIwMTkvMTEvMzMwMTAyLzYzNzEwMjc3NjE0ODQ5NDAxNS5qcGdMMjAxOeW5tOWxseilv+ecgemdkuWwkeW5tOenkeaKgOaVmeiCsua0u+WKqOmqqOW5suaVmeW4iOWfueiureePreWcqOW5tuS4vuihjLMCMjAxOeW5tDEx5pyIMjDml6UtMjPml6XvvIznlLHlsbHopb/nnIHpnZLlsJHlubTnp5Hmma7kuK3lv4PlkozlsbHopb/nnIHpnZLlsJHlubTnp5HmioDmlZnogrLljY/kvJrlhbHlkIzkuLvlip7nmoTlsbHopb/nnIHpnZLlsJHlubTnp5HmioDmlZnogrLmtLvliqjpqqjlubLmlZnluIjln7norq3nj63lnKjlpKrljp/luILkuL7ooYzjgILmnaXoh6rlhajnnIExMeS4quW4gueahOmdkuWwkeW5tOS4reW/g+i0n+i0o+S6uuWSjOWQhOW4guS4reWwj+WtpuenkeaKgOmqqOW5suaVmeW4iOetieWFseiuoTE1MOS6uuWPguWKoOS6huWfueiureOAgmQCAQ9kFgJmDxUENi4uL05ld3MvQXJ0aWNsZVZpZXcuYXNweD9BSUQ9MjQ0NTY3JkZyb250Q29sdW1uSUQ9MzMwMDYuLi8uLi9BdHRhY2hGaWxlLzIwMTkvMTAvMzMwMTAyLzYzNzA3NTMyOTM4Mjc5Mzc4MC5qcGdU56ys5LqU5bGK5YWo5Zu96Z2S5bCR5bm05Yib5oSP57yW56iL5LiO5pm66IO96K6+6K6h5aSn6LWb5bGx6KW/5Luj6KGo6Zif6I2j6I635L2z57up6AIxMOaciDE4LTIw5pel77yM55Sx5Lit5Zu956eR5Y2P6Z2S5bCR5bm056eR5oqA5Lit5b+D44CB5Lit5Zu96Z2S5bCR5bm056eR5oqA6L6F5a+85ZGY5Y2P5Lya5ZKM5aSp5rSl5biC56eR5a2m5oqA5pyv5Y2P5Lya5YWx5ZCM5Li75Yqe55qE56ys5LqU5bGK5YWo5Zu96Z2S5bCR5bm05Yib5oSP57yW56iL5LiO5pm66IO96K6+6K6h5aSn6LWb57uI6K+E5Zyo5aSp5rSl5oiQ5Yqf5Li+5Yqe44CC5p2l6Ieq5YWo5Zu9MjfkuKrnnIHjgIHoh6rmsrvljLrjgIHnm7TovpbluILlkozmvrPpl6jnibnliKvooYzmlL/ljLrnmoTpgInmiYvjgIHnp5HmioDmlZnluIjlkozkuJPlrrbnrYnnuqY1MDDkurrlj4LliqDkuobmnKzmrKHlpKfotZvjgIJkAgMPFgIfBGcWAgIBDxYCHwECBBYIZg9kFgJmDxUDWWh0dHA6Ly9zaGFueGkueGlhb3hpYW90b25nLm9yZy9hY3RpdmUvQWN0aXZlVmlldy5hc3B4P2FjdGl2ZUlEPTEwNiZGcm9udENvbHVtbklEPTMzMDQmcz0xL0F0dGFjaEZpbGUvMjAyMC8xLzMzMDExMi82MzcxMzkwNjY5NTcyNjg3MTcuanBnIeWxseilv+mdkuWwkeW5tOenkeaKgOWIm+aWsOWkp+i1m2QCAQ9kFgJmDxUDWWh0dHA6Ly9zaGFueGkueGlhb3hpYW90b25nLm9yZy9hY3RpdmUvQWN0aXZlVmlldy5hc3B4P2FjdGl2ZUlEPTEwOCZGcm9udENvbHVtbklEPTMzMDQmcz0zL0F0dGFjaEZpbGUvMjAyMC8xLzMzMDExMi82MzcxMzkwNjcxMTM1ODA5OTEuanBnHuWxseilv+mdkuWwkeW5tOacuuWZqOS6uuernui1m2QCAg9kFgJmDxUDkQFodHRwOi8vc2hhbnhpLnhpYW94aWFvdG9uZy5vcmcvYWN0aXZlL0FjdGl2ZVZpZXcuYXNweD9hY3RpdmVJRD0xMTAmRnJvbnRDb2x1bW5JRD0zMzA0JnM9NXRpdmUvQWN0aXZlVmlldy5hc3B4P2FjdGl2ZUlEPTExMCZGcm9udENvbHVtbklEPTMzMDQmcz01L0F0dGFjaEZpbGUvMjAyMC8xLzMzMDExMi82MzcxMzkwNjcyMzY1MDkyMDcuanBnGOmdkuWwkeW5tOmrmOagoeenkeWtpuiQpWQCAw9kFgJmDxUDWWh0dHA6Ly9zaGFueGkueGlhb3hpYW90b25nLm9yZy9hY3RpdmUvQWN0aXZlVmlldy5hc3B4P2FjdGl2ZUlEPTExMiZGcm9udENvbHVtbklEPTMzMDQmcz03L0F0dGFjaEZpbGUvMjAyMC8xLzMzMDExMi82MzcxMzkwNjc0NDg5ODE1ODEuanBnHuWFqOWbvemdkuWwkeW5tOenkeWtpuW9seWDj+iKgmQCBA8WAh8EZxYEAgEPFgIeBFRleHQFCeWFrOWRiuagj2QCAw8WAh8BAgEWAmYPZBYCZg8VAYgDPGRpdj4NCjxwIHN0eWxlPSJtYXJnaW46IDBwdDsi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5aWW5Yqx5rS75YqoJmh0dHA6Ly9taW5ndGlhbi54aWFveGlhb3Rvbmcub3JnLzIwMTkvMkF0dGFjaEZpbGUvMjAxOS8xMS8xMDEwMTkxMC82MzcwOTMyMDczMTkzNDgzODYuanBnZAIBD2QWAmYPFQUAATIm56ysMTDlsYrlhajlm73pnZLlsJHlubTnp5HlrablvbHlg4/oioIhaHR0cDovL3l4ai54aWFveGlhb3Rvbmcub3JnLzIwMTkvNS4uL0F0dGFjaEZpbGUvMjAxOS8xMC8xMDEwMTkxMC82MzcwNzk1NTU2MDgzMzkwMjQuanBnZAICD2QWAmYPFQUAATM/56ys5LqU5bGK5YWo5Zu96Z2S5bCR5bm05Yib5oSP57yW56iL5LiO5pm66IO96K6+6K6h5aSn6LWb57uI6K+EImh0dHA6Ly9haXNjLnhpYW94aWFvdG9uZy5vcmcvMjAxOS8yQXR0YWNoRmlsZS8yMDE5LzEwLzEwMTAxOTEwLzYzNzA3MjY0MDI4NzA0NTI0Ni5qcGdkAgMPZBYCZg8VBQABNBYyMDE55bm05YWo5Zu956eR5pmu5pelJWh0dHA6Ly93d3cua2VwdXJpLm9yZy8yMDE5L2luZGV4LmFzcHgxQXR0YWNoRmlsZS8yMDE5LzkvMTAxMDE5MTAvNjM3MDQ1MDIzMDQ2NDYxNDM5LmpwZ2QCBA9kFgJmDxUFAAE1JuesrDE55bGK5Lit5Zu96Z2S5bCR5bm05py65Zmo5Lq656ue6LWbI2h0dHA6Ly9yb2JvdC54aWFveGlhb3Rvbmcub3JnLzIwMTkvNC4uL0F0dGFjaEZpbGUvMjAxOS84LzEwMTAxOTEwLzYzNzAxODIwNjE4NTcyOTU0Mi5qcGdkAgUPZBYCZg8VBQABNinnrKwzNOWxiuWFqOWbvemdkuWwkeW5tOenkeaKgOWIm+aWsOWkp+i1myRodHRwOi8vY2FzdGljLnhpYW94aWFvdG9uZy5vcmcvMjAxOS8xQXR0YWNoRmlsZS8yMDE5LzcvMTAxMDE5MTAvNjM3MDAwMTkyODMwODE1MjY2LmpwZ2QCBg9kFgJmDxUFAAE3HzIwMTnlubTpnZLlsJHlubTpq5jmoKHnp5HlrabokKUiaHR0cDovL3d3dy5rZXh1ZXlpbmcub3JnLmNuLzIwMTlULzFBdHRhY2hGaWxlLzIwMTkvNy8xMDEwMTkxMC82MzY5ODM2NTYxODg3ODkzMzkuanBnZAIHD2QWAmYPFQUAATgv56ysMTjlsYrigJzmmI7lpKnlsI/lsI/np5HlrablrrbigJ3lpZblirHmtLvliqgmaHR0cDovL21pbmd0aWFuLnhpYW94aWFvdG9uZy5vcmcvMjAxOC81Li4vQXR0YWNoRmlsZS8yMDE4LzExLzEwMTAxOTEwLzYzNjc2ODMxNDA0ODg2NzA2NS5qcGdkAggPZBYCZg8VBQABOSfnrKzkuZ3lsYrlhajlm73pnZLlsJHlubTnp5HlrablvbHlg4/oioIhaHR0cDovL3l4ai54aWFveGlhb3Rvbmcub3JnLzIwMTgvMkF0dGFjaEZpbGUvMjAxOC8xMS8xMDEwMTkxMC82MzY3NjgzMTM1NzY2NTQyMzYuanBnZAIJD2QWAmYPFQUAAjEwFjIwMTjlubTlhajlm73np5Hmma7ml6UWaHR0cDovL3d3dy5rZXB1cmkub3JnLzFBdHRhY2hGaWxlLzIwMTgvOS8xMDEwMTkxMC82MzY3MzkwNDg3NzU2MjM1MTkuanBnZAIMDxYCHwRnZAIND2QWCAIBDxYCHwUFHuWxseilv+ecgemdkuWwkeW5tOenkeaZruS4reW/g2QCAw8WAh8FBUXlhajlm73pnZLlsJHlubTnp5HmioDmlZnogrLlkoznp5Hmma7mtLvliqjkupHmnI3liqHlubPlj7Dlj5HlsZXogZTnm59kAgUPFgIfBQUV5LqsSUNQ5aSHIDA1MDEzMjQ55Y+3ZAIHDxYCHwVlZGSKy97lc1vsXU2f7KPSwKYd9PzRJBZ7gEQeFnElsqw2xQ==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="90059987" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAa4kZV3xkt7WAmhRxYnTS9Bdi6A0Uy7hjrxYybW4mq9qP7Rk/bpc/vDwK1RCuUWZ+5ZLB76uMYqQyuWMg0LU8DuyGrMEgW6JddyvppvnhFU0j+86cDa544I86KLO530k0Bx4wzj4IU6xhAyCq1m+SIez/IUpZfAVTgOT/iAYa9Vfg==" />
+</div>
+    
+<div class="header_top ">
+        <style>
+            .addfunction.cur .search-box {
+                display:inline-block;
+            }
+        </style>
+        <div class="container clearfix">
+            <div class="fl">
+                <div class="addfunction">
+                    <dl>
+                        <dt>2020年01月06日</dt>
+                    </dl>
+                    <dl class="ml10 mr10">
+                        <dt>星期一</dt>
+                    </dl>
+                    <dl>
+                        <dt><a onclick="SetHome(this,window.location)">设为主页</a></dt>
+                    </dl>
+                    <!-- <dl>
+                        <dt>|</dt>
+                    </dl> -->
+                    <dl>
+                        <dt><a onclick="AddFavorite(window.location, document.title)">加入收藏</a></dt>
+                    </dl>
+
+
+                </div>
+            </div>
+            <div class="fr">
+                <div class="addfunction">
+                    <dl>
+                        <dt><a class="icons-app " >站内搜索 </a>
+
+                        </dt>
+                    </dl>
+                    <dl  class="search-box">
+                        <dt>
+                            <select name="Top1$ddlType" id="Top1_ddlType" class="select-form">
+	<option value="0">文章</option>
+	<option value="1">图集</option>
+	<option value="2">视频</option>
+
+</select>
+                            <input name="Top1$txtSearchKey" type="text" id="Top1_txtSearchKey" class="input-search" />
+                            <a id="Top1_btnFind" class="input-submit btn-primary" href="javascript:__doPostBack(&#39;Top1$btnFind&#39;,&#39;&#39;)" style="color:#fff">确定</a>
+
+
+                        </dt>
+                    </dl>
+
+                    <dl>
+                        <dt class="mail-h">
+                            <a class="icons-mail">移动应用</a>
+                            <div class="mail-show child">
+                            <span class="wx">
+                                微信
+                            </span>
+                                <span class="wz">
+                                微站
+                            </span>
+                            </div>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a class="icons-share">社交分享</a>
+                            <div class="child share">
+                                <div class="bshare-custom icon-medium">
+                                    <a title="分享到微信" class="bshare-weixin"></a>
+                                    <a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+                                    <a title="分享到QQ" class="bshare-qqim"></a>
+                                    <a title="分享到腾讯微博" class="bshare-qqmb"></a>
+                                    <a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a>
+                                </div>
+                            </div>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt><a href="/Other/shanxi/404.html" target="_blank" class="icons-net ">会员服务</a></dt>
+                    </dl>
+                    <dl>
+                        <dt><a href="/Other/shanxi/404.html" target="_blank" class="icons-email ">创新邮局</a></dt>
+                    </dl>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function searchbox() {
+            $(".search-box").show(500);
+        }
+
+
+        $(".icons-app").click(function () {
+            $(this).parents(".addfunction").toggleClass("cur")
+        })
+    </script>
+
+    <div class="header">
+        <div class="container">
+            <a href="/Other/shanxi/index.html" class="logo"></a>
+
+        </div>
+    </div>
+     
+<div class="nav-box">
+<div class="container clearfix">
+            <div class="nav">
+                <ul class="main-nav">
+                    
+                            <li id="Menu1_repMenu_liMenu_0" data-columnid="3300" class="current"><a href="/Other/shanxi/index.html"><i class="icon-act"></i>首页</a></li>
+                        
+                            <li id="Menu1_repMenu_liMenu_1" data-columnid="3301"><a href="/Other/shanxi/AboutUs.html"><i class=""></i>关于我们</a></li>
+                        
+                            <li id="Menu1_repMenu_liMenu_2" data-columnid="3304"><a href="/Other/shanxi/404.html" target="_blank" class="icons-net ">会员服务</a>
+<a class="970c4c25e01c45868ac162cc2b722a95" href="http://www.iis7.com" target="_blank" style="display:inline-block;background-color:;color:#fff;padding:2px 5px;font-family:arial;font-size:12px;font-weight:bold;">iis7站长之家</a></li>
+                        
+                            <li id="Menu1_repMenu_liMenu_3" data-columnid="3302"><a href="/Other/shanxi/news/noticeIndex.html"><i class=""></i>文件通知</a></li>
+                        
+                            <li id="Menu1_repMenu_liMenu_4" data-columnid="3303"><a href="/Other/shanxi/news/newsIndex.html"><i class=""></i>新闻报道</a></li>
+                        
+                            <li id="Menu1_repMenu_liMenu_5" data-columnid="3305"><a href="/Other/shanxi/Exhibition/index.html"><i class=""></i>在线展厅</a></li>
+                        
+                            <li id="Menu1_repMenu_liMenu_6" data-columnid="3306"><a href="/Other/shanxi/404.html"><i class=""></i>交流分享</a></li>
+                        
+                            <li id="Menu1_repMenu_liMenu_7" data-columnid="3307"><a href="/Other/shanxi/404.html"><i class=""></i>人才培养</a></li>
+                        
+                            <li id="Menu1_repMenu_liMenu_8" data-columnid="3308"><a href="/Other/shanxi/404.html"><i class=""></i>队伍建设</a></li>
+                        
+                            <li id="Menu1_repMenu_liMenu_9" data-columnid="3309"><a href="/Other/shanxi/404.html"><i class=""></i>创新学院</a></li>
+                        
+                            <li id="Menu1_repMenu_liMenu_10" data-columnid="3310"><a href="/Other/shanxi/Service/login.html"><i class=""></i>参与活动</a></li>
+                        
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+            <div class="banner ovh">
+        <div class="container clearfix white-bg">
+            <div id="div1" class="swiper-container swiper">
+                <div class="swiper-wrapper">
+                    
+                            <a href="/Other/shanxi/News/ArticleView/AID/244883/FrontColumnID/3300.html" class="swiper-slide" target="_blank">
+                                <img src="/AttachFile/2019/11/330102/637102776148494015.jpg" alt="">
+                                <div class="item_detail">
+                                    <h3>2019年山西省青少年科技教育活动骨干教师培训班在并举行</h3>
+                                    <p>2019年11月20日-23日，由山西省青少年科普中心和山西省青少年科技教育协会共同主办的山西省青少年科技教育活动骨干教师培训班在太原市举行。来自全省11个市的青少年中心负责人和各市中小学科技骨干教师等共计150人参加了培训。</p>
+                                 </div>
+                            </a>
+                        
+                            <a href="/Other/shanxi/News/ArticleView/AID/244567/FrontColumnID/3300.html" class="swiper-slide" target="_blank">
+                                <img src="/AttachFile/2019/10/330102/637075329382793780.jpg" alt="">
+                                <div class="item_detail">
+                                    <h3>第五届全国青少年创意编程与智能设计大赛山西代表队荣获佳绩</h3>
+                                    <p>10月18-20日，由中国科协青少年科技中心、中国青少年科技辅导员协会和天津市科学技术协会共同主办的第五届全国青少年创意编程与智能设计大赛终评在天津成功举办。来自全国27个省、自治区、直辖市和澳门特别行政区的选手、科技教师和专家等约500人参加了本次大赛。</p>
+                                 </div>
+                            </a>
+                        
+
+                </div>
+                <div class="swiper-pagination" style="text-align: right"></div>
+            </div>
+            <div id="div2" class="slider-list fr">
+                 
+                         <a href="/Other/shanxi/active/ActiveView/activeID/106/FrontColumnID/3304/s/1.html" target="_blank">
+                             <img src="/AttachFile/2020/1/330112/637139066957268717.jpg" alt="">
+                             <div class="shadowLeft">
+                                 <span>山西青少年科技创新大赛</span>
+
+                             </div>
+                         </a>
+                    
+                         <a href="/Other/shanxi/active/ActiveView/activeID/108/FrontColumnID/3304/s/3.html" target="_blank">
+                             <img src="/AttachFile/2020/1/330112/637139067113580991.jpg" alt="">
+                             <div class="shadowLeft">
+                                 <span>山西青少年机器人竞赛</span>
+
+                             </div>
+                         </a>
+                    
+                         <a href="/Other/shanxi/active/ActiveView/activeID/110/FrontColumnID/3304/s/5tive/ActiveView.aspxactiveID/110/FrontColumnID/3304/s/5.html" target="_blank">
+                             <img src="/AttachFile/2020/1/330112/637139067236509207.jpg" alt="">
+                             <div class="shadowLeft">
+                                 <span>青少年高校科学营</span>
+
+                             </div>
+                         </a>
+                    
+                         <a href="/Other/shanxi/active/ActiveView/activeID/112/FrontColumnID/3304/s/7.html" target="_blank">
+                             <img src="/AttachFile/2020/1/330112/637139067448981581.jpg" alt="">
+                             <div class="shadowLeft">
+                                 <span>全国青少年科学影像节</span>
+
+                             </div>
+                         </a>
+                    
+
+            </div>
+        </div>
+    </div>
+
+    <div id="div3" class="container">
+        <div class="notice">
+            <div class="notice-left">公告栏</div>
+            <div class="notice-content">
+                <div class="in" id="notice">
+                    
+                            <span class="list-mar" style="display:none"><div>
+<p style="margin: 0pt;">&nbsp;</p>
+
+<p><a href="/Other/shanxi/shanxi./FileNotice/Detail/lnArticleID/239498.html">山西省青少年机器人竞赛优秀标准及申报表</a></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p align="left" style="margin: 0cm 0cm 0pt; text-align: left; line-height: 30pt;">&nbsp;</p>
+</div>
+</span>
+                        
+                </div>
+                <div class="btns">
+                    <a class="up" onclick="slidePrev()"></a>
+                    <a class="down" onclick="slideNext()"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container clearfix bg-show" >
+        <div class="left fl con-left" >
+            <div id="div4" class="floor f-email tab_group_hover">
+                <div class="title">
+                    <h2 class="clearfix">
+                        <span class="email">新闻报道</span>
+                        <div class="fr">
+                            <div class="fr-right">
+                                <a href="/Other/shanxi/news/news.html" target="_blank">more></a>
+                                <a href="/Other/shanxi/news/news.html" target="_blank">more></a>
+                                <a href="/Other/shanxi/news/news.html" target="_blank">more></a>
+                            </div>
+                            <ul style="display:none">
+                                <li>地市 <i></i> </li>
+                                <li>区县 <i></i> </li>
+                                <li>学校 <i></i> </li>
+                            </ul>
+                        </div>
+                    </h2>
+                </div>
+                <div class="ctrl">
+                    <ul class="list tab_21">
+
+                          
+
+                            <li class='cur'>
+                            <div class="title">
+                                <a href="/Other/shanxi/News/ArticleView/AID/244883/FrontColumnID/3300.html" target="_blank">
+                                    2019年山西省青少年科技教育活动骨干教师培训班在并举行 <span>其它活动</span>
+                                </a>
+                            </div>
+                            <div class="tt">
+                                <a href="/Other/shanxi/News/ArticleView/AID/244883/FrontColumnID/3300.html" target="_blank">
+                                    <div class="img">
+                                        <img src='/AttachFile/2019/11/33190022/637102771072245099.jpg' alt="">
+                                    </div>
+                                    <div class="dd">
+                                        <h2>2019年山西省青少年科技教育活动骨干教师培训班在并举行</h2>
+                                        <p class="t2 mt5">2019年11月20日-23日，由山西省青少年科普中心和山西省青少年科技教育协会共同主办的山西省青少年科技教…<span class="par">[详情]</span></p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </li>
+                        
+
+                            <li class=''>
+                            <div class="title">
+                                <a href="/Other/shanxi/News/ArticleView/AID/244734/FrontColumnID/3300.html" target="_blank">
+                                    第十届山西省青少年科学影像节圆满结束 <span>其它活动</span>
+                                </a>
+                            </div>
+                            <div class="tt">
+                                <a href="/Other/shanxi/News/ArticleView/AID/244734/FrontColumnID/3300.html" target="_blank">
+                                    <div class="img">
+                                        <img src='/AttachFile/2019/11/33190022/637090869531120922.jpg' alt="">
+                                    </div>
+                                    <div class="dd">
+                                        <h2>第十届山西省青少年科学影像节圆满结束</h2>
+                                        <p class="t2 mt5">2019年，第十届山西省青少年科学影像节活动共收到9个市的124项作品。参照全国评审标准，制定《第十届山西…<span class="par">[详情]</span></p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </li>
+                        
+
+                            <li class=''>
+                            <div class="title">
+                                <a href="/Other/shanxi/News/ArticleView/AID/244567/FrontColumnID/3300.html" target="_blank">
+                                    第五届全国青少年创意编程与智能设计大赛山西代表队荣获佳绩 <span>其它活动</span>
+                                </a>
+                            </div>
+                            <div class="tt">
+                                <a href="/Other/shanxi/News/ArticleView/AID/244567/FrontColumnID/3300.html" target="_blank">
+                                    <div class="img">
+                                        <img src='/AttachFile/2019/10/33190022/637075296706352387.jpg' alt="">
+                                    </div>
+                                    <div class="dd">
+                                        <h2>第五届全国青少年创意编程与智能设计大赛山西代表队荣获佳绩</h2>
+                                        <p class="t2 mt5">10月18-20日，由中国科协青少年科技中心、中国青少年科技辅导员协会和天津市科学技术协会共同主办的第五…<span class="par">[详情]</span></p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </li>
+                        
+
+                            <li class=''>
+                            <div class="title">
+                                <a href="/Other/shanxi/News/ArticleView/AID/243944/FrontColumnID/3300.html" target="_blank">
+                                    山西代表团参加第19届中国青少年机器人竞赛暨2019世界青少年机器人邀请赛再创佳绩 <span>机器人竞赛</span>
+                                </a>
+                            </div>
+                            <div class="tt">
+                                <a href="/Other/shanxi/News/ArticleView/AID/243944/FrontColumnID/3300.html" target="_blank">
+                                    <div class="img">
+                                        <img src='/AttachFile/2019/8/33040022/637018063198062398.JPG' alt="">
+                                    </div>
+                                    <div class="dd">
+                                        <h2>山西代表团参加第19届中国青少年机器人竞赛暨2019世界青少年机器人邀请赛再创佳绩</h2>
+                                        <p class="t2 mt5"> 第19届中国青少年机器人竞赛暨2019世界青少年机器人邀请赛于2019年8月11日-16日在重庆举办。竞赛由中国…<span class="par">[详情]</span></p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </li>
+                        
+
+                            <li class=''>
+                            <div class="title">
+                                <a href="/Other/shanxi/News/ArticleView/AID/243782/FrontColumnID/3300.html" target="_blank">
+                                    第五届山西省青少年创意编程与智能设计大赛圆满结束 <span>其它活动</span>
+                                </a>
+                            </div>
+                            <div class="tt">
+                                <a href="/Other/shanxi/News/ArticleView/AID/243782/FrontColumnID/3300.html" target="_blank">
+                                    <div class="img">
+                                        <img src='/images/NoPicture.png' alt="">
+                                    </div>
+                                    <div class="dd">
+                                        <h2>第五届山西省青少年创意编程与智能设计大赛圆满结束</h2>
+                                        <p class="t2 mt5"> 7月30日-31日，由山西省科学技术协会主办，山西省青少年科普中心、山西省青少年科技教育协会承办的第五…<span class="par">[详情]</span></p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </li>
+                        
+
+                            <li class=''>
+                            <div class="title">
+                                <a href="/Other/shanxi/News/ArticleView/AID/243777/FrontColumnID/3300.html" target="_blank">
+                                    山西队在第34届全国青少年科技创新大赛荣获佳绩 <span>青少年科技创新大赛</span>
+                                </a>
+                            </div>
+                            <div class="tt">
+                                <a href="/Other/shanxi/News/ArticleView/AID/243777/FrontColumnID/3300.html" target="_blank">
+                                    <div class="img">
+                                        <img src='/AttachFile/2019/8/33020022/637003400325363017.JPG' alt="">
+                                    </div>
+                                    <div class="dd">
+                                        <h2>山西队在第34届全国青少年科技创新大赛荣获佳绩</h2>
+                                        <p class="t2 mt5">7月20日—7月26日，由中国科协、教育部、科技部等九部委和澳门特别行政区政府共同主办的第34届全国青少年…<span class="par">[详情]</span></p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </li>
+                        
+
+                            <li class=''>
+                            <div class="title">
+                                <a href="/Other/shanxi/News/ArticleView/AID/243651/FrontColumnID/3300.html" target="_blank">
+                                    鲜衣怒马少年时  逐梦七日科学营--- 青少年高校科学营山西分营活动圆满结束 <span>青少年高校科学营</span>
+                                </a>
+                            </div>
+                            <div class="tt">
+                                <a href="/Other/shanxi/News/ArticleView/AID/243651/FrontColumnID/3300.html" target="_blank">
+                                    <div class="img">
+                                        <img src='/AttachFile/2019/7/3350000200/636997549517394875.jpg' alt="">
+                                    </div>
+                                    <div class="dd">
+                                        <h2>鲜衣怒马少年时  逐梦七日科学营--- 青少年高校科学营山西分营活动圆满结束</h2>
+                                        <p class="t2 mt5"> 2019年7月7日—7月22日，带着科学的梦想来自太原市、晋中市、吕梁市、长治市等11市的285营员以及20名带…<span class="par">[详情]</span></p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </li>
+                        
+
+                            <li class=''>
+                            <div class="title">
+                                <a href="/Other/shanxi/News/ArticleView/AID/240634/FrontColumnID/3300.html" target="_blank">
+                                     2019年青少年高校科学营山西分营营前培训会召开            <span>其它活动</span>
+                                </a>
+                            </div>
+                            <div class="tt">
+                                <a href="/Other/shanxi/News/ArticleView/AID/240634/FrontColumnID/3300.html" target="_blank">
+                                    <div class="img">
+                                        <img src='/AttachFile/2019/7/33190022/636979254608662394.jpg' alt="">
+                                    </div>
+                                    <div class="dd">
+                                        <h2> 2019年青少年高校科学营山西分营营前培训会召开           </h2>
+                                        <p class="t2 mt5"> 7月1日，山西省青少年科普中心在太原开展2019年青少年高校科学营山西分营营前培训工作，来自太原、阳泉…<span class="par">[详情]</span></p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </li>
+                        
+
+                            <li class=''>
+                            <div class="title">
+                                <a href="/Other/shanxi/News/ArticleView/AID/240618/FrontColumnID/3300.html" target="_blank">
+                                    2019年青少年科学调查体验活动山西省启动仪式暨骨干教师培训班成功举办 <span>其它活动</span>
+                                </a>
+                            </div>
+                            <div class="tt">
+                                <a href="/Other/shanxi/News/ArticleView/AID/240618/FrontColumnID/3300.html" target="_blank">
+                                    <div class="img">
+                                        <img src='/AttachFile/2019/7/33190022/636979138204689942.jpg' alt="">
+                                    </div>
+                                    <div class="dd">
+                                        <h2>2019年青少年科学调查体验活动山西省启动仪式暨骨干教师培训班成功举办</h2>
+                                        <p class="t2 mt5">省青少年科普中心于2019年6月26日——28日在太原市隆重召开2019年青少年科学调查体验活动山西省启动仪式…<span class="par">[详情]</span></p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </li>
+                        
+
+                            <li class=''>
+                            <div class="title">
+                                <a href="/Other/shanxi/News/ArticleView/AID/240334/FrontColumnID/3300.html" target="_blank">
+                                    2019年中国科协大手拉小手科普报告希望行山西省巡讲活动圆满结束 <span>大手拉小手</span>
+                                </a>
+                            </div>
+                            <div class="tt">
+                                <a href="/Other/shanxi/News/ArticleView/AID/240334/FrontColumnID/3300.html" target="_blank">
+                                    <div class="img">
+                                        <img src='/AttachFile/2019/6/33070022/636964728069317355.JPG' alt="">
+                                    </div>
+                                    <div class="dd">
+                                        <h2>2019年中国科协大手拉小手科普报告希望行山西省巡讲活动圆满结束</h2>
+                                        <p class="t2 mt5">6月10日-14日，由中国科协青少年科技中心和山西省科协共同主办，山西省青少年科普中心、吕梁市科学技术协…<span class="par">[详情]</span></p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </li>
+                        
+                      </ul>
+                </div>
+
+            </div>
+
+            <div id="div5" class="nowNews">
+                <div class="swiper-container sub-swiper">
+                    <div class="swiper-wrapper">
+                        
+                                <div class="swiper-slide">
+                                    <a href="/index.html" target="_blank">
+                                        <img src="/AttachFile/2020/1/330107/637136640622935699.jpg" /></a>
+
+                                </div>
+
+                            
+                                <div class="swiper-slide">
+                                    <a href="/Other/castic/index.html" target="_blank">
+                                        <img src="/AttachFile/2020/1/330107/637136640146042861.jpg" /></a>
+
+                                </div>
+
+                            
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="div6" class="floor f-video" style="margin-top: 15px">
+                <div class="title">
+                    <h2 class="clearfix">
+                        <span class="video">活动掠影</span>
+                        <div class="fr">
+                            <div class="fr-right">
+                                <a href="/Other/shanxi/Gallery/GalleryList.html" target="_blank">more></a>
+                            </div>
+                        </div>
+                    </h2>
+                </div>
+
+                <div class="video-list  clearfix">
+                    <div class="video-listc">
+                        
+                            <a href='/Other/shanxi/Gallery/GalleryView/GalleryID/15453/FrontColumnID/3300.html' target="_blank">
+                                <img src="/GalleryFile/2020/1/33020024/637136488424076376.jpg" alt="">
+                                <span class="shadow shadow-top1"><em>山西队在第34届全国青少年科技创新大赛荣获佳绩</em></span>
+                                <i class="shadow-thumb">0</i>
+                                <div class="shadow-big">
+                                    <div class="shadow-inner">
+                                        <h1>山西队在第34届全国青少年科技创新大赛荣获佳绩</h1>
+                                        <p class="font-12">
+                                            山西队在第34届全国青少年科技创新大赛荣获佳绩
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        
+                            <a href='/Other/shanxi/Gallery/GalleryView/GalleryID/15454/FrontColumnID/3300.html' target="_blank">
+                                <img src="/GalleryFile/2020/1/33020024/637136488905805222.jpg" alt="">
+                                <span class="shadow shadow-top1"><em>2019年山西省青少年科技教育活动骨干教师培训班在并举行</em></span>
+                                <i class="shadow-thumb">0</i>
+                                <div class="shadow-big">
+                                    <div class="shadow-inner">
+                                        <h1>2019年山西省青少年科技教育活动骨干教师培训班在并举行</h1>
+                                        <p class="font-12">
+                                            2019年山西省青少年科技教育活动骨干教师培训班在并举行
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        
+                            <a href='/Other/shanxi/Gallery/GalleryView/GalleryID/15455/FrontColumnID/3300.html' target="_blank">
+                                <img src="/GalleryFile/2020/1/33040024/637136489475206222.jpg" alt="">
+                                <span class="shadow shadow-top1"><em>第十九届山西省青少年机器人竞赛隆重举办</em></span>
+                                <i class="shadow-thumb">0</i>
+                                <div class="shadow-big">
+                                    <div class="shadow-inner">
+                                        <h1>第十九届山西省青少年机器人竞赛隆重举办</h1>
+                                        <p class="font-12">
+                                            第十九届山西省青少年机器人竞赛隆重举办
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        
+                        
+                                <a href="/Other/shanxi/Video/VideoView/VideoID/6445.html" target="_blank">
+                                    <img src="/VideoFile/2020/1/1050000400/345e70a3ff6746d1bb21a308c4a7aaa1.jpg" alt="">
+                                    <span class="shadow shadow-top2"><em>2019年高校科学营总结视频</em></span>
+                                    <div class="shadow-big">
+                                        <div class="shadow-inner">
+                                            <h1>2019年高校科学营总结视频</h1>
+                                            <p class="font-12">
+                                                2019年高校科学营总结视频
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            
+                                <a href="/Other/shanxi/Video/VideoView/VideoID/6192.html" target="_blank">
+                                    <img src="/VideoFile/2019/8/1013001000/0632af37d29045ee8a64f72548f86797.jpg" alt="">
+                                    <span class="shadow shadow-top2"><em>第19届中国青少年机器人竞赛回顾</em></span>
+                                    <div class="shadow-big">
+                                        <div class="shadow-inner">
+                                            <h1>第19届中国青少年机器人竞赛回顾</h1>
+                                            <p class="font-12">
+                                                2019年8月11-17日，第19届中国青少年机器人竞赛暨2019世界青少年机器人邀请赛在重庆举办。
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            
+                                <a href="/Other/shanxi/Video/VideoView/VideoID/6143.html" target="_blank">
+                                    <img src="/VideoFile/2019/8/1011000600/97ec5af784fa42c68f3bde1fa17e9266.jpg" alt="">
+                                    <span class="shadow shadow-top2"><em>第34届全国青少年科技创新大赛回顾视频</em></span>
+                                    <div class="shadow-big">
+                                        <div class="shadow-inner">
+                                            <h1>第34届全国青少年科技创新大赛回顾视频</h1>
+                                            <p class="font-12">
+                                                第34届全国青少年科技创新大赛六天花絮
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="div7" class="floor f-people" style="margin-top: 15px">
+                <div class="title">
+                    <h2 class="clearfix">
+                        <span class="people">人才培养</span>
+                        <div class="fr">
+                            <div class="fr-right">
+                                <a>more></a>
+                            </div>
+                        </div>
+                    </h2>
+                </div>
+
+                <div class="video-list  clearfix">
+                    <div class="people-top">
+                        <a href="" class="people-top1">
+                            <p><span>0</span> 名学生</p>
+                        </a>
+                        <a href="" class="people-top2">
+                            <p><span>0</span> 名教师</p>
+                        </a>
+                        <a href="" class="people-top3">
+                            <p><span>0</span> 所学校</p>
+                        </a>
+                    </div>
+                    <div class="people-bottom">
+                        
+                        
+                        
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="right fr con-right"  >
+            <div id="div8" class="floor">
+                <h5 class="noticed">文件通知<i class="fr"><a class="f13" href="/Other/shanxi/news/notice.html">MORE></a></i></h5>
+                <div style="box-sizing:border-box">
+                    <div class="more mt15 mb15">
+                        
+                                 <a href="/Other/shanxi/News/noticeView/AID/244719/FrontColumnID/3300.html" target="_blank"><i></i><span class="pl10">关于开展2019年山西省初级、中级青少年科技辅导员专业水平认证工作的通知</span></a>
+                            
+                                 <a href="/Other/shanxi/News/noticeView/AID/244679/FrontColumnID/3300.html" target="_blank"><i></i><span class="pl10">关于举办2019年山西省青少年科技教育活动骨干教师培训班的通知</span></a>
+                            
+                                 <a href="/Other/shanxi/News/noticeView/AID/243860/FrontColumnID/3300.html" target="_blank"><i></i><span class="pl10">关于做好2019年青少年高校科学营山西分营后续工作的通知</span></a>
+                            
+                                 <a href="/Other/shanxi/News/noticeView/AID/242872/FrontColumnID/3300.html" target="_blank"><i></i><span class="pl10">关于举办第五届山西省青少年创意编程与智能设计大赛创意编程比赛终评活动的通知</span></a>
+                            
+                                 <a href="/Other/shanxi/News/noticeView/AID/240371/FrontColumnID/3300.html" target="_blank"><i></i><span class="pl10">关于举办2019年山西省青少年科学调查体验活动启动仪式暨骨干教师培训班的通知</span></a>
+                            
+                                 <a href="/Other/shanxi/News/noticeView/AID/240366/FrontColumnID/3300.html" target="_blank"><i></i><span class="pl10">关于举办第五届山西省青少年创意编程与智能设计大赛的通知</span></a>
+                            
+                                 <a href="/Other/shanxi/News/noticeView/AID/240341/FrontColumnID/3300.html" target="_blank"><i></i><span class="pl10">关于转发《关于开展“第27届全国青少年科技辅导员论文征集活动”的通知》的通知</span></a>
+                            
+                                 <a href="/Other/shanxi/News/noticeView/AID/239762/FrontColumnID/3300.html" target="_blank"><i></i><span class="pl10">第十九届山西省青少年机器人竞赛获奖名单</span></a>
+                            
+                                 <a href="/Other/shanxi/News/noticeView/AID/239740/FrontColumnID/3300.html" target="_blank"><i></i><span class="pl10">关于召开2019年青少年高校科学营山西分营培训会的通知</span></a>
+                            
+                                 <a href="/Other/shanxi/News/noticeView/AID/239498/FrontColumnID/3300.html" target="_blank"><i></i><span class="pl10">山西省青少年机器人竞赛优秀标准及申报表</span></a>
+                            
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="div9" class="floor">
+                <h5 class="act">活动日历<i class="fr"><a class="f13" href="/Other/shanxi/news/actNotice.html">MORE></a></i></h5>
+                <div class="floor-content">
+                    <div class="act-calendar"></div>
+                    <div id="AnnounceList" style="display: none">[{type:&#39;startday&#39;,year:2020,month:1,day:13,detail:{title:&#39;第35届山西省青少年科技创新大赛、青少年科学影像节申报&#39;,start:&#39;2020-01-13&#39;,end:&#39;2020-02-15&#39;}}]</div>
+                </div>
+            </div>
+
+            <div id="div10" class="floor mt25 tab_group_hover">
+                <div class="bg-blue">
+                    <h5 class="point">
+                        精彩推荐
+                        <i class="fr" style="display:none">
+                            <a class="f13" href="/Other/shanxi/news/notice.html">MORE></a>
+                            <a class="f13" href="/Other/shanxi/news/notice1.html">MORE></a>
+                        </i>
+                        <div class="fr-point">
+                            <span class="active">专题</span>
+                            <span>展览</span>
+                        </div>
+                    </h5>
+                </div>
+                <div style="box-sizing:border-box" class="point-par pb10">
+                    <div style="box-sizing:border-box" class="pl20 pr20 pt10" >
+                        <div class="tab-tt">
+                            <ul class="act-list tab_23">
+                                
+                                        <li class='cur'>
+                                            <span><em>1</em><i>第19届“明天小小科学家”奖励活动</i></span>
+                                            <a target="_blank"  href='/Other/mingtian/2019/index.html'><img width="220" height="36" src='/AttachFile/2019/11/10101910/637093207319348386.jpg'></a>
+                                        </li>
+                                    
+                                        <li class=''>
+                                            <span><em>2</em><i>第10届全国青少年科学影像节</i></span>
+                                            <a target="_blank"  href='/Other/yxj/2019/index.html'><img width="220" height="36" src='/AttachFile/2019/10/10101910/637079555608339024.jpg'></a>
+                                        </li>
+                                    
+                                        <li class=''>
+                                            <span><em>3</em><i>第五届全国青少年创意编程与智能设计大赛终评</i></span>
+                                            <a target="_blank"  href='/Other/aisc/2019/index.html'><img width="220" height="36" src='/AttachFile/2019/10/10101910/637072640287045246.jpg'></a>
+                                        </li>
+                                    
+                                        <li class=''>
+                                            <span><em>4</em><i>2019年全国科普日</i></span>
+                                            <a target="_blank"  href='http://www.kepuri.org/2019/index.aspx'><img width="220" height="36" src='/AttachFile/2019/9/10101910/637045023046461439.jpg'></a>
+                                        </li>
+                                    
+                                        <li class=''>
+                                            <span><em>5</em><i>第19届中国青少年机器人竞赛</i></span>
+                                            <a target="_blank"  href='/2019/index.html'><img width="220" height="36" src='/AttachFile/2019/8/10101910/637018206185729542.jpg'></a>
+                                        </li>
+                                    
+                                        <li class=''>
+                                            <span><em>6</em><i>第34届全国青少年科技创新大赛</i></span>
+                                            <a target="_blank"  href='/Other/castic/2019/index.html'><img width="220" height="36" src='/AttachFile/2019/7/10101910/637000192830815266.jpg'></a>
+                                        </li>
+                                    
+                                        <li class=''>
+                                            <span><em>7</em><i>2019年青少年高校科学营</i></span>
+                                            <a target="_blank"  href='http://www.kexueying.org.cn/2019T/'><img width="220" height="36" src='/AttachFile/2019/7/10101910/636983656188789339.jpg'></a>
+                                        </li>
+                                    
+                                        <li class=''>
+                                            <span><em>8</em><i>第18届“明天小小科学家”奖励活动</i></span>
+                                            <a target="_blank"  href='/Other/mingtian/2018/index.html'><img width="220" height="36" src='/AttachFile/2018/11/10101910/636768314048867065.jpg'></a>
+                                        </li>
+                                    
+                                        <li class=''>
+                                            <span><em>9</em><i>第九届全国青少年科学影像节</i></span>
+                                            <a target="_blank"  href='/Other/yxj/2018/index.html'><img width="220" height="36" src='/AttachFile/2018/11/10101910/636768313576654236.jpg'></a>
+                                        </li>
+                                    
+                                        <li class=''>
+                                            <span><em>10</em><i>2018年全国科普日</i></span>
+                                            <a target="_blank"  href='http://www.kepuri.org/'><img width="220" height="36" src='/AttachFile/2018/9/10101910/636739048775623519.jpg'></a>
+                                        </li>
+                                    
+
+
+
+                            </ul>
+
+
+                        </div>
+
+                    </div>
+                    <div style="box-sizing:border-box" class="pl20 pr20 pt10" >
+
+                        <div class="tab-tt">
+                            <ul class="act-list act-list2 tab_idx2 ">
+                                <li class='cur'>
+                                    <span><em>1</em><i>全国青少年科学影像节光影10年回顾展</i></span>
+                                    <a target="_blank"  href='/Other/yxj/2019/History/Index.html'><img width="220" height="36" src='/sourceshanxi/images/zhanlan1.jpg'></a>
+                                </li>
+
+                                <li class=''>
+                                    <span><em>2</em><i>全国青少年科技创新大赛30届回顾展</i></span>
+                                    <a target="_blank"  href='/Other/castic/zhanlan/index.html'><img width="220" height="36" src='/sourceshanxi/images/zhanlan2.jpg'></a>
+                                </li>
+                            </ul>
+                           
+                        </div>
+
+                </div>
+                </div>
+
+            </div>
+            <div id="div11" class="right-btmbtn">
+                <a href="" class="btmbtn-1">下载中心</a>
+                <a href="" class="btmbtn-2">咨询答疑</a>
+                <a href="" class="btmbtn-3">意见建议</a>
+                <a href="" class="btmbtn-4">举报投诉</a>
+            </div>
+        </div>
+
+    </div>
+
+    
+<!--footer start-->
+<div class="footer">
+    <div class="bg-footer">
+        <div class="container">
+            <div class="foot-info  clearfix ">
+                <div class="fl mt25">
+                    <p>
+                        主办单位：山西省青少年科普中心
+                    </p>
+                    <p>
+                        服务保障：全国青少年科技教育和科普活动云服务平台发展联盟
+                    </p>
+                    <p >
+                        网站备案：京ICP备 05013249号
+                    </p>
+                    <p >
+                        联系我们：
+                    </p>
+                </div>
+                <a href="" class="rel" ></a>
+                <div class="code-footer fr mt15">
+                        <span style="width: 88px;">
+                            <var></var>
+                            <i>扫一扫 关注我们</i>
+                        </span>
+                </div>
+                <div class="linkCode fr clearfix">
+                    <div class="code-box tc">
+                        <a  class="erCode  xcx mr15" style="display:none">小程序</a>
+                        <a  class="erCode  wx mr15" style="display:none">微信</a>
+                        <a  class="erCode wz ">微站</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer end-->
+
+        <script>
+    var mySwiper1 = new Swiper('.swiper', {
+        loop: true,
+        autoplay: 5000,
+        speed: 500,
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+    var mySwiper2 = new Swiper('.sub-swiper', {
+        loop: true,
+        direction: 'vertical',
+        autoplay: 6000,
+        speed: 500
+    });
+    $(".list li").hover(function () {
+        $(this).addClass("cur").siblings().removeClass("cur")
+    });
+    $(".act-list li").hover(function () {
+        $(this).closest('.act-list').find('li').removeClass("cur");
+        $(this).addClass("cur");
+    });
+    $(".tab_26 li").hover(function () {
+        $(".tab_26 li").removeClass("cur");
+        $(this).addClass("cur");
+    });
+    $(".tab_27 li").hover(function () {
+        $(".tab_27 li").removeClass("cur");
+        $(this).addClass("cur");
+    });
+
+    $(".slider-list a").hover(function () {
+        $(this).siblings().removeClass("cur");
+        $(this).addClass("cur");
+    })
+
+    //     新闻报道切换
+
+    $(".f-email .fr ul li").mouseover(function(){
+        $('.ctrl ul').css('display','none')
+        $('.ctrl ul').eq($(this).index()+1).css('display','block')
+        $(".f-email .fr ul li").removeClass('active')
+        $(this).addClass('active')
+        $(this).parents(".fr").find(".fr-right a").css('display','none')
+        $(this).parents(".fr").find(".fr-right a").eq($(this).index()).css('display','block')
+    })
+
+    $(".fr-point span").mouseover(function(){
+        $('.point-par>div').css('display','none')
+        $('.point-par>div').eq($(this).index()).css('display','block')
+        $(".fr-point span").removeClass('active')
+        $(this).addClass('active')
+        $(this).parents(".point").find(".fr>a").css('display','none')
+        $(this).parents(".point").find(".fr>a").eq($(this).index()).css('display','block')
+    })
+
+</script>
+
+<!--活动日历-->
+<script>
+    $(function () {
+        var mar1 = "<marquee onmouseover=\"this.stop()\" onmouseout=\"this.start()\">" + $('.list-mar').eq(0).text() + "</marquee>";
+        $('#notice').prepend(mar1);
+
+
+        $('.act-calendar').datepicker({
+            showMonthAfterYear: true,
+            showOtherMonths: true,
+            selectOtherMonths: true,
+            nextText: '下个月',
+            prevText: '上个月',
+            yearSuffix: '年',
+            monthNames: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
+            monthNamesShort: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
+            dayNamesMin: ['日', '一', '二', '三', '四', '五', '六'],
+            onSelect: function () { },
+            onChangeMonthYear: function () {
+                setTimeout(function () {
+                    showDetail();
+                }, 100);
+
+            }
+        });
+        showDetail()
+    });
+
+
+    var actList = eval($('#AnnounceList').text());
+
+    function showDetail() {
+        for (x in actList) {
+            var _type = actList[x].type;
+            var _year = actList[x].year;
+            var _month = actList[x].month;
+            var _day = actList[x].day;
+            var _title = actList[x].detail.title;
+            var _start = actList[x].detail.start;
+            var _end = actList[x].detail.end;
+            $('td[data-month=' + (_month - 1) + '][data-year=' + _year + ']').each(function () {
+                if ($(this).find('a').text() == _day) {
+                    $(this).closest('td').removeClass(_type).addClass(_type);
+                    $(this).closest('td').removeClass('ctrl').addClass('ctrl');
+                    if ($(this).find('.hidden-data')[0]) {
+                        $(this).find('.hidden-data').append("<div class=\"list-data\"><span class=\"ca-title\">"+_title+"</span><span class=\"ca-when\">"+_start+"至"+_end+"</span></div>")
+                    } else {
+                        $(this).append("<div style=\"display: none\" class=\"hidden-data\"></div>");
+                        $(this).find('.hidden-data').append("<div class=\"list-data\"><span class=\"ca-title\">"+_title+"</span><span class=\"ca-when\">"+_start+"至"+_end+"</span></div>")
+                    }
+                }
+            })
+        }
+        $('#div9 td').off('click').find('a').removeAttr('href');
+        $('#div9 td.ctrl').mouseenter(function () {
+            let dom = $(this).find('.hidden-data').html();
+            let left = $(this).offset().left;
+            let top = $(this).offset().top;
+            $('body').append("<div class=\"act-pop\" style=\"left: " + (Math.round(left) - 263) + "px;top:" + (Math.round(top) + 55) + "px\"> <div class=\"in\">" + dom + "</div></div>")
+
+        });
+        $('#div9 td.ctrl').mouseleave(function () {
+            $('.act-pop').remove()
+        })
+
+    }
+
+
+</script>
+        <script>
+            var slideNow = 0;
+            var slideLength = $('.list-mar').size();
+            function slideNext(){
+                $('#notice marquee').remove();
+                if ((slideNow + 2) > slideLength) {
+                    var mar1 = "<marquee onmouseover=\"this.stop()\" onmouseout=\"this.start()\">" + $('.list-mar').eq(0).text() + "</marquee>";
+                    $('#notice').prepend(mar1);
+                    slideNow = 0;
+                } else {
+                    var mar2 = "<marquee onmouseover=\"this.stop()\" onmouseout=\"this.start()\">" + $('.list-mar').eq((slideNow + 1)).text() + "</marquee>";
+                    $('#notice').prepend(mar2);
+                    slideNow++;
+                }
+            }
+            function slidePrev(){
+                $('#notice marquee').remove();
+                if ((slideNow - 1) < 0) {
+                    var mar1 = "<marquee onmouseover=\"this.stop()\" onmouseout=\"this.start()\">" + $('.list-mar').eq(slideLength - 1).text() + "</marquee>";
+                    $('#notice').prepend(mar1);
+                    slideNow = slideLength -1
+                } else {
+                    var mar2 = "<marquee onmouseover=\"this.stop()\" onmouseout=\"this.start()\">" + $('.list-mar').eq(slideNow - 1).text() + "</marquee>";
+                    $('#notice').prepend(mar2);
+                    slideNow--
+                }
+            }
+</script>
+    </form>
+</body>
+</html>
+

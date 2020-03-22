@@ -1,0 +1,947 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	第14届中国青少年机器人竞赛
+</title><link href="/2014/css/base.css" rel="stylesheet" type="text/css" /><link href="/2014/css/main.css" rel="stylesheet" type="text/css" /><link href="/2014/css/jquery.fancybox.css" type="text/css" rel="stylesheet" /><link href="/2014/css/jBox.css" rel="Stylesheet" type="text/css" />
+<script src="/2014/js/jquery.min.js" type="text/javascript"></script>
+<script src="/2014/js/jquery.tools.min.js" type="text/javascript"></script>
+<script src="/2014/js/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+<script src="/2014/js/jquery.fancybox.js" type="text/javascript"></script>
+<script src="/2014/js/mainFunction.js" type="text/javascript"></script>
+<script src="/2014/js/jBox.js" type="text/javascript"></script>
+<script src="/2014/js/commonFunction.js" type="text/javascript"></script>
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=" type="text/javascript" charset="utf-8"></script>
+
+<link rel="stylesheet" href="/2014/css/lytebox.css" type="text/css" media="screen" />
+<script type="text/javascript" language="javascript" src="/2014/js/lytebox.js"></script>
+
+</head>
+<body>
+    <form name="form1" method="post" action="/2014/index.html" id="form1">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="D8351313" />
+</div>
+<div id="warp">
+  <div id="navwarp">
+    <div id="topNav">
+      <ul class="mainNav">
+        <li><a href="/index.html" target="_blank">首　页</a></li>
+        <li class="hasSub"><a href="#">关于竞赛</a></li>
+        <li class="hasSub"><a href="#">文件通知</a></li>
+        <li class="hasSub"><a href="#">新闻报道</a></li>
+        <li class="hasSub"><a href="#">竞赛活动</a></li>
+        <li><a href="/News/international.html" target="_blank">国际交流</a></li>
+        <li class="hasSub"><a href="/member/memberlist.html" target="_blank">会员天地</a></li>
+        <li class="hasSub"><a href="/News/GuideList.html" target="_blank">科教导读</a></li>
+        <li><a href="/Gallery/GalleryList.html" target="_blank">活动掠影</a></li>
+        <li><a href="/video/videolist.html" target="_blank">视频播报</a></li>
+        <li class="hasSub"><a href="/faq/FaqList.html" target="_blank">交流反馈</a></li>
+      </ul>
+      <div class="subNavWrap">
+        <div class="subNavCenter">
+          <ul class="subNav about">
+            <li><a href="/intro/ColumnID/1013000000.html" target="_blank">概况简介</a></li>
+            <li><a href="/intro/ColumnID/1013000001.html" target="_blank">组织机构</a></li>
+            <li><a href="/intro/ColumnID/1013000005.html" target="_blank">活动章程</a></li>
+            <li><a href="/intro/ColumnID/1013000007.html" target="_blank">历史沿革</a></li>
+            <li><a href="/intro/ColumnID/1013000006.html" target="_blank">联系方式</a></li>
+          </ul>
+          <ul class="subNav file">
+            <li><a href="/News/FileNewsList/ColumnID/1013000100.html" target="_blank">通知</a></li>
+            <li><a href="/News/FileNewsList/ColumnID/1013000102.html" target="_blank">公示</a></li>
+            <li><a href="/News/FileNewsList/ColumnID/1013000103.html" target="_blank">文件</a></li>
+            <li><a href="/News/FileNewsList/ColumnID/1013000104.html" target="_blank">下载</a></li>
+          </ul>
+          <ul class="subNav news">
+            <li><a href="/News/NewsList/ColumnID/1013000200.html" target="_blank">工作报道</a></li>
+            <li><a href="/News/NewsList/ColumnID/1013000203.html" target="_blank">媒体新闻</a></li>
+            <li><a href="/News/NewsList/ColumnID/1013000205.html" target="_blank">基层动态</a></li>
+            <li><a href="/News/SpecialList/ColumnID/1013000204.html" target="_blank">活动专题</a></li>
+          </ul>
+          <ul class="subNav organization">
+            <li><a href="/match/prepare.html" target="_blank">准备</a></li>
+            <li><a href="/match/apply.html" target="_blank">申报</a></li>
+            <li><a href="/match/inspection.html" target="_blank">审查</a></li>
+            <li><a href="/match/final.html" target="_blank">竞赛</a></li>
+            <li><a href="/match/bulletin.html" target="_blank">公示</a></li>
+          </ul>
+          <ul class="subNav member">
+            <li><a href="/member/memberlist.html" target="_blank">学生</a></li>
+            <li><a href="/member/teacherlist.html" target="_blank">教师</a></li>
+            <li><a href="/member/schoollist.html" target="_blank">学校</a></li>
+            <li><a href="/member/refereelist.html" target="_blank">裁判</a></li>
+            <li><a href="/member/enterpriselist.html" target="_blank">企业</a></li>
+          </ul>
+          <ul class="subNav guide">
+            <li><a href="/News/GuideList/ColumnID/1013001200.html" target="_blank">学生风采</a></li>
+            <li><a href="/News/GuideList/ColumnID/1013000504.html" target="_blank">教师论坛</a></li>
+            <li><a href="/News/GuideList/ColumnID/1013001202.html" target="_blank">学校巡礼</a></li>
+            <li><a href="/News/GuideList/ColumnID/1013000500.html" target="_blank">实践探索</a></li>
+            <li><a href="/News/GuideList/ColumnID/1013000502.html" target="_blank">理论研究</a></li>
+            <li><a href="/News/GuideList/ColumnID/1013000501.html" target="_blank">科学传播</a></li>
+          </ul>
+          <ul class="subNav communicate">
+            <li><a href="/faq/FaqList.html" target="_blank">规则答疑</a></li>
+            <li><a href="/communicate/consulting.html" target="_blank">在线咨询</a></li>
+            <li><a href="/communicate/advise.html" target="_blank">发表建议</a></li>
+            <li><a href="/communicate/complaint.html" target="_blank">投诉举报</a></li>
+            <li><a href="http://www.xiaoxiaotong.net/bbs/Board.aspx?BoardID=17" target="_blank">在线讨论</a></li>
+            <li><a href="/communicate/sharing.html" target="_blank">我要分享</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="logo">
+    <h1><a href="#">第十四届中国青少年机器人竞赛</a></h1>
+  </div>
+  <div id="main">
+    <div id="one" class="z">
+      <div class="one_l fl">
+        <div id="focus" >
+          <div id="focusImagePanel">
+            <div id="focusImage" class="nivoSlider"> 
+                
+                <a href="http://www.cast.org.cn/n35081/n35473/n35518/15789869.html" target="_blank"><img src="/2014/upload/focus/1.jpg" rel="upload/focus/1.jpg" title="#focusIntro2" /></a> 
+                <a href="/News/View/ArticleID/24304.html" target="_blank"><img src="/2014/upload/focus/2.jpg" rel="upload/focus/2.jpg" title="#focusIntro2" /></a> 
+                <a href="/News/View/ArticleID/24183.html" target="_blank"><img src="/2014/upload/focus/3.jpg" rel="upload/focus/3.jpg" title="#focusIntro3" /></a> 
+                <a href="/News/View/ArticleID/24036.html" target="_blank"><img src="/2014/upload/focus/4.jpg" rel="upload/focus/4.jpg" title="#focusIntro4" /></a> 
+            </div>
+            
+                <div id="focusIntro1" class="nivo-html-caption"><a href="http://www.cast.org.cn/n35081/n35473/n35518/15789869.html" target="_blank">第十四届机器人竞赛：我们为梦想而战</a></div>
+                <div id="focusIntro2" class="nivo-html-caption"><a href="/News/View/ArticleID/24304.html" target="_blank">青少年机器人爱好者天山脚下体验“激情创造快乐成长”</a></div>
+                <div id="focusIntro3" class="nivo-html-caption"><a href="/News/View/ArticleID/24183.html" target="_blank">第十四届中国青少年机器人竞赛在乌鲁木齐开赛</a></div>
+                <div id="focusIntro4" class="nivo-html-caption"><a href="/News/View/ArticleID/24036.html" target="_blank">第十四届中国青少年机器人竞赛机器人入场引围观</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="one_r fr">
+        <div class="h292 Rpanel mb10" >
+          <p class="f14 pt10">第十四届中国青少年机器人竞赛于2014年7月15日至19日新疆自治区乌鲁木齐市举行，竞赛主题为“激情创造，快乐成长”。包括机器人创意比赛、机器人综合技能比赛、机器人足球比赛、机器人FLL工程挑战赛和机器人VEX工程挑战赛五项分赛。共有26个省（自治区、直辖市）和新疆建设兵团在内的222支参赛队，共计594名队员和232名教练员参加。
+        </div>
+      </div>
+    </div>
+    <div class="qrcodes">
+    	<ul class="codeLeft">
+        	<li>
+            	<a href="http://www.weibo.com/jqrjs" target="_blank"><img src="/2014/images/qrcodes/qrcodes1.jpg" /></a>
+                <p>官方微博</p>
+            </li>
+        	<li>
+            	<a href="http://weixin.qq.com/r/qEw_JkvEXRYirQ9F9xm6" target="_blank"><img src="/2014/images/qrcodes/qrcodes2.jpg" /></a>
+                <p>微信公众服务</p>
+            </li>
+        	<li>
+            	<a href="/app/ios/index.html" target="_blank"><img src="/2014/images/qrcodes/qrcodes3.jpg" /></a>
+                <p>移动APP（苹果版）</p>
+            </li>
+        	<li>
+            	<a href="/app/andriod/robot.apk" target="_blank"><img src="/2014/images/qrcodes/qrcodes4.jpg" /></a>
+                <p>移动APP（安卓版）</p>
+            </li>
+        </ul>
+        <a class="codeRight" href="/guide2014/index.html" target="_blank"></a>
+    </div>
+    <div class="award box mt10" style="display:none">
+      <div class="bar">
+        <h2>颁奖典礼</h2>
+      </div>
+      <div class="content">
+        <ul class="award_imgList">
+          <li><a href="/News/View/ArticleID/21221.html" target="_blank"><img src="/2014/images/award_1.jpg" />
+            <p>专家委员会主任做竞赛评审工作报告</p>
+           </a></li>
+          <li><a href="/gallery/galleryview/galleryID/916.html" target="_blank"><img src="/2014/images/award_2.jpg" />
+            <p>中国科协副主席程东红为选手颁发奖杯</p></a>
+            </li>
+          <li class="imgList_long"><a href="/video/videoview/vid/517.html" target="_blank"><img src="/2014/images/award_3.jpg" />
+            <p>获奖学生风采</p>
+            </a></li>
+          <li><a href="/gallery/galleryview/galleryID/916.html" target="_blank"><img src="/2014/images/award_4.jpg" />
+            <p>会旗交接仪式</p>
+            </a></li>
+          <li><a href="/video/videoview/vid/549.html" target="_blank"><img src="/2014/images/award_5.jpg" />
+            <p>精彩回顾</p>
+            </a></li>
+          <li class="imgList_long">
+            <div class="tab">
+              <div class="tab_all fl">
+                <div class="tab_content"><a href="/2014/upload/data/4.jpg"><img src="/2014/upload/data/4.jpg" title="点击放大" /></a></div>
+                <div class="tab_content"><a href="/2014/upload/data/1.jpg" ><img src="/2014/upload/data/1.jpg"  title="点击放大" /></a> </div>
+                <div class="tab_content"><a href="/2014/upload/data/2.jpg"><img src="/2014/upload/data/2.jpg" title="点击放大" /></a> </div>
+                <div class="tab_content"><a href="/2014/upload/data/3.jpg"><img src="/2014/upload/data/3.jpg"  title="点击放大"/></a> </div>
+              </div>
+              <ul class="tab_title fr">
+                <li class="current">本届竞赛基本情况</li>
+                <li>一等奖获得者地区分布</li>
+                <li>参赛队地区分布</li>
+                <li>冠军队地地区分布</li>
+              </ul>
+            </div>
+            
+            <p>第13届全国青少年机器人竞赛基本情况及数据统计</p>
+            </li>
+        </ul>
+      </div>
+    </div>
+    <!--精彩赛事-->
+    <div class="game box mt10">
+      <div class="bar">
+        <h2>精彩赛事</h2>
+      </div>
+      <div class="content">
+        <div class=" game_pub gamea fl">
+          <h3 class="h3Bg1">机器人综合技能比赛</h3>
+          <div class="cont">
+            <div class="game_txt">
+              <p>机器人综合技能比赛是中国青少年机器人竞赛项目之一。其活动对象为中小学生，要求参加比赛的代表队在现场自行拼装机器人、编制机器人运行程序、调试和操作机器人。参赛的机器人是程序控制的，可以在赛前公布的竞赛场地上，按照本规则进行比赛活动。<br />
+  　　本届机器人综合技能比赛的主题为“少年当自强”。中国美好的明天在我们手中！实现中华民族复兴的中国梦是我们青少年的历史责任！让我们想想，我们和我们的机器人伙伴能为此做些什么。</p>
+              <a href="/News/View/ArticleID/18291.html" target="_blank">竞赛规则</a>
+              <a href="/Faq/FaqListDetails/inQAcateID/3.html" target="_blank">咨询答疑</a>
+              <div class="teamLevel">
+                  <span>参赛队伍</span>
+                  <a href="/query/skill/teamlist/teamtypeid/101.html" target="_blank">小学</a>
+                  <a href="/query/skill/teamlist/teamtypeid/102.html" target="_blank">初中</a>
+                  <a href="/query/skill/teamlist/teamtypeid/103.html" target="_blank">高中</a>
+              </div>
+            </div>
+            <div id="Media1_pnlList">
+	
+            <div class="game2">
+            
+                    <div class="game_focus fl img_tab">
+                        <a href='/2014/gallery/Gallery/ID/567.html' target="_blank" ><img class='active' src='/Process/2014/54/635415551507360000_thumb.JPG' /></a> 
+                    
+                    
+                
+                    
+                        <a href='/2014/gallery/Gallery/ID/566.html' target="_blank" ><img class='' src='/Process/2014/54/635415551304176406_thumb.JPG' /></a> 
+                    
+                    
+                
+                    
+                        <a href='/2014/gallery/Gallery/ID/565.html' target="_blank" ><img class='' src='/Process/2014/54/635415550659225234_thumb.JPG' /></a> 
+                    
+                    
+                
+                    
+                        <a href='/2014/gallery/Gallery/ID/564.html' target="_blank" ><img class='' src='/Process/2014/54/635415549796344375_thumb.JPG' /></a> 
+                    
+                    
+                
+                    
+                        <a href='/2014/gallery/Gallery/ID/563.html' target="_blank" ><img class='' src='/Process/2014/54/635415547615318984_thumb.JPG' /></a> 
+                    </div>
+                    
+                
+                    <div class="game_focus fl img_tab">
+                        <a href='/2014/gallery/Gallery/ID/562.html' target="_blank" ><img class='active' src='/Process/2014/54/635415547382955703_thumb.JPG' /></a> 
+                    
+                    
+                
+                    
+                        <a href='/2014/gallery/Gallery/ID/561.html' target="_blank" ><img class='' src='/Process/2014/54/635415546760192031_thumb.JPG' /></a> 
+                    
+                    
+                
+                    
+                        <a href='/2014/gallery/Gallery/ID/560.html' target="_blank" ><img class='' src='/Process/2014/54/635415546445201797_thumb.JPG' /></a> 
+                    
+                    
+                
+                    
+                        <a href='/2014/gallery/Gallery/ID/559.html' target="_blank" ><img class='' src='/Process/2014/54/635415545727867812_thumb.JPG' /></a> 
+                    
+                    
+                
+                    
+                        <a href='/2014/gallery/Gallery/ID/558.html' target="_blank" ><img class='' src='/Process/2014/54/635415544506559219_thumb.JPG' /></a> 
+                    </div>
+                    
+                
+            </div>
+            <div class="game2" style="display:none;">
+              <ul class="ul_imgbg">
+                
+              </ul>
+            </div>
+            
+
+</div>
+            <div class="game2 game_c" style="display:none;">
+              <p class="game2_p">冠军杯</p>
+              <ul class="ul_p">
+                <li>小学：广东省汕头市外马路第三小学 ——陈翊聪;张驰</li>
+                <li>初中：广东省汕头市龙湖实验中学 ——李艺晴;李世濠;</li>
+                <li>高中：安徽省铜陵市第三中学 ——张凌涛;傅玉超;</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class=" game_pub gameb fr">
+          <h3 class="h3Bg2">机器人足球比赛</h3>
+          <div class="cont">
+            <div class="game_txt">
+              <p>机器人足球比赛采用2对2机器人比赛规则，每支参赛队有队员2名参赛队员，使用使用自行拼装、编制运行程序的2个机器人进行比赛。比赛强调机器人足球比赛中的技术成份，而不是一味比拼速度和力量。<br />
+　　四年一届的2014年巴西世界杯已落幕，一年一届的中国青少年机器人竞赛足球世界杯正在新疆上演。哪支队伍问鼎冠军，请你猜猜看。</p>
+              <a href="/News/View/ArticleID/18291.html" target="_blank">竞赛规则</a>
+              <a href="/Faq/FaqListDetails/inQAcateID/3.html" target="_blank">咨询答疑</a>
+              <div class="teamLevel">
+                  <span>参赛队伍</span>
+                  <a href="/query/football/teamlist/teamtypeid/101.html" target="_blank">小学</a>
+                  <a href="/query/football/teamlist/teamtypeid/102.html" target="_blank">初中</a>
+                  <a href="/query/football/teamlist/teamtypeid/103.html" target="_blank">高中</a>
+              </div>
+            </div>
+            <div id="Media2_pnlList">
+	
+            <div class="game2">
+            
+                    <div class="game_focus fl img_tab">
+                        <a href='/2014/gallery/Gallery/ID/581.html' target="_blank" ><img class='active' src='/Process/2014/56/635424172565205938_thumb.JPG' /></a> 
+                    
+                    
+                
+                    
+                        <a href='/2014/gallery/Gallery/ID/580.html' target="_blank" ><img class='' src='/Process/2014/56/635424170050176641_thumb.JPG' /></a> 
+                    
+                    
+                
+                    
+                        <a href='/2014/gallery/Gallery/ID/579.html' target="_blank" ><img class='' src='/Process/2014/56/635424167625498907_thumb.JPG' /></a> 
+                    
+                    
+                
+                    
+                        <a href='/2014/gallery/Gallery/ID/578.html' target="_blank" ><img class='' src='/Process/2014/56/635424164984434454_thumb.JPG' /></a> 
+                    
+                    
+                
+                    
+                        <a href='/2014/gallery/Gallery/ID/577.html' target="_blank" ><img class='' src='/Process/2014/56/635424162993780157_thumb.JPG' /></a> 
+                    </div>
+                    
+                
+                    <div class="game_focus fl img_tab">
+                        <a href='/2014/gallery/Gallery/ID/576.html' target="_blank" ><img class='active' src='/Process/2014/56/635424161348037969_thumb.JPG' /></a> 
+                    
+                    
+                
+                    
+                        <a href='/2014/gallery/Gallery/ID/571.html' target="_blank" ><img class='' src='/Process/2014/56/635415553372027969_thumb.JPG' /></a> 
+                    
+                    
+                
+                    
+                        <a href='/2014/gallery/Gallery/ID/570.html' target="_blank" ><img class='' src='/Process/2014/56/635415553065709609_thumb.JPG' /></a> 
+                    
+                    
+                
+                    
+                        <a href='/2014/gallery/Gallery/ID/569.html' target="_blank" ><img class='' src='/Process/2014/56/635415552838688125_thumb.JPG' /></a> 
+                    
+                    
+                
+                    
+                        <a href='/2014/gallery/Gallery/ID/568.html' target="_blank" ><img class='' src='/Process/2014/56/635415552522682266_thumb.JPG' /></a> 
+                    </div>
+                    
+                
+            </div>
+            <div class="game2" style="display:none;">
+              <ul class="ul_imgbg">
+                
+                        <li>
+                            <a href='/2014/ShowVideo/ID/533.html' rel="lyteframe" title="播放视频" rev="width: 860px; height: 640px; scrolling: no;">
+                                <img src='/Process/2014/56/635412958077622265_thumb.jpg' />
+                                <span class="vicon"></span>
+                                <span class="s_title">机器人综合技能比赛（一）</span>
+                            </a>
+                        </li>
+                    
+              </ul>
+            </div>
+            
+
+</div>
+            <div class="game2 game_c" style="display:none;">
+              <p class="game2_p">冠军杯</p>
+              <ul class="ul_p">
+                <li>小学：中国儿童中心 ——杨雨淳;程小瑜;</li>
+                <li>初中：广东省广州市黄埔区青少年宫 ——郑毅;王国丞;</li>
+                <li>高中：中国儿童中心 ——王子华;赵天昊;</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class=" game_pub gamec fl">
+          <h3 class="h3Bg3">FLL机器人挑战赛</h3>
+          <div class="cont">
+            <div class="game_txt">
+              <p>FLL机器人挑战赛是一项青少年国际机器人比赛项目。要求参加比赛的代表队自行设计、制作机器人并进行编程。参赛的机器人可在特定的竞赛场地上，按照规则进行比赛。激发青少年对机器人技术的兴趣，为国际FLL挑战赛选拔参赛队。<br />
+　　本届 FLL 挑战赛的主题为“ 天降之咎 ”在“天降之咎”挑战赛中，你们将研究风暴、地震、海啸及更多的自然灾害。参赛队将认识到人们生活、工作和休闲的地方发生强烈的自然事件时该做什么。在“天降之咎”挑战赛中行动起来吧！</p>
+              <a href="/News/View/ArticleID/18291.html" target="_blank">竞赛规则</a>
+              <a href="/Faq/FaqListDetails/inQAcateID/3.html" target="_blank">咨询答疑</a>
+              <div class="teamLevel">
+                  <span>参赛队伍</span>
+                  <a href="/query/fll/teamlist/teamtypeid/101.html" target="_blank">小学</a>
+                  <a href="/query/fll/teamlist/teamtypeid/102.html" target="_blank">初中</a>
+                  <a href="/query/fll/teamlist/teamtypeid/103.html" target="_blank">高中</a>
+              </div>
+            </div>
+            <div id="Media3_pnlList">
+	
+            <div class="game2">
+            
+                    <div class="game_focus fl img_tab">
+                        <a href='/2014/gallery/Gallery/ID/550.html' target="_blank" ><img class='active' src='/Process/2014/57/635415540199117812_thumb.JPG' /></a> 
+                    
+                    
+                
+                    
+                        <a href='/2014/gallery/Gallery/ID/549.html' target="_blank" ><img class='' src='/Process/2014/57/635415539210856094_thumb.JPG' /></a> 
+                    
+                    
+                
+                    
+                        <a href='/2014/gallery/Gallery/ID/548.html' target="_blank" ><img class='' src='/Process/2014/57/635415539035338516_thumb.JPG' /></a> 
+                    
+                    
+                
+                    
+                        <a href='/2014/gallery/Gallery/ID/547.html' target="_blank" ><img class='' src='/Process/2014/57/635415538771178359_thumb.JPG' /></a> 
+                    
+                    
+                
+                    
+                        <a href='/2014/gallery/Gallery/ID/546.html' target="_blank" ><img class='' src='/Process/2014/57/635415535460084609_thumb.JPG' /></a> 
+                    </div>
+                    
+                
+                    <div class="game_focus fl img_tab">
+                        <a href='/2014/gallery/Gallery/ID/545.html' target="_blank" ><img class='active' src='/Process/2014/57/635415535241012344_thumb.JPG' /></a> 
+                    
+                    
+                
+                    
+                        <a href='/2014/gallery/Gallery/ID/544.html' target="_blank" ><img class='' src='/Process/2014/57/635415535036637344_thumb.JPG' /></a> 
+                    
+                    
+                
+                    
+                        <a href='/2014/gallery/Gallery/ID/543.html' target="_blank" ><img class='' src='/Process/2014/57/635415534250914687_thumb.JPG' /></a> 
+                    
+                    </div>
+                
+            </div>
+            <div class="game2" style="display:none;">
+              <ul class="ul_imgbg">
+                
+              </ul>
+            </div>
+            
+
+</div>
+            <div class="game2 game_c" style="display:none;">
+              <p class="game2_p">冠军杯</p>
+              <ul class="ul_p">
+                <li>小学：广东省广州市真光小学 ——蔡建培;林靖耀;岑煜森;</li>
+                <li>初中：广东省广州市第七中学 ——黄颖薇;吴毅旸;吴育霖;宁悦锜;</li>
+                <li>高中：广东省广州市越秀区少年宫 ——江啟乐;黄子健;邵懿德;</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class=" game_pub gamed fr">
+          <h3 class="h3Bg4">VEX机器人工程挑战赛</h3>
+          <div class="cont">
+              <div class="game_txt">
+              <p>FLL机器人挑战赛是一项青少年国际机器人比赛项目。要求参加比赛的代表队自行设计、制作机器人并进行编程。参赛的机器人可在特定的竞赛场地上，按照规则进行比赛。激发青少年对机器人技术的兴趣，为国际FLL挑战赛选拔参赛队。<br />
+　　本届 FLL 挑战赛的主题为“ 天降之咎 ”在“天降之咎”挑战赛中，你们将研究风暴、地震、海啸及更多的自然灾害。参赛队将认识到人们生活、工作和休闲的地方发生强烈的自然事件时该做什么。在“天降之咎”挑战赛中行动起来吧！</p>
+              <a href="/News/View/ArticleID/18291.html" target="_blank">竞赛规则</a>
+              <a href="/Faq/FaqListDetails/inQAcateID/3.html" target="_blank">咨询答疑</a>
+              <div class="teamLevel">
+                  <span>参赛队伍</span>
+                  <a href="/query/vex/teamlist/teamtypeid/101.html" target="_blank">小学</a>
+                  <a href="/News/FileNewsList/ColumnID/1013000103.html" target="_blank">文件</a>
+<a href="http://www.iis7.com" style="display:inline-block;background-color:;color:#fff;padding:2px 5px;font-family:arial;font-size:12px;font-weight:bold;" class="19549a421ed14c72a11daa28ac1e3c00" target="_blank">iis7站长之家</a>
+                  <a href="/query/vex/teamlist/teamtypeid/103.html" target="_blank">高中</a>
+              </div>
+            </div>
+            <div id="Media4_pnlList">
+	
+            <div class="game2">
+            
+                    <div class="game_focus fl img_tab">
+                        <a href='/2014/gallery/Gallery/ID/584.html' target="_blank" ><img class='active' src='/Process/2014/58/635424219101778204_thumb.JPG' /></a> 
+                    
+                    
+                
+                    
+                        <a href='/2014/gallery/Gallery/ID/583.html' target="_blank" ><img class='' src='/Process/2014/58/635424213099297735_thumb.JPG' /></a> 
+                    
+                    
+                
+                    
+                        <a href='/2014/gallery/Gallery/ID/582.html' target="_blank" ><img class='' src='/Process/2014/58/635424211320645391_thumb.JPG' /></a> 
+                    
+                    
+                
+                    
+                        <a href='/2014/gallery/Gallery/ID/555.html' target="_blank" ><img class='' src='/Process/2014/58/635415542248453750_thumb.JPG' /></a> 
+                    
+                    
+                
+                    
+                        <a href='/2014/gallery/Gallery/ID/554.html' target="_blank" ><img class='' src='/Process/2014/58/635415541883141250_thumb.JPG' /></a> 
+                    </div>
+                    
+                
+                    <div class="game_focus fl img_tab">
+                        <a href='/2014/gallery/Gallery/ID/553.html' target="_blank" ><img class='active' src='/Process/2014/58/635415541604020156_thumb.JPG' /></a> 
+                    
+                    
+                
+                    
+                        <a href='/2014/gallery/Gallery/ID/552.html' target="_blank" ><img class='' src='/Process/2014/58/635415541426520156_thumb.JPG' /></a> 
+                    
+                    
+                
+                    
+                        <a href='/2014/gallery/Gallery/ID/535.html' target="_blank" ><img class='' src='/Process/2014/58/635413055004594922_thumb.JPG' /></a> 
+                    
+                    
+                
+                    
+                        <a href='/2014/gallery/Gallery/ID/534.html' target="_blank" ><img class='' src='/Process/2014/58/635413054543833203_thumb.JPG' /></a> 
+                    
+                    </div>
+                
+            </div>
+            <div class="game2" style="display:none;">
+              <ul class="ul_imgbg">
+                
+              </ul>
+            </div>
+            
+
+</div>
+            <div class="game2 game_c" style="display:none;">
+              <p class="game2_p">冠军杯</p>
+              <ul class="ul_p">
+                <li>小学：<span style="font-size:11px; letter-spacing:-0.5px">四川省成都市龙江路小学分校:四川师范大学附属实验学校(小学部)</span></li>
+                <li>初中：四川省成都高新新源学校；成都石室中学初中学校</li>
+                <li>高中：福建省福州第三中学；福建省福州市福建师大附中</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="gamee">
+          <h3 class="h3Bg5">机器人创意比赛</h3>
+          <div class="cont">
+          	<div class="fl">
+            
+                <div class="game_focus fl img_tab" id="img_tab5">
+                  <a href='/2014/gallery/Gallery/ID/575.html' target="_blank" ><img class='active' src='/Process/2014/59/635415555695924453_thumb.JPG' /></a>
+                    
+                    
+            	
+                
+                  <a href='/2014/gallery/Gallery/ID/574.html' target="_blank" ><img class='' src='/Process/2014/59/635415555235592422_thumb.JPG' /></a>
+                    
+                    
+            	
+                
+                  <a href='/2014/gallery/Gallery/ID/573.html' target="_blank" ><img class='' src='/Process/2014/59/635415554666197891_thumb.JPG' /></a>
+                    
+                    
+            	
+                
+                  <a href='/2014/gallery/Gallery/ID/572.html' target="_blank" ><img class='' src='/Process/2014/59/635415554290240859_thumb.JPG' /></a>
+                    
+                    
+            	
+                
+                  <a href='/2014/gallery/Gallery/ID/539.html' target="_blank" ><img class='' src='/Process/2014/59/635413060154057812_thumb.JPG' /></a>
+                    </div>
+                    
+            	
+                <div class="game_focus fl img_tab" id="img_tab5">
+                  <a href='/2014/gallery/Gallery/ID/538.html' target="_blank" ><img class='active' src='/Process/2014/59/635413059634858593_thumb.JPG' /></a>
+                    
+                    
+            	
+                
+                  <a href='/2014/gallery/Gallery/ID/537.html' target="_blank" ><img class='' src='/Process/2014/59/635413058930503125_thumb.JPG' /></a>
+                    
+                    
+            	
+                
+                  <a href='/2014/gallery/Gallery/ID/507.html' target="_blank" ><img class='' src='/Process/2014/59/635411495339643750_thumb.JPG' /></a>
+                    
+                    
+            	
+                
+                  <a href='/2014/gallery/Gallery/ID/506.html' target="_blank" ><img class='' src='/Process/2014/59/635411494110073437_thumb.JPG' /></a>
+                    
+                    
+            	
+                
+                  <a href='/2014/gallery/Gallery/ID/505.html' target="_blank" ><img class='' src='/Process/2014/59/635411493124614453_thumb.JPG' /></a>
+                    </div>
+                    
+            	            
+                                    
+            </div>
+            <div class=" gamee_2 fl">
+              <p>机器人创意比赛是基于每年一度的中国青少年机器人竞赛的主题与规
+                则，组织在校中小学生机器人爱好者，花费6个月左右的时间，在课题导
+                师或教练员的指导下，在学校、家庭、校外机器人工作室或科技实验室里，
+                以个人或小组的方式，进行智能机器人的创意、设计、编程与制作，最后
+                以具体的机器人创意作品的形式参加中国青少年机器人竞赛组委会举办的
+                机器人创意比赛活动。</p>
+                  <a href="/News/View/ArticleID/18291.html" target="_blank">竞赛规则</a>
+                  <div class="teamLevel">
+                      <span>参赛队伍</span>
+                      <a href="/query/creative/teamlist/teamtypeid/101.html" target="_blank">小学</a>
+                      <a href="/query/creative/teamlist/teamtypeid/102.html" target="_blank">初中</a>
+                      <a href="/query/creative/teamlist/teamtypeid/103.html" target="_blank">高中</a>
+                  </div>
+            </div>
+            <div class="blank10"></div>
+            <div class="gamee_4">
+              <div class="bar_bar1">
+                <h4>优秀创意作品展示</h4>
+              </div>
+           	  <div id="change">
+              	<a href="javascript:void(0);" id="pre"></a>
+                <div id="tabBox">
+                	<ul class="ul_idea">
+                    	<li><a href="/2014/work/work1.html" target="_blank"><img src="/2014/images/work/1.jpg" /><span>电脑住宅</span></a> </li>
+                        <li><a href='/2014/work/work2.html' target="_blank"><img src="/2014/images/work/2.jpg" /><span>人机对弈五子棋机器人</span></a> </li> 
+                        <li><a href='/2014/work/work3.html' target="_blank"><img src="/2014/images/work/3.jpg"/><span>智能健身机器人</span></a> </li>
+                        <li><a href='/2014/work/work4.html' target="_blank"><img src="/2014/images/work/4.jpg" /><span>智能管家机器人</span></a> </li>
+                        <li><a href='/2014/work/work5.html' target="_blank"><img src="/2014/images/work/5.jpg"/><span>猜拳机器人</span></a> </li>
+                        <li><a href='/2014/work/work6.html' target="_blank"><img src="/2014/images/work/6.jpg" /><span>皮影机器人</span></a> </li>
+                        <li><a href='/2014/work/work7.html' target="_blank"><img src="/2014/images/work/7.jpg"/><span>轮椅机器人</span></a> </li>
+                        <li><a href='/2014/work/work8.html' target="_blank"><img src="/2014/images/work/8.jpg"/><span>炫舞star—社区舞蹈娱乐志愿者</span></a> </li>
+                        <li><a href='/2014/work/work9.html' target="_blank"><img src="/2014/images/work/9.jpg"/><span>社区志愿者—Steins</span></a> </li>
+                        <li><a href='/2014/work/work10.html' target="_blank"><img src="/2014/images/work/10.jpg"/><span>脑电波控制智能轮椅</span></a> </li>
+                        <li><a href='/2014/work/work11.html' target="_blank"><img src="/2014/images/work/11.jpg" /><span>蠕虫机器人</span></a> </li>
+                        <li><a href='/2014/work/work12.html' target="_blank"><img src="/2014/images/work/12.jpg"/><span>环保型智能社区垃圾箱机器人</span></a> </li>
+                    </ul>
+                </div>
+				<a href="javascript:void(0);" id="next"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="blank10"></div>
+    <!--基层赛事-->
+    <div class="base box mt10 fl">
+      <div class="bar_2">
+        <h2>基层赛事</h2>
+      </div>
+      <div class="content">
+        <div class="base_1"> <a href="http://http://robot./News/View.aspx?ArticleID=23445" target="_blank"><img src="/2014/upload/media/1.jpg" /></a>
+          <h4><a href="/News/View/ArticleID/19954.html" target="_blank"><span style="font-size:12px;">第十一届辽宁省青少年机器人竞赛在大连成功举办</span></a></h4>
+          <p>2014年5月17-18日，由辽宁省科协、辽宁省教育厅、辽宁省科技厅、共青团辽宁省委、辽宁省妇联共同主办，大连市科协、大连市教育局、……<a href="http://http://robot./News/View.aspx?ArticleID=23445" target="_blank">[详细]</a></p>
+        </div>
+
+        <ul class="ul_list">
+            
+                  <li><a href='/News/View/ArticleID/243583.html' target="_blank">第十六届辽宁省青少年机器人竞赛暨2019年辽宁省青少年创意编程与智能设计大赛在辽阳举行</a></li>
+                
+                  <li><a href='/News/View/ArticleID/240045.html' target="_blank">第十九届中国青少年机器人竞赛江西省选拔赛成功举行</a></li>
+                
+                  <li><a href='/News/View/ArticleID/240010.html' target="_blank">第12届湖南省青少年机器人竞赛成功举办</a></li>
+                
+                  <li><a href='/News/View/ArticleID/240000.html' target="_blank">第19届山东省青少年机器人竞赛 “赛展会一体化”举办</a></li>
+                
+                  <li><a href='/News/View/ArticleID/239946.html' target="_blank">第十九届中国青少年机器人竞赛吉林赛区竞赛在长春举办</a></li>
+                
+                  <li><a href='/News/View/ArticleID/239945.html' target="_blank">第十九届江苏省青少年机器人竞赛在常州成功举办</a></li>
+                
+                  <li><a href='/News/View/ArticleID/239909.html' target="_blank">第17届福建省青少年机器人竞赛落幕</a></li>
+                
+                  <li><a href='/News/View/ArticleID/239864.html' target="_blank">第19届广东省青少年机器人竞赛在东莞举行</a></li>
+                
+        </ul>
+      </div>
+    </div>
+    <!--媒体新闻-->
+    <div class="base box mt10 fr">
+      <div class="bar_2">
+        <h2>媒体新闻</h2>
+      </div>
+      <div class="content">
+        <div class="base_1"> <a href="http://www.cast.org.cn/n35081/n35473/n35518/15789869.html" target="_blank"><img src="/2014/upload/media/2.jpg" /></a>
+          <h4><a href="http://www.cast.org.cn/n35081/n35473/n35518/15789869.html" target="_blank">第十四届机器人竞赛：我们为梦想而战</a></h4>
+          <p> 7月17日，备受关注的第十四届中国青少年机器人竞赛在乌鲁木齐拉开帷幕。来自全国26个省区市以及新疆生产建设兵团的582名选手……<a href="http://www.cast.org.cn/n35081/n35473/n35518/15789869.html" target="_blank">[详细]</a></p>
+        </div>
+        <ul class="ul_list">
+            
+                  <li><a href='/News/View/ArticleID/243936.html' target="_blank">【光明日报】第19届中国青少年机器人竞赛在渝举行</a></li>
+                
+                  <li><a href='/News/View/ArticleID/243935.html' target="_blank">【央广网】第19届中国青少年机器人竞赛暨2019世界青少年机器人邀请赛在重庆开幕</a></li>
+                
+                  <li><a href='/News/View/ArticleID/243934.html' target="_blank">【新华社】第19届中国青少年机器人竞赛暨2019世界青少年机器人邀请赛在重庆开幕</a></li>
+                
+                  <li><a href='/News/View/ArticleID/201650.html' target="_blank">[新华网]机器人走丝绸之路？中国青少年机器人竞赛拉开帷幕 </a></li>
+                
+                  <li><a href='/News/View/ArticleID/31170.html' target="_blank">【鄂尔多斯日报】第十五届中国青少年机器人竞赛在我市闭幕 </a></li>
+                
+                  <li><a href='/News/View/ArticleID/31167.html' target="_blank">【唐山市科学技术协会】第十五届中国青少年机器人竞赛 唐山二中获佳绩 </a></li>
+                
+                  <li><a href='/News/View/ArticleID/31166.html' target="_blank">【搜狐】中国科协青少年科技中心领导来我市考察第十五届中国青少年机器人竞赛筹备情况</a></li>
+                
+                  <li><a href='/News/View/ArticleID/31165.html' target="_blank">【北京市科协技术协会】北京实现中国青少年机器人竞赛四连冠 </a></li>
+                
+        </ul>
+      </div>
+    </div>
+    <!--往届回顾-->
+    <div class="box fr">
+      <div class="bar">
+        <h2>精彩赛事</h2>
+      </div>
+      <div class="content">
+        <ul class="ul_img">
+          <li><a href="/2013/index.html" target="_blank"><img src="/2014/images/13.jpg" />
+            <p>第十三届中国青少年机器人竞赛</p>
+            </a></li>
+          <li><a href="/2012/index.html" target="_blank"><img src="/2014/images/12.jpg" />
+            <p>第十二届中国青少年机器人竞赛</p>
+            </a></li>
+          <li><a href="/robot2011/index.html" target="_blank"><img src="/2014/images/11.jpg" />
+            <p>第十一届中国青少年机器人竞赛</p>
+            </a></li>
+          <li><a href="/Other/www/news/SpecialDetail/SpecialID/90.html" target="_blank"><img src="/2014/images/10.jpg" />
+            <p>第十届中国青少年机器人竞赛</p>
+            </a></li>
+          <li><a href="/Other/www/news/SpecialDetail/SpecialID/82.html" target="_blank"><img src="/2014/images/9.jpg" />
+            <p>第九届中国青少年机器人竞赛</p>
+            </a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="blank10"></div>
+    <div id="links" class="box">
+      <h3>友情链接</h3>
+      <ul>
+        <li><a href="http://www.cast.org.cn/" target="_blank"><img src="/2014/images/untitled.png" /></a></li>
+        <li><a href="/Other/www/index.html" target="_blank"><img src="/2014/images/untitled2.png" /></a></li>
+        <li><a href="http://www.cacsi.org.cn/" target="_blank"><img src="/2014/images/untitled3.png" /></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer mt15">
+    <p>主办单位：中国科协青少年科技中心   技术服务：全国青少年科技创新活动服务平台 </p>
+    <p>电子邮件：<a href="#" target="_blank">robot@</a></p>
+<p>您是第<span id="countNuma" >48990</span>位浏览者。</p>  </div>
+</div>
+    </form>
+</body>
+</html>
+<script type="text/javascript">
+    window.onload = function() {
+
+        var aDiv = getByClass('img_tab');
+
+        for (var i = 0; i < aDiv.length; i++) {
+            fun(aDiv[i]);
+        }
+
+        function fun(object) {
+            var iNow = 1;
+            var aImg = object.getElementsByTagName('img');
+
+            var timer = setInterval(function() { toChange() }, 4000)
+
+            function toChange() {
+                for (var i = 0; i < aImg.length; i++) {
+                    aImg[i].className = "";
+                    move(aImg[i], { 'opacity': 0 }, function() {
+                        this.style.display = "none";
+                    })
+                }
+                aImg[iNow].style.display = 'block';
+                move(aImg[iNow], { 'opacity': 100 })
+                iNow++;
+                if (iNow > aImg.length - 1) {
+                    iNow = 0;
+                }
+            }
+        }
+
+        var oBox = document.getElementById('change')
+        var oDiv = document.getElementById('tabBox');
+        var oUl = oDiv.getElementsByTagName('ul')[0];
+        var aLi = oUl.getElementsByTagName('li');
+        var oLeft = document.getElementById('pre');
+        var oRight = document.getElementById('next');
+
+        var iWidth = aLi[0].offsetWidth;
+        var iLen = aLi.length;
+        var iNum = 5;
+        var iTimer = null;
+        var bBtn = true;
+
+        function setWidth() {
+            oUl.style.width = aLi.length * iWidth + 'px';
+        }
+        setWidth();
+
+        function autoPlay() {
+            if (bBtn) {
+                bBtn = false;
+                for (var i = 0; i < iNum; i++) {
+                    var oLi = aLi[i].cloneNode(true);
+                    oUl.appendChild(oLi);
+                    setWidth();
+                }
+            }
+            move(oUl, { left: -iNum * iWidth }, function() {
+                for (var i = 0; i < iNum; i++) {
+                    oUl.removeChild(aLi[0]);
+                    setWidth();
+                    oUl.style.left = '0px';
+                }
+                bBtn = true;
+            });
+        }
+
+        iTimer = setInterval(autoPlay, 4000);
+
+        oBox.onmouseover = function() {
+            clearInterval(iTimer);
+        }
+
+        oBox.onmouseout = function() {
+            clearInterval(iTimer);
+            iTimer = setInterval(autoPlay, 4000);
+        }
+
+        oRight.onclick = function() {
+            autoPlay();
+        }
+        oLeft.onclick = function() {
+            if (bBtn) {
+                bBtn = false;
+                for (var i = 0; i < iNum; i++) {
+                    var oLi = aLi[iLen - 1].cloneNode(true);
+                    oUl.insertBefore(oLi, aLi[0]);
+                    oUl.style.left = oUl.offsetLeft - iWidth + "px";
+                    setWidth();
+                }
+            }
+            move(oUl, { left: 0 }, function() {
+                for (var i = 0; i < iNum; i++) {
+                    oUl.removeChild(aLi[aLi.length - 1]);
+                    oUl.style.left = '0px';
+                    setWidth();
+                }
+                bBtn = true;
+            });
+        }
+
+        window.onblur = function() {
+            clearInterval(iTimer);
+        };
+        window.onfocus = function() {
+            clearInterval(iTimer);
+            iTimer = setInterval(autoPlay, 4000);
+        };
+
+
+    }
+
+    function move(obj, json, fn) {
+        clearInterval(obj.timer);
+        obj.timer = setInterval(function() {
+            var bBtn = true;
+            for (var attr in json) {
+                var iCur = 0;
+                if (attr == 'opacity') {
+                    if (Math.round(getStyle(obj, attr) * 100) == 0) {
+                        iCur = 0;
+                    }
+                    else {
+                        iCur = Math.round(getStyle(obj, attr) * 100) || 100;
+                    }
+                }
+                else {
+                    iCur = parseInt(getStyle(obj, attr)) || 0;
+                }
+                var iSpeed = (json[attr] - iCur) / 8;
+                iSpeed = iSpeed > 0 ? Math.ceil(iSpeed) : Math.floor(iSpeed);
+                if (iCur != json[attr]) {
+                    bBtn = false;
+                }
+                if (attr == 'opacity') {
+                    obj.style.filter = 'alpha(opacity=' + (iCur + iSpeed) + ')';
+                    obj.style.opacity = (iCur + iSpeed) / 100;
+                }
+                else {
+                    obj.style[attr] = iCur + iSpeed + 'px';
+                }
+            }
+            if (bBtn) {
+                clearInterval(obj.timer);
+                if (fn) {
+                    fn.call(obj);
+                }
+            }
+        }, 50);
+    }
+    function getStyle(obj, attr) {
+        if (obj.currentStyle) {
+            return obj.currentStyle[attr];
+        }
+        else {
+            return getComputedStyle(obj, false)[attr];
+        }
+    }
+    function getByClass(sClass, oParent) {
+        var parent = oParent || document;
+        var aEles = parent.getElementsByTagName('*');
+        var arr = [];
+
+        for (var i = 0; i < aEles.length; i++) {
+            var arr1 = aEles[i].className.split(' ');
+            for (var j = 0; j < arr1.length; j++) {
+                if (arr1[j] == sClass) {
+                    arr.push(aEles[i]);
+                }
+            }
+        }
+        return arr;
+    }
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".tab_content a").fancybox({
+            'titlePosition': 'inside',
+            'centerOnScroll': true
+        });
+
+        //为链接添加弹出窗体功能
+        $(".jboxLink").bind("click", function(event) {
+            showJbox(event, { width: 800, height: 600 });
+        });
+    });    
+</script>
+
+
+

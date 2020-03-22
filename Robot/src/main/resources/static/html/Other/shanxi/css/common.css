@@ -1,0 +1,385 @@
+dt .bshare-custom.icon-medium{
+  display: flex;
+}
+.title-box h3{
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.5em;
+  padding: 0 40px;
+}
+.title-box .sub-title{
+  display: block;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+}
+.title-box{
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-top: 20px;
+}
+.title-box .title-addon{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.title-box .title-addon .lef span{
+  color: #999999;
+  font-size: 13px;
+}
+.title-box .title-addon .lef span i{
+  color: #333333;
+}
+.title-box .title-addon .rig a.fa{
+  display: inline-block;
+  width: 22px;
+  color: #999;
+  font-size: 15px;
+  text-align: center;
+}
+.title-box .title-addon .rig a.fa:hover{
+  color: #006bbb;
+}
+.article-in{
+  overflow: hidden;
+}
+.article-detail .share-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+.share-box .bshare-custom {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.share-box .bshare-custom a{
+  display: inline-block !important;
+  height: 35px !important;
+  width: 35px !important;
+  padding: 0 !important;
+  margin-right:10px !important;
+}
+.share-box .bshare-custom a.bshare-weixin{
+  background: url("/images/base/weixin.png") no-repeat center center;
+  background-size: 100% 100%;
+}
+.share-box .bshare-custom a.bshare-sinaminiblog{
+  background: url("/images/base/weibo.png") no-repeat center center;
+  background-size: 100% 100%;
+}
+.share-box .bshare-custom a.bshare-qqim{
+  background: url("/images/base/QQ.png") no-repeat center center;
+  background-size: 100% 100%;
+}
+.share-box .bshare-custom a.bshare-qqmb{
+  background: url("/images/base/txWeibo.png") no-repeat center center;
+  background-size: 100% 100%;
+}
+.share-box .bshare-custom a.bshare-kaixin001{
+  background: url("/images/base/kaixin.png") no-repeat center center;
+  background-size: 100% 100%;
+}
+.share-box .share-add{
+  display: inline-flex;
+}
+.share-box .share-add li{
+  overflow: hidden;
+  height: auto;
+}
+.share-add a.border-blue{
+  border: 1px solid #59c2f0;
+  color: #59c2f0;
+}
+.share-add a.border-blue:hover{
+  color: #ffffff;
+  background-color: #59c2f0;
+  border-color: #59c2f0;
+}
+.share-box .share-add li a{
+  height: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.article-detail-in{
+  padding: 20px 0;
+}
+.article-detail-in p{
+  font-size: 15px;
+  text-align: justify;
+  margin-bottom: 10px;
+  line-height: 1.8em;
+  color: #333333;
+}
+.article-detail-addon{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.article-detail-addon .key{
+  font-weight: bold;
+  font-size: 15px;
+}
+.article-detail-addon .val{
+  display: inline-block;
+  padding: 0 10px;
+  height: 26px;
+  line-height: 26px;
+  margin-right: 5px;
+}
+.p-next-pre{
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+}
+.p-next-pre .item{
+  display: block;
+  line-height: 1.8em;
+}
+.news-comment{
+  margin-top: 20px;
+}
+.comment-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.comment-box .face{
+  display: inline-block;
+  width: 45px !important;
+  height: 45px !important;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: url("/images/user-face.png") no-repeat center center;
+  background-size: 100% 100%;
+}
+.comment-box .face img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius:50%;
+}
+img[src="#"]{
+  display: none !important;
+}
+.comment-box-innner .comment-submit{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
+}
+.comment-box-innner .comment-submit *{
+  display: inline-block;
+  margin-left: 5px;
+}
+.comment-box-innner .comment-submit input[type=text]{
+  height: 24px;
+  line-height: 24px;
+  font-size:14px;
+  border: 1px solid #ccc;
+  text-indent: 2px;
+}
+.comment-box-innner .comment-submit input[type=text]:focus{
+  border-color: #6abfff;
+}
+.comment-box-innner .comment-submit input[type=image]{
+  height: 26px;
+}
+.comment-list{
+  margin: 20px 0;
+}
+.comment-list-item{
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+}
+.comment-list-item .comment-list-item{
+  border-bottom: none;
+}
+.comment-list-item .face{
+  display: inline-block;
+  width: 45px !important;
+  height: 45px !important;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: url("/images/user-face.png") no-repeat center center;
+  background-size: 100% 100%;
+  float: left;
+}
+.comment-list-item .comment-content{
+  float: none;
+  display: block;
+  margin-left: 55px;
+}
+.comment-list-item .comment-content .in{
+  display: block;
+  text-align: justify;
+  font-size: 15px;
+  color: #333;
+  line-height: 1.8em;
+  margin-bottom: 10px;
+}
+.comment-list-item .comment-content .addon{
+  font-size: 14px;
+  color: #888888;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.comment-list-item .comment-content .addon .it{
+  padding-right:10px;
+  padding-left: 10px;
+  border-right: 1px solid #ddd;
+}
+.comment-list-item .comment-content .addon .it:first-child{
+  padding-left: 0;
+}
+.comment-list-item .comment-content .addon .it:last-of-type{
+  border-right: none;
+  padding-right: 0;
+}
+.comment-list-item .comment-content .addon a.reply-1{
+  color: #888888;
+}
+.comment-list-item .comment-content .addon a.reply-1:hover{
+  color: #006bbb;
+}
+.question-box{
+  margin: 30px 0;
+}
+.question-box-tt{
+  border-bottom: solid 1px #ddd;
+  display: block;
+  line-height: 32px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.question-box-tt span{
+  border-bottom: solid 2px #0095fe;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.question-item{
+  border-bottom: dashed 1px #ddd;
+  padding:10px 0;
+}
+.question-item .question{
+  font-size:18px;
+  line-height: 26px;
+  color: #2472c0;
+  cursor: pointer;
+  padding-right: 25px;
+  padding-left: 30px;
+  position: relative;
+}
+.question-item .question b{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.question-item .answer{
+  position: relative;
+  padding-left: 30px;
+}
+.question-item .answer b{
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: normal;
+}
+.question-item.open .question{
+  color: #e38400;
+  font-weight: bold;
+}
+.question-item .description{
+  color:#f27422;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+.question-item .answer-box{
+  max-height: 0;
+  min-height:0;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.question-item.open .answer-box{
+ max-height:300px;
+}
+.question-item .question i{
+  color: #b2b2b2;
+  font-size: 20px;
+  line-height:26px;
+  position: absolute;
+  right: 5px;
+  top:0;
+}
+.question-item.open .question i{
+  color: #338cd8;
+  transform: rotate(90deg);
+}
+.zt-bg {
+  background: url('/images/zt-bg.jpg') top center no-repeat;
+  height: 654px;
+  background-size: 1920px auto;
+}
+
+.swiper-zt {
+  width: 1200px;
+  height: 495px;
+  margin: 0 auto;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.pt200 {
+  padding-top: 120px;
+  box-sizing: border-box;
+}
+.zt-flexBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.ztImg-item {
+  width: 336px;
+  height: 424px;
+  background:url('/images/simg-bg.png') center no-repeat;
+  background-size:100% 100%;
+  padding: 20px 20px 45px 20px;
+  box-sizing: border-box;
+}
+.ztImg-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+  /* i i s 7 . c o m */

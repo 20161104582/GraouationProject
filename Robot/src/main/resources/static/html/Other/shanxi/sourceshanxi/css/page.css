@@ -1,0 +1,487 @@
+.left-1{
+    width: 260px;
+    float: left;
+    padding-left: 10px;
+}
+.left-1 .tt{
+    background: url('/sourceshanxi/images/sub-bg.png') 0 0 no-repeat;
+    font-size: 34px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    height: 98px;
+    line-height: 98px;
+    margin-bottom: 10px;
+    text-indent: 60px;
+}
+.left-1 .tt.tt1{
+    background: url('/sourceshanxi/images/sub-bg1.png') 0 0 no-repeat;
+    line-height: 93px;
+}
+.left-1 .tt.tt2{
+    background: url('/sourceshanxi/images/sub-bg2.png') 0 0 no-repeat;
+}
+.left-1 .tt i{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+.icons-search-max{
+    background: url('/sourceshanxi/images/icons-search-max.png') 0 center no-repeat;
+    width: 46px;
+    height: 46px;
+}
+
+
+.left-1 .item{
+    background: #0383cc;
+    display: block;
+    line-height: 46px;
+    margin-bottom: 1px;
+    color: #fff;
+    position: relative;
+    text-indent: 5em;
+    font-size: 18px;
+}
+.left-1 .item.cur, .left-1 .item:hover{
+    background: #11c764;
+}
+
+.left-1 .item.cur:after{
+    content: '';
+    width:0;
+    height:0;
+    border-top:8px solid transparent;
+    border-bottom:8px solid transparent;
+    border-right:8px solid #fff;
+    position: absolute;
+    right: 0;
+    top: 16px;
+}
+.left-1 .sub-item2{
+    background: #fff;
+    position: relative;
+    padding: 8px 0;
+    display: none;
+}
+.left-1 .item.cur .sub-item2{
+    display: block;
+}
+.left-1 .sub-item2:before{
+    content: '';
+    border-left: 1px solid #b7eed0;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    left: 19px;
+    top: 0;
+}
+.left-1 .item2{
+    display: block;
+    line-height: 27px;
+    font-size: 14px;
+    position: relative;
+    text-indent: 38px;
+}
+.left-1 .item2.cur, .left-1 .item2:hover{
+    color: #11c764;
+}
+.left-1 .item2.cur:after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #11c764;
+    border: 2px solid #d6ecff;
+    border-radius:50%;
+    position: absolute;
+    left: 13px;
+    top: 7px;
+}
+.right-main{
+    width: 900px;
+    float: right;
+    padding-right: 5px;
+}
+
+select.select-box1::-ms-expand {
+    display: none;
+}
+.select-box1{
+    border: solid 1px #ddd;
+    -webkit-appearance: none;
+    -moz-appearance:none;
+    appearance:none;
+    background: url('/sourceshanxi/images/select-down.jpg') right 0 no-repeat;
+    line-height: 38px;
+    height: 38px;
+    padding-left:14px;
+    font-size: 14px;
+    padding-right: 40px;
+    width: 300px;
+}
+.downlist .item{
+    border: solid 1px #ddd;
+    width: 210px;
+    height: 210px;
+    display: inline-block;
+    position: relative;
+    border-radius:2px;
+    margin-left:12px;
+    margin-top: 12px;
+    transition: all 0.5s;
+    vertical-align: top;
+}
+.downlist .item:hover{
+    border-color: #1480df;
+}
+.downlist{
+    margin-left: -10px;
+}
+.downlist  span{
+    background: url('/sourceshanxi/images/file/big/dir.png') center center no-repeat;
+    width: 100%;
+    height: 120px;
+    display: block;
+}
+.downlist h3{
+    font-size: 14px;
+    padding:5px 10px;
+    text-align: center;
+    font-weight: normal;
+    line-height: 22px;
+}
+.downlist .doc {
+    background: url("/sourceshanxi/images/file/big/doc.png") center center no-repeat;
+}
+
+.downlist .docx {
+    background: url("/sourceshanxi/images/file/big/docx.png") center center no-repeat;
+}
+
+.downlist .ppt {
+    background: url("/sourceshanxi/images/file/big/ppt.png") center center no-repeat;
+}
+
+.downlist .pptx {
+    background: url("/sourceshanxi/images/file/big/pptx.png") center center no-repeat;
+}
+
+.downlist .xls {
+    background: url("/sourceshanxi/images/file/big/xlsx.png") center center no-repeat;
+}
+
+.downlist .jpg {
+    background: url("/sourceshanxi/images/file/big/jpg.png") center center no-repeat;
+}
+
+.downlist .gif {
+    background: url("/sourceshanxi/images/file/big/gif.png") center center no-repeat;
+}
+
+.downlist .bmp {
+    background: url("/sourceshanxi/images/file/big/bmp.png") center center no-repeat;
+}
+
+.downlist-big .png {
+    background: url("/sourceshanxi/images/file/big/png.png") center center no-repeat;
+}
+
+.downlist .rar {
+    background: url("/sourceshanxi/images/file/big/rar.png") center center no-repeat;
+}
+
+.downlist .mp4 {
+    background: url("/sourceshanxi/images/file/big/mp4.png") center center no-repeat;
+}
+
+.downlist .avi {
+    background: url("/sourceshanxi/images/file/big/avi.png") center center no-repeat;
+}
+
+.downlist .dir {
+    background: url("../images/file/big/dir.png") center center no-repeat;
+}
+
+.downlist .pdf {
+    background: url("/sourceshanxi/images/file/big/pdf.png") center center no-repeat;
+}
+
+.downlist .txt {
+    background: url("/sourceshanxi/images/file/big/txt.png") center center no-repeat;
+}
+
+.file-big .zip {
+    background: url("/sourceshanxi/images/file/big/zip.png") center center no-repeat;
+}
+
+
+/*筛选 css*/
+.tags {
+    border: 1px solid #c0c0c0;
+    color: #333;
+    padding: 0px 6px;
+    margin-left: 10px;
+}
+
+.tags .location {
+    color: #0383cc;
+
+}
+
+.sxtable {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 12px;
+}
+
+.sxtable th, .sxtable td {
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+.sxtable th {
+    background-color: #eef3f7;
+    vertical-align: top;
+}
+
+.sxtable th.fiw {
+    padding-top: 15px;
+}
+
+.sxtable li {
+    display: inline-block;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    color: #5d8dc1;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.sxtable .fr {
+    line-height: 30px;
+    border: 1px solid #ccc;
+    padding: 0px 10px;
+}
+
+.sxtable li:hover, .sxtable li.cur {
+    background: #0383cc;
+    color: #fff;
+}
+
+.sxtable li:hover a, .sxtable li.cur a {
+    color: #fff;
+}
+
+.sxtable a.shaixuan {
+    color: #333;
+    font-size: 12px;
+}
+
+.sxtable a.shaixuan .icon-play-circle {
+    color: #333;
+    position: relative;
+    font-size: 12px;
+    left: 0px;
+    top: 0px;
+    margin: 0px;
+}
+
+.sxtable a.shaixuan:hover .icon-play-circle {
+    color: #5d8dc1;
+}
+
+.sxtable a.shaixuan:hover, .sxtable a.cur, .sxtable a.cur .icon-play-circle {
+    color: #5d8dc1;
+}
+
+.sxtable p {
+    margin-bottom: 0;
+}
+.sxtable .icon-time, .sxtable .icon-play-circle, .sxtable .icon-thumbs-up{
+    display: inline-block;
+    width:12px;
+    height: 12px;
+    vertical-align: sub;
+    margin-left: 20px;
+}
+.sxtable .icon-time{
+    background:url('/sourceshanxi/images/icon/icon-time.png') 0 0 no-repeat;
+    background-size:100% auto;
+}
+.sxtable .icon-play-circle{
+    background:url('/sourceshanxi/images/icon/icon-play.png') 0 0 no-repeat;
+    background-size:100% auto;
+}
+.sxtable .icon-thumbs-up{
+    background:url('/sourceshanxi/images/icon/icon-thumb-up.png') 0 0 no-repeat;
+    background-size:100% auto;
+}
+.sxtable a.cur .icon-time{
+    background:url('/sourceshanxi/images/icon/icon-timeh.png') 0 0 no-repeat;
+    background-size:100% auto;
+}
+.sxtable a.cur .icon-play-circle{
+    background:url('/sourceshanxi/images/icon/icon-playh.png') 0 0 no-repeat;
+    background-size:100% auto;
+}
+.sxtable a.cur .icon-thumbs-up{
+    background:url('/sourceshanxi/images/icon/icon-thumb-uph.png') 0 0 no-repeat;
+    background-size:100% auto;
+}
+/*筛选 css over*/
+.act-news::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+.act-news {
+    clear: both;
+    margin-top: 25px;
+}
+.act-news li {
+    position: relative;
+    width: 289px;
+    float: left;
+    margin-left: 16px;
+    margin-bottom: 10px;
+    height: 265px;
+}
+.act-news li:nth-child(3n-2){
+    margin-left: 0px;
+}
+.act-news li img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease 0s;
+}
+
+.act-img {
+    display: block;
+    position: relative;
+    height: 217px;
+    overflow: hidden;
+    transition: all 0.5s ease 0s;
+}
+
+.act-img:hover img {
+    transform: scale(1.1, 1.1);
+    opacity: 0.8;
+}
+
+.act-img img {
+    transition: all 0.5s ease 0s;
+}
+
+.act-comment {
+    background: -webkit-linear-gradient(transparent, rgba( 0, 0, 0, 0.4)); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(transparent, rgba( 0, 0, 0, 0.4)); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(transparent, rgba( 0, 0, 0, 0.4)); /* Firefox 3.6 - 15 */
+    background: linear-gradient(transparent, rgba( 0, 0, 0, 0.4)); /* 标准的语法 */
+
+    display: block;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+}
+
+.act-comment i {
+    color: #f8f8f8;
+    margin: 0 3px;
+}
+
+.act-comment i:hover {
+    color: #8ec512;
+}
+
+.act-comment span {
+    color: #fff;
+    margin: 0 10px;
+    line-height: 40px;
+}
+.act-news p a {
+    line-height: 24px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    height: 50px;
+    display: block;
+}
+.act-news .icons-play {
+    background: url('/sourceshanxi/images/icons-play.png') center center  no-repeat;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -40px;
+    margin-top: -40px !important;
+    width: 80px;
+    height: 80px;
+}
+.act-news a:hover .icons-play{
+    display:block;
+}
+.search-net .selectbox {
+    vertical-align: middle;
+    float: left;
+    border: solid 2px #3691E2;
+    border-right: 0;
+    height: 27px;
+    overflow: hidden;
+    width: 80px;
+
+}
+
+.search-net select {
+    vertical-align: middle;
+    -webkit-appearance: none;
+    -moz-appearance:none;
+    appearance:none;
+    float: left;
+    border: 0;
+    height: 27px;
+    width: 110px;
+    background: url("/sourceshanxi/images/select-down.png") 60px center no-repeat;
+    padding: 0 5px;
+}
+
+.search-net .input-search {
+    border: solid 2px #3691E2;
+    height: 25px;
+    width: 200px;
+}
+.search-net a {
+    background: #3691E2;
+    height: 31px;
+    line-height: 28px;
+    text-align: center;
+    width: 26px;
+    vertical-align: middle;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 0 2px 2px 0;
+}
+.search-list a{
+    line-height: 32px;
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 14px;
+}
+.search-list a:before{
+    content: '';
+    width: 4px;
+    height: 4px;
+    background: #999999;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.search-list a .color-red{
+    border: 0;
+}
+
+
+  /* i i s 7 . c o m */

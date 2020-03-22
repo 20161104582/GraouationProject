@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.web.sys.dao.ProNoticeDao">
+  <resultMap id="BaseResultMap" type="com.web.sys.bean.ProNotice">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="pubtime" jdbcType="TIMESTAMP" property="pubtime" />
+    <result column="content" jdbcType="LONGVARCHAR" property="content" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from pro_notice
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select id, title, pubtime, content
+    from pro_notice
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, title, pubtime, content
+    from pro_notice
+      <where>
+		<if test="id!=null "> and id = #{id,jdbcType=BIGINT}</if>
+		<if test="title!=null and title!=''"> and title = #{title,jdbcType=VARCHAR}</if>
+		<if test="pubtime!=null "> and pubtime = #{pubtime,jdbcType=TIMESTAMP}</if>
+		<if test="content!=null and content!=''"> and content = #{content,jdbcType=LONGVARCHAR}</if>
+ 	</where> 
+ <if test="orderByString!=null and orderByString!=''"> 
+	 ${orderByString} 
+ </if>
+  </select>
+  <select id="queryByCondition" resultMap="BaseResultMap">
+    select id,title,pubtime,content
+ 	from  pro_notice 
+	<where>
+		<if test="id!=null "> and id = #{id,jdbcType=BIGINT}</if>
+		<if test="title!=null and title!=''"> and title = #{title,jdbcType=VARCHAR}</if>
+		<if test="pubtime!=null "> and pubtime = #{pubtime,jdbcType=TIMESTAMP}</if>
+		<if test="content!=null and content!=''"> and content = #{content,jdbcType=LONGVARCHAR}</if>
+ 	</where> 
+ <if test="orderByString!=null and orderByString!=''"> 
+	 ${orderByString} 
+ </if>
+  </select>
+  <insert id="insert" keyColumn="id" keyProperty="id" useGeneratedKeys="true">
+    insert into pro_notice (title,pubtime,content)
+ values ( #{title,jdbcType=VARCHAR}, #{pubtime,jdbcType=TIMESTAMP}, #{content,jdbcType=LONGVARCHAR})
+  </insert>
+  <update id="update">
+    update  	pro_notice 
+	<set>
+		<if test="title!=null and title!=''">title = #{title,jdbcType=VARCHAR}, </if>
+		<if test="pubtime!=null ">pubtime = #{pubtime,jdbcType=TIMESTAMP}, </if>
+		<if test="content!=null and content!=''">content = #{content,jdbcType=LONGVARCHAR}, </if>
+ 	</set>
+	where id=#{id}
+  </update>
+</mapper>

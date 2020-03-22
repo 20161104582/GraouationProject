@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.web.sys.dao.ViewUserInfoDao">
+  <resultMap id="BaseResultMap" type="com.web.sys.bean.ViewUserInfo">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="truename" jdbcType="VARCHAR" property="truename" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="sex" jdbcType="VARCHAR" property="sex" />
+    <result column="photoid" jdbcType="VARCHAR" property="photoid" />
+    <result column="brithday" jdbcType="DATE" property="brithday" />
+    <result column="createtime" jdbcType="TIMESTAMP" property="createtime" />
+    <result column="lastlogin" jdbcType="TIMESTAMP" property="lastlogin" />
+    <result column="itype" jdbcType="SMALLINT" property="itype" />
+    <result column="schoolid" jdbcType="BIGINT" property="schoolid" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="role_id" jdbcType="BIGINT" property="roleId" />
+    <result column="role_name" jdbcType="VARCHAR" property="roleName" />
+    <result column="role_num" jdbcType="BIGINT" property="roleNum" />
+    <result column="company_id" jdbcType="BIGINT" property="companyId" />
+    <result column="company_name" jdbcType="VARCHAR" property="companyName" />
+    <result column="company_address" jdbcType="VARCHAR" property="companyAddress" />
+    <result column="company_phone" jdbcType="VARCHAR" property="companyPhone" />
+    <result column="school_id" jdbcType="BIGINT" property="schoolId" />
+    <result column="school_name" jdbcType="VARCHAR" property="schoolName" />
+    <result column="school_address" jdbcType="VARCHAR" property="schoolAddress" />
+    <result column="company_intro" jdbcType="LONGVARCHAR" property="companyIntro" />
+    <result column="school_intro" jdbcType="LONGVARCHAR" property="schoolIntro" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from view_user_info
+    where id = #{id,jdbcType=VARCHAR}
+  </delete>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select id, username, truename, password, phone, email, address, sex, photoid, brithday, 
+    createtime, lastlogin, itype, schoolid, user_id, role_id, role_name, role_num, company_id, 
+    company_name, company_address, company_phone, school_id, school_name, school_address, 
+    company_intro, school_intro
+    from view_user_info
+    where id = #{id,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, username, truename, password, phone, email, address, sex, photoid, brithday, 
+    createtime, lastlogin, itype, schoolid, user_id, role_id, role_name, role_num, company_id, 
+    company_name, company_address, company_phone, school_id, school_name, school_address, 
+    company_intro, school_intro
+    from view_user_info
+      <where>
+		<if test="id!=null and id!=''"> and id = #{id,jdbcType=VARCHAR}</if>
+		<if test="username!=null and username!=''"> and username = #{username,jdbcType=VARCHAR}</if>
+		<if test="truename!=null and truename!=''"> and truename = #{truename,jdbcType=VARCHAR}</if>
+		<if test="password!=null and password!=''"> and password = #{password,jdbcType=VARCHAR}</if>
+		<if test="phone!=null and phone!=''"> and phone = #{phone,jdbcType=VARCHAR}</if>
+		<if test="email!=null and email!=''"> and email = #{email,jdbcType=VARCHAR}</if>
+		<if test="address!=null and address!=''"> and address = #{address,jdbcType=VARCHAR}</if>
+		<if test="sex!=null and sex!=''"> and sex = #{sex,jdbcType=VARCHAR}</if>
+		<if test="photoid!=null and photoid!=''"> and photoid = #{photoid,jdbcType=VARCHAR}</if>
+		<if test="brithday!=null "> and brithday = #{brithday,jdbcType=DATE}</if>
+		<if test="createtime!=null "> and createtime = #{createtime,jdbcType=TIMESTAMP}</if>
+		<if test="lastlogin!=null "> and lastlogin = #{lastlogin,jdbcType=TIMESTAMP}</if>
+		<if test="itype!=null "> and itype = #{itype,jdbcType=SMALLINT}</if>
+		<if test="schoolid!=null "> and schoolid = #{schoolid,jdbcType=BIGINT}</if>
+		<if test="userId!=null "> and user_id = #{userId,jdbcType=BIGINT}</if>
+		<if test="roleId!=null "> and role_id = #{roleId,jdbcType=BIGINT}</if>
+		<if test="roleName!=null and roleName!=''"> and role_name = #{roleName,jdbcType=VARCHAR}</if>
+		<if test="roleNum!=null "> and role_num = #{roleNum,jdbcType=BIGINT}</if>
+		<if test="companyId!=null "> and company_id = #{companyId,jdbcType=BIGINT}</if>
+		<if test="companyName!=null and companyName!=''"> and company_name = #{companyName,jdbcType=VARCHAR}</if>
+		<if test="companyAddress!=null and companyAddress!=''"> and company_address = #{companyAddress,jdbcType=VARCHAR}</if>
+		<if test="companyPhone!=null and companyPhone!=''"> and company_phone = #{companyPhone,jdbcType=VARCHAR}</if>
+		<if test="schoolId!=null "> and school_id = #{schoolId,jdbcType=BIGINT}</if>
+		<if test="schoolName!=null and schoolName!=''"> and school_name = #{schoolName,jdbcType=VARCHAR}</if>
+		<if test="schoolAddress!=null and schoolAddress!=''"> and school_address = #{schoolAddress,jdbcType=VARCHAR}</if>
+		<if test="companyIntro!=null and companyIntro!=''"> and company_intro = #{companyIntro,jdbcType=LONGVARCHAR}</if>
+		<if test="schoolIntro!=null and schoolIntro!=''"> and school_intro = #{schoolIntro,jdbcType=LONGVARCHAR}</if>
+ 	</where> 
+ <if test="orderByString!=null and orderByString!=''"> 
+	 ${orderByString} 
+ </if>
+  </select>
+  <select id="queryByCondition" resultMap="BaseResultMap">
+    select id,username,truename,password,phone,email,address,sex,photoid,brithday,createtime,lastlogin,itype,schoolid,user_id,role_id,role_name,role_num,company_id,company_name,company_address,company_phone,school_id,school_name,school_address,company_intro,school_intro
+ 	from  view_user_info 
+	<where>
+		<if test="id!=null and id!=''"> and id = #{id,jdbcType=VARCHAR}</if>
+		<if test="username!=null and username!=''"> and username = #{username,jdbcType=VARCHAR}</if>
+		<if test="truename!=null and truename!=''"> and truename = #{truename,jdbcType=VARCHAR}</if>
+		<if test="password!=null and password!=''"> and password = #{password,jdbcType=VARCHAR}</if>
+		<if test="phone!=null and phone!=''"> and phone = #{phone,jdbcType=VARCHAR}</if>
+		<if test="email!=null and email!=''"> and email = #{email,jdbcType=VARCHAR}</if>
+		<if test="address!=null and address!=''"> and address = #{address,jdbcType=VARCHAR}</if>
+		<if test="sex!=null and sex!=''"> and sex = #{sex,jdbcType=VARCHAR}</if>
+		<if test="photoid!=null and photoid!=''"> and photoid = #{photoid,jdbcType=VARCHAR}</if>
+		<if test="brithday!=null "> and brithday = #{brithday,jdbcType=DATE}</if>
+		<if test="createtime!=null "> and createtime = #{createtime,jdbcType=TIMESTAMP}</if>
+		<if test="lastlogin!=null "> and lastlogin = #{lastlogin,jdbcType=TIMESTAMP}</if>
+		<if test="itype!=null "> and itype = #{itype,jdbcType=SMALLINT}</if>
+		<if test="schoolid!=null "> and schoolid = #{schoolid,jdbcType=BIGINT}</if>
+		<if test="userId!=null "> and user_id = #{userId,jdbcType=BIGINT}</if>
+		<if test="roleId!=null "> and role_id = #{roleId,jdbcType=BIGINT}</if>
+		<if test="roleName!=null and roleName!=''"> and role_name = #{roleName,jdbcType=VARCHAR}</if>
+		<if test="roleNum!=null "> and role_num = #{roleNum,jdbcType=BIGINT}</if>
+		<if test="companyId!=null "> and company_id = #{companyId,jdbcType=BIGINT}</if>
+		<if test="companyName!=null and companyName!=''"> and company_name = #{companyName,jdbcType=VARCHAR}</if>
+		<if test="companyAddress!=null and companyAddress!=''"> and company_address = #{companyAddress,jdbcType=VARCHAR}</if>
+		<if test="companyPhone!=null and companyPhone!=''"> and company_phone = #{companyPhone,jdbcType=VARCHAR}</if>
+		<if test="schoolId!=null "> and school_id = #{schoolId,jdbcType=BIGINT}</if>
+		<if test="schoolName!=null and schoolName!=''"> and school_name = #{schoolName,jdbcType=VARCHAR}</if>
+		<if test="schoolAddress!=null and schoolAddress!=''"> and school_address = #{schoolAddress,jdbcType=VARCHAR}</if>
+		<if test="companyIntro!=null and companyIntro!=''"> and company_intro = #{companyIntro,jdbcType=LONGVARCHAR}</if>
+		<if test="schoolIntro!=null and schoolIntro!=''"> and school_intro = #{schoolIntro,jdbcType=LONGVARCHAR}</if>
+ 	</where> 
+ <if test="orderByString!=null and orderByString!=''"> 
+	 ${orderByString} 
+ </if>
+  </select>
+  <insert id="insert" keyColumn="id" keyProperty="id" useGeneratedKeys="true">
+    insert into view_user_info (id,username,truename,password,phone,email,address,sex,photoid,brithday,createtime,lastlogin,itype,schoolid,user_id,role_id,role_name,role_num,company_id,company_name,company_address,company_phone,school_id,school_name,school_address,company_intro,school_intro)
+ values ( #{id,jdbcType=VARCHAR}, #{username,jdbcType=VARCHAR}, #{truename,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}, #{sex,jdbcType=VARCHAR}, #{photoid,jdbcType=VARCHAR}, #{brithday,jdbcType=DATE}, #{createtime,jdbcType=TIMESTAMP}, #{lastlogin,jdbcType=TIMESTAMP}, #{itype,jdbcType=SMALLINT}, #{schoolid,jdbcType=BIGINT}, #{userId,jdbcType=BIGINT}, #{roleId,jdbcType=BIGINT}, #{roleName,jdbcType=VARCHAR}, #{roleNum,jdbcType=BIGINT}, #{companyId,jdbcType=BIGINT}, #{companyName,jdbcType=VARCHAR}, #{companyAddress,jdbcType=VARCHAR}, #{companyPhone,jdbcType=VARCHAR}, #{schoolId,jdbcType=BIGINT}, #{schoolName,jdbcType=VARCHAR}, #{schoolAddress,jdbcType=VARCHAR}, #{companyIntro,jdbcType=LONGVARCHAR}, #{schoolIntro,jdbcType=LONGVARCHAR})
+  </insert>
+  <update id="update">
+    update  	view_user_info 
+	<set>
+		<if test="id!=null and id!=''">id = #{id,jdbcType=VARCHAR}, </if>
+		<if test="username!=null and username!=''">username = #{username,jdbcType=VARCHAR}, </if>
+		<if test="truename!=null and truename!=''">truename = #{truename,jdbcType=VARCHAR}, </if>
+		<if test="password!=null and password!=''">password = #{password,jdbcType=VARCHAR}, </if>
+		<if test="phone!=null and phone!=''">phone = #{phone,jdbcType=VARCHAR}, </if>
+		<if test="email!=null and email!=''">email = #{email,jdbcType=VARCHAR}, </if>
+		<if test="address!=null and address!=''">address = #{address,jdbcType=VARCHAR}, </if>
+		<if test="sex!=null and sex!=''">sex = #{sex,jdbcType=VARCHAR}, </if>
+		<if test="photoid!=null and photoid!=''">photoid = #{photoid,jdbcType=VARCHAR}, </if>
+		<if test="brithday!=null ">brithday = #{brithday,jdbcType=DATE}, </if>
+		<if test="createtime!=null ">createtime = #{createtime,jdbcType=TIMESTAMP}, </if>
+		<if test="lastlogin!=null ">lastlogin = #{lastlogin,jdbcType=TIMESTAMP}, </if>
+		<if test="itype!=null ">itype = #{itype,jdbcType=SMALLINT}, </if>
+		<if test="schoolid!=null ">schoolid = #{schoolid,jdbcType=BIGINT}, </if>
+		<if test="userId!=null ">user_id = #{userId,jdbcType=BIGINT}, </if>
+		<if test="roleId!=null ">role_id = #{roleId,jdbcType=BIGINT}, </if>
+		<if test="roleName!=null and roleName!=''">role_name = #{roleName,jdbcType=VARCHAR}, </if>
+		<if test="roleNum!=null ">role_num = #{roleNum,jdbcType=BIGINT}, </if>
+		<if test="companyId!=null ">company_id = #{companyId,jdbcType=BIGINT}, </if>
+		<if test="companyName!=null and companyName!=''">company_name = #{companyName,jdbcType=VARCHAR}, </if>
+		<if test="companyAddress!=null and companyAddress!=''">company_address = #{companyAddress,jdbcType=VARCHAR}, </if>
+		<if test="companyPhone!=null and companyPhone!=''">company_phone = #{companyPhone,jdbcType=VARCHAR}, </if>
+		<if test="schoolId!=null ">school_id = #{schoolId,jdbcType=BIGINT}, </if>
+		<if test="schoolName!=null and schoolName!=''">school_name = #{schoolName,jdbcType=VARCHAR}, </if>
+		<if test="schoolAddress!=null and schoolAddress!=''">school_address = #{schoolAddress,jdbcType=VARCHAR}, </if>
+		<if test="companyIntro!=null and companyIntro!=''">company_intro = #{companyIntro,jdbcType=LONGVARCHAR}, </if>
+		<if test="schoolIntro!=null and schoolIntro!=''">school_intro = #{schoolIntro,jdbcType=LONGVARCHAR} </if>
+ 	</set>
+	where id=#{id}
+  </update>
+</mapper>

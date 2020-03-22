@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.web.sys.dao.ViewCompanyInfoDao">
+  <resultMap id="BaseResultMap" type="com.web.sys.bean.ViewCompanyInfo">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="company_id" jdbcType="BIGINT" property="companyId" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="truename" jdbcType="VARCHAR" property="truename" />
+    <result column="intro" jdbcType="LONGVARCHAR" property="intro" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from view_company_info
+    where id = #{id,jdbcType=VARCHAR}
+  </delete>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select id, company_id, name, address, phone, user_id, truename, intro
+    from view_company_info
+    where id = #{id,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, company_id, name, address, phone, user_id, truename, intro
+    from view_company_info
+      <where>
+		<if test="id!=null and id!=''"> and id = #{id,jdbcType=VARCHAR}</if>
+		<if test="companyId!=null "> and company_id = #{companyId,jdbcType=BIGINT}</if>
+		<if test="name!=null and name!=''"> and name = #{name,jdbcType=VARCHAR}</if>
+		<if test="address!=null and address!=''"> and address = #{address,jdbcType=VARCHAR}</if>
+		<if test="phone!=null and phone!=''"> and phone = #{phone,jdbcType=VARCHAR}</if>
+		<if test="userId!=null "> and user_id = #{userId,jdbcType=BIGINT}</if>
+		<if test="truename!=null and truename!=''"> and truename = #{truename,jdbcType=VARCHAR}</if>
+		<if test="intro!=null and intro!=''"> and intro = #{intro,jdbcType=LONGVARCHAR}</if>
+ 	</where> 
+ <if test="orderByString!=null and orderByString!=''"> 
+	 ${orderByString} 
+ </if>
+  </select>
+  <select id="queryByCondition" resultMap="BaseResultMap">
+    select id,company_id,name,address,phone,user_id,truename,intro
+ 	from  view_company_info 
+	<where>
+		<if test="id!=null and id!=''"> and id = #{id,jdbcType=VARCHAR}</if>
+		<if test="companyId!=null "> and company_id = #{companyId,jdbcType=BIGINT}</if>
+		<if test="name!=null and name!=''"> and name = #{name,jdbcType=VARCHAR}</if>
+		<if test="address!=null and address!=''"> and address = #{address,jdbcType=VARCHAR}</if>
+		<if test="phone!=null and phone!=''"> and phone = #{phone,jdbcType=VARCHAR}</if>
+		<if test="userId!=null "> and user_id = #{userId,jdbcType=BIGINT}</if>
+		<if test="truename!=null and truename!=''"> and truename = #{truename,jdbcType=VARCHAR}</if>
+		<if test="intro!=null and intro!=''"> and intro = #{intro,jdbcType=LONGVARCHAR}</if>
+ 	</where> 
+ <if test="orderByString!=null and orderByString!=''"> 
+	 ${orderByString} 
+ </if>
+  </select>
+  <insert id="insert" keyColumn="id" keyProperty="id" useGeneratedKeys="true">
+    insert into view_company_info (id,company_id,name,address,phone,user_id,truename,intro)
+ values ( #{id,jdbcType=VARCHAR}, #{companyId,jdbcType=BIGINT}, #{name,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR}, #{userId,jdbcType=BIGINT}, #{truename,jdbcType=VARCHAR}, #{intro,jdbcType=LONGVARCHAR})
+  </insert>
+  <update id="update">
+    update  	view_company_info 
+	<set>
+		<if test="id!=null and id!=''">id = #{id,jdbcType=VARCHAR}, </if>
+		<if test="companyId!=null ">company_id = #{companyId,jdbcType=BIGINT}, </if>
+		<if test="name!=null and name!=''">name = #{name,jdbcType=VARCHAR}, </if>
+		<if test="address!=null and address!=''">address = #{address,jdbcType=VARCHAR}, </if>
+		<if test="phone!=null and phone!=''">phone = #{phone,jdbcType=VARCHAR}, </if>
+		<if test="userId!=null ">user_id = #{userId,jdbcType=BIGINT}, </if>
+		<if test="truename!=null and truename!=''">truename = #{truename,jdbcType=VARCHAR}, </if>
+		<if test="intro!=null and intro!=''">intro = #{intro,jdbcType=LONGVARCHAR} </if>
+ 	</set>
+	where id=#{id}
+  </update>
+</mapper>

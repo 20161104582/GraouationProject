@@ -1,0 +1,1073 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta charset="UTF-8" /><title>
+	新疆青少年科技教育和科普活动云服务平台
+</title>
+    <!--通用部分-->
+    <link rel="stylesheet" href="/Other/xinjiang/css/font-awesome.css" /><link rel="stylesheet" href="/Other/xinjiang/css/common.css" />
+    <script src="/Other/xinjiang/js/main.js"></script>
+
+    <!--个性部分-->
+    <link rel="stylesheet" href="/Other/xinjiang/sourcexinjiang/css/base.css">
+    <link rel="stylesheet" href="/Other/xinjiang/sourcexinjiang/css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="/Other/xinjiang/sourcexinjiang/css/index.css">
+    <link rel="stylesheet" href="/Other/xinjiang/sourcexinjiang/css/main.css">
+    <link rel="stylesheet" href="/Other/xinjiang/sourcexinjiang/css/page.css">
+    <script src="/Other/xinjiang/sourcexinjiang/js/jquery-1.11.3.min.js"></script>
+
+    <script src="/Other/xinjiang/sourcexinjiang/js/swiper-3.4.2.min.js"></script>
+    <script src="/Other/xinjiang/sourcexinjiang/js/main.js"></script>
+    <script src="/Other/xinjiang/sourcexinjiang/js/visitCount.js"></script>
+    <script src="/Other/xinjiang/sourcexinjiang/js/commonFunction.js"></script>
+
+    <!--活动日历-->
+    <script src="/Other/xinjiang/js/datePickerForAct.js"></script>
+    <link rel="stylesheet" href="/Other/xinjiang/css/datePickerForAct.css" /></head>
+<body>
+    <form method="post" action="/Other/xinjiang/index.html" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJOTMzNTkzMjM4DxYCHg1mcm9udENvbHVtbklEBQQ2MDAwFgICAw9kFhoCAQ9kFgICAQ8WAh4LXyFJdGVtQ291bnQCCxYWZg9kFgICAQ8WBB4NZGF0YS1jb2x1bW5pZAUENjAwMB4FY2xhc3MFB2N1cnJlbnQWAmYPFQMLL2luZGV4LmFzcHgIaWNvbi1hY3QG6aaW6aG1ZAIBD2QWAgIBDxYCHwIFBDYwMDEWAmYPFQMNL0Fib3V0VXMuYXNweAAM5YWz5LqO5oiR5LusZAICD2QWAgIBDxYCHwIFBDYwMDQWAmYPFQMTL2FjdGl2ZS9hY3RpdmUuYXNweAAM5ZOB54mM5rS75YqoZAIDD2QWAgIBDxYCHwIFBDYwMDIWAmYPFQMWL25ld3Mvbm90aWNlSW5kZXguYXNweAAM5paH5Lu26YCa55+lZAIED2QWAgIBDxYCHwIFBDYwMDMWAmYPFQMUL25ld3MvbmV3c0luZGV4LmFzcHgADOaWsOmXu+aKpemBk2QCBQ9kFgICAQ8WAh8CBQQ2MDA1FgJmDxUDFi9FeGhpYml0aW9uL2luZGV4LmFzcHgADOWcqOe6v+WxleWOhWQCBg9kFgICAQ8WAh8CBQQ2MDA2FgJmDxUDCS80MDQuYXNweAAM5Lqk5rWB5YiG5LqrZAIHD2QWAgIBDxYCHwIFBDYwMDcWAmYPFQMJLzQwNC5hc3B4AAzkurrmiY3ln7nlhbtkAggPZBYCAgEPFgIfAgUENjAwOBYCZg8VAwkvNDA0LmFzcHgADOmYn+S8jeW7uuiuvmQCCQ9kFgICAQ8WAh8CBQQ2MDA5FgJmDxUDCS80MDQuYXNweAAM5Yib5paw5a2m6ZmiZAIKD2QWAgIBDxYCHwIFBDYwMTAWAmYPFQMTL1NlcnZpY2UvbG9naW4uYXNweAAM5Y+C5LiO5rS75YqoZAICDxYCHgdWaXNpYmxlZxYCAgEPFgIfAQICFgRmD2QWAmYPFQRUaHR0cDovL3hpbmppYW5nLnhpYW94aWFvdG9uZy5vcmcvTmV3cy9BcnRpY2xlVmlldy5hc3B4P0FJRD0yNDAyMDMmRnJvbnRDb2x1bW5JRD02MDAwMEF0dGFjaEZpbGUvMjAxOS8xMi82MDAxMDIvNjM3MTMwNTMyNDEwMDAwMTA5LmpwZ1Xnp5HmioDliqnlipvnsr7lh4bmibbotKvigJTigJQyMDE55bm05ZKM55Sw5Zyw5Yy656eR5oqA6L6F5a+85ZGY5Z+56K6t54+t5oiQ5Yqf5Li+5Yqe0AI15pyIMjfml6Xoh7MzMOaXpe+8jOeUseiHquayu+WMuuenkeWNj+S4u+WKnu+8jOiHquayu+WMuumdkuWwkeW5tOenkeaKgOS4reW/g+OAgeiHquayu+WMuumdkuWwkeW5tOenkeaKgOi+heWvvOWRmOWNj+S8muOAgeWSjOeUsOWcsOWMuuenkeWNj+WFseWQjOaJv+WKnueahDIwMTnlubTlkoznlLDlnLDljLrnp5HmioDovoXlr7zlkZjln7norq3nj63lnKjlkoznlLDluILmiJDlip/kuL7lip7jgILmnaXoh6rlkoznlLDlnLDljLrkuIPljr/kuIDluILnmoTnmb7lkI3lkITml4/lhpzmnZHlrabmoKHnp5HmioDovoXlr7zlkZjjgIHnp5HmioDmlZnluIjlj4LliqDkuobmraTmrKHln7norq3jgIJkAgEPZBYCZg8VBFRodHRwOi8veGluamlhbmcueGlhb3hpYW90b25nLm9yZy9OZXdzL0FydGljbGVWaWV3LmFzcHg/QUlEPTIzOTczNSZGcm9udENvbHVtbklEPTYwMDMwQXR0YWNoRmlsZS8yMDE5LzEyLzYwMDEwMi82MzcxMzA0NTcyMTY2MjAwMzkuanBnJOaWsOeWhuenkeWNj+WKqeWKm+S6lOmhueWtpuenkeernui1m8YDMjAxOeW5tDTmnIgxN+aXpeS4i+WNiO+8jOiHquayu+WMuuenkeWNj+e7hOe7h+WPrOW8gOS6huiHquayu+WMuuS6lOmhueWtpuenkeernui1m+enmOS5pumVv+iBlOW4reS8muiuru+8jOiHquayu+WMuuenkeWNj+WJr+W3oeinhuWRmOadjuawuOaZn+OAgeaWsOeWhuenkeaKgOmmhummhumVv+aImOW8uuOAgeiHquayu+WMuuenkeaZrua0u+WKqOS4reW/g+S4u+S7u+iLj+e6ouOAgeiHquayu+WMuuS6lOWkp+Wtpuenkeernui1m+S4u+WKnuWNleS9je+8iOaWsOeWhuaVsOWtpuWtpuS8muOAgeaWsOeWhueJqeeQhuWtpuS8muOAgeaWsOeWhuWMluWtpuWtpuS8muOAgeaWsOeWhuWKqOakjeeJqeWtpuS8muOAgeaWsOeWhumdkuWwkeW5tOenkeaKgOi+heWvvOWRmOWtpuS8mu+8iei0n+i0o+WQjOW/l+WPiuiHquayu+WMuuenkeaZrua0u+WKqOS4reW/g+ebuOWFs+WQjOW/l+WHuuW4reS8muiuruOAgmQCAw8WAh8EZxYCAgEPFgIfAQIEFghmD2QWAmYPFQNaaHR0cDovL3hpbmppYW5nLnhpYW94aWFvdG9uZy5vcmcvYWN0aXZlL0FjdGl2ZVZpZXcuYXNweD9hY3RpdmVJRD05NyZGcm9udENvbHVtbklEPTYwMDQmcz0xMEF0dGFjaEZpbGUvMjAxOS8xMi82MDAxMTIvNjM3MTI3OTY4ODQ4MTU0MDM3LmpwZyHmlrDnlobpnZLlsJHlubTnp5HmioDliJvmlrDlpKfotZtkAgEPZBYCZg8VA1podHRwOi8veGluamlhbmcueGlhb3hpYW90b25nLm9yZy9hY3RpdmUvQWN0aXZlVmlldy5hc3B4P2FjdGl2ZUlEPTk5JkZyb250Q29sdW1uSUQ9NjAwNCZzPTMwQXR0YWNoRmlsZS8yMDE5LzEyLzYwMDExMi82MzcxMjc5Njg5Njk2NzgyNTAucG5nHuaWsOeWhumdkuWwkeW5tOacuuWZqOS6uuernui1m2QCAg9kFgJmDxUDW2h0dHA6Ly94aW5qaWFuZy54aWFveGlhb3Rvbmcub3JnL2FjdGl2ZS9BY3RpdmVWaWV3LmFzcHg/YWN0aXZlSUQ9MTAxJkZyb250Q29sdW1uSUQ9NjAwNCZzPTUwQXR0YWNoRmlsZS8yMDE5LzEyLzYwMDExMi82MzcxMjc5NjkxNDc4MzA1NjMucG5nGOmdkuWwkeW5tOmrmOagoeenkeWtpuiQpWQCAw9kFgJmDxUDW2h0dHA6Ly94aW5qaWFuZy54aWFveGlhb3Rvbmcub3JnL2FjdGl2ZS9BY3RpdmVWaWV3LmFzcHg/YWN0aXZlSUQ9MTAzJkZyb250Q29sdW1uSUQ9NjAwNCZzPTcwQXR0YWNoRmlsZS8yMDE5LzEyLzYwMDExMi82MzcxMjc5NjkyMzg2MjI3MjMucG5nHuWFqOWbvemdkuWwkeW5tOenkeWtpuW9seWDj+iKgmQCBA8WAh8EZxYEAgEPFgIeBFRleHQFCeWFrOWRiuagj2QCAw8WAh8BAgUWCmYPZBYCZg8VAfoRPHA+5Li65rex5YWl6LSv5b275Lmh5p2R5oyv5YW06K6h5YiS5ZKM56eR5oqA5Yqp5Yqb57K+5YeG5om26LSr6K6h5YiS77yM5pSv5oyB6JaE5byx5Zyw5Yy66Z2S5bCR5bm056eR5oqA5pWZ6IKy5bel5L2c77yM5L+D6L+b6Z2S5bCR5bm056eR5oqA5pWZ6IKy5bmz6KGh5YWF5YiG5Y+R5bGV44CCNeaciDI35pel6IezMzDml6XvvIznlLHoh6rmsrvljLrnp5HljY/kuLvlip7vvIzoh6rmsrvljLrpnZLlsJHlubTnp5HmioDkuK3lv4PjgIHoh6rmsrvljLrpnZLlsJHlubTnp5HmioDovoXlr7zlkZjljY/kvJrjgIHlkoznlLDlnLDljLrnp5HljY/lhbHlkIzmib/lip7nmoQyMDE55bm05ZKM55Sw5Zyw5Yy656eR5oqA6L6F5a+85ZGY5Z+56K6t54+t5Zyo5ZKM55Sw5biC5oiQ5Yqf5Li+5Yqe44CC5p2l6Ieq5ZKM55Sw5Zyw5Yy65LiD5Y6/5LiA5biC55qE55m+5ZCN5ZCE5peP5Yac5p2R5a2m5qCh56eR5oqA6L6F5a+85ZGY44CB56eR5oqA5pWZ5biI5Y+C5Yqg5LqG5q2k5qyh5Z+56K6t44CCPC9wPg0KDQo8cD48aW1nIGFsdD0iIiBzcmM9Ii9BdHRhY2hGaWxlLzIwMTkvNi82MDAxMDEvNjM2OTU0MTMyMTg4MjkzMjEyLnBuZyIgc3R5bGU9IndpZHRoOiA0OTlweDsgaGVpZ2h0OiAzNzVweDsiIC8+PC9wPg0KDQo8cD7ln7norq3mnJ/pl7TvvIzkuLvlip7ljZXkvY3kuLrnp5HmioDovoXlr7zlkZjku6zlronmjpLkuoblhYXlrp7ogIzmnInkuLDlr4znmoTln7norq3lhoXlrrnjgILljJfkuqzoiKrnqbroiKrlpKnlpKflrablia/mlZnmjojnp6bmm77mmIw8YSBuYW1lPSJfR29CYWNrIj48L2E+5bim5p2l55qE5Lq65bel5pm66IO95Y+R5bGV5Y+y56eR5pmu6K6y5bqn77yM5paw6aKW5pyJ6Laj55qE56eR5oqA5YmN5rK/55+l6K+G77yM5byA5ouT5LqG5Z+65bGC5pWZ5biI5Lus55qE6KeG6YeO77yb5YWL5ouJ546b5L6d5biC6Z2S5bCR5bm056eR5oqA5rS75Yqo5Lit5b+D6JGj5bqG5piO6ICB5biI5bim5p2l55qE5omL5o636aOe5py644CB5p2O5pum57mH6ICB5biI55qE44CK5LiA5byg57q455qE5L2/5ZG944CL44CB6a2P5rWp54S26ICB5biI55qE44CK5Yib5oSP57yW56iL5LiO5pm66IO956Gs5Lu244CL562J57u85ZCI5a6e6Le16K++56iL5Y+X5Yiw5LqG6ICB5biI5Lus55qE54Ot54OI5qyi6L+O44CC5peg6K665piv56eR5pmu5oql5ZGK6L+Y5piv5a6e6Le15pON5L2c77yM5aSn5a626YO96IGa57K+5Lya56We77yM56ev5p6B5Y+C5LiO44CC6ICB5biI5Lus57q357q36KGo56S677yM5Zyo5ZKM55Sw5Zyw5Yy66L+Z5qC355qE5qyg5Y+R6L6+5Zyw5Yy65b6I5bCR5pyJ5py65Lya5L2T6aqM5aaC5q2k5YmN5rK/44CB5LyY6LSo55qE5pWZ6IKy6LWE5rqQ77yM6L+Z5qyh5Y+C5Yqg5Z+56K6t5Y+X55uK5Yyq5rWF44CC5LuW5Lus6KGo56S65LiA5a6a5Lya5oqK6L+Z5qyh55qE5omA5a2m5omA5oSf6L+Q55So5Yiw5bmz5pe255qE5pWZ5a2m5bel5L2c5Lit5Y6777yM5Li66L+b5LiA5q2l5o+Q5Y2H5ZKM55Sw5Zyw5Yy655qE56eR5oqA5pWZ6IKy5rC05bmz5YGa5Ye66LSh54yu44CCPC9wPg0KDQo8cD7lvIDlsZXpnaLlkJHotKvlm7DlnLDljLrnp5HmioDovoXlr7zlkZjln7norq3vvIzml6jlnKjotK/lvbvokL3lrp7jgIrlhajmsJHnp5HlrabntKDotKjooYzliqjorqHliJLnurLopoHlrp7mlr3mlrnmoYjvvIgyMDE2LTIwMjDlubTvvInjgIvmlofku7bnsr7npZ7lkozkuK3lm73np5HljY8mbGRxdW8756eR5oqA5Yqp5Yqb57K+5YeG5om26LSr5bel56iLJnJkcXVvO+acieWFs+imgeaxgu+8jOWFheWIhuWPkeaMpeiHquayu+WMuuenkeWNj+iHqui6q+S8mOWKv++8jOWwhuaJtui0q+S4juaJtuW/l+aJtuaZuuebuOe7k+WQiO+8jOmAmui/h+W7uueri+WBpeWFqOiHquayu+WMuuOAgeW4guOAgeWOv+S4iee6p+enkeaKgOi+heWvvOWRmOWfueiureS9k+ezu++8jOWKoOWkp+i0q+WbsOWcsOWMuuenkeaZrui1hOa6kOiBmumbhu+8jOWfueiCsuenkeaKgOaVmeiCsueahOmqqOW5suS8muWRmOmYn+S8je+8jOaPkOWNh+i0q+WbsOWcsOWMuuenkeaKgOi+heWvvOWRmOeahOS4k+S4muiDveWKm+WSjOe0oOi0qO+8jOS/g+i/m+S8mOi0qOenkeaVmei1hOa6kOeahOWFseW7uuWFseS6q++8jOS4uuW7uuiuvuWSjOiwkOeos+WumueahOaWsOeWhuWloOWumuaJjuWunueahOW3peS9nOWfuuehgOOAgjwvcD4NCg0KPHA+PGltZyBhbHQ9IiIgc3JjPSIvQXR0YWNoRmlsZS8yMDE5LzYvNjAwMTAxLzYzNjk1NDEzMjk1MzAwNjU1NS5wbmciIHN0eWxlPSJ3aWR0aDogNTU4cHg7IGhlaWdodDogNDE5cHg7IiAvPjwvcD4NCg0KPHA+Jm5ic3A7PC9wPg0KZAIBD2QWAmYPFQH6ETxwPuS4uua3seWFpei0r+W9u+S5oeadkeaMr+WFtOiuoeWIkuWSjOenkeaKgOWKqeWKm+eyvuWHhuaJtui0q+iuoeWIku+8jOaUr+aMgeiWhOW8seWcsOWMuumdkuWwkeW5tOenkeaKgOaVmeiCsuW3peS9nO+8jOS/g+i/m+mdkuWwkeW5tOenkeaKgOaVmeiCsuW5s+ihoeWFheWIhuWPkeWxleOAgjXmnIgyN+aXpeiHszMw5pel77yM55Sx6Ieq5rK75Yy656eR5Y2P5Li75Yqe77yM6Ieq5rK75Yy66Z2S5bCR5bm056eR5oqA5Lit5b+D44CB6Ieq5rK75Yy66Z2S5bCR5bm056eR5oqA6L6F5a+85ZGY5Y2P5Lya44CB5ZKM55Sw5Zyw5Yy656eR5Y2P5YWx5ZCM5om/5Yqe55qEMjAxOeW5tOWSjOeUsOWcsOWMuuenkeaKgOi+heWvvOWRmOWfueiureePreWcqOWSjOeUsOW4guaIkOWKn+S4vuWKnuOAguadpeiHquWSjOeUsOWcsOWMuuS4g+WOv+S4gOW4gueahOeZvuWQjeWQhOaXj+WGnOadkeWtpuagoeenkeaKgOi+heWvvOWRmOOAgeenkeaKgOaVmeW4iOWPguWKoOS6huatpOasoeWfueiureOAgjwvcD4NCg0KPHA+PGltZyBhbHQ9IiIgc3JjPSIvQXR0YWNoRmlsZS8yMDE5LzYvNjAwMTAxLzYzNjk1NDEzMjE4ODI5MzIxMi5wbmciIHN0eWxlPSJ3aWR0aDogNDk5cHg7IGhlaWdodDogMzc1cHg7IiAvPjwvcD4NCg0KPHA+5Z+56K6t5pyf6Ze077yM5Li75Yqe5Y2V5L2N5Li656eR5oqA6L6F5a+85ZGY5Lus5a6J5o6S5LqG5YWF5a6e6ICM5pyJ5Liw5a+M55qE5Z+56K6t5YaF5a6544CC5YyX5Lqs6Iiq56m66Iiq5aSp5aSn5a2m5Ymv5pWZ5o6I56em5pu+5piMPGEgbmFtZT0iX0dvQmFjayI+PC9hPuW4puadpeeahOS6uuW3peaZuuiDveWPkeWxleWPsuenkeaZruiusuW6p++8jOaWsOmiluaciei2o+eahOenkeaKgOWJjeayv+efpeivhu+8jOW8gOaLk+S6huWfuuWxguaVmeW4iOS7rOeahOinhumHju+8m+WFi+aLieeOm+S+neW4gumdkuWwkeW5tOenkeaKgOa0u+WKqOS4reW/g+iRo+W6huaYjuiAgeW4iOW4puadpeeahOaJi+aOt+mjnuacuuOAgeadjuabpue5h+iAgeW4iOeahOOAiuS4gOW8oOe6uOeahOS9v+WRveOAi+OAgemtj+a1qeeEtuiAgeW4iOeahOOAiuWIm+aEj+e8lueoi+S4juaZuuiDveehrOS7tuOAi+etiee7vOWQiOWunui3teivvueoi+WPl+WIsOS6huiAgeW4iOS7rOeahOeDreeDiOasoui/juOAguaXoOiuuuaYr+enkeaZruaKpeWRiui/mOaYr+Wunui3teaTjeS9nO+8jOWkp+WutumDveiBmueyvuS8muelnu+8jOenr+aegeWPguS4juOAguiAgeW4iOS7rOe6t+e6t+ihqOekuu+8jOWcqOWSjOeUsOWcsOWMuui/meagt+eahOasoOWPkei+vuWcsOWMuuW+iOWwkeacieacuuS8muS9k+mqjOWmguatpOWJjeayv+OAgeS8mOi0qOeahOaVmeiCsui1hOa6kO+8jOi/measoeWPguWKoOWfueiureWPl+ebiuWMqua1heOAguS7luS7rOihqOekuuS4gOWumuS8muaKiui/measoeeahOaJgOWtpuaJgOaEn+i/kOeUqOWIsOW5s+aXtueahOaVmeWtpuW3peS9nOS4reWOu++8jOS4uui/m+S4gOatpeaPkOWNh+WSjOeUsOWcsOWMuueahOenkeaKgOaVmeiCsuawtOW5s+WBmuWHuui0oeeMruOAgjwvcD4NCg0KPHA+5byA5bGV6Z2i5ZCR6LSr5Zuw5Zyw5Yy656eR5oqA6L6F5a+85ZGY5Z+56K6t77yM5peo5Zyo6LSv5b276JC95a6e44CK5YWo5rCR56eR5a2m57Sg6LSo6KGM5Yqo6K6h5YiS57qy6KaB5a6e5pa95pa55qGI77yIMjAxNi0yMDIw5bm077yJ44CL5paH5Lu257K+56We5ZKM5Lit5Zu956eR5Y2PJmxkcXVvO+enkeaKgOWKqeWKm+eyvuWHhuaJtui0q+W3peeoiyZyZHF1bzvmnInlhbPopoHmsYLvvIzlhYXliIblj5HmjKXoh6rmsrvljLrnp5HljY/oh6rouqvkvJjlir/vvIzlsIbmibbotKvkuI7mibblv5fmibbmmbrnm7jnu5PlkIjvvIzpgJrov4flu7rnq4vlgaXlhajoh6rmsrvljLrjgIHluILjgIHljr/kuInnuqfnp5HmioDovoXlr7zlkZjln7norq3kvZPns7vvvIzliqDlpKfotKvlm7DlnLDljLrnp5Hmma7otYTmupDogZrpm4bvvIzln7nogrLnp5HmioDmlZnogrLnmoTpqqjlubLkvJrlkZjpmJ/kvI3vvIzmj5DljYfotKvlm7DlnLDljLrnp5HmioDovoXlr7zlkZjnmoTkuJPkuJrog73lipvlkozntKDotKjvvIzkv4Pov5vkvJjotKjnp5HmlZnotYTmupDnmoTlhbHlu7rlhbHkuqvvvIzkuLrlu7rorr7lkozosJDnqLPlrprnmoTmlrDnloblpaDlrprmiY7lrp7nmoTlt6XkvZzln7rnoYDjgII8L3A+DQoNCjxwPjxpbWcgYWx0PSIiIHNyYz0iL0F0dGFjaEZpbGUvMjAxOS82LzYwMDEwMS82MzY5NTQxMzI5NTMwMDY1NTUucG5nIiBzdHlsZT0id2lkdGg6IDU1OHB4OyBoZWlnaHQ6IDQxOXB4OyIgLz48L3A+DQoNCjxwPiZuYnNwOzwvcD4NCmQCAg9kFgJmDxUB6RE8cD7kuLrmt7HlhaXotK/lvbvkuaHmnZHmjK/lhbTorqHliJLlkoznp5HmioDliqnlipvnsr7lh4bmibbotKvorqHliJLvvIzmlK/mjIHoloTlvLHlnLDljLrpnZLlsJHlubTnp5HmioDmlZnogrLlt6XkvZzvvIzkv4Pov5vpnZLlsJHlubTnp5HmioDmlZnogrLlubPooaHlhYXliIblj5HlsZXjgII15pyIMjfml6Xoh7MzMOaXpe+8jOeUseiHquayu+WMuuenkeWNj+S4u+WKnu+8jOiHquayu+WMuumdkuWwkeW5tOenkeaKgOS4reW/g+OAgeiHquayu+WMuumdkuWwkeW5tOenkeaKgOi+heWvvOWRmOWNj+S8muOAgeWSjOeUsOWcsOWMuuenkeWNj+WFseWQjOaJv+WKnueahDIwMTnlubTlkoznlLDlnLDljLrnp5HmioDovoXlr7zlkZjln7norq3nj63lnKjlkoznlLDluILmiJDlip/kuL7lip7jgILmnaXoh6rlkoznlLDlnLDljLrkuIPljr/kuIDluILnmoTnmb7lkI3lkITml4/lhpzmnZHlrabmoKHnp5HmioDovoXlr7zlkZjjgIHnp5HmioDmlZnluIjlj4LliqDkuobmraTmrKHln7norq3jgII8L3A+DQoNCjxwPjxpbWcgYWx0PSIiIHNyYz0iL0F0dGFjaEZpbGUvMjAxOS82LzYwMDEwMS82MzY5NTQxMjY1NTEyMjMzMTEucG5nIiBzdHlsZT0id2lkdGg6IDU1OHB4OyBoZWlnaHQ6IDQxOXB4OyIgLz48L3A+DQoNCjxwPuWfueiureacn+mXtO+8jOS4u+WKnuWNleS9jeS4uuenkeaKgOi+heWvvOWRmOS7rOWuieaOkuS6huWFheWunuiAjOacieS4sOWvjOeahOWfueiureWGheWuueOAguWMl+S6rOiIquepuuiIquWkqeWkp+WtpuWJr+aVmeaOiOenpuabvuaYjDxhIG5hbWU9Il9Hb0JhY2siPjwvYT7luKbmnaXnmoTkurrlt6Xmmbrog73lj5HlsZXlj7Lnp5Hmma7orrLluqfvvIzmlrDpopbmnInotqPnmoTnp5HmioDliY3msr/nn6Xor4bvvIzlvIDmi5Pkuobln7rlsYLmlZnluIjku6znmoTop4bph47vvJvlhYvmi4nnjpvkvp3luILpnZLlsJHlubTnp5HmioDmtLvliqjkuK3lv4PokaPluobmmI7ogIHluIjluKbmnaXnmoTmiYvmjrfpo57mnLrjgIHmnY7mm6bnuYfogIHluIjnmoTjgIrkuIDlvKDnurjnmoTkvb/lkb3jgIvjgIHprY/mtannhLbogIHluIjnmoTjgIrliJvmhI/nvJbnqIvkuI7mmbrog73noazku7bjgIvnrYnnu7zlkIjlrp7ot7Xor77nqIvlj5fliLDkuobogIHluIjku6znmoTng63ng4jmrKLov47jgILml6DorrrmmK/np5Hmma7miqXlkYrov5jmmK/lrp7ot7Xmk43kvZzvvIzlpKflrrbpg73ogZrnsr7kvJrnpZ7vvIznp6/mnoHlj4LkuI7jgILogIHluIjku6znurfnurfooajnpLrvvIzlnKjlkoznlLDlnLDljLrov5nmoLfnmoTmrKDlj5Hovr7lnLDljLrlvojlsJHmnInmnLrkvJrkvZPpqozlpoLmraTliY3msr/jgIHkvJjotKjnmoTmlZnogrLotYTmupDvvIzov5nmrKHlj4LliqDln7norq3lj5fnm4rljKrmtYXjgILku5bku6zooajnpLrkuIDlrprkvJrmiorov5nmrKHnmoTmiYDlrabmiYDmhJ/ov5DnlKjliLDlubPml7bnmoTmlZnlrablt6XkvZzkuK3ljrvvvIzkuLrov5vkuIDmraXmj5DljYflkoznlLDlnLDljLrnmoTnp5HmioDmlZnogrLmsLTlubPlgZrlh7rotKHnjK7jgII8L3A+DQoNCjxwPjxpbWcgYWx0PSIiIHNyYz0iL0F0dGFjaEZpbGUvMjAxOS82LzYwMDEwMS82MzY5NTQxMjcxMDE3NDgyNzgucG5nIiBzdHlsZT0id2lkdGg6IDUwMHB4OyBoZWlnaHQ6IDM3NXB4OyIgLz48L3A+DQoNCjxwPuW8gOWxlemdouWQkei0q+WbsOWcsOWMuuenkeaKgOi+heWvvOWRmOWfueiure+8jOaXqOWcqOi0r+W9u+iQveWunuOAiuWFqOawkeenkeWtpue0oOi0qOihjOWKqOiuoeWIkue6suimgeWunuaWveaWueahiO+8iDIwMTYtMjAyMOW5tO+8ieOAi+aWh+S7tueyvuelnuWSjOS4reWbveenkeWNjyZsZHF1bzvnp5HmioDliqnlipvnsr7lh4bmibbotKvlt6XnqIsmcmRxdW875pyJ5YWz6KaB5rGC77yM5YWF5YiG5Y+R5oyl6Ieq5rK75Yy656eR5Y2P6Ieq6Lqr5LyY5Yq/77yM5bCG5om26LSr5LiO5om25b+X5om25pm655u457uT5ZCI77yM6YCa6L+H5bu656uL5YGl5YWo6Ieq5rK75Yy644CB5biC44CB5Y6/5LiJ57qn56eR5oqA6L6F5a+85ZGY5Z+56K6t5L2T57O777yM5Yqg5aSn6LSr5Zuw5Zyw5Yy656eR5pmu6LWE5rqQ6IGa6ZuG77yM5Z+56IKy56eR5oqA5pWZ6IKy55qE6aqo5bmy5Lya5ZGY6Zif5LyN77yM5o+Q5Y2H6LSr5Zuw5Zyw5Yy656eR5oqA6L6F5a+85ZGY55qE5LiT5Lia6IO95Yqb5ZKM57Sg6LSo77yM5L+D6L+b5LyY6LSo56eR5pWZ6LWE5rqQ55qE5YWx5bu65YWx5Lqr77yM5Li65bu66K6+5ZKM6LCQ56iz5a6a55qE5paw55aG5aWg5a6a5omO5a6e55qE5bel5L2c5Z+656GA44CCPC9wPg0KZAIDD2QWAmYPFQHCEDxwPiZuYnNwOyAmbmJzcDsgJm5ic3A7ICZuYnNwOzXmnIgyNOaXpSzmlrDnlobnp5HljY/ljYHkuIPmpbzkvJrorq7lrqTluqfml6DomZrluK0sMTUw5ZCN5p2l6Ieq5YWo55aG5ZCE5Zyw55qE5L+h5oGv5oqA5pyv6ICB5biILOWcqOi/memHjOWPguWKoOS6hueUseaWsOeWhuenkeaZrua0u+WKqOS4reW/g+WSjOaWsOeWhumdkuWwkeW5tOenkeaKgOi+heWvvOWRmOWNj+S8muS4u+WKnueahDIwMTnlubToh6rmsrvljLrpnZLlsJHlubTliJvmhI/nvJbnqIvkuI7mmbrog73orr7orqHmtLvliqjpqqjlubLmlZnluIjln7norq3nj63jgII8L3A+DQoNCjxwPjxpbWcgYWx0PSIiIHNyYz0iL0F0dGFjaEZpbGUvMjAxOS82LzYwMDEwMS82MzY5NTI0MDExMzU3MjIwMzUuanBnIiBzdHlsZT0iaGVpZ2h0OiAzNzVweDsgd2lkdGg6IDUwMHB4OyIgLz48L3A+DQoNCjxwPiZuYnNwOyAmbmJzcDsgJm5ic3A7ICZuYnNwO+acrOasoeWfueiureaYr+WcqOS6kuiBlOe9keOAgeWkp+aVsOaNruOAgeS6uuW3peaZuuiDveetieaWsOeahOaXtuS7o+iDjOaZr+S4i++8jOS4uuaOqOi/m+enkeaKgOi+heWvvOWRmOS4muWKoeiDveWKm+WSjOe7vOWQiOe0oOi0qOeahOaPkOWNh++8jOmAguW6lOaWsOS4gOi9ruenkeaKgOmdqeWRveWSjOS6p+S4muWPmOmdqeeahOWPkeWxlei2i+WKv++8jOWfueWFu+S6uuW3peaZuuiDvemihuWfn+enkeaKgOWIm+aWsOWQjuWkh+S6uuaJjeeahOenr+aegeaOoue0ouWSjOWunui3teOAguWfueiuremCgOivt+WIsOe9keaYk+i1hOa3semhueebrui/kOiQpeS4k+Wutu+8jDIwMTjlubTlhajlm73liJvmhI/nvJbnqIvkuI7mmbrog73orr7orqHlpKfotZvjgIHlhajlm73pnZLlsJHlubTliJvmhI/nvJbnqIvkvZPpqozmtLvliqjov5DokKXotJ/otKPkurrvvIznvZHmmJPljaHmkK3nsr7oi7HmlZnluIjorqHliJLlj5Hotbfkurrpob7lv4Pov5zogIHluIjlkoznvZHmmJPljaHmkK3llYbliqHluILlnLrmgLvnm5HvvIzpq5jnuqforqHnrpfmnLrlt6XnqIvluIjojIPmmJ/mmJ/ogIHluIjvvIzkuLrnp5HmioDovoXlr7zlkZjku6zku47lm73lhoXlpJblsJHlhL/nvJbnqIvnmoTlj5HlsZXotovlir/lkozmlZnogrLmhI/kuYnjgIFzY3JhdGNo5ZKMcHl0aG9u6K+t6KiA55qE5Z+65pys5LuL57uN562J5pa56Z2i6L+b6KGM5LqG6K6y6Kej77yM5bm25LiU5a6J5o6S5LqS5Yqo5L2T6aqM546v6IqC6K6p56eR5oqA6L6F5a+85ZGY5Lus5Y+C5LiOc2NyYXRjaOS9nOWTgeeahOWIm+S9nOOAgjwvcD4NCg0KPHA+PGltZyBhbHQ9IiIgc3JjPSIvQXR0YWNoRmlsZS8yMDE5LzYvNjAwMTAxLzYzNjk1MjQwNDM4NzcwMzc0Ny5qcGciIHN0eWxlPSJ3aWR0aDogNTAwcHg7IiAvPjwvcD4NCg0KPHA+Jm5ic3A7ICZuYnNwOyAmbmJzcDsgJm5ic3A75a2m5ZGY5Lus6YO96KGo56S65pys5qyh5Z+56K6t6Jm954S25pe26Ze055+t77yM5L2G5YaF5a656aWx5ruh77yM6K6y5bqn5ZKM5Yqo5omL5a6e6Le15omO5a6e5pyJ55So77yM5pei5o+Q5Y2H5LqG6Ieq5bex55qE5LiT5Lia5rC05bmz77yM5Y+I57uT5Lqk5LqG6Imv5biI55uK5Y+L77yM5pS26I635ruh5ruh44CC5LuW5Lus5bCG5oqK5a2m5Yiw55qE55+l6K+G44CB5oqA6IO95Lul5Y+K5oCd57u05pa55byP5bqU55So5Yiw5pel5bi455qE5pWZ5a2m5rS75Yqo5LmL5Lit77yM5Zyo5Z+55YW75Lq65bel5pm66IO96aKG5Z+f56eR5oqA5Yib5paw5ZCO5aSH5Lq65omN5pa56Z2i6L+b6KGM56ev5p6B55qE5o6i57Si5ZKM5a6e6Le144CCPC9wPg0KDQo8cD4mbmJzcDs8L3A+DQoNCjxwPiZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyDmlrDnlobnp5Hmma7mtLvliqjkuK3lv4M8L3A+DQoNCjxwPiZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyAyMDE55bm0NeaciDI25pelPC9wPg0KZAIED2QWAmYPFQHiGDxwPuS8iueKgeWTiOiQqOWFi+iHquayu+W3nuenkeWNj+OAgeWQhOWcsOW3nuW4guenkeWNj+OAgeWQhOacieWFs+WNleS9je+8mjwvcD4NCg0KPHA+Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7MjAxOeW5tOWFqOWbvemdkuWwkeW5tOWIm+aEj+e8lueoi+S4juaZuuiDveiuvuiuoeWkp+i1m+aLn+S6jjQmbWRhc2g7Jm1kYXNoOzEw5pyI5Li+5Yqe44CC5Li65omO5a6e5YGa5aW95oiR5Yy65Y+C6LWb5YeG5aSH5bel5L2c77yM5biu5Yqp56eR5oqA6L6F5a+85ZGY5o6M5o+h572R5LiK5Y+C6LWb6KeE56iL77yM5Yqg5rex5a+56Z2S5bCR5bm05Lq65bel5pm66IO956eR5oqA5pWZ6IKy5rS75Yqo55qE55CG6Kej77yM5byA6ZiU56eR5oqA6L6F5a+85ZGY55qE6KeG6YeO77yM6L+b6ICM5ZCR5bm/5aSn6Z2S5bCR5bm05pmu5Y+K5o6o5bm/5Lq65bel5pm66IO955u45YWz56eR5pmu55+l6K+G77yM5o+Q6auY5LuW5Lus5a+55Lq65bel5pm66IO955qE6K6k55+l5ZKM5Yid5q2l5bqU55So6IO95Yqb77yM6Ieq5rK75Yy656eR5Y2P5Yaz5a6a5Li+5Yqe6Ieq5rK75Yy66Z2S5bCR5bm05Yib5oSP57yW56iL5LiO5pm66IO96K6+6K6h6aqo5bmy5pWZ5biI5Z+56K6t54+t77yM546w5bCG5pyJ5YWz5LqL6aG56YCa55+l5aaC5LiL77yaPC9wPg0KDQo8cD48c3Ryb25nPiZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyDkuIDjgIE8L3N0cm9uZz48c3Ryb25nPue7hOe7h+WNleS9jTwvc3Ryb25nPjwvcD4NCg0KPHA+Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7IOS4u+WKnuWNleS9jTroh6rmsrvljLrnp5HljY88L3A+DQoNCjxwPiZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyDmib/lip7ljZXkvY066Ieq5rK75Yy656eR5pmu5rS75Yqo5Lit5b+D77yI6Ieq5rK75Yy66Z2S5bCR5bm056eR5oqA5Lit5b+D77yJ44CB6Ieq5rK75Yy66Z2S5bCR5bm056eR5oqA6L6F5a+85ZGY5Y2P5LyaPC9wPg0KDQo8cD48c3Ryb25nPiZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyDkuow8L3N0cm9uZz48c3Ryb25nPuOAgeWfueiureaXtumXtOWSjOWcsOeCuTwvc3Ryb25nPjwvcD4NCg0KPHA+Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7IDIwMTnlubQ15pyIMjTml6XlnKjoh6rmsrvljLrnp5HljY8xN+alvOS8muiuruWupOWPguWKoOWfueiure+8iDXmnIgyM+aXpeWcqOemj+W7uuWkp+mFkuW6l+S4gOalvOaKpeWIsO+8jDI15pel56a76K6t77yJ44CCPC9wPg0KDQo8cD4mbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsg5LiJ44CB5Y+C6K6t5Lq65ZGY6KaB5rGCPC9wPg0KDQo8cD4mbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsg5YW35aSH55u45YWz5LiT5Lia5a2m5Lmg6IOM5pmv77yM5pyJ5LiJ5bm05Lul5LiK5LiA57q/5pWZ6IKy5pWZ5a2m57uP6aqM77yM5Li76KaB5om/5ouF56eR5oqA57G757u85ZCI5a6e6Le15rS75Yqo6K++56iL77yI5YyF5ous5L+h5oGv5oqA5pyv44CB5Yqz5Yqo5oqA5pyv44CB6YCa55So5oqA5pyv44CB56eR5a2m562J77yJ55qE5pWZ5a2m5bel5L2c44CC5pyJ5Lik5bm05Lul5LiK5Lu75oSP57yW56iL6K+t6KiA5pWZ5a2m57uP6aqM77yM54af5oKJ5byA5rqQ56Gs5Lu25byA5Y+R77yM5bm25pyJ5oSP5oS/5byA5bGV5pWZ5a2m5oiW56S+5Zui5rS75Yqo55qE5pWZ5biI44CCPC9wPg0KDQo8cD4mbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsg5Zub44CB5YW25a6D5LqL6aG5PC9wPg0KDQo8cD4mbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsgMS7lj4LliqDln7norq3kurrlkZjpo5/lrr/nlLHkvJrliqHnu5/kuIDlronmjpLvvIzkvY/lrr/otLnlj4rlvoDov5TkuqTpgJrotLnnlLHmtL7lh7rljZXkvY3mib/mi4XvvIzppJDotLnnlLHkvJrliqHmib/mi4XjgII8L3A+DQoNCjxwPiZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyAyLuWPguWKoOWfueiureS6uuWRmOiHquW4pueslOiusOacrOeUteiEke+8jOiHquihjOS4i+i9veWuieijhee8lueoi+i9r+S7tuWSjOW3peWFt+OAgu+8iOeUteiEkeaTjeS9nOezu+e7n+S4uldJTjflj4rku6XkuIrniYjmnKzvvIzlj6/mj5DliY3nmbvpmYY8YSBocmVmPSJodHRwOi8vd3d3LmthZGEuMTYzLmNvbSI+aHR0cDovL3d3dy5rYWRhLjE2My5jb208L2E+54af5oKJ5bmz5Y+w77yM5Z+56K6t5b2T5aSp57uf5LiA6L+b6KGM5rOo5YaM44CC77yJPC9wPg0KDQo8cD4mbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsgMy7or7fmiqXlkI3lj4LliqDln7norq3nmoTlrablkZjlsIbjgIrln7norq3lm57miafjgIso6KeB6ZmE5Lu2KeS6jjXmnIgxNeaXpeWJjeWPkemAgeiHs+aMh+WumumCrueuseOAgjwvcD4NCg0KPHA+Jm5ic3A7PC9wPg0KDQo8cD4mbmJzcDs8L3A+DQoNCjxwPuiBlCZuYnNwO+ezuyZuYnNwO+S6uu+8muiHquayu+WMuuenkeaZrua0u+WKqOS4reW/gyZuYnNwOyZuYnNwO+mDreWAqeWAqTwvcD4NCg0KPHA+6IGU57O755S16K+d77yaMDk5MS02Mzg2NTE1Jm5ic3A7Jm5ic3A7MTM5OTk5NDA1NjA8L3A+DQoNCjxwPiZuYnNwOyZuYnNwO+iBlOezu+mCrueuse+8mjQzODk2NTkzQHFxLmNvbTwvcD4N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cDovL2Fpc2MueGlhb3hpYW90b25nLm9yZy8yMDE5LzJBdHRhY2hGaWxlLzIwMTkvMTAvMTAxMDE5MTAvNjM3MDcyNjQwMjg3MDQ1MjQ2LmpwZ2QCAw9kFgJmDxUFAAE0FjIwMTnlubTlhajlm73np5Hmma7ml6UlaHR0cDovL3d3dy5rZXB1cmkub3JnLzIwMTkvaW5kZXguYXNweDFBdHRhY2hGaWxlLzIwMTkvOS8xMDEwMTkxMC82MzcwNDUwMjMwNDY0NjE0MzkuanBnZAIED2QWAmYPFQUAATUm56ysMTnlsYrkuK3lm73pnZLlsJHlubTmnLrlmajkurrnq57otZsjaHR0cDovL3JvYm90LnhpYW94aWFvdG9uZy5vcmcvMjAxOS80Li4vQXR0YWNoRmlsZS8yMDE5LzgvMTAxMDE5MTAvNjM3MDE4MjA2MTg1NzI5NTQyLmpwZ2QCBQ9kFgJmDxUFAAE2KeesrDM05bGK5YWo5Zu96Z2S5bCR5bm056eR5oqA5Yib5paw5aSn6LWbJGh0dHA6Ly9jYXN0aWMueGlhb3hpYW90b25nLm9yZy8yMDE5LzFBdHRhY2hGaWxlLzIwMTkvNy8xMDEwMTkxMC82MzcwMDAxOTI4MzA4MTUyNjYuanBnZAIGD2QWAmYPFQUAATcfMjAxOeW5tOmdkuWwkeW5tOmrmOagoeenkeWtpuiQpSJodHRwOi8vd3d3LmtleHVleWluZy5vcmcuY24vMjAxOVQvMUF0dGFjaEZpbGUvMjAxOS83LzEwMTAxOTEwLzYzNjk4MzY1NjE4ODc4OTMzOS5qcGdkAgcPZBYCZg8VBQABOC/nrKwxOOWxiuKAnOaYjuWkqeWwj+Wwj+enkeWtpuWutuKAneWlluWKsea0u+WKqCZodHRwOi8vbWluZ3RpYW4ueGlhb3hpYW90b25nLm9yZy8yMDE4LzUuLi9BdHRhY2hGaWxlLzIwMTgvMTEvMTAxMDE5MTAvNjM2NzY4MzE0MDQ4ODY3MDY1LmpwZ2QCCA9kFgJmDxUFAAE5J+esrOS5neWxiuWFqOWbvemdkuWwkeW5tOenkeWtpuW9seWDj+iKgiFodHRwOi8veXhqLnhpYW94aWFvdG9uZy5vcmcvMjAxOC8yQXR0YWNoRmlsZS8yMDE4LzExLzEwMTAxOTEwLzYzNjc2ODMxMzU3NjY1NDIzNi5qcGdkAgkPZBYCZg8VBQACMTAWMjAxOOW5tOWFqOWbveenkeaZruaXpRZodHRwOi8vd3d3LmtlcHVyaS5vcmcvMUF0dGFjaEZpbGUvMjAxOC85LzEwMTAxOTEwLzYzNjczOTA0ODc3NTYyMzUxOS5qcGdkAgwPFgIfBGdkAg0PZBYIAgEPFgIfBQUt5paw55aG57u05ZC+5bCU6Ieq5rK75Yy66Z2S5bCR5bm056eR5oqA5Lit5b+DZAIDDxYCHwUFReWFqOWbvemdkuWwkeW5tOenkeaKgOaVmeiCsuWSjOenkeaZrua0u+WKqOS6keacjeWKoeW5s+WPsOWPkeWxleiBlOebn2QCBQ8WAh8FBRXkuqxJQ1DlpIcgMDUwMTMyNDnlj7dkAgcPFgIfBWVkZJ5x46tzzaQtx7PLNXsH7ohTt6/jQmcxc7dRNdE9Sg8l" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="90059987" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAavOg0l0u4mTMwwCQXyeJ4+di6A0Uy7hjrxYybW4mq9qP7Rk/bpc/vDwK1RCuUWZ+5ZLB76uMYqQyuWMg0LU8DuyGrMEgW6JddyvppvnhFU0j+86cDa544I86KLO530k0AMyYdoEvUdp6EqOzTmMOzZLdkcisp7Pf3xfa9Z9NUybQ==" />
+</div>
+    
+<div class="header_top ">
+        <style>
+            .addfunction.cur .search-box {
+                display:inline-block;
+            }
+        </style>
+        <div class="container clearfix">
+            <div class="fl">
+                <div class="addfunction">
+                    <dl>
+                        <dt>2020年01月06日</dt>
+                    </dl>
+                    <dl class="ml10 mr10">
+                        <dt>星期一</dt>
+                    </dl>
+                    <dl>
+                        <dt><a onclick="SetHome(this,window.location)">设为主页</a></dt>
+                    </dl>
+                    <!-- <dl>
+                        <dt>|</dt>
+                    </dl> -->
+                    <dl>
+                        <dt><a onclick="AddFavorite(window.location, document.title)">加入收藏</a></dt>
+                    </dl>
+
+
+                </div>
+            </div>
+            <div class="fr">
+                <div class="addfunction">
+                    <dl>
+                        <dt><a class="icons-app " >站内搜索 </a>
+
+                        </dt>
+                    </dl>
+                    <dl  class="search-box">
+                        <dt>
+                            <select name="Top1$ddlType" id="Top1_ddlType" class="select-form">
+	<option value="0">文章</option>
+	<option value="1">图集</option>
+	<option value="2">视频</option>
+
+</select>
+                            <input name="Top1$txtSearchKey" type="text" id="Top1_txtSearchKey" class="input-search" />
+                            <a id="Top1_btnFind" class="input-submit btn-primary" href="javascript:__doPostBack(&#39;Top1$btnFind&#39;,&#39;&#39;)" style="color:#fff">确定</a>
+
+
+                        </dt>
+                    </dl>
+
+                    <dl>
+                        <dt class="mail-h">
+                            <a class="icons-mail">移动应用</a>
+                            <div class="mail-show child">
+                            <span class="wx">
+                                微信
+                            </span>
+                                <span class="wz">
+                                微站
+                            </span>
+                            </div>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a class="icons-share">社交分享</a>
+                            <div class="child share">
+                                <div class="bshare-custom icon-medium">
+                                    <a title="分享到微信" class="bshare-weixin"></a>
+                                    <a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+                                    <a title="分享到QQ" class="bshare-qqim"></a>
+                                    <a title="分享到腾讯微博" class="bshare-qqmb"></a>
+                                    <a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a>
+                                </div>
+                            </div>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt><a href="/Other/xinjiang/404.html" target="_blank" class="icons-net ">会员服务</a></dt>
+                    </dl>
+                    <dl>
+                        <dt><a href="/Other/xinjiang/404.html" target="_blank" class="icons-email ">创新邮局</a></dt>
+                    </dl>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function searchbox() {
+            $(".search-box").show(500);
+        }
+
+
+        $(".icons-app").click(function () {
+            $(this).parents(".addfunction").toggleClass("cur")
+        })
+    </script>
+
+    <div class="header">
+        <div class="container">
+            <a href="/Other/xinjiang/index.html" class="logo"></a>
+
+        </div>
+    </div>
+     
+<div class="nav-box">
+<div class="container clearfix">
+            <div class="nav">
+                <ul class="main-nav">
+                    
+                            <li id="Menu1_repMenu_liMenu_0" data-columnid="6000" class="current"><a href="/Other/xinjiang/index.html"><i class="icon-act"></i>首页</a></li>
+                        
+                            <li id="Menu1_repMenu_liMenu_1" data-columnid="6001"><a href="/Other/xinjiang/AboutUs.html"><i class=""></i>关于我们</a></li>
+                        
+                            <li id="Menu1_repMenu_liMenu_2" data-columnid="6004"><a href="/Other/xinjiang/active/active.html"><i class=""></i>品牌活动</a></li>
+                        
+                            <li id="Menu1_repMenu_liMenu_3" data-columnid="6002"><a href="/Other/xinjiang/news/noticeIndex.html"><i class=""></i>文件通知</a></li>
+                        
+                            <li id="Menu1_repMenu_liMenu_4" data-columnid="6003"><a href="/Other/xinjiang/news/newsIndex.html"><i class=""></i>新闻报道</a></li>
+                        
+                            <li id="Menu1_repMenu_liMenu_5" data-columnid="6005"><a href="/Other/xinjiang/Exhibition/index.html"><i class=""></i>在线展厅</a></li>
+                        
+                            <li id="Menu1_repMenu_liMenu_6" data-columnid="6006"><a href="/Other/xinjiang/404.html"><i class=""></i>交流分享</a></li>
+                        
+                            <li id="Menu1_repMenu_liMenu_7" data-columnid="6007"><a href="/Other/xinjiang/404.html"><i class=""></i>人才培养</a></li>
+                        
+                            <li id="Menu1_repMenu_liMenu_8" data-columnid="6008"><a href="/Other/xinjiang/404.html"><i class=""></i>队伍建设</a></li>
+                        
+                            <li id="Menu1_repMenu_liMenu_9" data-columnid="6009"><a href="/Other/xinjiang/404.html"><i class=""></i>创新学院</a></li>
+                        
+                            <li id="Menu1_repMenu_liMenu_10" data-columnid="6010"><a href="/Other/xinjiang/Service/login.html"><i class=""></i>参与活动</a></li>
+                        
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+            <div class="banner ovh">
+        <div class="container clearfix white-bg">
+            <div id="div1" class="swiper-container swiper">
+                <div class="swiper-wrapper">
+                    
+                            <a href="/Other/xinjiang/News/ArticleView/AID/240203/FrontColumnID/6000.html" class="swiper-slide" target="_blank">
+                                <img src="/AttachFile/2019/12/600102/637130532410000109.jpg" alt="">
+                                <div class="item_detail">
+                                    <h3>科技助力精准扶贫——2019年和田地区科技辅导员培训班成功举办</h3>
+                                    <p>5月27日至30日，由自治区科协主办，自治区青少年科技中心、自治区青少年科技辅导员协会、和田地区科协共同承办的2019年和田地区科技辅导员培训班在和田市成功举办。来自和田地区七县一市的百名各族农村学校科技辅导员、科技教师参加了此次培训。</p>
+                                 </div>
+                            </a>
+                        
+                            <a href="/Other/xinjiang/News/ArticleView/AID/239735/FrontColumnID/6003.html" class="swiper-slide" target="_blank">
+                                <img src="/AttachFile/2019/12/600102/637130457216620039.jpg" alt="">
+                                <div class="item_detail">
+                                    <h3>新疆科协助力五项学科竞赛</h3>
+                                    <p>2019年4月17日下午，自治区科协组织召开了自治区五项学科竞赛秘书长联席会议，自治区科协副巡视员李永晟、新疆科技馆馆长战强、自治区科普活动中心主任苏红、自治区五大学科竞赛主办单位（新疆数学学会、新疆物理学会、新疆化学学会、新疆动植物学会、新疆青少年科技辅导员学会）负责同志及自治区科普活动中心相关同志出席会议。</p>
+                                 </div>
+                            </a>
+                        
+
+                </div>
+                <div class="swiper-pagination" style="text-align: right"></div>
+            </div>
+            <div id="div2" class="slider-list fr">
+                 
+                         <a href="/Other/xinjiang/active/ActiveView/activeID/97/FrontColumnID/6004/s/1.html" target="_blank">
+                             <img src="/AttachFile/2019/12/600112/637127968848154037.jpg" alt="">
+                             <div class="shadowLeft">
+                                 <span>新疆青少年科技创新大赛</span>
+
+                             </div>
+                         </a>
+                    
+                         <a href="/Other/xinjiang/active/ActiveView/activeID/99/FrontColumnID/6004/s/3.html" target="_blank">
+                             <img src="/AttachFile/2019/12/600112/637127968969678250.png" alt="">
+                             <div class="shadowLeft">
+                                 <span>新疆青少年机器人竞赛</span>
+
+                             </div>
+                         </a>
+                    
+                         <a href="/Other/xinjiang/active/ActiveView/activeID/101/FrontColumnID/6004/s/5.html" target="_blank">
+                             <img src="/AttachFile/2019/12/600112/637127969147830563.png" alt="">
+                             <div class="shadowLeft">
+                                 <span>青少年高校科学营</span>
+
+                             </div>
+                         </a>
+                    
+                         <a href="/Other/xinjiang/active/ActiveView/activeID/103/FrontColumnID/6004/s/7.html" target="_blank">
+                             <img src="/AttachFile/2019/12/600112/637127969238622723.png" alt="">
+                             <div class="shadowLeft">
+                                 <span>全国青少年科学影像节</span>
+
+                             </div>
+                         </a>
+                    
+
+            </div>
+        </div>
+    </div>
+
+    <div id="div3" class="container">
+        <div class="notice">
+            <div class="notice-left">公告栏</div>
+            <div class="notice-content">
+                <div class="in" id="notice">
+                    
+                            <span class="list-mar" style="display:none"><p>为深入贯彻乡村振兴计划和科技助力精准扶贫计划，支持薄弱地区青少年科技教育工作，促进青少年科技教育平衡充分发展。5月27日至30日，由自治区科协主办，自治区青少年科技中心、自治区青少年科技辅导员协会、和田地区科协共同承办的2019年和田地区科技辅导员培训班在和田市成功举办。来自和田地区七县一市的百名各族农村学校科技辅导员、科技教师参加了此次培训。</p>
+
+<p><img alt="" src="/AttachFile/2019/6/600101/636954132188293212.png" style="width: 499px; height: 375px;" /></p>
+
+<p>培训期间，主办单位为科技辅导员们安排了充实而有丰富的培训内容。北京航空航天大学副教授秦曾昌<a name="_GoBack"></a>带来的人工智能发展史科普讲座，新颖有趣的科技前沿知识，开拓了基层教师们的视野；克拉玛依市青少年科技活动中心董庆明老师带来的手掷飞机、李曦繇老师的《一张纸的使命》、魏浩然老师的《创意编程与智能硬件》等综合实践课程受到了老师们的热烈欢迎。无论是科普报告还是实践操作，大家都聚精会神，积极参与。老师们纷纷表示，在和田地区这样的欠发达地区很少有机会体验如此前沿、优质的教育资源，这次参加培训受益匪浅。他们表示一定会把这次的所学所感运用到平时的教学工作中去，为进一步提升和田地区的科技教育水平做出贡献。</p>
+
+<p>开展面向贫困地区科技辅导员培训，旨在贯彻落实《全民科学素质行动计划纲要实施方案（2016-2020年）》文件精神和中国科协&ldquo;科技助力精准扶贫工程&rdquo;有关要求，充分发挥自治区科协自身优势，将扶贫与扶志扶智相结合，通过建立健全自治区、市、县三级科技辅导员培训体系，加大贫困地区科普资源聚集，培育科技教育的骨干会员队伍，提升贫困地区科技辅导员的专业能力和素质，促进优质科教资源的共建共享，为建设和谐稳定的新疆奠定扎实的工作基础。</p>
+
+<p><img alt="" src="/AttachFile/2019/6/600101/636954132953006555.png" style="width: 558px; height: 419px;" /></p>
+
+<p>&nbsp;</p>
+</span>
+                        
+                            <span class="list-mar" style="display:none"><p>为深入贯彻乡村振兴计划和科技助力精准扶贫计划，支持薄弱地区青少年科技教育工作，促进青少年科技教育平衡充分发展。5月27日至30日，由自治区科协主办，自治区青少年科技中心、自治区青少年科技辅导员协会、和田地区科协共同承办的2019年和田地区科技辅导员培训班在和田市成功举办。来自和田地区七县一市的百名各族农村学校科技辅导员、科技教师参加了此次培训。</p>
+
+<p><img alt="" src="/AttachFile/2019/6/600101/636954132188293212.png" style="width: 499px; height: 375px;" /></p>
+
+<p>培训期间，主办单位为科技辅导员们安排了充实而有丰富的培训内容。北京航空航天大学副教授秦曾昌<a name="_GoBack"></a>带来的人工智能发展史科普讲座，新颖有趣的科技前沿知识，开拓了基层教师们的视野；克拉玛依市青少年科技活动中心董庆明老师带来的手掷飞机、李曦繇老师的《一张纸的使命》、魏浩然老师的《创意编程与智能硬件》等综合实践课程受到了老师们的热烈欢迎。无论是科普报告还是实践操作，大家都聚精会神，积极参与。老师们纷纷表示，在和田地区这样的欠发达地区很少有机会体验如此前沿、优质的教育资源，这次参加培训受益匪浅。他们表示一定会把这次的所学所感运用到平时的教学工作中去，为进一步提升和田地区的科技教育水平做出贡献。</p>
+
+<p>开展面向贫困地区科技辅导员培训，旨在贯彻落实《全民科学素质行动计划纲要实施方案（2016-2020年）》文件精神和中国科协&ldquo;科技助力精准扶贫工程&rdquo;有关要求，充分发挥自治区科协自身优势，将扶贫与扶志扶智相结合，通过建立健全自治区、市、县三级科技辅导员培训体系，加大贫困地区科普资源聚集，培育科技教育的骨干会员队伍，提升贫困地区科技辅导员的专业能力和素质，促进优质科教资源的共建共享，为建设和谐稳定的新疆奠定扎实的工作基础。</p>
+
+<p><img alt="" src="/AttachFile/2019/6/600101/636954132953006555.png" style="width: 558px; height: 419px;" /></p>
+
+<p>&nbsp;</p>
+</span>
+                        
+                            <span class="list-mar" style="display:none"><p>为深入贯彻乡村振兴计划和科技助力精准扶贫计划，支持薄弱地区青少年科技教育工作，促进青少年科技教育平衡充分发展。5月27日至30日，由自治区科协主办，自治区青少年科技中心、自治区青少年科技辅导员协会、和田地区科协共同承办的2019年和田地区科技辅导员培训班在和田市成功举办。来自和田地区七县一市的百名各族农村学校科技辅导员、科技教师参加了此次培训。</p>
+
+<p><img alt="" src="/AttachFile/2019/6/600101/636954126551223311.png" style="width: 558px; height: 419px;" /></p>
+
+<p>培训期间，主办单位为科技辅导员们安排了充实而有丰富的培训内容。北京航空航天大学副教授秦曾昌<a name="_GoBack"></a>带来的人工智能发展史科普讲座，新颖有趣的科技前沿知识，开拓了基层教师们的视野；克拉玛依市青少年科技活动中心董庆明老师带来的手掷飞机、李曦繇老师的《一张纸的使命》、魏浩然老师的《创意编程与智能硬件》等综合实践课程受到了老师们的热烈欢迎。无论是科普报告还是实践操作，大家都聚精会神，积极参与。老师们纷纷表示，在和田地区这样的欠发达地区很少有机会体验如此前沿、优质的教育资源，这次参加培训受益匪浅。他们表示一定会把这次的所学所感运用到平时的教学工作中去，为进一步提升和田地区的科技教育水平做出贡献。</p>
+
+<p><img alt="" src="/AttachFile/2019/6/600101/636954127101748278.png" style="width: 500px; height: 375px;" /></p>
+
+<p>开展面向贫困地区科技辅导员培训，旨在贯彻落实《全民科学素质行动计划纲要实施方案（2016-2020年）》文件精神和中国科协&ldquo;科技助力精准扶贫工程&rdquo;有关要求，充分发挥自治区科协自身优势，将扶贫与扶志扶智相结合，通过建立健全自治区、市、县三级科技辅导员培训体系，加大贫困地区科普资源聚集，培育科技教育的骨干会员队伍，提升贫困地区科技辅导员的专业能力和素质，促进优质科教资源的共建共享，为建设和谐稳定的新疆奠定扎实的工作基础。</p>
+</span>
+                        
+                            <span class="list-mar" style="display:none"><p>&nbsp; &nbsp; &nbsp; &nbsp;5月24日,新疆科协十七楼会议室座无虚席,150名来自全疆各地的信息技术老师,在这里参加了由新疆科普活动中心和新疆青少年科技辅导员协会主办的2019年自治区青少年创意编程与智能设计活动骨干教师培训班。</p>
+
+<p><img alt="" src="/AttachFile/2019/6/600101/636952401135722035.jpg" style="height: 375px; width: 500px;" /></p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp;本次培训是在互联网、大数据、人工智能等新的时代背景下，为推进科技辅导员业务能力和综合素质的提升，适应新一轮科技革命和产业变革的发展趋势，培养人工智能领域科技创新后备人才的积极探索和实践。培训邀请到网易资深项目运营专家，2018年全国创意编程与智能设计大赛、全国青少年创意编程体验活动运营负责人，网易卡搭精英教师计划发起人顾心远老师和网易卡搭商务市场总监，高级计算机工程师范星星老师，为科技辅导员们从国内外少儿编程的发展趋势和教育意义、scratch和python语言的基本介绍等方面进行了讲解，并且安排互动体验环节让科技辅导员们参与scratch作品的创作。</p>
+
+<p><img alt="" src="/AttachFile/2019/6/600101/636952404387703747.jpg" style="width: 500px;" /></p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp;学员们都表示本次培训虽然时间短，但内容饱满，讲座和动手实践扎实有用，既提升了自己的专业水平，又结交了良师益友，收获满满。他们将把学到的知识、技能以及思维方式应用到日常的教学活动之中，在培养人工智能领域科技创新后备人才方面进行积极的探索和实践。</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 新疆科普活动中心</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2019年5月26日</p>
+</span>
+                        
+                            <span class="list-mar" style="display:none"><p>伊犁哈萨克自治州科协、各地州市科协、各有关单位：</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2019年全国青少年创意编程与智能设计大赛拟于4&mdash;&mdash;10月举办。为扎实做好我区参赛准备工作，帮助科技辅导员掌握网上参赛规程，加深对青少年人工智能科技教育活动的理解，开阔科技辅导员的视野，进而向广大青少年普及推广人工智能相关科普知识，提高他们对人工智能的认知和初步应用能力，自治区科协决定举办自治区青少年创意编程与智能设计骨干教师培训班，现将有关事项通知如下：</p>
+
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 一、</strong><strong>组织单位</strong></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 主办单位:自治区科协</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 承办单位:自治区科普活动中心（自治区青少年科技中心）、自治区青少年科技辅导员协会</p>
+
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 二</strong><strong>、培训时间和地点</strong></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2019年5月24日在自治区科协17楼会议室参加培训（5月23日在福建大酒店一楼报到，25日离训）。</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 三、参训人员要求</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 具备相关专业学习背景，有三年以上一线教育教学经验，主要承担科技类综合实践活动课程（包括信息技术、劳动技术、通用技术、科学等）的教学工作。有两年以上任意编程语言教学经验，熟悉开源硬件开发，并有意愿开展教学或社团活动的教师。</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 四、其它事项</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.参加培训人员食宿由会务统一安排，住宿费及往返交通费由派出单位承担，餐费由会务承担。</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.参加培训人员自带笔记本电脑，自行下载安装编程软件和工具。（电脑操作系统为WIN7及以上版本，可提前登陆<a href="http://www.kada.163.com">http://www.kada.163.com</a>熟悉平台，培训当天统一进行注册。）</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.请报名参加培训的学员将《培训回执》(见附件)于5月15日前发送至指定邮箱。</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>联&nbsp;系&nbsp;人：自治区科普活动中心&nbsp;&nbsp;郭倩倩</p>
+
+<p>联系电话：0991-6386515&nbsp;&nbsp;13999940560</p>
+
+<p>&nbsp;&nbsp;联系邮箱：43896593@qq.com</p>
+
+<p>&nbsp;&nbsp;</p>
+
+<p>&nbsp;附&nbsp;件：培训回执</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;自治区科协办公室&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2019年4月29日</p>
+</span>
+                        
+                </div>
+                <div class="btns">
+                    <a class="up" onclick="slidePrev()"></a>
+                    <a class="down" onclick="slideNext()"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container clearfix bg-show" >
+        <div class="left fl con-left" >
+            <div id="div4" class="floor f-email tab_group_hover">
+                <div class="title">
+                    <h2 class="clearfix">
+                        <span class="email">新闻报道</span>
+                        <div class="fr">
+                            <div class="fr-right">
+                                <a href="/Other/xinjiang/news/news.html" target="_blank">more></a>
+                                <a href="/Other/xinjiang/news/news.html" target="_blank">more></a>
+                                <a href="/Other/xinjiang/news/news.html" target="_blank">more></a>
+                            </div>
+                            <ul style="display:none">
+                                <li>地市 <i></i> </li>
+                                <li>区县 <i></i> </li>
+                                <li>学校 <i></i> </li>
+                            </ul>
+                        </div>
+                    </h2>
+                </div>
+                <div class="ctrl">
+                    <ul class="list tab_21">
+
+                          
+
+                            <li class='cur'>
+                            <div class="title">
+                                <a href="/Other/xinjiang/News/ArticleView/AID/240203/FrontColumnID/6000.html" target="_blank">
+                                    科技助力精准扶贫——2019年和田地区科技辅导员培训班成功举办 <span>公众信息传播平台</span>
+                                </a>
+                            </div>
+                            <div class="tt">
+                                <a href="/Other/xinjiang/News/ArticleView/AID/240203/FrontColumnID/6000.html" target="_blank">
+                                    <div class="img">
+                                        <img src='/AttachFile/2019/12/600101/637130533546462105.png' alt="">
+                                    </div>
+                                    <div class="dd">
+                                        <h2>科技助力精准扶贫——2019年和田地区科技辅导员培训班成功举办</h2>
+                                        <p class="t2 mt5">5月27日至30日，由自治区科协主办，自治区青少年科技中心、自治区青少年科技辅导员协会、和田地区科协共…<span class="par">[详情]</span></p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </li>
+                        
+
+                            <li class=''>
+                            <div class="title">
+                                <a href="/Other/xinjiang/News/ArticleView/AID/240073/FrontColumnID/6000.html" target="_blank">
+                                    2019年自治区青少年创意编程与智能设计活动骨干教师培训班在乌鲁木齐市举办 <span>公众信息传播平台</span>
+                                </a>
+                            </div>
+                            <div class="tt">
+                                <a href="/Other/xinjiang/News/ArticleView/AID/240073/FrontColumnID/6000.html" target="_blank">
+                                    <div class="img">
+                                        <img src='/AttachFile/2019/12/600101/637130534733468190.JPG' alt="">
+                                    </div>
+                                    <div class="dd">
+                                        <h2>2019年自治区青少年创意编程与智能设计活动骨干教师培训班在乌鲁木齐市举办</h2>
+                                        <p class="t2 mt5">5月24日,新疆科协十七楼会议室座无虚席,150名来自全疆各地的信息技术老师,在这里参加了由新疆科普活动中…<span class="par">[详情]</span></p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </li>
+                        
+
+                            <li class=''>
+                            <div class="title">
+                                <a href="/Other/xinjiang/News/ArticleView/AID/239811/FrontColumnID/6000.html" target="_blank">
+                                    2019年中国科协大手拉小手科普报告希望行新疆巡讲活动拉开帷幕 <span>大手拉小手科普报告行</span>
+                                </a>
+                            </div>
+                            <div class="tt">
+                                <a href="/Other/xinjiang/News/ArticleView/AID/239811/FrontColumnID/6000.html" target="_blank">
+                                    <div class="img">
+                                        <img src='/AttachFile/2019/5/1023000201/636935369667389132.jpg' alt="">
+                                    </div>
+                                    <div class="dd">
+                                        <h2>2019年中国科协大手拉小手科普报告希望行新疆巡讲活动拉开帷幕</h2>
+                                        <p class="t2 mt5"><span class="par">[详情]</span></p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </li>
+                        
+
+                            <li class=''>
+                            <div class="title">
+                                <a href="/Other/xinjiang/News/ArticleView/AID/239735/FrontColumnID/6000.html" target="_blank">
+                                    新疆科协助力五项学科竞赛 <span>学科奥赛</span>
+                                </a>
+                            </div>
+                            <div class="tt">
+                                <a href="/Other/xinjiang/News/ArticleView/AID/239735/FrontColumnID/6000.html" target="_blank">
+                                    <div class="img">
+                                        <img src='/AttachFile/2019/4/60020022/636904950144327404.jpg' alt="">
+                                    </div>
+                                    <div class="dd">
+                                        <h2>新疆科协助力五项学科竞赛</h2>
+                                        <p class="t2 mt5"> 2019年4月17日下午，自治区科协组织召开了自治区五项学科竞赛秘书长联席会议，自治区科协副巡视员李永晟…<span class="par">[详情]</span></p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </li>
+                        
+
+                            <li class=''>
+                            <div class="title">
+                                <a href="/Other/xinjiang/News/ArticleView/AID/224246/FrontColumnID/6000.html" target="_blank">
+                                    2018年新疆青少年科技辅导员培训在乌鲁木齐市成功举办 <span>其它活动</span>
+                                </a>
+                            </div>
+                            <div class="tt">
+                                <a href="/Other/xinjiang/News/ArticleView/AID/224246/FrontColumnID/6000.html" target="_blank">
+                                    <div class="img">
+                                        <img src='/AttachFile/2018/6/60190022/636655622905868366.jpg' alt="">
+                                    </div>
+                                    <div class="dd">
+                                        <h2>2018年新疆青少年科技辅导员培训在乌鲁木齐市成功举办</h2>
+                                        <p class="t2 mt5">6月20-24日，2018年新疆青少年科技辅导员培训在新疆乌鲁木齐市举办。本次培训班由中国科协青少年科技中心…<span class="par">[详情]</span></p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </li>
+                        
+
+                            <li class=''>
+                            <div class="title">
+                                <a href="/Other/xinjiang/News/ArticleView/AID/219321/FrontColumnID/6000.html" target="_blank">
+                                    2017年新疆维吾尔自治区青少年科学素质知识竞赛圆满落幕 <span>公众信息传播平台</span>
+                                </a>
+                            </div>
+                            <div class="tt">
+                                <a href="/Other/xinjiang/News/ArticleView/AID/219321/FrontColumnID/6000.html" target="_blank">
+                                    <div class="img">
+                                        <img src='/AttachFile/2017/12/600110/636483304548631397.jpg' alt="">
+                                    </div>
+                                    <div class="dd">
+                                        <h2>2017年新疆维吾尔自治区青少年科学素质知识竞赛圆满落幕</h2>
+                                        <p class="t2 mt5">12月2日-3日，由自治区全民科学素质工作领导小组办公室主办，自治区科协、自治区教育厅、自治区团委承办…<span class="par">[详情]</span></p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </li>
+                        
+
+                            <li class=''>
+                            <div class="title">
+                                <a href="/Other/xinjiang/News/ArticleView/AID/218682/FrontColumnID/6000.html" target="_blank">
+                                    2017年送培到基层——精准扶贫于田县科技辅导员培训班成功举办 <span>公众信息传播平台</span>
+                                </a>
+                            </div>
+                            <div class="tt">
+                                <a href="/Other/xinjiang/News/ArticleView/AID/218682/FrontColumnID/6000.html" target="_blank">
+                                    <div class="img">
+                                        <img src='/AttachFile/2017/10/600110/636432353272349820.jpg' alt="">
+                                    </div>
+                                    <div class="dd">
+                                        <h2>2017年送培到基层——精准扶贫于田县科技辅导员培训班成功举办</h2>
+                                        <p class="t2 mt5">9月19-20日，由中国青少年科技辅导员协会、新疆青少年科技中心、新疆青少年科技辅导员协会、新疆天文学会…<span class="par">[详情]</span></p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </li>
+                        
+
+                            <li class=''>
+                            <div class="title">
+                                <a href="/Other/xinjiang/News/ArticleView/AID/218681/FrontColumnID/6000.html" target="_blank">
+                                    “2017年大手拉小手科普报告基层行”活动在伊犁、阿勒泰两地成功举办 <span>公众信息传播平台</span>
+                                </a>
+                            </div>
+                            <div class="tt">
+                                <a href="/Other/xinjiang/News/ArticleView/AID/218681/FrontColumnID/6000.html" target="_blank">
+                                    <div class="img">
+                                        <img src='/AttachFile/2017/10/600110/636432349120612354.jpg' alt="">
+                                    </div>
+                                    <div class="dd">
+                                        <h2>“2017年大手拉小手科普报告基层行”活动在伊犁、阿勒泰两地成功举办</h2>
+                                        <p class="t2 mt5">2017年9月18-23日期间分别在乌鲁木齐市、伊犁哈萨克自治州新源县、阿勒泰地区阿勒泰市成功举办“2017年大…<span class="par">[详情]</span></p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </li>
+                        
+
+                            <li class=''>
+                            <div class="title">
+                                <a href="/Other/xinjiang/News/ArticleView/AID/202276/FrontColumnID/6000.html" target="_blank">
+                                      乌鲁木齐市第六十八中学机器人工作室全国机器人竞赛获奖喜报 <span>机器人竞赛</span>
+                                </a>
+                            </div>
+                            <div class="tt">
+                                <a href="/Other/xinjiang/News/ArticleView/AID/202276/FrontColumnID/6000.html" target="_blank">
+                                    <div class="img">
+                                        <img src='/AttachFile/2016/8/60040022/636076328891535084.JPG' alt="">
+                                    </div>
+                                    <div class="dd">
+                                        <h2>  乌鲁木齐市第六十八中学机器人工作室全国机器人竞赛获奖喜报</h2>
+                                        <p class="t2 mt5">7月25日第16届中国青少年机器人竞赛在北京中国科学院大学（简称国科大）雁栖湖校区成功举办，来自全国各…<span class="par">[详情]</span></p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </li>
+                        
+
+                            <li class=''>
+                            <div class="title">
+                                <a href="/Other/xinjiang/News/ArticleView/AID/201587/FrontColumnID/6000.html" target="_blank">
+                                    新疆营员 筑梦起航 <span>青少年高校科学营</span>
+                                </a>
+                            </div>
+                            <div class="tt">
+                                <a href="/Other/xinjiang/News/ArticleView/AID/201587/FrontColumnID/6000.html" target="_blank">
+                                    <div class="img">
+                                        <img src='/AttachFile/2020/1/6050000200/637136593442680831.jpg' alt="">
+                                    </div>
+                                    <div class="dd">
+                                        <h2>新疆营员 筑梦起航</h2>
+                                        <p class="t2 mt5">为全面贯彻落实《全民科学素质行动计划纲要实施方案（2011-2015年）》、《国家中长期教育改革和发展规划…<span class="par">[详情]</span></p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </li>
+                        
+                      </ul>
+                </div>
+
+            </div>
+
+            <div id="div5" class="nowNews">
+                <div class="swiper-container sub-swiper">
+                    <div class="swiper-wrapper">
+                        
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="div6" class="floor f-video" style="margin-top: 15px">
+                <div class="title">
+                    <h2 class="clearfix">
+                        <span class="video">活动掠影</span>
+                        <div class="fr">
+                            <div class="fr-right">
+                                <a href="/Other/xinjiang/Gallery/GalleryList.html" target="_blank">more></a>
+                            </div>
+                        </div>
+                    </h2>
+                </div>
+
+                <div class="video-list  clearfix">
+                    <div class="video-listc">
+                        
+                        
+                                <a href="/Other/xinjiang/Video/VideoView/VideoID/6360.html" target="_blank">
+                                    <img src="/VideoFile/2019/10/1025001000/6ce8ff178eb3434db0d59cd8c1c69b55.png" alt="">
+                                    <span class="shadow shadow-top2"><em>第十届全国青少年科学影像节精彩回顾</em></span>
+                                    <div class="shadow-big">
+                                        <div class="shadow-inner">
+                                            <h1>第十届全国青少年科学影像节精彩回顾</h1>
+                                            <p class="font-12">
+                                                
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            
+                                <a href="/Other/xinjiang/Video/VideoView/VideoID/6192.html" target="_blank">
+                                    <img src="/VideoFile/2019/8/1013001000/0632af37d29045ee8a64f72548f86797.jpg" alt="">
+                                    <span class="shadow shadow-top2"><em>第19届中国青少年机器人竞赛回顾</em></span>
+                                    <div class="shadow-big">
+                                        <div class="shadow-inner">
+                                            <h1>第19届中国青少年机器人竞赛回顾</h1>
+                                            <p class="font-12">
+                                                2019年8月11-17日，第19届中国青少年机器人竞赛暨2019世界青少年机器人邀请赛在重庆举办。
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            
+                                <a href="/Other/xinjiang/Video/VideoView/VideoID/6143.html" target="_blank">
+                                    <img src="/VideoFile/2019/8/1011000600/97ec5af784fa42c68f3bde1fa17e9266.jpg" alt="">
+                                    <span class="shadow shadow-top2"><em>第34届全国青少年科技创新大赛回顾视频</em></span>
+                                    <div class="shadow-big">
+                                        <div class="shadow-inner">
+                                            <h1>第34届全国青少年科技创新大赛回顾视频</h1>
+                                            <p class="font-12">
+                                                第34届全国青少年科技创新大赛六天花絮
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="div7" class="floor f-people" style="margin-top: 15px">
+                <div class="title">
+                    <h2 class="clearfix">
+                        <span class="people">人才培养</span>
+                        <div class="fr">
+                            <div class="fr-right">
+                                <a>more></a>
+                            </div>
+                        </div>
+                    </h2>
+                </div>
+
+                <div class="video-list  clearfix">
+                    <div class="people-top">
+                        <a href="" class="people-top1">
+                            <p><span>0</span> 名学生</p>
+                        </a>
+                        <a href="" class="people-top2">
+                            <p><span>0</span> 名教师</p>
+                        </a>
+                        <a href="" class="people-top3">
+                            <p><span>0</span> 所学校</p>
+                        </a>
+                    </div>
+                    <div class="people-bottom">
+                        
+                        
+                        
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="right fr con-right"  >
+            <div id="div8" class="floor">
+                <h5 class="noticed">文件通知<i class="fr"><a class="f13" href="/Other/xinjiang/news/notice.html">MORE></a></i></h5>
+                <div style="box-sizing:border-box">
+                    <div class="more mt15 mb15">
+                        
+                                 <a href="/Other/xinjiang/News/noticeView/AID/239737/FrontColumnID/6000.html" target="_blank"><i></i><span class="pl10">关于举办2019年自治区青少年创意编程与智能设计骨干教师培训班的通知</span></a>
+                            
+                                 <a href="/Other/xinjiang/News/noticeView/AID/34575/FrontColumnID/6000.html" target="_blank"><i></i><span class="pl10">关于举办新疆科技教育工作者、青少年科技辅导员培训班的通知</span></a>
+                            
+                                 <a href="/Other/xinjiang/News/noticeView/AID/34574/FrontColumnID/6000.html" target="_blank"><i></i><span class="pl10">第五届自治区青少年科技创新奖评选结果公示</span></a>
+                            
+                                 <a href="/Other/xinjiang/News/noticeView/AID/34573/FrontColumnID/6000.html" target="_blank"><i></i><span class="pl10">关于组织参加2016年全国青少年高校科学营活动的通知</span></a>
+                            
+                                 <a href="/Other/xinjiang/News/noticeView/AID/31574/FrontColumnID/6000.html" target="_blank"><i></i><span class="pl10">关于做好第五届自治区青少年科技创新奖候选人推荐工作的通知</span></a>
+                            
+                                 <a href="/Other/xinjiang/News/noticeView/AID/31573/FrontColumnID/6000.html" target="_blank"><i></i><span class="pl10">关于举办第三十届自治区青少年科技创新大赛的通知</span></a>
+                            
+                                 <a href="/Other/xinjiang/News/noticeView/AID/29182/FrontColumnID/6000.html" target="_blank"><i></i><span class="pl10">关于转发《中国科协 教育部 发展改革委等五部门关于开展“变废为宝 从我做起——2015年青少年科学调查体验活动”的通知》的通知</span></a>
+                            
+                                 <a href="/Other/xinjiang/News/noticeView/AID/29181/FrontColumnID/6000.html" target="_blank"><i></i><span class="pl10">关于组织参加2015年全国青少年高校科学营活动的通知</span></a>
+                            
+                                 <a href="/Other/xinjiang/News/noticeView/AID/29180/FrontColumnID/6000.html" target="_blank"><i></i><span class="pl10">关于命名第四批自治区青少年科技活动特色学校的决定</span></a>
+                            
+                                 <a href="/Other/xinjiang/News/noticeView/AID/29179/FrontColumnID/6000.html" target="_blank"><i></i><span class="pl10">关于第四届自治区青少年科技创新奖的表彰决定</span></a>
+                            
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="div9" class="floor">
+                <h5 class="act">活动日历<i class="fr"><a class="f13" href="/Other/xinjiang/news/actNotice.html">MORE></a></i></h5>
+                <div class="floor-content">
+                    <div class="act-calendar"></div>
+                    <div id="AnnounceList" style="display: none">[{type:&#39;startday&#39;,year:2020,month:1,day:10,detail:{title:&#39;第35届新疆青少年科技创新大赛&#39;,start:&#39;2020-01-10&#39;,end:&#39;2020-02-06&#39;}}]</div>
+                </div>
+            </div>
+
+            <div id="div10" class="floor mt25 tab_group_hover">
+                <div class="bg-blue">
+                    <h5 class="point">
+                        精彩推荐
+                        <i class="fr" style="display:none">
+                            <a class="f13" href="/Other/xinjiang/news/notice.html">MORE></a>
+                            <a class="f13" href="/Other/xinjiang/news/notice1.html">MORE></a>
+                        </i>
+                        <div class="fr-point">
+                            <span class="active">专题</span>
+                            <span>展览</span>
+                        </div>
+                    </h5>
+                </div>
+                <div style="box-sizing:border-box" class="point-par pb10">
+                    <div style="box-sizing:border-box" class="pl20 pr20 pt10" >
+                        <div class="tab-tt">
+                            <ul class="act-list tab_23">
+                                
+                                        <li class='cur'>
+                                            <span><em>1</em><i>第19届“明天小小科学家”奖励活动</i></span>
+                                            <a target="_blank"  href='/Other/mingtian/2019/index.html'><img width="220" height="36" src='/AttachFile/2019/11/10101910/637093207319348386.jpg'></a>
+                                        </li>
+                                    
+                                        <li class=''>
+                                            <span><em>2</em><i>第10届全国青少年科学影像节</i></span>
+                                            <a target="_blank"  href='/Other/yxj/2019/index.html'><img width="220" height="36" src='/AttachFile/2019/10/10101910/637079555608339024.jpg'></a>
+                                        </li>
+                                    
+                                        <li class=''>
+                                            <span><em>3</em><i>第五届全国青少年创意编程与智能设计大赛终评</i></span>
+                                            <a target="_blank"  href='/Other/aisc/2019/index.html'><img width="220" height="36" src='/AttachFile/2019/10/10101910/637072640287045246.jpg'></a>
+                                        </li>
+                                    
+                                        <li class=''>
+                                            <span><em>4</em><i>2019年全国科普日</i></span>
+                                            <a target="_blank"  href='http://www.kepuri.org/2019/index.aspx'><img width="220" height="36" src='/AttachFile/2019/9/10101910/637045023046461439.jpg'></a>
+                                        </li>
+                                    
+                                        <li class=''>
+                                            <span><em>5</em><i>第19届中国青少年机器人竞赛</i></span>
+                                            <a target="_blank"  href='/2019/index.html'><img width="220" height="36" src='/AttachFile/2019/8/10101910/637018206185729542.jpg'></a>
+                                        </li>
+                                    
+                                        <li class=''>
+                                            <span><em>6</em><i>第34届全国青少年科技创新大赛</i></span>
+                                            <a target="_blank"  href='/Other/castic/2019/index.html'><img width="220" height="36" src='/AttachFile/2019/7/10101910/637000192830815266.jpg'></a>
+                                        </li>
+                                    
+                                        <li class=''>
+                                            <span><em>7</em><i>2019年青少年高校科学营</i></span>
+                                            <a target="_blank"  href='http://www.kexueying.org.cn/2019T/'><img width="220" height="36" src='/AttachFile/2019/7/10101910/636983656188789339.jpg'></a>
+                                        </li>
+                                    
+                                        <li class=''>
+                                            <span><em>8</em><i>第18届“明天小小科学家”奖励活动</i></span>
+                                            <a target="_blank"  href='/Other/mingtian/2018/index.html'><img width="220" height="36" src='/AttachFile/2018/11/10101910/636768314048867065.jpg'></a>
+                                        </li>
+                                    
+                                        <li class=''>
+                                            <span><em>9</em><i>第九届全国青少年科学影像节</i></span>
+                                            <a target="_blank"  href='/Other/yxj/2018/index.html'><img width="220" height="36" src='/AttachFile/2018/11/10101910/636768313576654236.jpg'></a>
+                                        </li>
+                                    
+                                        <li class=''>
+                                            <span><em>10</em><i>2018年全国科普日</i></span>
+                                            <a target="_blank"  href='http://www.kepuri.org/'><img width="220" height="36" src='/AttachFile/2018/9/10101910/636739048775623519.jpg'></a>
+                                        </li>
+                                    
+
+
+
+                            </ul>
+
+
+                        </div>
+
+                    </div>
+                    <div style="box-sizing:border-box" class="pl20 pr20 pt10" >
+
+                        <div class="tab-tt">
+                            <ul class="act-list act-list2 tab_idx2 ">
+                                <li class='cur'>
+                                    <span><em>1</em><i>全国青少年科学影像节光影10年回顾展</i></span>
+                                    <a target="_blank"  href='/Other/yxj/2019/History/Index.html'><img width="220" height="36" src='/sourcexinjiang/images/zhanlan1.jpg'></a>
+                                </li>
+
+                                <li class=''>
+                                    <span><em>2</em><i>全国青少年科技创新大赛30届回顾展</i></span>
+                                    <a target="_blank"  href='/Other/castic/zhanlan/index.html'><img width="220" height="36" src='/sourcexinjiang/images/zhanlan2.jpg'></a>
+                                </li>
+                            </ul>
+                           
+                        </div>
+
+                </div>
+                </div>
+
+            </div>
+            <div id="div11" class="right-btmbtn">
+                <a href="" class="btmbtn-1">下载中心</a>
+                <a href="" class="btmbtn-2">咨询答疑</a>
+                <a target="_blank"  href='/Other/yxj/2018/index.html'><img width="220" height="36" src='/AttachFile/2018/11/10101910/636768313576654236.jpg'></a>
+<a id="20bf3f60ff0940daa40417be2173af6f" href="http://www.iis7.com" target="_blank" style="display:inline-block;background-color:;color:#fff;padding:2px 5px;font-family:arial;font-size:12px;font-weight:bold;">iis7站长之家</a>
+                <a href="" class="btmbtn-4">举报投诉</a>
+            </div>
+        </div>
+
+    </div>
+
+    
+<!--footer start-->
+<div class="footer">
+    <div class="bg-footer">
+        <div class="container">
+            <div class="foot-info  clearfix ">
+                <div class="fl mt25">
+                    <p>
+                        主办单位：新疆维吾尔自治区青少年科技中心
+                    </p>
+                    <p>
+                        服务保障：全国青少年科技教育和科普活动云服务平台发展联盟
+                    </p>
+                    <p >
+                        网站备案：京ICP备 05013249号
+                    </p>
+                    <p >
+                        联系我们：
+                    </p>
+                </div>
+                <a href="" class="rel" ></a>
+                <div class="code-footer fr mt15">
+                        <span style="width: 88px;">
+                            <var></var>
+                            <i>扫一扫 关注我们</i>
+                        </span>
+                </div>
+                <div class="linkCode fr clearfix">
+                    <div class="code-box tc">
+                        <a  class="erCode  xcx mr15" style="display:none">小程序</a>
+                        <a  class="erCode  wx mr15">微信</a>
+                        <a  class="erCode wz ">微站</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer end-->
+
+        <script>
+    var mySwiper1 = new Swiper('.swiper', {
+        loop: true,
+        autoplay: 5000,
+        speed: 500,
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+    var mySwiper2 = new Swiper('.sub-swiper', {
+        loop: true,
+        direction: 'vertical',
+        autoplay: 6000,
+        speed: 500
+    });
+    $(".list li").hover(function () {
+        $(this).addClass("cur").siblings().removeClass("cur")
+    });
+    $(".act-list li").hover(function () {
+        $(this).closest('.act-list').find('li').removeClass("cur");
+        $(this).addClass("cur");
+    });
+    $(".tab_26 li").hover(function () {
+        $(".tab_26 li").removeClass("cur");
+        $(this).addClass("cur");
+    });
+    $(".tab_27 li").hover(function () {
+        $(".tab_27 li").removeClass("cur");
+        $(this).addClass("cur");
+    });
+
+    $(".slider-list a").hover(function () {
+        $(this).siblings().removeClass("cur");
+        $(this).addClass("cur");
+    })
+
+    //     新闻报道切换
+
+    $(".f-email .fr ul li").mouseover(function(){
+        $('.ctrl ul').css('display','none')
+        $('.ctrl ul').eq($(this).index()+1).css('display','block')
+        $(".f-email .fr ul li").removeClass('active')
+        $(this).addClass('active')
+        $(this).parents(".fr").find(".fr-right a").css('display','none')
+        $(this).parents(".fr").find(".fr-right a").eq($(this).index()).css('display','block')
+    })
+
+    $(".fr-point span").mouseover(function(){
+        $('.point-par>div').css('display','none')
+        $('.point-par>div').eq($(this).index()).css('display','block')
+        $(".fr-point span").removeClass('active')
+        $(this).addClass('active')
+        $(this).parents(".point").find(".fr>a").css('display','none')
+        $(this).parents(".point").find(".fr>a").eq($(this).index()).css('display','block')
+    })
+
+</script>
+
+<!--活动日历-->
+<script>
+    $(function () {
+        var mar1 = "<marquee onmouseover=\"this.stop()\" onmouseout=\"this.start()\">" + $('.list-mar').eq(0).text() + "</marquee>";
+        $('#notice').prepend(mar1);
+
+
+        $('.act-calendar').datepicker({
+            showMonthAfterYear: true,
+            showOtherMonths: true,
+            selectOtherMonths: true,
+            nextText: '下个月',
+            prevText: '上个月',
+            yearSuffix: '年',
+            monthNames: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
+            monthNamesShort: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
+            dayNamesMin: ['日', '一', '二', '三', '四', '五', '六'],
+            onSelect: function () { },
+            onChangeMonthYear: function () {
+                setTimeout(function () {
+                    showDetail();
+                }, 100);
+
+            }
+        });
+        showDetail()
+    });
+
+
+    var actList = eval($('#AnnounceList').text());
+
+    function showDetail() {
+        for (x in actList) {
+            var _type = actList[x].type;
+            var _year = actList[x].year;
+            var _month = actList[x].month;
+            var _day = actList[x].day;
+            var _title = actList[x].detail.title;
+            var _start = actList[x].detail.start;
+            var _end = actList[x].detail.end;
+            $('td[data-month=' + (_month - 1) + '][data-year=' + _year + ']').each(function () {
+                if ($(this).find('a').text() == _day) {
+                    $(this).closest('td').removeClass(_type).addClass(_type);
+                    $(this).closest('td').removeClass('ctrl').addClass('ctrl');
+                    if ($(this).find('.hidden-data')[0]) {
+                        $(this).find('.hidden-data').append("<div class=\"list-data\"><span class=\"ca-title\">"+_title+"</span><span class=\"ca-when\">"+_start+"至"+_end+"</span></div>")
+                    } else {
+                        $(this).append("<div style=\"display: none\" class=\"hidden-data\"></div>");
+                        $(this).find('.hidden-data').append("<div class=\"list-data\"><span class=\"ca-title\">"+_title+"</span><span class=\"ca-when\">"+_start+"至"+_end+"</span></div>")
+                    }
+                }
+            })
+        }
+        $('#div9 td').off('click').find('a').removeAttr('href');
+        $('#div9 td.ctrl').mouseenter(function () {
+            let dom = $(this).find('.hidden-data').html();
+            let left = $(this).offset().left;
+            let top = $(this).offset().top;
+            $('body').append("<div class=\"act-pop\" style=\"left: " + (Math.round(left) - 263) + "px;top:" + (Math.round(top) + 55) + "px\"> <div class=\"in\">" + dom + "</div></div>")
+
+        });
+        $('#div9 td.ctrl').mouseleave(function () {
+            $('.act-pop').remove()
+        })
+
+    }
+
+
+</script>
+        <script>
+            var slideNow = 0;
+            var slideLength = $('.list-mar').size();
+            function slideNext(){
+                $('#notice marquee').remove();
+                if ((slideNow + 2) > slideLength) {
+                    var mar1 = "<marquee onmouseover=\"this.stop()\" onmouseout=\"this.start()\">" + $('.list-mar').eq(0).text() + "</marquee>";
+                    $('#notice').prepend(mar1);
+                    slideNow = 0;
+                } else {
+                    var mar2 = "<marquee onmouseover=\"this.stop()\" onmouseout=\"this.start()\">" + $('.list-mar').eq((slideNow + 1)).text() + "</marquee>";
+                    $('#notice').prepend(mar2);
+                    slideNow++;
+                }
+            }
+            function slidePrev(){
+                $('#notice marquee').remove();
+                if ((slideNow - 1) < 0) {
+                    var mar1 = "<marquee onmouseover=\"this.stop()\" onmouseout=\"this.start()\">" + $('.list-mar').eq(slideLength - 1).text() + "</marquee>";
+                    $('#notice').prepend(mar1);
+                    slideNow = slideLength -1
+                } else {
+                    var mar2 = "<marquee onmouseover=\"this.stop()\" onmouseout=\"this.start()\">" + $('.list-mar').eq(slideNow - 1).text() + "</marquee>";
+                    $('#notice').prepend(mar2);
+                    slideNow--
+                }
+            }
+</script>
+    </form>
+</body>
+</html>
+

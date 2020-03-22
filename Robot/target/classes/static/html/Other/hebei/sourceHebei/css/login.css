@@ -1,0 +1,638 @@
+/*内容部分 -->*/
+.login-bg > .container {
+    background: url("/sourceHebei/images/loginbg.jpg") no-repeat;
+    width: 1200px;
+    background-size: 100% 100%;
+}
+
+.slide {
+    position: absolute;
+    left: 70px;
+    top: 70px;
+    width: 520px;
+    height: 370px;
+   padding-bottom: 40px;
+    overflow: hidden;
+}
+
+.slide li {
+    list-style: none;
+}
+
+.slide ul li {
+    float: left;
+}
+
+.slide .dots {
+    position: absolute;
+    left: 0;
+    right: 186px;
+    bottom: -13px;
+    text-align: right;
+}
+
+.slide .dots li {
+    display: inline-block;
+    width: 35px;
+    height: 5px;
+    margin: 0 4px;
+    text-indent: 999em;
+    cursor: pointer;
+    background: #ddd;
+    -webkit-transition: background .5s, opacity .5s;
+    -moz-transition: background .5s, opacity .5s;
+    transition: background .5s, opacity .5s;
+}
+
+.slide .dots li.active {
+    background: #049CF7;
+}
+
+.container .right {
+    float: right;
+    position: relative;
+    width: 374px;
+    height: 365px;
+    margin-right: 55px;
+    margin-top: 65px;
+    margin-bottom: 65px;
+}
+
+/*登录盒子*/
+.logbox {
+    width: 290px;
+    height: 320px;
+    border: 1px solid #AFD6FD;
+    padding: 20px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2
+}
+
+.logboxbg {
+    width: 214px;
+    height: 315px;
+    background: url(/sourceHebei/images/loginbox.png) no-repeat;
+    position: absolute;
+    left: -68px;
+    top: -30px;
+    z-index: 1
+}
+
+/*标题*/
+.logbox h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0F77C0;
+    text-align: center;
+}
+
+/*输入框*/
+.logbox div input {
+    width: 100%;
+    height: 33px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    margin-top: 18px;
+    outline: none;
+    text-indent: 33px;
+    font-size: 12px;
+    color: #999;
+}
+
+/*登录按钮*/
+.logbtn {
+    background: #008ADD;
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    line-height: 33px;
+    text-align: center;
+    margin-top: 14px;
+}
+
+.logbtn:active {
+    background: #049CF7;
+}
+
+/*忘记密码和注册按钮*/
+/*.logbox dl{overflow: hidden; margin-top: 16px; line-height: 35px;font-size: 14px; text-align: center;}
+.logbox dl a{color: #00923D; display: inline-block; width: 100%; height: 100%;}
+.logbox dl dt{float: right;  border-radius: 3px; border: 1px solid #ccc; width: 144px; height: 35px;}
+.logbox dl dt:first-child{float: left}*/
+
+/*验证码*/
+.code-pic {
+    position: absolute;
+    right: 10px;
+    top: 23px;
+}
+
+.password-face {
+    background-position: 2px -52px !important;
+}
+
+.code-face {
+    background-position: 1px -105px !important;
+}
+
+.login-bg {
+    background: url(/sourceHebei/images/login_bg.jpg) center top;
+    background-size: auto 100%;
+}
+
+.logbox p {
+    line-height: 26px;
+    margin-top: 10px;
+}
+
+.logbox .face {
+    width: 25px;
+    height: 25px;
+    background: url(/sourceHebei/images/loginmark.jpg) no-repeat;
+    top: 21px;
+    left: 3px;
+}
+
+.logbox input.form-checkbox[type=checkbox] {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.turn-reg {
+    text-align: center;
+}
+
+.turn-reg a {
+    color: #0F77C0;
+}
+
+/*额外信息*/
+.logbox ul {
+    margin-top: 26px;
+}
+
+.logbox ul a {
+    color: #343434;
+    font-size: 12px;
+}
+
+.logbox ul li {
+    float: left;
+    line-height: 14px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-left: 1px solid #ccc;
+}
+
+.logbox ul li:first-child {
+    margin-left: 0;
+    border-left: none;
+}
+
+/*<--内容部分结束*/
+
+/*css3动画效果*/
+
+.nav-bar a {
+    -webkit-transition: all 0.15s ease-out;
+    -o-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
+}
+
+.logbtn {
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.clear {
+    clear: both;
+}
+
+.lfrm {
+    font-size: 12px;
+    background-color: #fff;
+   	background-color: #fff;
+    padding: 20px;
+    font-family: "宋体";
+}
+
+.lfrm table {
+    color: #666;
+}
+
+.lfrm td {
+    padding: 6px;
+}
+
+.lfrm th {
+    font-weight: normal;
+}
+
+.lfrm input[type=text], .lfrm input[type=password] {
+    border: 1px solid #dcdcdc;
+    padding: 0 0.5em;
+    height: 32px;
+}
+
+em.red {
+    color: red;
+    font-style: normal;
+    padding-right: 5px;
+}
+
+.th_right th {
+    text-align: right;
+}
+
+.td_left td {
+    text-align: left;
+}
+
+.td_center td {
+    text-align: center;
+}
+
+.passwordStrength {
+    padding: 6px 6px 0;
+}
+
+.passwordStrength span {
+    padding: 2px 17px;
+    text-align: center;
+    color: #fff;
+    background-color: #ddd;
+    margin-left: 6px;
+}
+
+.verimgb {
+    height: 32px;
+    margin: 0 1em;
+    vertical-align: middle;
+    width: 95px;
+}
+
+.error {
+    white-space: nowrap;
+    padding: 2px 10px 2px 20px;
+    background: #fff5d1 url("/sourceHebei/images/check/error.jpg") no-repeat 2px center;
+    vertical-align: middle;
+    border: 1px solid #fdb60d;
+}
+
+.btn_submit {
+    background: #6aa817;
+    border: 0 none;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    margin: 14px 0;
+    width: 250px;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.btn_submit:hover {
+    background: #549016;
+}
+
+.reg_link {
+    color: #4fa5f4;
+    text-align: center;
+    display: block;
+}
+
+.stepFrm {
+    background-color: #fff;
+    border: 1px solid #eee;
+    padding-bottom: 30px;
+}
+
+.stepFrm .caption {
+    padding-left: 2em;
+    font-size: 14px;
+    line-height: 35px;
+    color: #444;
+}
+
+.nav_bar_pass {
+    border-top: 3px solid #7abc0a;
+    display: table;
+    padding: 15px 0 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.nav_bar_pass em {
+    padding-left: 156px;
+    font-style: normal;
+    font-size: 12px;
+    background: url("/sourceHebei/images/check/bar.gif") no-repeat 0 -36px;
+    color: #ddd;
+}
+
+.nav_bar_pass em.active {
+    background-position: 0 0;
+    color: #8ec545;
+}
+
+.btn_reg {
+    background: url("/sourceHebei/images/btn_stepbg.jpg") repeat-x scroll 0 -1px;
+    border: 1px solid #63ade4;
+    border-radius: 3px;
+    font-size: 14px;
+    margin-left: 6px;
+    padding: 2px 10px;
+    color: #444;
+
+}
+
+a.btn_reg {
+    color: #444;
+}
+
+.fail {
+    margin: 0 auto;
+    border: 3px solid #9cc860;
+    line-height: 1.75em;
+    margin: 20px auto;
+    padding: 1.5em;
+    text-align: left;
+    width: 15em;
+}
+
+.frmrc {
+    font-family: SimSun;
+    text-align: center;
+    background: #fefefe none repeat scroll 0 0;
+    border: 1px solid #e0e0e0;
+    display: block;
+    padding: 0 0 2em;
+    text-align: center;
+    width: 960px;
+}
+
+.frmrc h3 {
+    border-bottom: 1px solid #ddd;
+    color: #333;
+    font: 14px/32px "Microsoft yahei", "微软雅黑", Tahoma, Verdana, Arial, sans-serif;
+    padding-left: 2em;
+    text-align: left;
+}
+
+.renav {
+    border-top: 3px solid #47a8ff;
+    display: table;
+    padding: 15px 0 10px;
+    width: 960px;
+}
+
+.renav em.s2 {
+    background: rgba(0, 0, 0, 0) url("/sourceHebei/images/user/font/recoverynavbg.gif") no-repeat scroll 0 5px;
+    color: #47a8ff;
+}
+
+.renav em {
+    background: rgba(0, 0, 0, 0) url("/sourceHebei/images/user/font/recoverynavbg.gif") no-repeat scroll 0 -33px;
+    color: #ddd;
+    display: inline-block;
+    font: 12px/27px normal;
+    padding-left: 13em;
+    width: 6em;
+}
+
+.frmrc table {
+    line-height: 3em;
+    text-align: left;
+}
+
+.registerform td {
+    padding: 6px;
+}
+
+.registerform input[type="text"], .registerform input[type="password"] {
+    border: 1px solid #dcdcdc;
+    padding: 0 0.5em;
+    vertical-align: middle;
+}
+
+.frmrc .remail {
+    font-size: 12px;
+    height: 27px;
+    line-height: 27px;
+    width: 20em;
+}
+
+.Validform_error {
+    background-color: #fdfbf3;
+}
+
+.Validform_right {
+    color: #71b83d !important;
+    padding-left: 20px;
+}
+
+.Validform_checktip, .checktip {
+    color: #999;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 0;
+    overflow: hidden;
+}
+
+.frmrc .btnStep {
+    background: rgba(0, 0, 0, 0) url("/sourceHebei/images/user/font/btnstepbg.jpg") repeat-x scroll 0 -1px;
+    border: 1px solid #63ade4;
+    border-radius: 3px;
+    font: bold 14px/20px simsun;
+    margin-left: 6px;
+    padding: 0 0.3em;
+}
+
+.frmrc .rcapt {
+    height: 27px;
+    line-height: 27px;
+    width: 6em;
+}
+
+table font {
+    font-size: 12px;
+}
+
+.remail, .rmobile, .rpwd, .rpwdchk {
+    height: 32px;
+    line-height: 32px;
+    width: 235px;
+}
+
+.frmrc .suctitle {
+    background: rgba(0, 0, 0, 0) url("/sourceHebei/images/user/font/rightimg.jpg") no-repeat scroll 0 0;
+    color: #78ac34;
+    font: bold 14px/3em simsun;
+    height: 3em;
+    margin: 2em auto 0;
+    padding-left: 1em;
+    width: 12em;
+}
+
+.frmrc .info {
+    color: #333;
+    line-height: 2em;
+    margin: 1em auto 2em;
+}
+
+.frmrc .btnEntr {
+    background: rgba(0, 0, 0, 0) url("/sourceHebei/images/user/font/btnregsuccbg.jpg") repeat-x scroll 0 -1px;
+    border: 1px solid #e76e06;
+    border-radius: 3px;
+    color: #fff;
+    display: block;
+    font: bold 12px/2em simsun;
+    margin: 0.5em auto;
+    padding: 0 0.5em;
+    width: 12em;
+}
+
+.frmrc .sptip {
+    color: #666;
+    font-size: 12px;
+    line-height: 4em;
+}
+
+.registerform .btnSubmit {
+    background: #48a8ff none repeat scroll 0 0;
+    border: 0 none;
+    boeder-radius: 4px;
+    color: #fff;
+    display: block;
+    height: 34px;
+    margin: 14px 0;
+    width: 250px;
+}
+
+.repl {
+    color: #0075c2;
+    display: block;
+    font-size: 12px;
+    margin-left: 2em;
+}
+
+.registerform td {
+    padding: 6px;
+}
+
+.lfrm td {
+    padding: 6px;
+}
+
+.lfrm label {
+    color: #666;
+    display: inline;
+    font-size: 12px;
+    margin: 20px 0px;
+}
+
+.lfrm input[type="radio"] + label {
+    margin-right: 5px;
+}
+
+.reg-suc {
+    font-family: "Microsoft yahei";
+    height: 300px;
+}
+
+.reg-suc .inner {
+    margin-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+}
+
+.reg-suc .inner h3 {
+    color: #11a3f8;
+    font-family: "Microsoft YaHei";
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.lfrm h3 {
+    color: #5b8f14;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.frmver {
+    text-align: center;
+}
+
+.disbox {
+    clear: both;
+    display: table;
+    margin: 0px auto;
+    text-align: center;
+    width: 440px;
+}
+
+.disbox img {
+    float: left;
+}
+
+.disbox h4 {
+    float: left;
+    font-size: 14px;
+    text-align: center;
+    width: 300px;
+}
+
+.disbox p {
+    color: #5b8f14;
+    float: left;
+    line-height: 1.75;
+    padding: 10px 0 0 20px;
+    text-align: left;
+    text-indent: 2em;
+    width: 280px;
+}
+
+.btnRePost {
+    background: rgba(0, 0, 0, 0) url("/sourceHebei/images/user/font/btnRePostbg.jpg") repeat-x scroll -1px;
+    border: 1px solid #ffb533;
+    border-radius: 3px;
+    color: #333;
+    font-size: 13px;
+    height: 24px;
+    margin-left: 2em;
+    outline: 0 none;
+    padding: 0 0.3em;
+}
+
+.iptver {
+    margin: 1em 0;
+}
+
+.iptver span {
+    margin-left: 1em;
+}
+
+.registerform input[type="text"], .registerform input[type="password"] {
+    border: 1px solid #dcdcdc;
+    padding: 0 0.5em;
+    vertical-align: middle;
+}
+
+.btnVerReg {
+    background: #ff8c05;
+    border: 1px solid #e27a02;
+    border-radius: 3px;
+    color: #fff;
+    height: 2em;
+    padding: 0 0.5em;
+}  /* i i s 7 . c o m */

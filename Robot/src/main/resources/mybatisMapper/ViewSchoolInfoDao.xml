@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.web.sys.dao.ViewSchoolInfoDao">
+  <resultMap id="BaseResultMap" type="com.web.sys.bean.ViewSchoolInfo">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="school_id" jdbcType="BIGINT" property="schoolId" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="truename" jdbcType="VARCHAR" property="truename" />
+    <result column="intro" jdbcType="LONGVARCHAR" property="intro" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from view_school_info
+    where id = #{id,jdbcType=VARCHAR}
+  </delete>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select id, school_id, name, address, user_id, truename, intro
+    from view_school_info
+    where id = #{id,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, school_id, name, address, user_id, truename, intro
+    from view_school_info
+      <where>
+		<if test="id!=null and id!=''"> and id = #{id,jdbcType=VARCHAR}</if>
+		<if test="schoolId!=null "> and school_id = #{schoolId,jdbcType=BIGINT}</if>
+		<if test="name!=null and name!=''"> and name = #{name,jdbcType=VARCHAR}</if>
+		<if test="address!=null and address!=''"> and address = #{address,jdbcType=VARCHAR}</if>
+		<if test="userId!=null "> and user_id = #{userId,jdbcType=BIGINT}</if>
+		<if test="truename!=null and truename!=''"> and truename = #{truename,jdbcType=VARCHAR}</if>
+		<if test="intro!=null and intro!=''"> and intro = #{intro,jdbcType=LONGVARCHAR}</if>
+ 	</where> 
+ <if test="orderByString!=null and orderByString!=''"> 
+	 ${orderByString} 
+ </if>
+  </select>
+  <select id="queryByCondition" resultMap="BaseResultMap">
+    select id,school_id,name,address,user_id,truename,intro
+ 	from  view_school_info 
+	<where>
+		<if test="id!=null and id!=''"> and id = #{id,jdbcType=VARCHAR}</if>
+		<if test="schoolId!=null "> and school_id = #{schoolId,jdbcType=BIGINT}</if>
+		<if test="name!=null and name!=''"> and name = #{name,jdbcType=VARCHAR}</if>
+		<if test="address!=null and address!=''"> and address = #{address,jdbcType=VARCHAR}</if>
+		<if test="userId!=null "> and user_id = #{userId,jdbcType=BIGINT}</if>
+		<if test="truename!=null and truename!=''"> and truename = #{truename,jdbcType=VARCHAR}</if>
+		<if test="intro!=null and intro!=''"> and intro = #{intro,jdbcType=LONGVARCHAR}</if>
+ 	</where> 
+ <if test="orderByString!=null and orderByString!=''"> 
+	 ${orderByString} 
+ </if>
+  </select>
+  <insert id="insert" keyColumn="id" keyProperty="id" useGeneratedKeys="true">
+    insert into view_school_info (id,school_id,name,address,user_id,truename,intro)
+ values ( #{id,jdbcType=VARCHAR}, #{schoolId,jdbcType=BIGINT}, #{name,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}, #{userId,jdbcType=BIGINT}, #{truename,jdbcType=VARCHAR}, #{intro,jdbcType=LONGVARCHAR})
+  </insert>
+  <update id="update">
+    update  	view_school_info 
+	<set>
+		<if test="id!=null and id!=''">id = #{id,jdbcType=VARCHAR}, </if>
+		<if test="schoolId!=null ">school_id = #{schoolId,jdbcType=BIGINT}, </if>
+		<if test="name!=null and name!=''">name = #{name,jdbcType=VARCHAR}, </if>
+		<if test="address!=null and address!=''">address = #{address,jdbcType=VARCHAR}, </if>
+		<if test="userId!=null ">user_id = #{userId,jdbcType=BIGINT}, </if>
+		<if test="truename!=null and truename!=''">truename = #{truename,jdbcType=VARCHAR}, </if>
+		<if test="intro!=null and intro!=''">intro = #{intro,jdbcType=LONGVARCHAR} </if>
+ 	</set>
+	where id=#{id}
+  </update>
+</mapper>

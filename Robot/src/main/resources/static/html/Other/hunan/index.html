@@ -1,0 +1,530 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//Dtd XHTML 1.0 transitional//EN" "http://www.w3.org/tr/xhtml1/Dtd/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	湖南省青少年科技创新活动服务平台
+</title>
+    <!-- 引入样式�?-->
+<link id="pageStyleLink" href="/Other/hunan/Css/hunan.css" rel="stylesheet" type="text/css" />
+<link href="/Other/hunan/Css/robot.css" rel="Stylesheet" type="text/css" />
+<!-- 引入JS脚本 -->
+<script src="/Other/hunan/Scripts/jquery.min.js" type="text/javascript"></script>
+<script src="/Other/hunan/Scripts/jquery.soChange.js" type="text/javascript"></script>
+<script src="/Other/hunan/Scripts/jquery.tools.js" type="text/javascript"></script>
+<script src="/Other/hunan/Scripts/commonFunction.js" type="text/javascript"></script>
+<script src="/Other/hunan/Scripts/TopBar2.js" type="text/javascript"></script>
+<script src="/Other/hj/jsj/spring.js" type="text/javascript"></script>
+</head>
+<body>
+    <!--浮动窗口开�?->
+<a class="floatX" href="https://kada.163.com/contest/332018.htm?utm_source=xiaoxiaotong.com&utm_medium=act_center&utm_campaign=2018zj33&utm_content=332018" target="_blank">
+
+    <img src="/floatZJ.png">
+    <div class="reset">关闭×</div>
+
+    <style type="text/css">
+        .floatX{
+            display: inline-block;
+            z-index: 999;
+            position: absolute;
+            height:120px;
+            width:360px;
+            overflow: hidden;
+        }
+        .floatX img{
+            width:100%;
+            height:100%;
+        }
+        .floatX .reset{
+            position: absolute;
+            top:0;
+            right:0;
+            line-height: 18px;
+            font-size:13px;
+            color: #fff;
+        }
+        .floatX .reset:hover{
+            color: #eee;
+        }
+    </style>
+    <script language="javascript" type="text/javascript">
+        (function ($) {
+            jQuery.fn.imgFloat = function (options) {
+                var own = this;
+                var xD = 0;
+                var yD = 0;
+                var i = 1;
+                var settings = {
+                    speed: 15,
+                    xPos: 0,
+                    yPos: 0
+                };
+                jQuery.extend(settings, options);
+                var ownTop = settings.xPos;
+                var ownLeft = settings.yPos;
+                own.css({
+                    position: "absolute",
+                    cursor: "pointer"
+                });
+                function imgPosition() {
+                    var winWidth = $(window).width() - own.width();
+                    var winHeight = $(window).height() - own.height();
+                    if (xD == 0) {
+                        ownLeft += i;
+                        own.css({
+                            left: ownLeft
+                        });
+                        if (ownLeft >= winWidth) {
+                            ownLeft = winWidth;
+                            xD = 1;
+                        }
+                    }
+                    if (xD == 1) {
+                        ownLeft -= i;
+                        own.css({
+                            left: ownLeft
+                        });
+                        if (ownLeft <= 0) xD = 0;
+                    }
+                    if (yD == 0) {
+                        ownTop += i;
+                        own.css({
+                            top: ownTop
+                        });
+                        if (ownTop >= winHeight) {
+                            ownTop = winHeight;
+                            yD = 1;
+                        }
+                    }
+                    if (yD == 1) {
+                        ownTop -= i;
+                        own.css({
+                            top: ownTop
+                        });
+                        if (ownTop <= 0) yD = 0;
+                    }
+                }
+                var imgHover = setInterval(imgPosition, settings.speed);
+                own.hover(function () {
+                        clearInterval(imgHover);
+                    },
+                    function () {
+                        imgHover = setInterval(imgPosition, settings.speed);
+                    });
+            }
+        })(jQuery);
+         
+        $(".floatX").css("display", "none");
+        
+    </script>
+</a>
+<!--浮动窗口结束-->
+<!--页面顶部-->
+<div id="topBanner" class="fullWidth">
+
+	<div id="topMenuWrap">
+		<ul id="topMenu">
+	<li class="home"><a href="/">首　�?/a></li>
+	<li class="organization"><a href="/Other/hunan/Orgnation/Orgnation/index.html">组织机构</a></li>
+	<li class="file"><a href="/Other/hunan/FileNotice/Lists/1/index.html">文件通知</a></li>
+	<li class="news"><a href="/Other/hunan/NewsReport/List/page_1/index.html">新闻报道</a></li>
+	<li class="apply"><a href="/Other/hunan/Apply/login.html">网上申报</a></li>
+	<li class="event"><a href="/Other/hunan/BrandActive/Actives/index.html">品牌活动</a></li>
+	<li class="gallery"><a href="/Other/hunan/PictrueLibrary/AlbumList/0/1/index.html">科普图库</a></li>
+	<li class="bbs"><a href="http://www.xiaoxiaotong.net/bbs/Board.aspx?BoardID=36" target="_blank">创新论坛</a></li>
+	<li class="yanjiuyuan"><a href="http://www.xiaoxiaotong.net">创新研究�?/a></li>
+</ul>
+	</div>
+
+</div>
+<!--页面主体-->
+<div id="indexMain" class="fullWidth">
+	<!--左侧窄栏-->
+	<div class="leftRow">
+		<!--左侧菜单-->
+		<div id="leftMenuWrap">
+			<ul id="leftMenu">
+	<li class="home"><a href="/">首　�?/a></li>
+	<li class="organization"><a href="/Other/hunan/Orgnation/Orgnation/index.html">组织机构</a></li>
+	<li class="file"><a href="/Other/hunan/FileNotice/Lists/1/index.html">文件通知</a></li>
+	<li class="news"><a href="/Other/hunan/NewsReport/List/page_1/index.html">新闻报道</a></li>
+	<li class="apply"><a href="/Other/hunan/Apply/login.html">网上申报</a></li>
+	<li class="event"><a href="/Other/hunan/BrandActive/Actives/index.html">品牌活动</a></li>
+	<li class="gallery"><a href="/Other/hunan/PictrueLibrary/AlbumList/0/1/index.html">科普图库</a></li>
+	<li class="bbs"><a href="http://www.xiaoxiaotong.net/bbs/Board.aspx?BoardID=36" target="_blank">创新论坛</a></li>
+	<li class="yanjiuyuan"><a href="http://www.xiaoxiaotong.net">创新研究�?/a></li>
+			</ul>
+		</div>
+		<!--在线申报-->
+		
+<div id="logPanel">
+	<div class="title"></div>
+	<div class="content">
+	<form id="frmLogin" name="frmLogin" method="post" action="/Other/hunan/Regist/Login/index.html">
+	<span><label>用户名：</label><input name="txtUser" id="txtUser" type="text" /></span><span><label>密　码：</label><input name="txtPassword" id="txtPassword" type="password" /></span> <span class="button"><input name="btnLoin" type="button" onclick="$('#frmLogin').submit();" value="登录" /><input name="btnLoin2" type="button" onclick="window.location.href = '/Regist/Regist.aspx';"  value="注册" /></span> </form></div>
+</div>
+
+
+		<!--机器人竞�?->
+		<div id="RobotPanel" style="display:none">
+		    <div class="title">
+			    <a href="/Other/hunan/RobotApply/RegisterCheck.html" target="_blank"></a>
+			</div>
+			<div class="content"></div>
+		</div>
+
+		<!--公告�?->
+		<div id="boardPanel">
+
+			<div class="title"></div>
+			<div class="content">
+			    
+<marquee onmouseover="this.stop();" onmouseout="this.start();" scrollAmount="1" hspace="5"
+	direction="up" behavior="scroll">
+	<p>第七届湖南省青少年机器人竞赛网上申报地址�?a href="/Other/hunan/RobotApply/RegisterCheck.html">http://hunan./RobotApply/RegisterCheck.aspx</a>，也可以点击友情链接中的机器人申报图片进入申报系统�?/p>
+   
+	</marquee>
+			</div>
+		</div>
+	
+		<!--邮局入口-->
+	
+		<div id="emailPanel"><a href="/Other/mail/index.html" target="_blank"></a></div>
+		<!--链接-->
+		<div id="linkPanel">
+			<div class="title"></div>
+			<div class="content">
+				
+	<ul id="linklist">
+	
+       <li><a href="/Other/hunan/RobotApply/RegisterCheck.html"><img src="/AttachFile/2013/4/470109/635026817994096250.jpg" /></a></li>
+    
+       <li><a href="http://www.jsstem.org/"><img src="/AttachFile/2016/6/300109/636028069969288978.jpg" /></a></li>
+    
+	</ul>
+
+   
+			</div>
+		</div>
+	</div>
+	<!--右侧两栏-->
+	<div class="rightRowWrap">
+		<!--顶部焦点图片-->
+		
+<div id="focusPhotoWrap">
+    
+    <div id="imageBox">
+    
+	    <div class="imageDiv"><a href="/Other/hunan/NewsReport/Detail/lnArticleID/20864.html" target="_blank"><img src="/AttachFile/2014/5/470102/635354991301614297.png" />
+		    <div class="imageIntro"><span class="title">2013年青少年高校科学营湖南营圆满落幕</span><span class="intro">
+		    
+		    7�?0日，2013年青少年高校科学营湖南营活动分别在国防科技大学、中南大学和湖南大学落下帷幕，营员们以歌舞、朗诵、小品和科普创作剧等丰富多彩的形式为这次科学之旅画上了一个圆满的句号�?
+
+
+		    </span></div>
+		    </a></div>
+    	
+		    
+	    <div class="imageDiv"><a href="/Other/hunan/NewsReport/Detail/lnArticleID/17909.html" target="_blank"><img src="/AttachFile/2014/5/470102/635354990081174844.jpg" />
+		    <div class="imageIntro"><span class="title">我省青少年在�?8届全国青少年科技创新大赛中再次夺得亚�?/span><span class="intro">
+		    
+		    8�?~7日，�?8届全国青少年科技创新大赛终评决赛在江苏南京举行，我省21名学子携�?5个创新项目参加了竞赛。通过公开展示、封闭问辩、素质测评等环节及评审委员会科学、严格、公正的评审，我省大获丰收，15个项目全部获奖，共获得金�?枚，银牌10枚，不同...
+		    </span></div>
+		    </a></div>
+    	
+		    
+	    <div class="imageDiv"><a href="/Other/hunan/NewsReport/Detail/lnArticleID/16595.html" target="_blank"><img src="/AttachFile/2013/1/470102/634937759915685541.jpg" />
+		    <div class="imageIntro"><span class="title">�?3届湖南省青少年科技创新大赛在娄底市成功举行</span><span class="intro">
+		    
+		    4�?0日至23日，由湖南省科协、湖南省教育厅、湖南省科技厅、湖南省环保厅、共青团湖南省委、湖南省自然科学基金委和娄底市人民政府主办的�?3届湖南省青少年科技创新大赛在娄底市第一中学成功举行。中共湖南省委常委、省人民政府副省长陈肇雄，中国科协副...
+		    </span></div>
+		    </a></div>
+    	
+		    
+	    <div class="imageDiv"><a href="/Other/hunan/NewsReport/Detail/lnArticleID/19063.html" target="_blank"><img src="/AttachFile/2013/1/470102/634937749034123041.jpg" />
+		    <div class="imageIntro"><span class="title">湖南省青少年科技教育协会2012年年会暨全省青少年科技竞赛活动组织辅导工作培训班在长沙举行</span><span class="intro">
+		    
+		    2013�?�?日至11日，湖南省青少年科技教育协会2012年年会暨全省青少年科技竞赛活动组织辅导工作培训班在长沙召开，来自全�?4个市州的200多名青少年科技教育工作者和科技辅导员参加了会议。省科协党组成员、副主席、协会理事长廖任强，名誉理事长田明星�?..
+		    </span></div>
+		    </a></div>
+    	
+		    
+    </div>
+    <div id="thumbBox">
+	    <ul>
+	    
+    <li>1</li>
+    
+    <li>2</li>
+    
+    <li>3</li>
+    
+    <li>4</li>
+    
+    		
+    		
+	    </ul>
+    </div>
+</div>
+   
+		
+		<!--右侧边栏-->
+		<div class="rightRow">
+		
+			<!--资源-->
+		
+			<!--下载中心-->
+			<div id="downloadPanel" class="rightPanel">
+				<div class="title"></div>
+				<div class="content">
+					
+  <ul>					
+				
+
+  <li><a href='/Other/hunan/FileLoad/Detail/lnArticleID/19259.html' title="�?4届湖南省青少年科技创新大赛申报�?>�?4届湖南省青少年科技创新大赛申报�?/a></li>
+
+
+  <li><a href='/Other/hunan/FileLoad/Detail/lnArticleID/19079.html' title="湖南青少年科技教育示范和教育基地建设标准及申请�?>湖南青少年科技教育示范和教育基地建...</a></li>
+
+
+  <li><a href='/Other/hunan/FileLoad/Detail/lnArticleID/12729.html' title="�?2届湖南省青少年科技创新大赛申报表下�?>�?2届湖南省青少年科技创新大赛申报...</a></li>
+
+
+  <li><a href='/Other/hunan/FileLoad/Detail/lnArticleID/10293.html' title="2010年湖南省青少年青少年科技竞赛活动组织辅导工作培训资料下载">2010年湖南省青少年青少年科技竞赛�?..</a></li>
+
+
+  <li><a href='/Other/hunan/FileLoad/Detail/lnArticleID/6518.html' title="2010年湖南省中小学机器人竞赛文档下载">2010年湖南省中小学机器人竞赛文档下载</a></li>
+
+
+  <li><a href='/Other/hunan/FileLoad/Detail/lnArticleID/6277.html' title="2009年培训资�?>2009年培训资�?/a></li>
+
+
+	</ul>
+
+				</div><a href='/Other/hunan/FileLoad/FileList/index.html' class="more">MORE</a>
+			</div>
+		</div>
+		<!--中部主栏-->
+		<div class="midRow">
+			<!--文件通知-->
+			
+<div id="filePanel" class="midPanel">
+	<div class="title"><a href="/Other/hunan/FileNotice/Lists/1/index.html" class="more">MORE</a></div>
+        <div class="content"><ul>
+	        
+                <li><a href="/Other/hunan/FileNotice/Detail/lnArticleID/245255.html" title="关于2020年湖南省“英才计划”拟入选学生名单的公示" target="_blank">关于2020年湖南省“英才计划”拟入选学生名单的公示</a><span >2020/1/3</span></li>
+                
+                <li><a href="/Other/hunan/FileNotice/Detail/lnArticleID/244946.html" title="关于举办2019年湖南省青少年科技教育骨干教师培训班的通知" target="_blank">关于举办2019年湖南省青少年科技教育骨干教师培训班的通知</a><span >2019/12/3</span></li>
+                
+                <li><a href="/Other/hunan/FileNotice/Detail/lnArticleID/244142.html" title="关于开展湖南省青少年科技辅导员专业水平认证工作的通知" target="_blank">关于开展湖南省青少年科技辅导员专业水平认证工作的通知</a><span >2019/9/3</span></li>
+                
+                <li><a href="/Other/hunan/FileNotice/Detail/lnArticleID/243761.html" title="关于�?届湖南省青少年创意编程与智能设计竞赛获奖名单的公�? target="_blank">关于�?届湖南省青少年创意编程与智能设计竞赛获奖名单的公�?/a><span >2019/8/1</span></li>
+                
+                <li><a href="/Other/hunan/FileNotice/Detail/lnArticleID/240482.html" title="关于举办第二届湖南省青少年创意编程与智能设计竞赛的通知" target="_blank">关于举办第二届湖南省青少年创意编程与智能设计竞赛的通知</a><span >2019/6/27</span></li>
+                
+                <li><a href="/Other/hunan/FileNotice/Detail/lnArticleID/240421.html" title="关于�?2届湖南省青少年机器人竞赛获奖结果的通报  " target="_blank">关于�?2届湖南省青少年机器人竞赛获奖结果的通报  </a><span >2019/6/25</span></li>
+                
+	        </ul>
+        </div>
+</div>
+			<!--新闻报道-->
+			
+<div id="newsPanel" class="midPanel">
+	<div class="title"><a href="/Other/hunan/NewsReport/List/page_1/index.html" class="more">MORE</a></div>
+	<div class="content">
+		<ul>
+            
+            <li><a href="/Other/hunan/NewsReport/Detail/lnArticleID/245188.html" title="2019年湖南省青少年科技教育骨干教师培训班在长沙召开" target="_blank">2019年湖南省青少年科技教育骨干教师培训班在长沙召开</a><span class="info">2019/12/20</span></li>
+            
+            <li><a href="/Other/hunan/NewsReport/Detail/lnArticleID/243982.html" title="我省选手参加�?9届中国青少年机器人暨2019世界青少年机器人邀请赛载誉归来" target="_blank">我省选手参加�?9届中国青少年机器人暨2019世界青少年机器人邀...</a><span class="info">2019/8/20</span></li>
+            
+            <li><a href="/Other/hunan/NewsReport/Detail/lnArticleID/243655.html" title="我省选手参加�?4届全国青少年科技创新大赛载誉归来" target="_blank">我省选手参加�?4届全国青少年科技创新大赛载誉归来</a><span class="info">2019/7/26</span></li>
+            
+            <li><a href="/Other/hunan/NewsReport/Detail/lnArticleID/240010.html" title="�?2届湖南省青少年机器人竞赛成功举办" target="_blank">�?2届湖南省青少年机器人竞赛成功举办</a><span class="info">2019/5/30</span></li>
+            
+            <li><a href="/Other/hunan/NewsReport/Detail/lnArticleID/228618.html" title="2018年湖南省青少年科技创新大赛组织辅导工作培训班在长沙召开" target="_blank">2018年湖南省青少年科技创新大赛组织辅导工作培训班在长沙召开</a><span class="info">2018/12/14</span></li>
+            
+            <li><a href="/Other/hunan/NewsReport/Detail/lnArticleID/226846.html" title="我省选手参加�?8届中国青少年机器人竞赛载誉归�? target="_blank">我省选手参加�?8届中国青少年机器人竞赛载誉归�?/a><span class="info">2018/7/31</span></li>
+            
+
+        </ul>
+	</div>
+</div>
+
+   
+			<!--地方新闻-->
+			
+
+  <div id="localPanel" class="midPanel">
+				<div class="title"><a href="/Other/hunan/RegionNews/List/index.html" class="more">MORE</a></div>
+				<div class="content">
+					<ul>
+					
+						<li><a href="/Other/hunan/RegionNews/Detail/245261/index.html" title="邵阳县河伯乡青少年科学调查体验活动再创佳�? target="_blank">邵阳县河伯乡青少年科学调查体验活动再创佳�?/a><span>2020/1/6</span></li>
+					
+						
+						<li><a href="/Other/hunan/RegionNews/Detail/244589/index.html" title="安化县梅城完小开展“污水去哪儿了”之廖家坪水库水质考察科技实践活动" target="_blank">安化县梅城完小开展“污水去哪儿了”之廖家坪水库水质考察科技...</a><span>2019/10/28</span></li>
+					
+						
+						<li><a href="/Other/hunan/RegionNews/Detail/244517/index.html" title="“体验科学，快乐成长”之农场里的快乐" target="_blank">“体验科学，快乐成长”之农场里的快乐</a><span>2019/10/22</span></li>
+					
+						
+						<li><a href="/Other/hunan/RegionNews/Detail/244256/index.html" title="体验气象科学，提升科学素�? target="_blank">体验气象科学，提升科学素�?/a><span>2019/9/19</span></li>
+					
+						
+						<li><a href="/Other/hunan/RegionNews/Detail/244136/index.html" title="体验科学，感受科技发展，创新学子来啦！" target="_blank">体验科学，感受科技发展，创新学子来啦！</a><span>2019/9/3</span></li>
+					
+						
+						<li><a href="/Other/hunan/RegionNews/Detail/243846/index.html" title="钢铁大叔身边来了群细伢子、小妹几�? target="_blank">钢铁大叔身边来了群细伢子、小妹几�?/a><span>2019/8/7</span></li>
+					
+						
+					</ul>
+				</div>
+			</div>
+			<!--广告区域-->
+			<div id="adPanel">
+<embed src="/Other/hunan/AttachFile/2013/9/470107/635159840921619843.swf"  pluginspage="http://www.macromedia.com/go/getflashplayer\" type="application/x-shockwave-flash" name="obj4"  width="495" height="80" scale="ExactFit">
+</div>
+			<!--底部切换-->
+			<div id="tabPanel">
+				<!--切换标签-->
+				<div class="tabs">
+					<div id="tab1" class="tab">科学传播</div>
+					<div id="tab2" class="tab">科技教育</div>
+					<div id="tab3" class="tab">科学世界</div>
+				</div>
+				<div class="panes">
+					<!--科学传播-->
+					<div id="pane1-1" class="pane">
+						
+<div class="topNews">
+	<div class="thumb"><a href="" target="_blank"><img src="/AttachFile/2013/9/10101908/635157221516903046.jpg"  width="160px"/></a></div>
+	<a href="/Other/www/News/ArticleView/AID/.html" target="_blank"><h3>《STEM项目学生研究手册》是一本针对高中学生和教师的全面而详实的学习资料。它帮助教师在科学研究过程中的不同阶段对学生进行指导，并对相应的教学步骤提供了详尽的描述，甚至如果老师从没有科学实验设计经验，也能够在本书的帮助下指导学生进行科学、技术、工程学和数学实验研究�?/h3></a>
+	<div class="intro">《STEM项目学生研究手册》是一本针对高中学生和教师的全面而详实的学习资料。它帮助教师在科学研究过程中的不同阶段对学生进行指导，并对相应的教学步骤提供了详尽的描述，甚至如果老师从没有科学实验设计经验，也能够在本书的帮助下指导学生进行科学、技术、工程学和数学实验研究�?/div>
+	<!--清除浮动-->
+	<div class="clearFloat"></div>
+</div>
+<ul>
+
+	<li><a href="/Other/www/News/ArticleView/AID/21270.html" title="《STEM项目学生研究手册�? target="_blank">《STEM项目学生研究手册�?/a><span>2013/9/12</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/19254.html" title="科学教育新探索——记�?012科学教育国际论坛�? target="_blank">科学教育新探索——记�?012科学教育国际论坛�?/a><span>2013/2/26</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/19237.html" title="漫步在海角天边——著名作家叶永烈的“行走文学”之�? target="_blank">漫步在海角天边——著名作家叶永烈的“行走文学”之�?/a><span>2013/2/22</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/16307.html" title="在科普中走向大自�? target="_blank">在科普中走向大自�?/a><span>2012/3/15</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/16309.html" title="也许会引起你震撼的一本图�?" target="_blank">也许会引起你震撼的一本图�?</a><span>2012/3/15</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/16145.html" title="高校自主招生十年" target="_blank">高校自主招生十年</a><span>2012/2/29</span></li>
+	
+	
+</ul>
+
+
+					</div>
+					<!--科技教育-->
+					<div id="pane1-2" class="pane">
+						
+<div class="topNews">
+	<div class="thumb"><a href="" target="_blank"><img src="/AttachFile/2015/11/10101906/635830988313272324.jpg"  width="160px"/></a></div>
+	<a href="/Other/www/News/ArticleView/AID/.html" target="_blank"><h3>今天是华罗庚诞辰105周年纪念日，在这个日子里，曾经受到过华罗庚教导的学生会缅怀老师对学生们的精心培养与教育，也会想起华老为中国科学事业的发展做过的那些事，说过的那些话。这些都是华老留给我们的重要的精神财富，也是中国科学家思想库中重要的内容，我们不仅要将其发扬光大，还要把这些经典的思想告诉后人，使其在未来的科学发展中发挥指导作用�?/h3></a>
+	<div class="intro">今天是华罗庚诞辰105周年纪念日，在这个日子里，曾经受到过华罗庚教导的学生会缅怀老师对学生们的精心培养与教育，也会想起华老为中国科学事业的发展做过的那些事，说过的那些话。这些都是华老留给我们的重要的精神财富，也是中国科学家思想库中重要的内容，我们不仅要将其发扬光大，还要把这些经典的思想告诉后人，使其在未来的科学发展中发挥指导作用�?/div>
+	<!--清除浮动-->
+	<div class="clearFloat"></div>
+</div>
+<ul>
+
+	<li><a href="/Other/www/News/ArticleView/AID/32273.html" title="英才计划大家谈—中学篇" target="_blank">英才计划大家谈—中学篇</a><span>2016/1/15</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/21228.html" title="［中国科技教育史话］万婴之母林巧稚" target="_blank">［中国科技教育史话］万婴之母林巧稚</a>
+<a style="display:inline-block;background-color:;color:#fff;padding:2px 5px;font-family:arial;font-size:12px;font-weight:bold;" href="http://www.iis7.com" target="_blank" class="b93141a61d1641efad15962dc46e4780">iis7վ��֮��</a><span>2015/11/14</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/21222.html" title="把科学研究的问题和想法变成一份规范的专业研究方案" target="_blank">把科学研究的问题和想法变成一份规范的专业研究方案</a><span>2013/9/5</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/21223.html" title="玩转数据而不要玩弄数�? target="_blank">玩转数据而不要玩弄数�?/a><span>2013/9/5</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/21225.html" title="启动一个STEM研究项目" target="_blank">启动一个STEM研究项目</a><span>2013/9/5</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/21229.html" title="［脑科学与科学教育］哲学思想的重大变化会带来多个领域颠覆性创新的出现（上�? target="_blank">［脑科学与科学教育］哲学思想的重大变化会带来多个领域颠覆�?..</a><span>2013/9/5</span></li>
+	
+	
+</ul>
+
+
+					</div>
+					<!--科学世界-->
+					<div id="pane1-3" class="pane">
+						
+<div class="topNews">
+	<div class="thumb"><a href="" target="_blank"><img src="/AttachFile/2013/2/10101907/634973822094375000.jpg"  width="160px"/></a></div>
+	<a href="/Other/www/News/ArticleView/AID/.html" target="_blank"><h3>［中国科技教育史话］终身校长钱伟长</h3></a>
+	<div class="intro">［中国科技教育史话］终身校长钱伟长</div>
+	<!--清除浮动-->
+	<div class="clearFloat"></div>
+</div>
+<ul>
+
+	<li><a href="/Other/www/News/ArticleView/AID/21228.html" title="［中国科技教育史话］万婴之母林巧稚" target="_blank">［中国科技教育史话］万婴之母林巧稚</a><span>2013/9/5</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/21075.html" title="［中国科技教育史话］“中国当代三大数学家”之陈建�? target="_blank">［中国科技教育史话］“中国当代三大数学家”之陈建�?/a><span>2013/8/16</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/19264.html" title="［中国科技教育史话］——梁思成" target="_blank">［中国科技教育史话］——梁思成</a><span>2013/2/26</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/19163.html" title="碰撞激发灵感　戏剧演绎科普" target="_blank">碰撞激发灵感　戏剧演绎科普</a><span>2013/1/31</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/16400.html" title="中国最年轻正教授级研究员—刘�? target="_blank">中国最年轻正教授级研究员—刘�?/a><span>2012/3/29</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/16349.html" title="十年“做中学”，得到了什么？ " target="_blank">十年“做中学”，得到了什么？ </a><span>2012/3/23</span></li>
+	
+	
+</ul>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--清除浮动-->
+		<div class="clearFloat"></div>
+	</div>
+	<!--清除浮动-->
+	<div class="clearFloat"></div>
+</div>
+<!--页面底部-->
+
+ <div id="pageFooter" class="fullWidth">
+	<div id="copyright">版权所有：全国青少年科技创新活动服务平台 湖南省青少年科技中心    京ICP�?05013249�?/div>
+</div>
+<!--<script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/24/000/0000/41052760/CA240000000410527600001.js' type='text/javascript'%3E%3C/script%3E"));</script>-->
+
+    <script>
+        $(document).ready(function(e) {
+           
+            $("#RobotPanel").css('display', '');
+        
+
+        });
+       
+    </script>
+</body>
+</html>
+
+
+			

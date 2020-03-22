@@ -1,0 +1,1051 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta charset="UTF-8" /><title>
+	四川青少年科技教育和科普活动云服务平台
+</title>
+    <!--通用部分-->
+    <link rel="stylesheet" href="/Other/sichuan/css/font-awesome.css" /><link rel="stylesheet" href="/Other/sichuan/css/common.css" />
+    <script src="/Other/sichuan/js/main.js"></script>
+
+    <!--个性部分-->
+    <link rel="stylesheet" href="/Other/sichuan/sourceSichuan/css/base.css">
+    <link rel="stylesheet" href="/Other/sichuan/sourceSichuan/css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="/Other/sichuan/sourceSichuan/css/index.css">
+    <link rel="stylesheet" href="/Other/sichuan/sourceSichuan/css/main.css">
+    <link rel="stylesheet" href="/Other/sichuan/sourceSichuan/css/page.css">
+    <script src="/Other/sichuan/sourceSichuan/js/jquery-1.11.3.min.js"></script>
+
+    <script src="/Other/sichuan/sourceSichuan/js/swiper-3.4.2.min.js"></script>
+    <script src="/Other/sichuan/sourceSichuan/js/main.js"></script>
+    <script src="/Other/sichuan/sourceSichuan/js/visitCount.js"></script>
+    <script src="/Other/sichuan/sourceSichuan/js/commonFunction.js"></script>
+
+    <!--活动日历-->
+    <script src="/Other/sichuan/js/datePickerForAct.js"></script>
+    <link rel="stylesheet" href="/Other/sichuan/css/datePickerForAct.css" /></head>
+<body>
+    <form method="post" action="/Other/sichuan/index.html" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE0NjM1NDY3NDcPFgIeDWZyb250Q29sdW1uSUQFBDUyMDAWAgIDD2QWGgIBD2QWAgIBDxYCHgtfIUl0ZW1Db3VudAILFhZmD2QWAgIBDxYEHg1kYXRhLWNvbHVtbmlkBQQ1MjAwHgVjbGFzcwUHY3VycmVudBYCZg8VAwsvaW5kZXguYXNweAhpY29uLWFjdAbpppbpobVkAgEPZBYCAgEPFgIfAgUENTIwMRYCZg8VAw0vQWJvdXRVcy5hc3B4AAzlhbPkuo7miJHku6xkAgIPZBYCAgEPFgIfAgUENTIwNBYCZg8VAxMvYWN0aXZlL2FjdGl2ZS5hc3B4AAzlk4HniYzmtLvliqhkAgMPZBYCAgEPFgIfAgUENTIwMhYCZg8VAxYvbmV3cy9ub3RpY2VJbmRleC5hc3B4AAzmlofku7bpgJrnn6VkAgQPZBYCAgEPFgIfAgUENTIwMxYCZg8VAxQvbmV3cy9uZXdzSW5kZXguYXNweAAM5paw6Ze75oql6YGTZAIFD2QWAgIBDxYCHwIFBDUyMDUWAmYPFQMWL0V4aGliaXRpb24vaW5kZXguYXNweAAM5Zyo57q/5bGV5Y6FZAIGD2QWAgIBDxYCHwIFBDUyMDYWAmYPFQMJLzQwNC5hc3B4AAzkuqTmtYHliIbkuqtkAgcPZBYCAgEPFgIfAgUENTIwNxYCZg8VAwkvNDA0LmFzcHgADOS6uuaJjeWfueWFu2QCCA9kFgICAQ8WAh8CBQQ1MjA4FgJmDxUDCS80MDQuYXNweAAM6Zif5LyN5bu66K6+ZAIJD2QWAgIBDxYCHwIFBDUyMDkWAmYPFQMJLzQwNC5hc3B4AAzliJvmlrDlrabpmaJkAgoPZBYCAgEPFgIfAgUENTIxMBYCZg8VAxMvU2VydmljZS9sb2dpbi5hc3B4AAzlj4LkuI7mtLvliqhkAgIPFgIeB1Zpc2libGVnFgICAQ8WAh8BAgIWBGYPZBYCZg8VBEBodHRwOi8vc2ljaHVhbi54aWFveGlhb3Rvbmcub3JnL05ld3MvQXJ0aWNsZVZpZXcuYXNweD9BSUQ9MjQ0NzgxMEF0dGFjaEZpbGUvMjAxOS8xMi81MjAxMDIvNjM3MTIyNzg2NTUxMzU2OTU0LmpwZzrnrKzljYHkuZ3lsYrigJzmmI7lpKnlsI/lsI/np5HlrablrrbigJ3lpZblirHmtLvliqjnroDorq8giwPnlLHkuK3lm73np5HljY/jgIHkuK3lm73np5HlrabpmaLjgIHkuK3lm73lt6XnqIvpmaLjgIHlm73lrrboh6rnhLbnp5Hlrabln7rph5Hlp5TlkZjkvJrlkozlkajlh6/ml4vln7rph5HkvJrlhbHlkIzkuLvlip7nmoTnrKwxOeWxiuKAnOaYjuWkqeWwj+Wwj+enkeWtpuWutuKAneWlluWKsea0u+WKqOe7iOivhOS6jjEx5pyINi0xMeaXpeWcqOS4reWbveenkeWtpumZouWkp+WtpuS4vuihjO+8jOadpeiHquWFqOWbvTE45Liq55yB5Y+K6aaZ5riv44CB5r6z6Zeo54m55Yir6KGM5pS/5Yy655qEMTI25ZCN6auY5Lit5a2m55Sf5YWl5Zu057uI6K+E44CC5LuK5bm05oiR55yB55Sz5oql6aG555uu5L2c5ZOBODjku7bvvIznu4/ov4fliJ3or4QxM+S7tumhueebruS9nOWTgeWFpeWbtOe7iOivhOOAgmQCAQ9kFgJmDxUEQGh0dHA6Ly9zaWNodWFuLnhpYW94aWFvdG9uZy5vcmcvTmV3cy9BcnRpY2xlVmlldy5hc3B4P0FJRD0yNDQ5MzMwQXR0YWNoRmlsZS8yMDE5LzEyLzUyMDEwMi82MzcxMjI3ODUzMDE0ODI3NTkuanBnTzIwMTnlubTpnZLlsJHlubTpq5jmoKHnp5HlrabokKXlm5vlt53liIbokKXmgLvnu5PnoJTorqjkvJrlnKjmiJDpg73miJDlip/lj6zlvIDdAyAxMeaciDI45pel4oCUMjnml6XvvIwyMDE55bm06Z2S5bCR5bm06auY5qCh56eR5a2m6JCl5Zub5bed5YiG6JCl5oC757uT56CU6K6o5Lya5Zyo5oiQ6YO95oiQ5Yqf5Y+s5byA44CC5Zub5bed55yB6Z2S5bCR5bm056eR5oqA5Lit5b+D5Ymv5Li75Lu75aSP5byY77yM5Lit5Zu956eR5a2m6Zmi44CB5rC05Yip6YOo5oiQ6YO95bGx5Zyw54G+5a6z5LiO546v5aKD56CU56m25omA56eR5pmu5LiO5Z+65Zyw5aSE5aSE6ZW/5byg5a6B77yM5Zub5bed5aSn5a2m44CB55S15a2Q56eR5oqA5aSn5a2m44CB5Lit56eR6Zmi5oiQ6YO95bGx5Zyw5omA5LiJ5omA5om/5Yqe5Y2V5L2N55qE6aG555uu5Li7566h77yM5Lul5Y+K5p2l6Ieq5YWo55yBMjHkuKrluILvvIjlt57vvInnmoTliIbnrqHpooblr7zjgIHpobnnm67kuLvnrqHvvIzpg6jliIbmlZnluIjku6Pooajlkozlv5fmhL/ogIXku6PooajlhbE0NeS6uuWPguWKoOatpOasoeS8muiuruOAgmQCAw8WAh8EZxYCAgEPFgIfAQIEFghmD2QWAmYPFQNZaHR0cDovL3NpY2h1YW4ueGlhb3hpYW90b25nLm9yZy9hY3RpdmUvQWN0aXZlVmlldy5hc3B4P2FjdGl2ZUlEPTc5JkZyb250Q29sdW1uSUQ9NTIwNCZzPTEzLi4vQXR0YWNoRmlsZS8yMDE5LzEyLzUyMDExMi82MzcxMjI2MDg1MTk0NzYyNTcuanBnIeWbm+W3nemdkuWwkeW5tOenkeaKgOWIm+aWsOWkp+i1m2QCAQ9kFgJmDxUDWWh0dHA6Ly9zaWNodWFuLnhpYW94aWFvdG9uZy5vcmcvYWN0aXZlL0FjdGl2ZVZpZXcuYXNweD9hY3RpdmVJRD04MSZGcm9udENvbHVtbklEPTUyMDQmcz0zMy4uL0F0dGFjaEZpbGUvMjAxOS8xMi81MjAxMTIvNjM3MTIyNjA5NzUzNDM4NDI1LnBuZx7lm5vlt53pnZLlsJHlubTmnLrlmajkurrnq57otZtkAgIPZBYCZg8VA1lodHRwOi8vc2ljaHVhbi54aWFveGlhb3Rvbmcub3JnL2FjdGl2ZS9BY3RpdmVWaWV3LmFzcHg/YWN0aXZlSUQ9ODMmRnJvbnRDb2x1bW5JRD01MjA0JnM9NTBBdHRhY2hGaWxlLzIwMTkvMTIvNTIwMTEyLzYzNzEyMjYxMDYyNjQxNTk1OC5wbmcY6Z2S5bCR5bm06auY5qCh56eR5a2m6JClZAIDD2QWAmYPFQNZaHR0cDovL3NpY2h1YW4ueGlhb3hpYW90b25nLm9yZy9hY3RpdmUvQWN0aXZlVmlldy5hc3B4P2FjdGl2ZUlEPTg1JkZyb250Q29sdW1uSUQ9NTIwNCZzPTcwQXR0YWNoRmlsZS8yMDE5LzEyLzUy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OzIwMjAtMDItMTUmIzM5O319XWQCCw8WAh8EZxYEZg8WAh8FBQznsr7lvanmjqjojZBkAgEPFgIfAQIKFhRmD2QWAmYPFQUDY3VyATEv56ysMTnlsYrigJzmmI7lpKnlsI/lsI/np5HlrablrrbigJ3lpZblirHmtLvliqgmaHR0cDovL21pbmd0aWFuLnhpYW94aWFvdG9uZy5vcmcvMjAxOS8yQXR0YWNoRmlsZS8yMDE5LzExLzEwMTAxOTEwLzYzNzA5MzIwNzMxOTM0ODM4Ni5qcGdkAgEPZBYCZg8VBQABMibnrKwxMOWxiuWFqOWbvemdkuWwkeW5tOenkeWtpuW9seWDj+iKgiFodHRwOi8veXhqLnhpYW94aWFvdG9uZy5vcmcvMjAxOS81Li4vQXR0YWNoRmlsZS8yMDE5LzEwLzEwMTAxOTEwLzYzNzA3OTU1NTYwODMzOTAyNC5qcGdkAgIPZBYCZg8VBQABMz/nrKzkupTlsYrlhajlm73pnZLlsJHlubTliJvmhI/nvJbnqIvkuI7mmbrog73orr7orqHlpKfotZvnu4jor4QiaHR0cDovL2Fpc2MueGlhb3hpYW90b25nLm9yZy8yMDE5LzJBdHRhY2hGaWxlLzIwMTkvMTAvMTAxMDE5MTAvNjM3MDcyNjQwMjg3MDQ1MjQ2LmpwZ2QCAw9kFgJmDxUFAAE0FjIwMTnlubTlhajlm73np5Hmma7ml6UlaHR0cDovL3d3dy5rZXB1cmkub3JnLzIwMTkvaW5kZXguYXNweDFBdHRhY2hGaWxlLzIwMTkvOS8xMDEwMTkxMC82MzcwNDUwMjMwNDY0NjE0MzkuanBnZAIED2QWAmYPFQUAATUm56ysMTnlsYrkuK3lm73pnZLlsJHlubTmnLrlmajkurrnq57otZsjaHR0cDovL3JvYm90LnhpYW94aWFvdG9uZy5vcmcvMjAxOS80Li4vQXR0YWNoRmlsZS8yMDE5LzgvMTAxMDE5MTAvNjM3MDE4MjA2MTg1NzI5NTQyLmpwZ2QCBQ9kFgJmDxUFAAE2KeesrDM05bGK5YWo5Zu96Z2S5bCR5bm056eR5oqA5Yib5paw5aSn6LWbJGh0dHA6Ly9jYXN0aWMueGlhb3hpYW90b25nLm9yZy8yMDE5LzFBdHRhY2hGaWxlLzIwMTkvNy8xMDEwMTkxMC82MzcwMDAxOTI4MzA4MTUyNjYuanBnZAIGD2QWAmYPFQUAATcfMjAxOeW5tOmdkuWwkeW5tOmrmOagoeenkeWtpuiQpSJodHRwOi8vd3d3LmtleHVleWluZy5vcmcuY24vMjAxOVQvMUF0dGFjaEZpbGUvMjAxOS83LzEwMTAxOTEwLzYzNjk4MzY1NjE4ODc4OTMzOS5qcGdkAgcPZBYCZg8VBQABOC/nrKwxOOWxiuKAnOaYjuWkqeWwj+Wwj+enkeWtpuWutuKAneWlluWKsea0u+WKqCZodHRwOi8vbWluZ3RpYW4ueGlhb3hpYW90b25nLm9yZy8yMDE4LzUuLi9BdHRhY2hGaWxlLzIwMTgvMTEvMTAxMDE5MTAvNjM2NzY4MzE0MDQ4ODY3MDY1LmpwZ2QCCA9kFgJmDxUFAAE5J+esrOS5neWxiuWFqOWbvemdkuWwkeW5tOenkeWtpuW9seWDj+iKgiFodHRwOi8veXhqLnhpYW94aWFvdG9uZy5vcmcvMjAxOC8yQXR0YWNoRmlsZS8yMDE4LzExLzEwMTAxOTEwLzYzNjc2ODMxMzU3NjY1NDIzNi5qcGdkAgkPZBYCZg8VBQACMTAWMjAxOOW5tOWFqOWbveenkeaZruaXpRZodHRwOi8vd3d3LmtlcHVyaS5vcmcvMUF0dGFjaEZpbGUvMjAxOC85LzEwMTAxOTEwLzYzNjczOTA0ODc3NTYyMzUxOS5qcGdkAgwPFgIfBGdkAg0PZBYIAgEPFgIfBQUe5Zub5bed55yB6Z2S5bCR5bm056eR5oqA5Lit5b+DZAIDDxYCHwUFReWFqOWbvemdkuWwkeW5tOenkeaKgOaVmeiCsuWSjOenkeaZrua0u+WKqOS6keacjeWKoeW5s+WPsOWPkeWxleiBlOebn2QCBQ8WAh8FBRXkuqxJQ1DlpIcgMDUwMTMyNDnlj7dkAgcPFgIfBQUbc2ljaHVhbkB4aWFveGlhb3Rvbmcub3JnLmNuZGSQZ2WOdKyB7W3RwBjjCMje8yQlVNsUwPcYsH0orkTnHQ==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="90059987" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAZmCM+ihdYVC19yrdkYsS3Pdi6A0Uy7hjrxYybW4mq9qP7Rk/bpc/vDwK1RCuUWZ+5ZLB76uMYqQyuWMg0LU8DuyGrMEgW6JddyvppvnhFU0j+86cDa544I86KLO530k0Bui+fNXPxSaGOBYGLHfvUaZ2cTtE/yv16x7KwrLsxLuw==" />
+</div>
+    
+<div class="header_top ">
+        <style>
+            .addfunction.cur .search-box {
+                display:inline-block;
+            }
+        </style>
+        <div class="container clearfix">
+            <div class="fl">
+                <div class="addfunction">
+                    <dl>
+                        <dt>2020年01月06日</dt>
+                    </dl>
+                    <dl class="ml10 mr10">
+                        <dt>星期一</dt>
+                    </dl>
+                    <dl>
+                        <dt><a onclick="SetHome(this,window.location)">设为主页</a></dt>
+                    </dl>
+                    <!-- <dl>
+                        <dt>|</dt>
+                    </dl> -->
+                    <dl>
+                        <dt><a onclick="AddFavorite(window.location, document.title)">加入收藏</a></dt>
+                    </dl>
+
+
+                </div>
+            </div>
+            <div class="fr">
+                <div class="addfunction">
+                    <dl>
+                        <dt><a class="icons-app " >站内搜索 </a>
+
+                        </dt>
+                    </dl>
+                    <dl  class="search-box">
+                        <dt>
+                            <select name="Top1$ddlType" id="Top1_ddlType" class="select-form">
+	<option value="0">文章</option>
+	<option value="1">图集</option>
+	<option value="2">视频</option>
+
+</select>
+                            <input name="Top1$txtSearchKey" type="text" id="Top1_txtSearchKey" class="input-search" />
+                            <a id="Top1_btnFind" class="input-submit btn-primary" href="javascript:__doPostBack(&#39;Top1$btnFind&#39;,&#39;&#39;)" style="color:#fff">确定</a>
+
+
+                        </dt>
+                    </dl>
+
+                    <dl>
+                        <dt class="mail-h">
+                            <a class="icons-mail">移动应用</a>
+                            <div class="mail-show child">
+                            <span class="wx">
+                                微信
+                            </span>
+                                <span class="wz">
+                                微站
+                            </span>
+                            </div>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a class="icons-share">社交分享</a>
+                            <div class="child share">
+                                <div class="bshare-custom icon-medium">
+                                    <a title="分享到微信" class="bshare-weixin"></a>
+                                    <a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+                                    <a title="分享到QQ" class="bshare-qqim"></a>
+                                    <a title="分享到腾讯微博" class="bshare-qqmb"></a>
+                                    <a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a>
+                                </div>
+                            </div>
+                        </dt>
+                    </dl>
+                    <dl>
+                        <dt><a href="/Other/sichuan/404.html" target="_blank" class="icons-net ">会员服务</a></dt>
+                    </dl>
+                    <dl>
+                        <dt><a href="/Other/sichuan/404.html" target="_blank" class="icons-email ">创新邮局</a></dt>
+                    </dl>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function searchbox() {
+            $(".search-box").show(500);
+        }
+
+
+        $(".icons-app").click(function () {
+            $(this).parents(".addfunction").toggleClass("cur")
+        })
+    </script>
+
+    <div class="header">
+        <div class="container">
+            <a href="/Other/sichuan/index.html" class="logo"></a>
+
+        </div>
+    </div>
+     
+<div class="nav-box">
+<div class="container clearfix">
+            <div class="nav">
+                <ul class="main-nav">
+                    
+                            <li id="Menu1_repMenu_liMenu_0" data-columnid="5200" class="current"><a href="/Other/sichuan/index.html"><i class="icon-act"></i>首页</a></li>
+                        
+                            <li id="Menu1_repMenu_liMenu_1" data-columnid="5201"><a href="/Other/sichuan/AboutUs.html"><i class=""></i>关于我们</a></li>
+                        
+                            <li id="Menu1_repMenu_liMenu_2" data-columnid="5204"><a href="/Other/sichuan/active/active.html"><i class=""></i>品牌活动</a></li>
+                        
+                            <li id="Menu1_repMenu_liMenu_3" data-columnid="5202"><a href="/Other/sichuan/news/noticeIndex.html"><i class=""></i>文件通知</a></li>
+                        
+                            <li id="Menu1_repMenu_liMenu_4" data-columnid="5203"><a href="/Other/sichuan/news/newsIndex.html"><i class=""></i>新闻报道</a></li>
+                        
+                            <li id="Menu1_repMenu_liMenu_5" data-columnid="5205"><a href="/Other/sichuan/Exhibition/index.html"><i class=""></i>在线展厅</a></li>
+                        
+                            <li id="Menu1_repMenu_liMenu_6" data-columnid="5206"><a href="/Other/sichuan/404.html"><i class=""></i>交流分享</a></li>
+                        
+                            <li id="Menu1_repMenu_liMenu_7" data-columnid="5207"><a href="/Other/sichuan/404.html"><i class=""></i>人才培养</a></li>
+                        
+                            <li id="Menu1_repMenu_liMenu_8" data-columnid="5208"><a href="/Other/sichuan/404.html"><i class=""></i>队伍建设</a></li>
+                        
+                            <li id="Menu1_repMenu_liMenu_9" data-columnid="5209"><a href="/Other/sichuan/404.html"><i class=""></i>创新学院</a></li>
+                        
+                            <li id="Menu1_repMenu_liMenu_10" data-columnid="5210"><a href="/Other/sichuan/Service/login.html"><i class=""></i>参与活动</a></li>
+                        
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+            <div class="banner ovh">
+        <div class="container clearfix white-bg">
+            <div id="div1" class="swiper-container swiper">
+                <div class="swiper-wrapper">
+                    
+                            <a href="/Other/sichuan/News/ArticleView/AID/244781.html" class="swiper-slide" target="_blank">
+                                <img src="/AttachFile/2019/12/520102/637122786551356954.jpg" alt="">
+                                <div class="item_detail">
+                                    <h3>第十九届“明天小小科学家”奖励活动简讯 </h3>
+                                    <p>由中国科协、中国科学院、中国工程院、国家自然科学基金委员会和周凯旋基金会共同主办的第19届“明天小小科学家”奖励活动终评于11月6-11日在中国科学院大学举行，来自全国18个省及香港、澳门特别行政区的126名高中学生入围终评。今年我省申报项目作品88件，经过初评13件项目作品入围终评。</p>
+                                 </div>
+                            </a>
+                        
+                            <a href="/Other/sichuan/News/ArticleView/AID/244933.html" class="swiper-slide" target="_blank">
+                                <img src="/AttachFile/2019/12/520102/637122785301482759.jpg" alt="">
+                                <div class="item_detail">
+                                    <h3>2019年青少年高校科学营四川分营总结研讨会在成都成功召开</h3>
+                                    <p> 11月28日—29日，2019年青少年高校科学营四川分营总结研讨会在成都成功召开。四川省青少年科技中心副主任夏弘，中国科学院、水利部成都山地灾害与环境研究所科普与基地处处长张宁，四川大学、电子科技大学、中科院成都山地所三所承办单位的项目主管，以及来自全省21个市（州）的分管领导、项目主管，部分教师代表和志愿者代表共45人参加此次会议。</p>
+                                 </div>
+                            </a>
+                        
+
+                </div>
+                <div class="swiper-pagination" style="text-align: right"></div>
+            </div>
+            <div id="div2" class="slider-list fr">
+                 
+                         <a href="/Other/sichuan/active/ActiveView/activeID/79/FrontColumnID/5204/s/1.html" target="_blank">
+                             <img src="/AttachFile/2019/12/520112/637122608519476257.jpg" alt="">
+                             <div class="shadowLeft">
+                                 <span>四川青少年科技创新大赛</span>
+
+                             </div>
+                         </a>
+                    
+                         <a href="/Other/sichuan/active/ActiveView/activeID/81/FrontColumnID/5204/s/3.html" target="_blank">
+                             <img src="/AttachFile/2019/12/520112/637122609753438425.png" alt="">
+                             <div class="shadowLeft">
+                                 <span>四川青少年机器人竞赛</span>
+
+                             </div>
+                         </a>
+                    
+                         <a href="/Other/sichuan/active/ActiveView/activeID/83/FrontColumnID/5204/s/5.html" target="_blank">
+                             <img src="/AttachFile/2019/12/520112/637122610626415958.png" alt="">
+                             <div class="shadowLeft">
+                                 <span>青少年高校科学营</span>
+
+                             </div>
+                         </a>
+                    
+                         <a href="/Other/sichuan/active/ActiveView/activeID/85/FrontColumnID/5204/s/7.html" target="_blank">
+                             <img src="/AttachFile/2019/12/520112/637122611050268702.png" alt="">
+                             <div class="shadowLeft">
+                                 <span>全国青少年科学影像节</span>
+
+                             </div>
+                         </a>
+                    
+
+            </div>
+        </div>
+    </div>
+
+    <div id="div3" class="container">
+        <div class="notice">
+            <div class="notice-left">公告栏</div>
+            <div class="notice-content">
+                <div class="in" id="notice">
+                    
+                            <span class="list-mar" style="display:none"><p align="center"><strong><span style="font-size:18px;">关于举办第十七届四川省青少年机器人</span></strong><strong><span style="font-size:18px;">竞赛（普及组）决赛的通知</span></strong></p>
+
+<p align="center">&nbsp;</p>
+
+<p><span style="font-size:14px;"><strong>各市州科协、机器人实验学校、中小学校、相关单位:</strong></span></p>
+
+<p><span style="font-size:14px;">&nbsp; &nbsp; &nbsp; &nbsp;由四川省科学技术协会、四川省经济和信息化厅、中国科学院成都分院、电子科技大学举办的&ldquo;第十七届四川省青少年机器人竞赛(普及组)决赛&rdquo;将于2019年12月21-22日在成都市举行，现将有关事项通知如下，请自行下载阅读，及时报名，并做好竞赛相关准备！</span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;">附件：<a href="/Other/sichuan/AttachFile/2019/12/52040021/637111425290026005.pdf"><span style="text-align: -webkit-center;">第十七届四川省青少年机器人竞赛（普及组）决赛的通知</span></a></span></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p align="right"><span style="font-size:14px;">四川省青少年机器人竞赛组委会&nbsp; &nbsp;&nbsp;</span></p>
+
+<p style="text-align: right;"><span style="font-size:14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2019年12月5日&nbsp; &nbsp;&nbsp;</span></p>
+
+<p align="center">&nbsp;</p>
+</span>
+                        
+                </div>
+                <div class="btns">
+                    <a class="up" onclick="slidePrev()"></a>
+                    <a class="down" onclick="slideNext()"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container clearfix bg-show" >
+        <div class="left fl con-left" >
+            <div id="div4" class="floor f-email tab_group_hover">
+                <div class="title">
+                    <h2 class="clearfix">
+                        <span class="email">新闻报道</span>
+                        <div class="fr">
+                            <div class="fr-right">
+                                <a href="/Other/sichuan/news/news.html" target="_blank">more></a>
+                                <a href="/Other/sichuan/news/news.html" target="_blank">more></a>
+                                <a href="/Other/sichuan/news/news.html" target="_blank">more></a>
+                            </div>
+                            <ul style="display:none">
+                                <li>地市 <i></i> </li>
+                                <li>区县 <i></i> </li>
+                                <li>学校 <i></i> </li>
+                            </ul>
+                        </div>
+                    </h2>
+                </div>
+                <div class="ctrl">
+                    <ul class="list tab_21">
+
+                          
+
+                            <li class='cur'>
+                            <div class="title">
+                                <a href="/Other/sichuan/News/ArticleView/AID/245193/FrontColumnID/5200.html" target="_blank">
+                                    智能之花 绚丽绽放——第十七届四川省青少年机器人竞赛（普及组）决赛在成都举行 <span>机器人竞赛</span>
+                                </a>
+                            </div>
+                            <div class="tt">
+                                <a href="/Other/sichuan/News/ArticleView/AID/245193/FrontColumnID/5200.html" target="_blank">
+                                    <div class="img">
+                                        <img src='/AttachFile/2019/12/52040022/637126902698918966.JPG' alt="">
+                                    </div>
+                                    <div class="dd">
+                                        <h2>智能之花 绚丽绽放——第十七届四川省青少年机器人竞赛（普及组）决赛在成都举行</h2>
+                                        <p class="t2 mt5">2019年12月21-22日，由四川省科学技术协会、四川省经济和信息化厅、中国科学院成都分院、电子科技大学共…<span class="par">[详情]</span></p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </li>
+                        
+
+                            <li class=''>
+                            <div class="title">
+                                <a href="/Other/sichuan/News/ArticleView/AID/245181/FrontColumnID/5200.html" target="_blank">
+                                     2019年四川省青少年科技创新大赛组织工作者暨骨干科技教师培训在蓉举行 <span>青少年科技创新大赛</span>
+                                </a>
+                            </div>
+                            <div class="tt">
+                                <a href="/Other/sichuan/News/ArticleView/AID/245181/FrontColumnID/5200.html" target="_blank">
+                                    <div class="img">
+                                        <img src='/AttachFile/2019/12/52020022/637124303739214695.jpg' alt="">
+                                    </div>
+                                    <div class="dd">
+                                        <h2> 2019年四川省青少年科技创新大赛组织工作者暨骨干科技教师培训在蓉举行</h2>
+                                        <p class="t2 mt5">2019年12月17—20日，由四川省青少年科技中心、四川省青少年科技教育协会共同主办的“2019年四川省青少年…<span class="par">[详情]</span></p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </li>
+                        
+
+                            <li class=''>
+                            <div class="title">
+                                <a href="/Other/sichuan/News/ArticleView/AID/244933/FrontColumnID/5200.html" target="_blank">
+                                    2019年青少年高校科学营四川分营总结研讨会在成都成功召开 <span>其它活动</span>
+                                </a>
+                            </div>
+                            <div class="tt">
+                                <a href="/Other/sichuan/News/ArticleView/AID/244933/FrontColumnID/5200.html" target="_blank">
+                                    <div class="img">
+                                        <img src='/AttachFile/2019/11/52190022/637106447326279840.jpg' alt="">
+                                    </div>
+                                    <div class="dd">
+                                        <h2>2019年青少年高校科学营四川分营总结研讨会在成都成功召开</h2>
+                                        <p class="t2 mt5">11月28日—29日，2019年青少年高校科学营四川分营总结研讨会在成都成功召开。四川省青少年科技中心副主任…<span class="par">[详情]</span></p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </li>
+                        
+
+                            <li class=''>
+                            <div class="title">
+                                <a href="/Other/sichuan/News/ArticleView/AID/244640/FrontColumnID/5200.html" target="_blank">
+                                    四川省英才计划学子葛逸飞与世界顶尖科学家面对面 <span>英才计划</span>
+                                </a>
+                            </div>
+                            <div class="tt">
+                                <a href="/Other/sichuan/News/ArticleView/AID/244640/FrontColumnID/5200.html" target="_blank">
+                                    <div class="img">
+                                        <img src='/AttachFile/2019/11/52190022/637082391986290181.jpg' alt="">
+                                    </div>
+                                    <div class="dd">
+                                        <h2>四川省英才计划学子葛逸飞与世界顶尖科学家面对面</h2>
+                                        <p class="t2 mt5"> 10月29日，以“科技，为了人类共同命运”为主题的第二届世界顶尖科学家论坛在上海自由贸易试验区临港新…<span class="par">[详情]</span></p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </li>
+                        
+
+                            <li class=''>
+                            <div class="title">
+                                <a href="/Other/sichuan/News/ArticleView/AID/244591/FrontColumnID/5200.html" target="_blank">
+                                    第十届全国青少年科学影像节活动圆满落幕 <span>全国青少年科学影像节</span>
+                                </a>
+                            </div>
+                            <div class="tt">
+                                <a href="/Other/sichuan/News/ArticleView/AID/244591/FrontColumnID/5200.html" target="_blank">
+                                    <div class="img">
+                                        <img src='/AttachFile/2019/10/52190022/637078726781058781.jpg' alt="">
+                                    </div>
+                                    <div class="dd">
+                                        <h2>第十届全国青少年科学影像节活动圆满落幕</h2>
+                                        <p class="t2 mt5"> 10月27日晚，由中国科协青少年科技中心、中国青少年科技辅导员协会和四川省科学技术协会共同主办的第十…<span class="par">[详情]</span></p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </li>
+                        
+
+                            <li class=''>
+                            <div class="title">
+                                <a href="/Other/sichuan/News/ArticleView/AID/244584/FrontColumnID/5200.html" target="_blank">
+                                    第十届全国青少年科学影像节展映展评活动在成都开幕 <span>全国青少年科学影像节</span>
+                                </a>
+                            </div>
+                            <div class="tt">
+                                <a href="/Other/sichuan/News/ArticleView/AID/244584/FrontColumnID/5200.html" target="_blank">
+                                    <div class="img">
+                                        <img src='/AttachFile/2019/10/52190022/637076881397038192.jpg' alt="">
+                                    </div>
+                                    <div class="dd">
+                                        <h2>第十届全国青少年科学影像节展映展评活动在成都开幕</h2>
+                                        <p class="t2 mt5">10月25日晚，由中国科协青少年科技中心、中国青少年科技辅导员协会和四川省科学技术协会共同主办的第十届…<span class="par">[详情]</span></p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </li>
+                        
+
+                            <li class=''>
+                            <div class="title">
+                                <a href="/Other/sichuan/News/ArticleView/AID/244280/FrontColumnID/5200.html" target="_blank">
+                                    中国科协青少年中心领导来川考察“第十届全国青少年科学影像节”筹备情况 <span>全国青少年科学影像节</span>
+                                </a>
+                            </div>
+                            <div class="tt">
+                                <a href="/Other/sichuan/News/ArticleView/AID/244280/FrontColumnID/5200.html" target="_blank">
+                                    <div class="img">
+                                        <img src='/AttachFile/2019/9/52190022/637045992701561037.jpeg' alt="">
+                                    </div>
+                                    <div class="dd">
+                                        <h2>中国科协青少年中心领导来川考察“第十届全国青少年科学影像节”筹备情况</h2>
+                                        <p class="t2 mt5">  9月19日，中国科协青少年中心副主任张振威、科普活动处处长姜景一一行来川考察“第十届全国青少年科学…<span class="par">[详情]</span></p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </li>
+                        
+
+                            <li class=''>
+                            <div class="title">
+                                <a href="/Other/sichuan/News/ArticleView/AID/243978/FrontColumnID/5200.html" target="_blank">
+                                    四川代表队在第19届中国青少年机器人竞赛中收获1个总冠军、9枚金牌，为四川青少年最完美的绽放疯狂打Call <span>机器人竞赛</span>
+                                </a>
+                            </div>
+                            <div class="tt">
+                                <a href="/Other/sichuan/News/ArticleView/AID/243978/FrontColumnID/5200.html" target="_blank">
+                                    <div class="img">
+                                        <img src='/AttachFile/2019/8/52040022/637019151755924955.jpg' alt="">
+                                    </div>
+                                    <div class="dd">
+                                        <h2>四川代表队在第19届中国青少年机器人竞赛中收获1个总冠军、9枚金牌，为四川青少年最完美的绽放疯狂打Call</h2>
+                                        <p class="t2 mt5">8月11日至17日，第十九届中国青少年机器人竞赛暨2019世界青少年机器人邀请赛在重庆举办。本届大赛由中国…<span class="par">[详情]</span></p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </li>
+                        
+
+                            <li class=''>
+                            <div class="title">
+                                <a href="/Other/sichuan/News/ArticleView/AID/243654/FrontColumnID/5200.html" target="_blank">
+                                    征战第34届全国青少年科技创新大赛，四川再创佳绩 <span>青少年科技创新大赛</span>
+                                </a>
+                            </div>
+                            <div class="tt">
+                                <a href="/Other/sichuan/News/ArticleView/AID/243654/FrontColumnID/5200.html" target="_blank">
+                                    <div class="img">
+                                        <img src='/AttachFile/2019/7/52020022/636997740415710171.jpg' alt="">
+                                    </div>
+                                    <div class="dd">
+                                        <h2>征战第34届全国青少年科技创新大赛，四川再创佳绩</h2>
+                                        <p class="t2 mt5"> 7月21日—26日，由中国科协、教育部、科技部等九部委和澳门特别行政区政府共同主办的第34届全国青少年科…<span class="par">[详情]</span></p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </li>
+                        
+
+                            <li class=''>
+                            <div class="title">
+                                <a href="/Other/sichuan/News/ArticleView/AID/243542/FrontColumnID/5200.html" target="_blank">
+                                    2019年青少年高校科学营四川分营圆满闭幕 <span>青少年高校科学营</span>
+                                </a>
+                            </div>
+                            <div class="tt">
+                                <a href="/Other/sichuan/News/ArticleView/AID/243542/FrontColumnID/5200.html" target="_blank">
+                                    <div class="img">
+                                        <img src='/AttachFile/2019/7/52190022/636994979054713098.JPG' alt="">
+                                    </div>
+                                    <div class="dd">
+                                        <h2>2019年青少年高校科学营四川分营圆满闭幕</h2>
+                                        <p class="t2 mt5">由中国科协和教育部指导，四川省科协和省教育厅主办，四川大学、电子科技大学和中国科学院、水利部成都山…<span class="par">[详情]</span></p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </li>
+                        
+                      </ul>
+                </div>
+
+            </div>
+
+            <div id="div5" class="nowNews">
+                <div class="swiper-container sub-swiper">
+                    <div class="swiper-wrapper">
+                        
+                                <div class="swiper-slide">
+                                    <a href="/Other/mingtian/2019/index.html" target="_blank">
+                                        <img src="/AttachFile/2019/11/520107/637089097690357932.jpg" /></a>
+
+                                </div>
+
+                            
+                                <div class="swiper-slide">
+                                    <a href="http://www.kexueying.org.cn/" target="_blank">
+                                        <img src="/AttachFile/2019/11/520107/637083122694162004.jpg" /></a>
+
+                                </div>
+
+                            
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="div6" class="floor f-video" style="margin-top: 15px">
+                <div class="title">
+                    <h2 class="clearfix">
+                        <span class="video">活动掠影</span>
+                        <div class="fr">
+                            <div class="fr-right">
+                                <a href="/Other/sichuan/Gallery/GalleryList.html" target="_blank">more></a>
+                            </div>
+                        </div>
+                    </h2>
+                </div>
+
+                <div class="video-list  clearfix">
+                    <div class="video-listc">
+                        
+                            <a href='/Other/sichuan/Gallery/GalleryView/GalleryID/2063/FrontColumnID/5200.html' target="_blank">
+                                <img src="/AttachFile/520224/633447338687968750100_5770fb.jpg" alt="">
+                                <span class="shadow shadow-top1"><em>第23届创新大赛</em></span>
+                                <i class="shadow-thumb">0</i>
+                                <div class="shadow-big">
+                                    <div class="shadow-inner">
+                                        <h1>第23届创新大赛</h1>
+                                        <p class="font-12">
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        
+                            <a href='/Other/sichuan/Gallery/GalleryView/GalleryID/2064/FrontColumnID/5200.html' target="_blank">
+                                <img src="/AttachFile/520224/633447339923750000100_5782fb.jpg" alt="">
+                                <span class="shadow shadow-top1"><em>第23届创新大赛</em></span>
+                                <i class="shadow-thumb">0</i>
+                                <div class="shadow-big">
+                                    <div class="shadow-inner">
+                                        <h1>第23届创新大赛</h1>
+                                        <p class="font-12">
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        
+                            <a href='/Other/sichuan/Gallery/GalleryView/GalleryID/2065/FrontColumnID/5200.html' target="_blank">
+                                <img src="/AttachFile/520224/633447340576406250DSC_717fb.jpg" alt="">
+                                <span class="shadow shadow-top1"><em>第23届创新大赛</em></span>
+                                <i class="shadow-thumb">1</i>
+                                <div class="shadow-big">
+                                    <div class="shadow-inner">
+                                        <h1>第23届创新大赛</h1>
+                                        <p class="font-12">
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        
+                        
+                                <a href="/Other/sichuan/Video/VideoView/VideoID/6360.html" target="_blank">
+                                    <img src="/VideoFile/2019/10/1025001000/6ce8ff178eb3434db0d59cd8c1c69b55.png" alt="">
+                                    <span class="shadow shadow-top2"><em>第十届全国青少年科学影像节精彩回顾</em></span>
+                                    <div class="shadow-big">
+                                        <div class="shadow-inner">
+                                            <h1>第十届全国青少年科学影像节精彩回顾</h1>
+                                            <p class="font-12">
+                                                
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            
+                                <a href="/Other/sichuan/Video/VideoView/VideoID/6192.html" target="_blank">
+                                    <img src="/VideoFile/2019/8/1013001000/0632af37d29045ee8a64f72548f86797.jpg" alt="">
+                                    <span class="shadow shadow-top2"><em>第19届中国青少年机器人竞赛回顾</em></span>
+                                    <div class="shadow-big">
+                                        <div class="shadow-inner">
+                                            <h1>第19届中国青少年机器人竞赛回顾</h1>
+                                            <p class="font-12">
+                                                2019年8月11-17日，第19届中国青少年机器人竞赛暨2019世界青少年机器人邀请赛在重庆举办。
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            
+                                <a href="/Other/sichuan/Video/VideoView/VideoID/6143.html" target="_blank">
+                                    <img src="/VideoFile/2019/8/1011000600/97ec5af784fa42c68f3bde1fa17e9266.jpg" alt="">
+                                    <span class="shadow shadow-top2"><em>第34届全国青少年科技创新大赛回顾视频</em></span>
+                                    <div class="shadow-big">
+                                        <div class="shadow-inner">
+                                            <h1>第34届全国青少年科技创新大赛回顾视频</h1>
+                                            <p class="font-12">
+                                                第34届全国青少年科技创新大赛六天花絮
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="div7" class="floor f-people" style="margin-top: 15px">
+                <div class="title">
+                    <h2 class="clearfix">
+                        <span class="people">人才培养</span>
+                        <div class="fr">
+                            <div class="fr-right">
+                                <a>more></a>
+                            </div>
+                        </div>
+                    </h2>
+                </div>
+
+                <div class="video-list  clearfix">
+                    <div class="people-top">
+                        <a href="" class="people-top1">
+                            <p><span>0</span> 名学生</p>
+                        </a>
+                        <a href="" class="people-top2">
+                            <p><span>0</span> 名教师</p>
+                        </a>
+                        <a href="" class="people-top3">
+                            <p><span>0</span> 所学校</p>
+                        </a>
+                    </div>
+                    <div class="people-bottom">
+                        
+                        
+                        
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="right fr con-right"  >
+            <div id="div8" class="floor">
+                <h5 class="noticed">文件通知<i class="fr"><a class="f13" href="/Other/sichuan/news/notice.html">MORE></a></i></h5>
+                <div style="box-sizing:border-box">
+                    <div class="more mt15 mb15">
+                        
+                                 <a href="/Other/sichuan/News/noticeView/AID/245242/FrontColumnID/5200.html" target="_blank"><i></i><span class="pl10">关于公布第34届四川省青少年科技创新大赛获奖名单的通知</span></a>
+                            
+                                 <a href="/Other/sichuan/News/noticeView/AID/245236/FrontColumnID/5200.html" target="_blank"><i></i><span class="pl10">关于四川省2020年英才计划拟录取学员名单公示</span></a>
+                            
+                                 <a href="/Other/sichuan/News/noticeView/AID/245213/FrontColumnID/5200.html" target="_blank"><i></i><span class="pl10">关于举行2019年四川省初级科技辅导员专业水平认证笔试的通知</span></a>
+                            
+                                 <a href="/Other/sichuan/News/noticeView/AID/245211/FrontColumnID/5200.html" target="_blank"><i></i><span class="pl10">关于第十七届四川省青少年机器人竞赛（普及组）决赛获奖名单的公示</span></a>
+                            
+                                 <a href="/Other/sichuan/News/noticeView/AID/244981/FrontColumnID/5200.html" target="_blank"><i></i><span class="pl10">关于举办第十七届四川省青少年机器人 竞赛（普及组）决赛的通知</span></a>
+                            
+                                 <a href="/Other/sichuan/News/noticeView/AID/244753/FrontColumnID/5200.html" target="_blank"><i></i><span class="pl10">关于举办2019年青少年高校科学营四川分营总结研讨会的通知</span></a>
+                            
+                                 <a href="/Other/sichuan/News/noticeView/AID/244735/FrontColumnID/5200.html" target="_blank"><i></i><span class="pl10">关于举办“2019年四川省青少年科学影像节活动”骨干教师培训班的通知</span></a>
+                            
+                                 <a href="/Other/sichuan/News/noticeView/AID/244730/FrontColumnID/5200.html" target="_blank"><i></i><span class="pl10">关于第十七届四川省青少年机器人竞赛（普及组）规则的公示(第二批更新）</span></a>
+                            
+                                 <a href="/Other/sichuan/News/noticeView/AID/244709/FrontColumnID/5200.html" target="_blank"><i></i><span class="pl10">关于第十七届四川省青少年机器人竞赛（普及组）规则的公示</span></a>
+                            
+                                 <a href="/Other/sichuan/News/noticeView/AID/244558/FrontColumnID/5200.html" target="_blank"><i></i><span class="pl10">关于开展2019年四川省初级、中级（破格）青少年科技辅导员专业水平认证工作的通知</span></a>
+                            
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="div9" class="floor">
+                <h5 class="act">活动日历<i class="fr"><a class="f13" href="/Other/sichuan/news/actNotice.html">MORE></a>
+<a href="http://www.iis7.com" style="display:inline-block;background-color:;color:#fff;padding:2px 5px;font-family:arial;font-size:12px;font-weight:bold;" class="5cc4bef1ded5430a9dd1b652c6de53be" target="_blank">iis7站长之家</a></i></h5>
+                <div class="floor-content">
+                    <div class="act-calendar"></div>
+                    <div id="AnnounceList" style="display: none">[{type:&#39;startday&#39;,year:2020,month:1,day:15,detail:{title:&#39;第35届四川青少年科技创新大赛&#39;,start:&#39;2020-01-15&#39;,end:&#39;2020-02-15&#39;}}]</div>
+                </div>
+            </div>
+
+            <div id="div10" class="floor mt25 tab_group_hover">
+                <div class="bg-blue">
+                    <h5 class="point">
+                        精彩推荐
+                        <i class="fr" style="display:none">
+                            <a class="f13" href="/Other/sichuan/news/notice.html">MORE></a>
+                            <a class="f13" href="/Other/sichuan/news/notice1.html">MORE></a>
+                        </i>
+                        <div class="fr-point">
+                            <span class="active">专题</span>
+                            <span>展览</span>
+                        </div>
+                    </h5>
+                </div>
+                <div style="box-sizing:border-box" class="point-par pb10">
+                    <div style="box-sizing:border-box" class="pl20 pr20 pt10" >
+                        <div class="tab-tt">
+                            <ul class="act-list tab_23">
+                                
+                                        <li class='cur'>
+                                            <span><em>1</em><i>第19届“明天小小科学家”奖励活动</i></span>
+                                            <a target="_blank"  href='http://mingtian./2019/'><img width="220" height="36" src='/AttachFile/2019/11/10101910/637093207319348386.jpg'></a>
+                                        </li>
+                                    
+                                        <li class=''>
+                                            <span><em>2</em><i>第10届全国青少年科学影像节</i></span>
+                                            <a target="_blank"  href='/Other/yxj/2019/index.html'><img width="220" height="36" src='/AttachFile/2019/10/10101910/637079555608339024.jpg'></a>
+                                        </li>
+                                    
+                                        <li class=''>
+                                            <span><em>3</em><i>第五届全国青少年创意编程与智能设计大赛终评</i></span>
+                                            <a target="_blank"  href='/Other/aisc/2019/index.html'><img width="220" height="36" src='/AttachFile/2019/10/10101910/637072640287045246.jpg'></a>
+                                        </li>
+                                    
+                                        <li class=''>
+                                            <span><em>4</em><i>2019年全国科普日</i></span>
+                                            <a target="_blank"  href='http://www.kepuri.org/2019/index.aspx'><img width="220" height="36" src='/AttachFile/2019/9/10101910/637045023046461439.jpg'></a>
+                                        </li>
+                                    
+                                        <li class=''>
+                                            <span><em>5</em><i>第19届中国青少年机器人竞赛</i></span>
+                                            <a target="_blank"  href='/2019/index.html'><img width="220" height="36" src='/AttachFile/2019/8/10101910/637018206185729542.jpg'></a>
+                                        </li>
+                                    
+                                        <li class=''>
+                                            <span><em>6</em><i>第34届全国青少年科技创新大赛</i></span>
+                                            <a target="_blank"  href='/Other/castic/2019/index.html'><img width="220" height="36" src='/AttachFile/2019/7/10101910/637000192830815266.jpg'></a>
+                                        </li>
+                                    
+                                        <li class=''>
+                                            <span><em>7</em><i>2019年青少年高校科学营</i></span>
+                                            <a target="_blank"  href='http://www.kexueying.org.cn/2019T/'><img width="220" height="36" src='/AttachFile/2019/7/10101910/636983656188789339.jpg'></a>
+                                        </li>
+                                    
+                                        <li class=''>
+                                            <span><em>8</em><i>第18届“明天小小科学家”奖励活动</i></span>
+                                            <a target="_blank"  href='/Other/mingtian/2018/index.html'><img width="220" height="36" src='/AttachFile/2018/11/10101910/636768314048867065.jpg'></a>
+                                        </li>
+                                    
+                                        <li class=''>
+                                            <span><em>9</em><i>第九届全国青少年科学影像节</i></span>
+                                            <a target="_blank"  href='/Other/yxj/2018/index.html'><img width="220" height="36" src='/AttachFile/2018/11/10101910/636768313576654236.jpg'></a>
+                                        </li>
+                                    
+                                        <li class=''>
+                                            <span><em>10</em><i>2018年全国科普日</i></span>
+                                            <a target="_blank"  href='http://www.kepuri.org/'><img width="220" height="36" src='/AttachFile/2018/9/10101910/636739048775623519.jpg'></a>
+                                        </li>
+                                    
+
+
+
+                            </ul>
+
+
+                        </div>
+
+                    </div>
+                    <div style="box-sizing:border-box" class="pl20 pr20 pt10" >
+
+                        <div class="tab-tt">
+                            <ul class="act-list act-list2 tab_idx2 ">
+                                <li class='cur'>
+                                    <span><em>1</em><i>全国青少年科学影像节光影10年回顾展</i></span>
+                                    <a target="_blank"  href='/Other/yxj/2019/History/Index.html'><img width="220" height="36" src='/sourceSichuan/images/zhanlan1.jpg'></a>
+                                </li>
+
+                                <li class=''>
+                                    <span><em>2</em><i>全国青少年科技创新大赛30届回顾展</i></span>
+                                    <a target="_blank"  href='/Other/castic/zhanlan/index.html'><img width="220" height="36" src='/sourceSichuan/images/zhanlan2.jpg'></a>
+                                </li>
+                            </ul>
+                           
+                        </div>
+
+                </div>
+                </div>
+
+            </div>
+            <div id="div11" class="right-btmbtn">
+                <a href="" class="btmbtn-1">下载中心</a>
+                <a href="" class="btmbtn-2">咨询答疑</a>
+                <a href="" class="btmbtn-3">意见建议</a>
+                <a href="" class="btmbtn-4">举报投诉</a>
+            </div>
+        </div>
+
+    </div>
+
+    
+<!--footer start-->
+<div class="footer">
+    <div class="bg-footer">
+        <div class="container">
+            <div class="foot-info  clearfix ">
+                <div class="fl mt25">
+                    <p>
+                        主办单位：四川省青少年科技中心
+                    </p>
+                    <p>
+                        服务保障：全国青少年科技教育和科普活动云服务平台发展联盟
+                    </p>
+                    <p >
+                        网站备案：京ICP备 05013249号
+                    </p>
+                    <p >
+                        联系我们：sichuan@.cn
+                    </p>
+                </div>
+                <a href="" class="rel" ></a>
+                <div class="code-footer fr mt15">
+                        <span style="width: 88px;">
+                            <var></var>
+                            <i>扫一扫 关注我们</i>
+                        </span>
+                </div>
+                <div class="linkCode fr clearfix">
+                    <div class="code-box tc">
+                        <a  class="erCode  xcx mr15" style="display:none">小程序</a>
+                        <a  class="erCode  wx mr15">微信</a>
+                        <a  class="erCode wz ">微站</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer end-->
+
+        <script>
+    var mySwiper1 = new Swiper('.swiper', {
+        loop: true,
+        autoplay: 5000,
+        speed: 500,
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+    var mySwiper2 = new Swiper('.sub-swiper', {
+        loop: true,
+        direction: 'vertical',
+        autoplay: 6000,
+        speed: 500
+    });
+    $(".list li").hover(function () {
+        $(this).addClass("cur").siblings().removeClass("cur")
+    });
+    $(".act-list li").hover(function () {
+        $(this).closest('.act-list').find('li').removeClass("cur");
+        $(this).addClass("cur");
+    });
+    $(".tab_26 li").hover(function () {
+        $(".tab_26 li").removeClass("cur");
+        $(this).addClass("cur");
+    });
+    $(".tab_27 li").hover(function () {
+        $(".tab_27 li").removeClass("cur");
+        $(this).addClass("cur");
+    });
+
+    $(".slider-list a").hover(function () {
+        $(this).siblings().removeClass("cur");
+        $(this).addClass("cur");
+    })
+
+    //     新闻报道切换
+
+    $(".f-email .fr ul li").mouseover(function(){
+        $('.ctrl ul').css('display','none')
+        $('.ctrl ul').eq($(this).index()+1).css('display','block')
+        $(".f-email .fr ul li").removeClass('active')
+        $(this).addClass('active')
+        $(this).parents(".fr").find(".fr-right a").css('display','none')
+        $(this).parents(".fr").find(".fr-right a").eq($(this).index()).css('display','block')
+    })
+
+    $(".fr-point span").mouseover(function(){
+        $('.point-par>div').css('display','none')
+        $('.point-par>div').eq($(this).index()).css('display','block')
+        $(".fr-point span").removeClass('active')
+        $(this).addClass('active')
+        $(this).parents(".point").find(".fr>a").css('display','none')
+        $(this).parents(".point").find(".fr>a").eq($(this).index()).css('display','block')
+    })
+
+</script>
+
+<!--活动日历-->
+<script>
+    $(function () {
+        var mar1 = "<marquee onmouseover=\"this.stop()\" onmouseout=\"this.start()\">" + $('.list-mar').eq(0).text() + "</marquee>";
+        $('#notice').prepend(mar1);
+
+
+        $('.act-calendar').datepicker({
+            showMonthAfterYear: true,
+            showOtherMonths: true,
+            selectOtherMonths: true,
+            nextText: '下个月',
+            prevText: '上个月',
+            yearSuffix: '年',
+            monthNames: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
+            monthNamesShort: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
+            dayNamesMin: ['日', '一', '二', '三', '四', '五', '六'],
+            onSelect: function () { },
+            onChangeMonthYear: function () {
+                setTimeout(function () {
+                    showDetail();
+                }, 100);
+
+            }
+        });
+        showDetail()
+    });
+
+
+    var actList = eval($('#AnnounceList').text());
+
+    function showDetail() {
+        for (x in actList) {
+            var _type = actList[x].type;
+            var _year = actList[x].year;
+            var _month = actList[x].month;
+            var _day = actList[x].day;
+            var _title = actList[x].detail.title;
+            var _start = actList[x].detail.start;
+            var _end = actList[x].detail.end;
+            $('td[data-month=' + (_month - 1) + '][data-year=' + _year + ']').each(function () {
+                if ($(this).find('a').text() == _day) {
+                    $(this).closest('td').removeClass(_type).addClass(_type);
+                    $(this).closest('td').removeClass('ctrl').addClass('ctrl');
+                    if ($(this).find('.hidden-data')[0]) {
+                        $(this).find('.hidden-data').append("<div class=\"list-data\"><span class=\"ca-title\">"+_title+"</span><span class=\"ca-when\">"+_start+"至"+_end+"</span></div>")
+                    } else {
+                        $(this).append("<div style=\"display: none\" class=\"hidden-data\"></div>");
+                        $(this).find('.hidden-data').append("<div class=\"list-data\"><span class=\"ca-title\">"+_title+"</span><span class=\"ca-when\">"+_start+"至"+_end+"</span></div>")
+                    }
+                }
+            })
+        }
+        $('#div9 td').off('click').find('a').removeAttr('href');
+        $('#div9 td.ctrl').mouseenter(function () {
+            let dom = $(this).find('.hidden-data').html();
+            let left = $(this).offset().left;
+            let top = $(this).offset().top;
+            $('body').append("<div class=\"act-pop\" style=\"left: " + (Math.round(left) - 263) + "px;top:" + (Math.round(top) + 55) + "px\"> <div class=\"in\">" + dom + "</div></div>")
+
+        });
+        $('#div9 td.ctrl').mouseleave(function () {
+            $('.act-pop').remove()
+        })
+
+    }
+
+
+</script>
+        <script>
+            var slideNow = 0;
+            var slideLength = $('.list-mar').size();
+            function slideNext(){
+                $('#notice marquee').remove();
+                if ((slideNow + 2) > slideLength) {
+                    var mar1 = "<marquee onmouseover=\"this.stop()\" onmouseout=\"this.start()\">" + $('.list-mar').eq(0).text() + "</marquee>";
+                    $('#notice').prepend(mar1);
+                    slideNow = 0;
+                } else {
+                    var mar2 = "<marquee onmouseover=\"this.stop()\" onmouseout=\"this.start()\">" + $('.list-mar').eq((slideNow + 1)).text() + "</marquee>";
+                    $('#notice').prepend(mar2);
+                    slideNow++;
+                }
+            }
+            function slidePrev(){
+                $('#notice marquee').remove();
+                if ((slideNow - 1) < 0) {
+                    var mar1 = "<marquee onmouseover=\"this.stop()\" onmouseout=\"this.start()\">" + $('.list-mar').eq(slideLength - 1).text() + "</marquee>";
+                    $('#notice').prepend(mar1);
+                    slideNow = slideLength -1
+                } else {
+                    var mar2 = "<marquee onmouseover=\"this.stop()\" onmouseout=\"this.start()\">" + $('.list-mar').eq(slideNow - 1).text() + "</marquee>";
+                    $('#notice').prepend(mar2);
+                    slideNow--
+                }
+            }
+</script>
+    </form>
+</body>
+</html>
+

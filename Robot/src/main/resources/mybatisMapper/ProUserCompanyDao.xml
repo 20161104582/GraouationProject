@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.web.sys.dao.ProUserCompanyDao">
+  <resultMap id="BaseResultMap" type="com.web.sys.bean.ProUserCompany">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="company_id" jdbcType="BIGINT" property="companyId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from pro_user_company
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select id, user_id, company_id
+    from pro_user_company
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, user_id, company_id
+    from pro_user_company
+      <where>
+		<if test="id!=null "> and id = #{id,jdbcType=BIGINT}</if>
+		<if test="userId!=null "> and user_id = #{userId,jdbcType=BIGINT}</if>
+		<if test="companyId!=null "> and company_id = #{companyId,jdbcType=BIGINT}</if>
+ 	</where> 
+ <if test="orderByString!=null and orderByString!=''"> 
+	 ${orderByString} 
+ </if>
+  </select>
+  <select id="queryByCondition" resultMap="BaseResultMap">
+    select id,user_id,company_id
+ 	from  pro_user_company 
+	<where>
+		<if test="id!=null "> and id = #{id,jdbcType=BIGINT}</if>
+		<if test="userId!=null "> and user_id = #{userId,jdbcType=BIGINT}</if>
+		<if test="companyId!=null "> and company_id = #{companyId,jdbcType=BIGINT}</if>
+ 	</where> 
+ <if test="orderByString!=null and orderByString!=''"> 
+	 ${orderByString} 
+ </if>
+  </select>
+  <insert id="insert" keyColumn="id" keyProperty="id" useGeneratedKeys="true">
+    insert into pro_user_company (user_id,company_id)
+ values ( #{userId,jdbcType=BIGINT}, #{companyId,jdbcType=BIGINT})
+  </insert>
+  <update id="update">
+    update  	pro_user_company 
+	<set>
+		<if test="userId!=null ">user_id = #{userId,jdbcType=BIGINT}, </if>
+		<if test="companyId!=null ">company_id = #{companyId,jdbcType=BIGINT}, </if>
+ 	</set>
+	where id=#{id}
+  </update>
+</mapper>

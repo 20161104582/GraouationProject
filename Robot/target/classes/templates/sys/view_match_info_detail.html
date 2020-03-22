@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <div th:replace="share/common"></div>
+</head>
+<body class="body-common">
+<div class="page-container">
+    <form class="layui-form layui-form-pane" action="">
+        <input type="hidden" name="id" th:value="${view_match_info.id }" />
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">比赛ID</label>
+                <div class="layui-input-block">
+                    <input disabled type="number" name="matchId" id="matchId" maxlength="19" lay-verify="number" autocomplete="off"
+                           placeholder="请输入比赛ID" class="layui-input" th:value="${view_match_info.matchId}" >
+                </div>
+            </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">比赛名称</label>
+                    <div class="layui-input-block">
+                        <input disabled type="text" name="matchName" id="matchName" maxlength="255" lay-verify="required" autocomplete="off"
+                               placeholder="请输入比赛名称" class="layui-input" th:value="${view_match_info.matchName}" >
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">发布时间</label>
+                    <div class="layui-input-block">
+                        <input disabled type="text" name="matchPubtime" id="matchPubtime" autocomplete="off" class="layui-input" lay-verify="required"
+                               th:value="${view_match_info.matchPubtime_}">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">比赛时间</label>
+                    <div class="layui-input-block">
+                        <input disabled type="text" name="matchTime" id="matchTime" autocomplete="off" class="layui-input" lay-verify="required"
+                               th:value="${view_match_info.matchTime_}">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">比赛地点</label>
+                    <div class="layui-input-block">
+                        <input disabled type="text" name="matchAddress" id="matchAddress" maxlength="255" lay-verify="required" autocomplete="off"
+                               placeholder="请输入比赛地点" class="layui-input" th:value="${view_match_info.matchAddress}" >
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">负责人姓名</label>
+                    <div class="layui-input-block">
+                        <input disabled type="text" name="truename" id="truename" maxlength="255" lay-verify="required" autocomplete="off"
+                               placeholder="请输入真实姓名" class="layui-input" th:value="${view_match_info.truename}" >
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">电话</label>
+                    <div class="layui-input-block">
+                        <input disabled type="text" name="phone" id="phone" maxlength="16" lay-verify="required" autocomplete="off"
+                               placeholder="请输入电话" class="layui-input" th:value="${view_match_info.phone}" >
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">公司名称</label>
+                    <div class="layui-input-block">
+                        <input disabled type="text" name="companyName" id="companyName" maxlength="255" lay-verify="required" autocomplete="off"
+                               placeholder="请输入公司名称" class="layui-input" th:value="${view_match_info.companyName}" >
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">公司地址</label>
+                    <div class="layui-input-block">
+                        <input disabled type="text" name="companyAddress" id="companyAddress" maxlength="255" lay-verify="required" autocomplete="off"
+                               placeholder="请输入公司地址" class="layui-input" th:value="${view_match_info.companyAddress}" >
+                    </div>
+                </div>
+                <div class="layui-form-item layui-form-text">
+                    <label class="layui-form-label">公司简介</label>
+                    <div class="layui-input-block">
+                        <textarea disabled placeholder="请输入" class="layui-textarea" lay-verify="required"
+                                  th:text="${view_match_info.companyIntro}" name="companyIntro" id="companyIntro"></textarea>
+                    </div>
+                </div>
+        <div class="layui-form-item" style="text-align: center">
+            <span th:if="${session.userAuth==null || #maps.containsKey(session.userAuth,'viewMatchInfo/save')}">
+            <!--<button class="layui-btn" lay-submit="" lay-filter="save-data">提交</button>-->
+            </span>
+            <input type="button" class="layui-btn"  onclick="myback()" value="返回" />
+        </div>
+    </form>
+</div>
+<!--
+<script src="//res.layui.com/layui/dist/layui.js" charset="utf-8"></script>-->
+<!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
+<script>
+    layui.use(['form', 'layedit', 'laydate', 'upload'], function () {
+        var form = layui.form
+            , layer = layui.layer
+            , layedit = layui.layedit
+            , upload = layui.upload
+            , laydate = layui.laydate;
+        form.render();
+
+
+           laydate.render({
+               elem: '#matchPubtime'
+               , type: 'datetime'
+           });
+           laydate.render({
+               elem: '#matchTime'
+               , type: 'datetime'
+           });
+
+        //自定义验证规则
+        form.verify({});
+
+        //监听提交
+        form.on('submit(save-data)', function (data) {
+            $.post(rootPath+"viewMatchInfo/save",data.field,function (data) {
+                if(data.code==0){
+                    myAlert("保存成功");
+                    setTimeout(function () {
+                        myback("viewMatchInfo/gotoList");
+                    },alertTime)
+                }else{
+                    myAlert("保存失败->"+data.message)
+                }
+            });
+            return false
+        });
+
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.web.sys.dao.ViewSignInfoDao">
+  <resultMap id="BaseResultMap" type="com.web.sys.bean.ViewSignInfo">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="sign_id" jdbcType="BIGINT" property="signId" />
+    <result column="match_id" jdbcType="BIGINT" property="matchId" />
+    <result column="teacher_id" jdbcType="BIGINT" property="teacherId" />
+    <result column="sign_time" jdbcType="TIMESTAMP" property="signTime" />
+    <result column="score" jdbcType="INTEGER" property="score" />
+    <result column="file_id" jdbcType="BIGINT" property="fileId" />
+    <result column="match_name" jdbcType="VARCHAR" property="matchName" />
+    <result column="match_pubtime" jdbcType="TIMESTAMP" property="matchPubtime" />
+    <result column="match_time" jdbcType="TIMESTAMP" property="matchTime" />
+    <result column="match_address" jdbcType="VARCHAR" property="matchAddress" />
+    <result column="charger_name" jdbcType="VARCHAR" property="chargerName" />
+    <result column="teacher_name" jdbcType="VARCHAR" property="teacherName" />
+    <result column="school_name" jdbcType="VARCHAR" property="schoolName" />
+    <result column="school_address" jdbcType="VARCHAR" property="schoolAddress" />
+    <result column="company_name" jdbcType="VARCHAR" property="companyName" />
+    <result column="company_address" jdbcType="VARCHAR" property="companyAddress" />
+    <result column="company_phone" jdbcType="VARCHAR" property="companyPhone" />
+    <result column="school_intro" jdbcType="LONGVARCHAR" property="schoolIntro" />
+    <result column="company_intro" jdbcType="LONGVARCHAR" property="companyIntro" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from view_sign_info
+    where id = #{id,jdbcType=VARCHAR}
+  </delete>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select id, sign_id, match_id, teacher_id, sign_time, score, file_id, match_name, 
+    match_pubtime, match_time, match_address, charger_name, teacher_name, school_name, 
+    school_address, company_name, company_address, company_phone, school_intro, company_intro
+    from view_sign_info
+    where id = #{id,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, sign_id, match_id, teacher_id, sign_time, score, file_id, match_name, 
+    match_pubtime, match_time, match_address, charger_name, teacher_name, school_name, 
+    school_address, company_name, company_address, company_phone, school_intro, company_intro
+    from view_sign_info
+      <where>
+		<if test="id!=null and id!=''"> and id = #{id,jdbcType=VARCHAR}</if>
+		<if test="signId!=null "> and sign_id = #{signId,jdbcType=BIGINT}</if>
+		<if test="matchId!=null "> and match_id = #{matchId,jdbcType=BIGINT}</if>
+		<if test="teacherId!=null "> and teacher_id = #{teacherId,jdbcType=BIGINT}</if>
+		<if test="signTime!=null "> and sign_time = #{signTime,jdbcType=TIMESTAMP}</if>
+		<if test="score!=null "> and score = #{score,jdbcType=INTEGER}</if>
+		<if test="fileId!=null "> and file_id = #{fileId,jdbcType=BIGINT}</if>
+		<if test="matchName!=null and matchName!=''"> and match_name = #{matchName,jdbcType=VARCHAR}</if>
+		<if test="matchPubtime!=null "> and match_pubtime = #{matchPubtime,jdbcType=TIMESTAMP}</if>
+		<if test="matchTime!=null "> and match_time = #{matchTime,jdbcType=TIMESTAMP}</if>
+		<if test="matchAddress!=null and matchAddress!=''"> and match_address = #{matchAddress,jdbcType=VARCHAR}</if>
+		<if test="chargerName!=null and chargerName!=''"> and charger_name = #{chargerName,jdbcType=VARCHAR}</if>
+		<if test="teacherName!=null and teacherName!=''"> and teacher_name = #{teacherName,jdbcType=VARCHAR}</if>
+		<if test="schoolName!=null and schoolName!=''"> and school_name = #{schoolName,jdbcType=VARCHAR}</if>
+		<if test="schoolAddress!=null and schoolAddress!=''"> and school_address = #{schoolAddress,jdbcType=VARCHAR}</if>
+		<if test="companyName!=null and companyName!=''"> and company_name = #{companyName,jdbcType=VARCHAR}</if>
+		<if test="companyAddress!=null and companyAddress!=''"> and company_address = #{companyAddress,jdbcType=VARCHAR}</if>
+		<if test="companyPhone!=null and companyPhone!=''"> and company_phone = #{companyPhone,jdbcType=VARCHAR}</if>
+		<if test="schoolIntro!=null and schoolIntro!=''"> and school_intro = #{schoolIntro,jdbcType=LONGVARCHAR}</if>
+		<if test="companyIntro!=null and companyIntro!=''"> and company_intro = #{companyIntro,jdbcType=LONGVARCHAR}</if>
+ 	</where> 
+ <if test="orderByString!=null and orderByString!=''"> 
+	 ${orderByString} 
+ </if>
+  </select>
+  <select id="queryByCondition" resultMap="BaseResultMap">
+    select id,sign_id,match_id,teacher_id,sign_time,score,file_id,match_name,match_pubtime,match_time,match_address,charger_name,teacher_name,school_name,school_address,company_name,company_address,company_phone,school_intro,company_intro
+ 	from  view_sign_info 
+	<where>
+		<if test="id!=null and id!=''"> and id = #{id,jdbcType=VARCHAR}</if>
+		<if test="signId!=null "> and sign_id = #{signId,jdbcType=BIGINT}</if>
+		<if test="matchId!=null "> and match_id = #{matchId,jdbcType=BIGINT}</if>
+		<if test="teacherId!=null "> and teacher_id = #{teacherId,jdbcType=BIGINT}</if>
+		<if test="signTime!=null "> and sign_time = #{signTime,jdbcType=TIMESTAMP}</if>
+		<if test="score!=null "> and score = #{score,jdbcType=INTEGER}</if>
+		<if test="fileId!=null "> and file_id = #{fileId,jdbcType=BIGINT}</if>
+		<if test="matchName!=null and matchName!=''"> and match_name = #{matchName,jdbcType=VARCHAR}</if>
+		<if test="matchPubtime!=null "> and match_pubtime = #{matchPubtime,jdbcType=TIMESTAMP}</if>
+		<if test="matchTime!=null "> and match_time = #{matchTime,jdbcType=TIMESTAMP}</if>
+		<if test="matchAddress!=null and matchAddress!=''"> and match_address = #{matchAddress,jdbcType=VARCHAR}</if>
+		<if test="chargerName!=null and chargerName!=''"> and charger_name = #{chargerName,jdbcType=VARCHAR}</if>
+		<if test="teacherName!=null and teacherName!=''"> and teacher_name = #{teacherName,jdbcType=VARCHAR}</if>
+		<if test="schoolName!=null and schoolName!=''"> and school_name = #{schoolName,jdbcType=VARCHAR}</if>
+		<if test="schoolAddress!=null and schoolAddress!=''"> and school_address = #{schoolAddress,jdbcType=VARCHAR}</if>
+		<if test="companyName!=null and companyName!=''"> and company_name = #{companyName,jdbcType=VARCHAR}</if>
+		<if test="companyAddress!=null and companyAddress!=''"> and company_address = #{companyAddress,jdbcType=VARCHAR}</if>
+		<if test="companyPhone!=null and companyPhone!=''"> and company_phone = #{companyPhone,jdbcType=VARCHAR}</if>
+		<if test="schoolIntro!=null and schoolIntro!=''"> and school_intro = #{schoolIntro,jdbcType=LONGVARCHAR}</if>
+		<if test="companyIntro!=null and companyIntro!=''"> and company_intro = #{companyIntro,jdbcType=LONGVARCHAR}</if>
+ 	</where> 
+ <if test="orderByString!=null and orderByString!=''"> 
+	 ${orderByString} 
+ </if>
+  </select>
+  <insert id="insert" keyColumn="id" keyProperty="id" useGeneratedKeys="true">
+    insert into view_sign_info (id,sign_id,match_id,teacher_id,sign_time,score,file_id,match_name,match_pubtime,match_time,match_address,charger_name,teacher_name,school_name,school_address,company_name,company_address,company_phone,school_intro,company_intro)
+ values ( #{id,jdbcType=VARCHAR}, #{signId,jdbcType=BIGINT}, #{matchId,jdbcType=BIGINT}, #{teacherId,jdbcType=BIGINT}, #{signTime,jdbcType=TIMESTAMP}, #{score,jdbcType=INTEGER}, #{fileId,jdbcType=BIGINT}, #{matchName,jdbcType=VARCHAR}, #{matchPubtime,jdbcType=TIMESTAMP}, #{matchTime,jdbcType=TIMESTAMP}, #{matchAddress,jdbcType=VARCHAR}, #{chargerName,jdbcType=VARCHAR}, #{teacherName,jdbcType=VARCHAR}, #{schoolName,jdbcType=VARCHAR}, #{schoolAddress,jdbcType=VARCHAR}, #{companyName,jdbcType=VARCHAR}, #{companyAddress,jdbcType=VARCHAR}, #{companyPhone,jdbcType=VARCHAR}, #{schoolIntro,jdbcType=LONGVARCHAR}, #{companyIntro,jdbcType=LONGVARCHAR})
+  </insert>
+  <update id="update">
+    update  	view_sign_info 
+	<set>
+		<if test="id!=null and id!=''">id = #{id,jdbcType=VARCHAR}, </if>
+		<if test="signId!=null ">sign_id = #{signId,jdbcType=BIGINT}, </if>
+		<if test="matchId!=null ">match_id = #{matchId,jdbcType=BIGINT}, </if>
+		<if test="teacherId!=null ">teacher_id = #{teacherId,jdbcType=BIGINT}, </if>
+		<if test="signTime!=null ">sign_time = #{signTime,jdbcType=TIMESTAMP}, </if>
+		<if test="score!=null ">score = #{score,jdbcType=INTEGER}, </if>
+		<if test="fileId!=null ">file_id = #{fileId,jdbcType=BIGINT}, </if>
+		<if test="matchName!=null and matchName!=''">match_name = #{matchName,jdbcType=VARCHAR}, </if>
+		<if test="matchPubtime!=null ">match_pubtime = #{matchPubtime,jdbcType=TIMESTAMP}, </if>
+		<if test="matchTime!=null ">match_time = #{matchTime,jdbcType=TIMESTAMP}, </if>
+		<if test="matchAddress!=null and matchAddress!=''">match_address = #{matchAddress,jdbcType=VARCHAR}, </if>
+		<if test="chargerName!=null and chargerName!=''">charger_name = #{chargerName,jdbcType=VARCHAR}, </if>
+		<if test="teacherName!=null and teacherName!=''">teacher_name = #{teacherName,jdbcType=VARCHAR}, </if>
+		<if test="schoolName!=null and schoolName!=''">school_name = #{schoolName,jdbcType=VARCHAR}, </if>
+		<if test="schoolAddress!=null and schoolAddress!=''">school_address = #{schoolAddress,jdbcType=VARCHAR}, </if>
+		<if test="companyName!=null and companyName!=''">company_name = #{companyName,jdbcType=VARCHAR}, </if>
+		<if test="companyAddress!=null and companyAddress!=''">company_address = #{companyAddress,jdbcType=VARCHAR}, </if>
+		<if test="companyPhone!=null and companyPhone!=''">company_phone = #{companyPhone,jdbcType=VARCHAR}, </if>
+		<if test="schoolIntro!=null and schoolIntro!=''">school_intro = #{schoolIntro,jdbcType=LONGVARCHAR}, </if>
+		<if test="companyIntro!=null and companyIntro!=''">company_intro = #{companyIntro,jdbcType=LONGVARCHAR} </if>
+ 	</set>
+	where id=#{id}
+  </update>
+
+	<select id="queryStudents" resultMap="BaseResultMap">
+	   select a.* from view_sign_info as a
+		inner join pro_sign_student b
+		on a.sign_id = b.sign_id
+		where b.user_id = #{id,jdbcType=VARCHAR}
+  </select>
+</mapper>

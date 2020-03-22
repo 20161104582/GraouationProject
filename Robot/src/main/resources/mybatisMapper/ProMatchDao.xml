@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.web.sys.dao.ProMatchDao">
+  <resultMap id="BaseResultMap" type="com.web.sys.bean.ProMatch">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pubtime" jdbcType="TIMESTAMP" property="pubtime" />
+    <result column="time" jdbcType="TIMESTAMP" property="time" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from pro_match
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select id, name, pubtime, time, user_id, address
+    from pro_match
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, pubtime, time, user_id, address
+    from pro_match
+      <where>
+		<if test="id!=null "> and id = #{id,jdbcType=BIGINT}</if>
+		<if test="name!=null and name!=''"> and name = #{name,jdbcType=VARCHAR}</if>
+		<if test="pubtime!=null "> and pubtime = #{pubtime,jdbcType=TIMESTAMP}</if>
+		<if test="time!=null "> and time = #{time,jdbcType=TIMESTAMP}</if>
+		<if test="userId!=null "> and user_id = #{userId,jdbcType=BIGINT}</if>
+		<if test="address!=null and address!=''"> and address = #{address,jdbcType=VARCHAR}</if>
+ 	</where> 
+ <if test="orderByString!=null and orderByString!=''"> 
+	 ${orderByString} 
+ </if>
+  </select>
+  <select id="queryByCondition" resultMap="BaseResultMap">
+    select id,name,pubtime,time,user_id,address
+ 	from  pro_match 
+	<where>
+		<if test="id!=null "> and id = #{id,jdbcType=BIGINT}</if>
+		<if test="name!=null and name!=''"> and name = #{name,jdbcType=VARCHAR}</if>
+		<if test="pubtime!=null "> and pubtime = #{pubtime,jdbcType=TIMESTAMP}</if>
+		<if test="time!=null "> and time = #{time,jdbcType=TIMESTAMP}</if>
+		<if test="userId!=null "> and user_id = #{userId,jdbcType=BIGINT}</if>
+		<if test="address!=null and address!=''"> and address = #{address,jdbcType=VARCHAR}</if>
+ 	</where> 
+ <if test="orderByString!=null and orderByString!=''"> 
+	 ${orderByString} 
+ </if>
+  </select>
+  <insert id="insert" keyColumn="id" keyProperty="id" useGeneratedKeys="true">
+    insert into pro_match (name,pubtime,time,user_id,address)
+ values ( #{name,jdbcType=VARCHAR}, #{pubtime,jdbcType=TIMESTAMP}, #{time,jdbcType=TIMESTAMP}, #{userId,jdbcType=BIGINT}, #{address,jdbcType=VARCHAR})
+  </insert>
+  <update id="update">
+    update  	pro_match 
+	<set>
+		<if test="name!=null and name!=''">name = #{name,jdbcType=VARCHAR}, </if>
+		<if test="pubtime!=null ">pubtime = #{pubtime,jdbcType=TIMESTAMP}, </if>
+		<if test="time!=null ">time = #{time,jdbcType=TIMESTAMP}, </if>
+		<if test="userId!=null ">user_id = #{userId,jdbcType=BIGINT}, </if>
+		<if test="address!=null and address!=''">address = #{address,jdbcType=VARCHAR}, </if>
+ 	</set>
+	where id=#{id}
+  </update>
+</mapper>

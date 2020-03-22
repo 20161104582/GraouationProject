@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <div th:replace="share/common"></div>
+</head>
+<body class="body-common">
+<div class="page-container">
+    <form class="layui-form layui-form-pane" action="">
+        <input type="hidden" name="id" th:value="${view_user_info.id }" />
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">用户名</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="username" id="username" maxlength="255" lay-verify="required" autocomplete="off"
+                               placeholder="请输入用户名" class="layui-input" th:value="${view_user_info.username}" >
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">真实姓名</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="truename" id="truename" maxlength="255" lay-verify="required" autocomplete="off"
+                               placeholder="请输入真实姓名" class="layui-input" th:value="${view_user_info.truename}" >
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">密码</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="password" id="password" maxlength="255" lay-verify="required" autocomplete="off"
+                               placeholder="请输入密码" class="layui-input" th:value="${view_user_info.password}" >
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">电话</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="phone" id="phone" maxlength="16" lay-verify="required" autocomplete="off"
+                               placeholder="请输入电话" class="layui-input" th:value="${view_user_info.phone}" >
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">邮箱</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="email" id="email" maxlength="32" lay-verify="required" autocomplete="off"
+                               placeholder="请输入邮箱" class="layui-input" th:value="${view_user_info.email}" >
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">地址</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="address" id="address" maxlength="255" lay-verify="required" autocomplete="off"
+                               placeholder="请输入地址" class="layui-input" th:value="${view_user_info.address}" >
+                    </div>
+                </div>
+                <div class="layui-form-item" pane="">
+                    <label class="layui-form-label">性别</label>
+                    <div class="layui-input-block">
+
+                            <select name="sex" id="sex">
+                                <option value="">请选择性别</option>
+		                                <option value="0" th:selected="${view_user_info.sex==0}">男</option>
+		                                <option value="1" th:selected="${view_user_info.sex==1}">女</option>
+                            </select>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">图片ID</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="photoid" id="photoid" maxlength="64" lay-verify="required" autocomplete="off"
+                               placeholder="请输入图片ID" class="layui-input" th:value="${view_user_info.photoid}" >
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">出生日期</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="brithday" id="brithday" autocomplete="off" class="layui-input" lay-verify="required"
+                               th:value="${view_user_info.brithday_}">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">创建时间</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="createtime" id="createtime" autocomplete="off" class="layui-input" lay-verify="required"
+                               th:value="${view_user_info.createtime_}">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">最后登录时间</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="lastlogin" id="lastlogin" autocomplete="off" class="layui-input" lay-verify="required"
+                               th:value="${view_user_info.lastlogin_}">
+                    </div>
+                </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">用户类型</label>
+                <div class="layui-input-block">
+                    <input type="number" name="itype" id="itype" maxlength="5" lay-verify="number" autocomplete="off"
+                           placeholder="请输入用户类型" class="layui-input" th:value="${view_user_info.itype}" >
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">学校id</label>
+                <div class="layui-input-block">
+                    <input type="number" name="schoolid" id="schoolid" maxlength="19" lay-verify="number" autocomplete="off"
+                           placeholder="请输入学校id" class="layui-input" th:value="${view_user_info.schoolid}" >
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label"></label>
+                <div class="layui-input-block">
+                    <input type="number" name="userId" id="userId" maxlength="19" lay-verify="number" autocomplete="off"
+                           placeholder="请输入" class="layui-input" th:value="${view_user_info.userId}" >
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label"></label>
+                <div class="layui-input-block">
+                    <input type="number" name="roleId" id="roleId" maxlength="19" lay-verify="number" autocomplete="off"
+                           placeholder="请输入" class="layui-input" th:value="${view_user_info.roleId}" >
+                </div>
+            </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label"></label>
+                    <div class="layui-input-block">
+                        <input type="text" name="roleName" id="roleName" maxlength="255" lay-verify="required" autocomplete="off"
+                               placeholder="请输入" class="layui-input" th:value="${view_user_info.roleName}" >
+                    </div>
+                </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label"></label>
+                <div class="layui-input-block">
+                    <input type="number" name="roleNum" id="roleNum" maxlength="19" lay-verify="number" autocomplete="off"
+                           placeholder="请输入" class="layui-input" th:value="${view_user_info.roleNum}" >
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label"></label>
+                <div class="layui-input-block">
+                    <input type="number" name="companyId" id="companyId" maxlength="19" lay-verify="number" autocomplete="off"
+                           placeholder="请输入" class="layui-input" th:value="${view_user_info.companyId}" >
+                </div>
+            </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">公司名称</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="companyName" id="companyName" maxlength="255" lay-verify="required" autocomplete="off"
+                               placeholder="请输入公司名称" class="layui-input" th:value="${view_user_info.companyName}" >
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">公司地址</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="companyAddress" id="companyAddress" maxlength="255" lay-verify="required" autocomplete="off"
+                               placeholder="请输入公司地址" class="layui-input" th:value="${view_user_info.companyAddress}" >
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">公司电话</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="companyPhone" id="companyPhone" maxlength="255" lay-verify="required" autocomplete="off"
+                               placeholder="请输入公司电话" class="layui-input" th:value="${view_user_info.companyPhone}" >
+                    </div>
+                </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">学校</label>
+                <div class="layui-input-block">
+                    <input type="number" name="schoolId" id="schoolId" maxlength="19" lay-verify="number" autocomplete="off"
+                           placeholder="请输入学校" class="layui-input" th:value="${view_user_info.schoolId}" >
+                </div>
+            </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">名称</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="schoolName" id="schoolName" maxlength="255" lay-verify="required" autocomplete="off"
+                               placeholder="请输入名称" class="layui-input" th:value="${view_user_info.schoolName}" >
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">地址</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="schoolAddress" id="schoolAddress" maxlength="255" lay-verify="required" autocomplete="off"
+                               placeholder="请输入地址" class="layui-input" th:value="${view_user_info.schoolAddress}" >
+                    </div>
+                </div>
+                <div class="layui-form-item layui-form-text">
+                    <label class="layui-form-label"></label>
+                    <div class="layui-input-block">
+                        <textarea placeholder="请输入" class="layui-textarea" lay-verify="required"
+                                  th:text="${view_user_info.companyIntro}" name="companyIntro" id="companyIntro"></textarea>
+                    </div>
+                </div>
+                <div class="layui-form-item layui-form-text">
+                    <label class="layui-form-label">简介</label>
+                    <div class="layui-input-block">
+                        <textarea placeholder="请输入简介" class="layui-textarea" lay-verify="required"
+                                  th:text="${view_user_info.schoolIntro}" name="schoolIntro" id="schoolIntro"></textarea>
+                    </div>
+                </div>
+        <div class="layui-form-item" style="text-align: center">
+            <span th:if="${session.userAuth==null || #maps.containsKey(session.userAuth,'viewUserInfo/save')}">
+            <button class="layui-btn" lay-submit="" lay-filter="save-data">提交</button>
+            </span>
+            <input type="button" class="layui-btn"  onclick="myback()" value="返回" />
+        </div>
+    </form>
+</div>
+<!--
+<script src="//res.layui.com/layui/dist/layui.js" charset="utf-8"></script>-->
+<!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
+<script>
+    layui.use(['form', 'layedit', 'laydate', 'upload'], function () {
+        var form = layui.form
+            , layer = layui.layer
+            , layedit = layui.layedit
+            , upload = layui.upload
+            , laydate = layui.laydate;
+        form.render();
+
+
+            laydate.render({
+                elem: '#brithday'
+                , type: 'date'
+            });
+           laydate.render({
+               elem: '#createtime'
+               , type: 'datetime'
+           });
+           laydate.render({
+               elem: '#lastlogin'
+               , type: 'datetime'
+           });
+
+        //自定义验证规则
+        form.verify({});
+
+        //监听提交
+        form.on('submit(save-data)', function (data) {
+            $.post(rootPath+"viewUserInfo/save",data.field,function (data) {
+                if(data.code==0){
+                    myAlert("保存成功");
+                    setTimeout(function () {
+                        myback("viewUserInfo/gotoList");
+                    },alertTime)
+                }else{
+                    myAlert("保存失败->"+data.message)
+                }
+            });
+            return false
+        });
+
+    });
+</script>
+
+</body>
+</html>

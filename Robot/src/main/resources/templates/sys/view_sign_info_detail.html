@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <div th:replace="share/common"></div>
+</head>
+<body class="body-common">
+<div class="page-container">
+    <form class="layui-form layui-form-pane" action="">
+        <input type="hidden" name="id" th:value="${view_sign_info.id }" />
+
+            <div class="layui-form-item">
+                <label class="layui-form-label"></label>
+                <div class="layui-input-block">
+                    <input type="number" name="signId" id="signId" maxlength="19" lay-verify="number" autocomplete="off"
+                           placeholder="请输入" class="layui-input" th:value="${view_sign_info.signId}" >
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label"></label>
+                <div class="layui-input-block">
+                    <input type="number" name="matchId" id="matchId" maxlength="19" lay-verify="number" autocomplete="off"
+                           placeholder="请输入" class="layui-input" th:value="${view_sign_info.matchId}" >
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label"></label>
+                <div class="layui-input-block">
+                    <input type="number" name="teacherId" id="teacherId" maxlength="19" lay-verify="number" autocomplete="off"
+                           placeholder="请输入" class="layui-input" th:value="${view_sign_info.teacherId}" >
+                </div>
+            </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">报名时间</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="signTime" id="signTime" autocomplete="off" class="layui-input" lay-verify="required"
+                               th:value="${view_sign_info.signTime_}">
+                    </div>
+                </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">最终成绩</label>
+                <div class="layui-input-block">
+                    <input type="number" name="score" id="score" maxlength="10" lay-verify="number" autocomplete="off"
+                           placeholder="请输入最终成绩" class="layui-input" th:value="${view_sign_info.score}" >
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">结果文件</label>
+                <div class="layui-input-block">
+                    <input type="number" name="fileId" id="fileId" maxlength="19" lay-verify="number" autocomplete="off"
+                           placeholder="请输入结果文件" class="layui-input" th:value="${view_sign_info.fileId}" >
+                </div>
+            </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">比赛名称</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="matchName" id="matchName" maxlength="255" lay-verify="required" autocomplete="off"
+                               placeholder="请输入比赛名称" class="layui-input" th:value="${view_sign_info.matchName}" >
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">发布时间</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="matchPubtime" id="matchPubtime" autocomplete="off" class="layui-input" lay-verify="required"
+                               th:value="${view_sign_info.matchPubtime_}">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">比赛时间</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="matchTime" id="matchTime" autocomplete="off" class="layui-input" lay-verify="required"
+                               th:value="${view_sign_info.matchTime_}">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">比赛地点</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="matchAddress" id="matchAddress" maxlength="255" lay-verify="required" autocomplete="off"
+                               placeholder="请输入比赛地点" class="layui-input" th:value="${view_sign_info.matchAddress}" >
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">真实姓名</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="chargerName" id="chargerName" maxlength="255" lay-verify="required" autocomplete="off"
+                               placeholder="请输入真实姓名" class="layui-input" th:value="${view_sign_info.chargerName}" >
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">真实姓名</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="teacherName" id="teacherName" maxlength="255" lay-verify="required" autocomplete="off"
+                               placeholder="请输入真实姓名" class="layui-input" th:value="${view_sign_info.teacherName}" >
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">名称</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="schoolName" id="schoolName" maxlength="255" lay-verify="required" autocomplete="off"
+                               placeholder="请输入名称" class="layui-input" th:value="${view_sign_info.schoolName}" >
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">地址</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="schoolAddress" id="schoolAddress" maxlength="255" lay-verify="required" autocomplete="off"
+                               placeholder="请输入地址" class="layui-input" th:value="${view_sign_info.schoolAddress}" >
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">公司名称</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="companyName" id="companyName" maxlength="255" lay-verify="required" autocomplete="off"
+                               placeholder="请输入公司名称" class="layui-input" th:value="${view_sign_info.companyName}" >
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">公司地址</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="companyAddress" id="companyAddress" maxlength="255" lay-verify="required" autocomplete="off"
+                               placeholder="请输入公司地址" class="layui-input" th:value="${view_sign_info.companyAddress}" >
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">公司电话</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="companyPhone" id="companyPhone" maxlength="255" lay-verify="required" autocomplete="off"
+                               placeholder="请输入公司电话" class="layui-input" th:value="${view_sign_info.companyPhone}" >
+                    </div>
+                </div>
+                <div class="layui-form-item layui-form-text">
+                    <label class="layui-form-label">简介</label>
+                    <div class="layui-input-block">
+                        <textarea placeholder="请输入简介" class="layui-textarea" lay-verify="required"
+                                  th:text="${view_sign_info.schoolIntro}" name="schoolIntro" id="schoolIntro"></textarea>
+                    </div>
+                </div>
+                <div class="layui-form-item layui-form-text">
+                    <label class="layui-form-label"></label>
+                    <div class="layui-input-block">
+                        <textarea placeholder="请输入" class="layui-textarea" lay-verify="required"
+                                  th:text="${view_sign_info.companyIntro}" name="companyIntro" id="companyIntro"></textarea>
+                    </div>
+                </div>
+        <div class="layui-form-item" style="text-align: center">
+            <span th:if="${session.userAuth==null || #maps.containsKey(session.userAuth,'viewSignInfo/save')}">
+            <button class="layui-btn" lay-submit="" lay-filter="save-data">提交</button>
+            </span>
+            <input type="button" class="layui-btn"  onclick="myback()" value="返回" />
+        </div>
+    </form>
+</div>
+<!--
+<script src="//res.layui.com/layui/dist/layui.js" charset="utf-8"></script>-->
+<!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
+<script>
+    layui.use(['form', 'layedit', 'laydate', 'upload'], function () {
+        var form = layui.form
+            , layer = layui.layer
+            , layedit = layui.layedit
+            , upload = layui.upload
+            , laydate = layui.laydate;
+        form.render();
+
+
+           laydate.render({
+               elem: '#signTime'
+               , type: 'datetime'
+           });
+           laydate.render({
+               elem: '#matchPubtime'
+               , type: 'datetime'
+           });
+           laydate.render({
+               elem: '#matchTime'
+               , type: 'datetime'
+           });
+
+        //自定义验证规则
+        form.verify({});
+
+        //监听提交
+        form.on('submit(save-data)', function (data) {
+            $.post(rootPath+"viewSignInfo/save",data.field,function (data) {
+                if(data.code==0){
+                    myAlert("保存成功");
+                    setTimeout(function () {
+                        myback("viewSignInfo/gotoList");
+                    },alertTime)
+                }else{
+                    myAlert("保存失败->"+data.message)
+                }
+            });
+            return false
+        });
+
+    });
+</script>
+
+</body>
+</html>

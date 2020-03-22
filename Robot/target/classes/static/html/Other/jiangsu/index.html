@@ -1,0 +1,1280 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>江苏省青少年科学教育服务平台</title>
+    <link type="text/css" href="/Other/jiangsu/css/public.css" rel="stylesheet" />
+    <link type="text/css" href="/Other/jiangsu/css/page.css" rel="stylesheet" />
+    <link type="text/css" href="/Other/jiangsu/css/dateshow.css" rel="stylesheet" />
+    <link type="text/css" href="/Other/jiangsu/css/owl.carousel.css" rel="stylesheet" />
+    <link type="text/css" href="/Other/jiangsu/css/owl.theme.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/Other/jiangsu/css/font-awesome.min.css">
+    <script src="/Other/jiangsu/js/jquery-min-1.11.js"></script>
+    <script src="/Other/jiangsu/js/main.js"></script>
+    <script src="/Other/jiangsu/js/dateshow.js"></script>
+    <script src="/Other/jiangsu/js/owl.carousel.min.js"></script>
+    <script src='http://tj.jskx.org.cn/vzstat.js'></script>
+   <script src="http://www.cyscc.org/spring/spring.js"></script>
+    <style>
+        .rec-list li img
+        {
+            display: none;
+            height: 40px;
+            width: 275px;
+        }
+        .rec-list li.cur
+        {
+            height: 40px;
+            padding: 0;
+        }
+        .rec-list li.cur img
+        {
+            display: inline-block;
+        }
+        .rec-list li.cur span
+        {
+            display: none;
+        }
+        .rec-list li.cur em
+        {
+            display: none;
+        }
+        #scroll-notice *
+        {
+            float: left;
+            margin-right: 20px;
+        }
+        #scroll-notice p
+        {
+            text-indent: 0;
+        }
+    </style>
+    
+    <script>
+
+        $(function () {
+
+            $(".rec-list li").hover(function () {
+                $(".rec-list li.cur").removeClass("cur");
+                $(this).addClass("cur");
+            });
+
+            $('.right-list .download').on('mouseenter', function () {
+                $('ul.right_file li a').each(function () {
+                    if ($(this).innerHeight() > 20) {
+                        $(this).parent().css('lineHeight', '25px')
+                    }
+                })
+            });
+        })
+    </script>
+    <!--[if IE 7]>
+<link rel="stylesheet" href="/Other/jiangsu/css/font-awesome-ie7.min.css">
+<![endif]-->
+    <!--[if lt IE 9]>
+<script src="/Other/jiangsu/js/html5shiv.min.js"></script>
+<script src="/Other/jiangsu/js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+    <form method="post" action="/Other/jiangsu/index.html" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTExNTg3MjQxNzcPZBYCAgEPZBYcAgEPZBYCAgEPFgIeBFRleHQFGzIwMjDlubQx5pyINuaXpSAgIOaYn+acn+S4gGQCBQ9kFgJmDxYCHgtfIUl0ZW1Db3VudAIEFghmD2QWAmYPFQQcaHR0cHM6Ly9qc2dta3hzemRzLmNua2kubmV0LzguLi8uLi8uLi9BdHRhY2hGaWxlLzIwMTkvOS8zOTAxMDIvNjM3MDMyNzQ3MTA1NDE5MjU5LnBuZzIyMDE54oCUMjAyMOW5tOW6puaxn+iLj+ecgeWFqOawkeenkeWtpue0oOi0qOWkp+i1m/YC5Li65rex5YWl5a6e5pa944CK5rGf6IuP55yB5YWo5rCR56eR5a2m57Sg6LSo6KGM5Yqo6K6h5YiS57qy6KaB5a6e5pa95pa55qGI77yIMjAxNuKAlDIwMjDlubTvvInjgIvvvIzlpKflipvlvIDlsZXluLjmgIHljJbjgIHliLbluqbljJblkoznpL7kvJrljJbnp5Hmma7mtLvliqjvvIzlnKjlhajnpL7kvJrnp6/mnoHokKXpgKDmtZPpg4HnmoTnp5HlrabmlofljJbmsJvlm7TvvIzkv4Pov5vmiJHnnIHlhajmsJHnp5HlrabntKDotKjmsLTlubPkuI3mlq3mj5DljYfvvIwyMDE55bm057un57ut57uE57uH5byA5bGV4oCc5rGf6IuP55yB5YWo5rCR56eR5a2m57Sg6LSo5aSn6LWb4oCd44CC5rS75Yqo5pe26Ze0OjIwMTnlubQ55pyIN+aXpeiHszEy5pyIMzHml6VkAgEPZBYCZg8VBDZodHRwOi8vd3d3Lmpzc3RlbS5vcmcvTmV3cy9BcnRpY2xlVmlldy5hc3B4P0FJRD0yNDQ3NTI2Li4vLi4vQXR0YWNoRmlsZS8yMDE5LzExLzM5MDEwMi82MzcwOTE3MzUxNzU4MzE4MTUucG5nMOaxn+iLj+mAieaJi+iOt+KAnOaYjuWkqeWwj+Wwj+enkeWtpuWutuKAneensOWPt5wDMTHmnIgxMeaXpe+8jOeUseS4reWbveenkeWNj+OAgeS4reWbveenkeWtpumZouOAgeS4reWbveW3peeoi+mZouOAgeWbveWutuiHqueEtuenkeWtpuWfuumHkeWnlOWSjOWRqOWHr+aXi+WfuumHkeS8muWFseWQjOS4u+WKnueahOesrDE55bGK4oCc5piO5aSp5bCP5bCP56eR5a2m5a624oCd5aWW5Yqx5rS75Yqo5Zyo5Lit5Zu956eR5a2m6Zmi5aSn5a2m5ZyG5ruh6JC95bmV77yM5rGf6IuP6YCJ5omL5Y+W5b6X6aqE5Lq65oiQ57up44CC5rGf6IuP6Iux5omN6K6h5YiS5a2m5ZGY44CB55yB6IuP5bee5Lit5a2m55qE5Y2i5Yag5a6H5ZCM5a2m5Lul56ys5LiA5ZCN55qE5oiQ57up77yM6I2j6I634oCc5piO5aSp5bCP5bCP56eR5a2m5a624oCd56ew5Y+377yM5YWo5Zu95LuF5pyJM+WQjeWQjOWtpuiOt+atpOauiuiNo+OAgmQCAg9kFgJmDxUENmh0dHA6Ly93d3cuanNzdGVtLm9yZy9OZXdzL0FydGljbGVWaWV3LmFzcHg/QUlEPTI0NDY4NTkuLi8uLi8uLi9BdHRhY2hGaWxlLzIwMTkvMTEvMzkwMTAyLzYzNzA4NjU0NzUzMDgxNzQzNy5qcGdqMjAxOeS4reWbvemdkuWwkeW5tOenkeaKgOi+heWvvOWRmOWNj+S8muW5tOS8muaaqOaxn+iLj+ecgemdkuWwkeW5tOenkeaKgOaVmeiCsumrmOWzsOiuuuWdm+WcqOWNl+S6rOS4vuihjNMHMTHmnIgxLTLml6XvvIwyMDE55Lit5Zu96Z2S5bCR5bm056eR5oqA6L6F5a+85ZGY5Y2P5Lya5bm05Lya5Zyo5Y2X5Lqs5ZyG5ruh5Li+6KGM44CC5pys5qyh5bm05Lya5Zyo5Lit5Zu956eR5Y2P56eR5pmu6YOo5ZKM5Lit5Zu956eR5Y2P6Z2S5bCR5bm056eR5oqA5Lit5b+D5pSv5oyB5LiL77yM55Sx5Lit5Zu96Z2S5bCR5bm056eR5oqA6L6F5a+85ZGY5Y2P5Lya44CB5rGf6IuP55yB56eR5a2m5oqA5pyv5Y2P5Lya6IGU5ZCI5Li75Yqe77yM5rGf6IuP55yB6Z2S5bCR5bm056eR5oqA5pWZ6IKy5Y2P5Lya44CB5rGf6IuP55yB6Z2S5bCR5bm056eR5oqA5Lit5b+D44CB5rGf6IuP55yB5a2m5Lya5pyN5Yqh5Lit5b+D5om/5Yqe77yM5Y2X5Lqs5aSn5a2m44CB5Lic5Y2X5aSn5a2m44CB5Y2X5Lqs6Iiq56m66Iiq5aSp5aSn5a2m44CB5Y2X5Lqs55CG5bel5aSn5a2m44CB5Y2X5Lqs5biI6IyD5aSn5a2m44CB5rGf6IuP55yB5Lq65bel5pm66IO95a2m5Lya44CB5rGf6IuP55yB5bel56iL5biI5a2m5Lya44CB5rGf6IuP55yB6Iiq56m66Iiq5aSp5a2m5Lya44CB5Y2X5Lqs6Z2S5bCR5bm056eR5oqA5pWZ6IKy5Y2P5Lya5YWx5ZCM5Y2P5Yqe44CC5Zu057uV4oCc56eR5pWZ6IGU5ZCI44CB5YWx6IKy6Iux5omN4oCd5Li76aKY77yM5ZC45byV5LqG5YWo5Zu95ZCE5ZywMTAwMOS9meWQjeenkeaKgOaVmeiCsuS4k+WutuOAgeS8mOengOenkeaKgOi+heWvvOWRmOOAgeS4reWwj+WtpuagoemVv+WPguWKoO+8jOaQreW7uuaVmeiCsuS4juenkeaKgOayn+mAmueahOahpeaige+8jOWHneW/g+iBmuWKm++8jOS6pOa1geeglOiuqOWmguS9leWwhuenkeaKgOeVjOS4juaVmeiCsueVjOeahOaZuuaFp+WSjOWKm+mHj+axh+iBmu+8jOWkmuinhuinkuOAgeWkmue7tOW6puWIhuaekOino+ivu+aWsOaXtuS7o+enkeaKgOaVmeiCsu+8jOWFseWQjOaOqOi/m+aWsOaXtuS7o+mdkuWwkeW5tOenkeaKgOaVmeiCsuWIm+aWsOWPkeWxleOAgmQCAw9kFgJmDxUENmh0dHA6Ly93d3cuanNzdGVtLm9yZy9OZXdzL0FydGljbGVWaWV3LmFzcHg/QUlEPTI0NDQyNDMuLi9BdHRhY2hGaWxlLzIwMTkvMTAvMzkwMTAyLzYzNzA2ODIwOTQwNTUwMDQxOS5wbmdb56ys5LqU5bGK5Lit5Zu94oCc5LqS6IGU572RK+KAneWkp+WtpueUn+WIm+aWsOWIm+S4muWkp+i1m+Wchua7oeiQveW5leaxn+iLj+mYn+WLh+WIm+S9s+e7qYYEMTDmnIgxNeaXpeaZmu+8jOesrOS6lOWxiuS4reWbveKAnOS6kuiBlOe9kSvigJ3lpKflrabnlJ/liJvmlrDliJvkuJrl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mzIuLi9BdHRhY2hGaWxlLzIwMTcvNS8zOTAxMDcvNjM2MzA2MTE0MTIyNDk0MzYwLmpwZ2QCBA9kFgJmDxUEATUjaHR0cDovL3JvYm90LnhpYW94aWFvdG9uZy5vcmcvMjAxNi8m56ysMTblsYrkuK3lm73pnZLlsJHlubTmnLrlmajkurrnq57otZsyLi4vQXR0YWNoRmlsZS8yMDE3LzUvMzkwMTA3LzYzNjMwNjExNDM5MDEwOTY2Ni5qcGdkAgUPZBYCZg8VBAE2Jmh0dHA6Ly9taW5ndGlhbi54aWFveGlhb3Rvbmcub3JnLzIwMTYvL+esrDE25bGK4oCc5piO5aSp5bCP5bCP56eR5a2m5a624oCd5aWW5Yqx5rS75YqoMi4uL0F0dGFjaEZpbGUvMjAxNy81LzM5MDEwNy82MzYzMDYxMTQ3NDM4Nzk5MDEuanBnZAIGD2QWAmYPFQQBNy1odHRwOi8vY2FzdmYueGlhb3hpYW90b25nLm9yZy8yMDE2L2luZGV4LmFzcHgn56ys5LiD5bGK5YWo5Zu96Z2S5bCR5bm056eR5a2m5b2x5YOP6IqCMi4uL0F0dGFjaEZpbGUvMjAxNy81LzM5MDEwNy82MzYzMDYxMTUzMjc0ODMyODEuanBnZAIHD2QWAmYPFQQBOFFodHRwOi8vamlhbmdzdS54aWFveGlhb3Rvbmcub3JnL0F0dGFjaEZpbGUvMjAxNy81LzM5MDEwNDAyLzYzNjMwMjAxNjYyNzc3NDQ2MC5wZGYjIDIwMTblsYrigJzoi7HmiY3orqHliJLigJ3mhJ/mg7Ppm4YyLi4vQXR0YWNoRmlsZS8yMDE3LzUvMzkwMTA3LzYzNjMwNjEyNzgzMzc3ODYwMC5qcGdkAggPZBYCZg8VBAE5FWh0dHA6Ly96bi5rZXB1cmkub3JnLyIyMDE25bm05YWo5Zu956eR5pmu5pel5rS75Yqo5a+86KeIMi4uL0F0dGFjaEZpbGUvMjAxNy81LzM5MDEwNy82MzYzMDYxMTYwODY5MzY3MTkuanBnZAIJD2QWAmYPFQQCMTAkaHR0cDovL2RhdGEua2VwdXJpLm9yZy9yYW5rbGlzdC5hc3B4IjIwMTblubTlhajlm73np5Hmma7ml6XmtLvliqjmjpLooYwyLi4vQXR0YWNoRmlsZS8yMDE3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nZLlsJHlubTliJvmlrDlpKfotZvkuJPpopjniYdC5rGf6IuP5pWZ6IKy6aOO6YeHLeesrDMw5bGK5rGf6IuP55yB6Z2S5bCR5bm05Yib5paw5aSn6LWb5LiT6aKY54mHAGQCIw8WAh4JaW5uZXJodG1sBccbW3smcXVvdDtkYXRlJnF1b3Q7OiZxdW90OzIwMTctNC0xNCZxdW90OywmcXVvdDt0aXRsZSZxdW90OzomcXVvdDvnrKzkuozljYHlhavlsYrmsZ/oi4/nnIHpnZLlsJHlubTnp5HmioDliJvmlrDlpKfotZsmcXVvdDssJnF1b3Q7aXRlbSZxdW90OzomcXVvdDvlhrPotZsmcXVvdDssJnF1b3Q7dGltZSZxdW90OzomcXVvdDsyMDE3LTA0LTE06IezMjAxNy0wNC0xNiZxdW90OywmcXVvdDtsb2NhdGlvbiZxdW90OzomcXVvdDvmsZ/oi4/luLjlt54mcXVvdDssJnF1b3Q7dGFyZ2V0JnF1b3Q7OiZxdW90O+WFqOecgeS4reWwj+WtpueUn+OAgeenkeaKgOi+heWvvOWRmCZxdW90OywmcXVvdDtkZXRhaWwmcXVvdDs6JnF1b3Q756ysMjjlsYrmsZ/oi4/nnIHpnZLlsJHlubTnp5HmioDliJvmlrDlpKfotZvkuo4yMDE35bm0NOaciDE04oCUMTbml6XlnKjluLjlt57luILkuL7ooYzjgILpgJrov4fkuL7lip7kuLDlr4zlpJrlvannmoTns7vliJfmtLvliqjvvIzlsZXnpLrpnZLlsJHlubTnp5HmioDliJvmlrDmiJDmnpzvvIzmlL7po57pnZLlsJHlubTnp5Hlrabmoqbmg7PvvIzlvIDlj5HpnZLlsJHlubTliJvpgKDmvZzog73vvIzmj5DljYfpnZLlsJHlubTnp5HlrabntKDotKjvvIzokKXpgKDniLHnp5HlrabjgIHlrabnp5HlrabjgIHnlKjnp5HlrabnmoToia/lpb3po47lsJrvvIzliqrlipvln7nlhbvkvJjnp4DlkI7lpIfnp5HmioDkurrmiY3vvIzkuLrlu7rorr7liJvmlrDlnovnnIHku73lkozmjqjov5vntKDotKjmlZnogrLkvZzlh7rnp6/mnoHotKHnjK7jgIImcXVvdDssJnF1b3Q7bGluayZxdW90OzomcXVvdDtodHRwOi8vanNzdGVtLm9yZy9hY3RpdmUvY2FzdGljLmFzcHgmcXVvdDt9eyZxdW90O2RhdGUmcXVvdDs6JnF1b3Q7MjAxOC04LTE0JnF1b3Q7LCZxdW90O3RpdGxlJnF1b3Q7OiZxdW90O+esrDMz5bGK5YWo5Zu96Z2S5bCR5bm056eR5oqA5Yib5paw5aSn6LWbJnF1b3Q7LCZxdW90O2l0ZW0mcXVvdDs6JnF1b3Q756ysMzPlsYrlhajlm73pnZLlsJHlubTnp5HmioDliJvmlrDlpKfotZsmcXVvdDssJnF1b3Q7dGltZSZxdW90OzomcXVvdDsyMDE4LTA4LTE06IezMjAxOC0wOC0yMCZxdW90OywmcXVvdDtsb2NhdGlvbiZxdW90OzomcXVvdDvph43luobluIImcXVvdDssJnF1b3Q7dGFyZ2V0JnF1b3Q7OiZxdW90O+S4reWwj+WtpueUn+OAgeenkeaKgOi+heWvvOWRmCZxdW90OywmcXVvdDtkZXRhaWwmcXVvdDs6JnF1b3Q755Sx5Lit5Zu956eR5Y2P44CB5pWZ6IKy6YOo44CB56eR5oqA6YOo44CB546v5aKD5L+d5oqk6YOo44CB5L2T6IKy5oC75bGA44CB55+l6K+G5Lqn5p2D5bGA44CB6Ieq54S256eR5a2m5Z+66YeR5Lya44CB5YWx6Z2S5Zui5Lit5aSu44CB5YWo5Zu95aaH6IGU5ZKM6YeN5bqG5biC5Lq65rCR5pS/5bqc5YWx5ZCM5Li75Yqe55qE56ysMzPlsYrlhajlm73pnZLlsJHlubTnp5HmioDliJvmlrDlpKfotZvvvIjku6XkuIvnroDnp7DigJzlpKfotZvigJ3vvInorqHliJLkuo4yMDE45bm0OOaciDE0LTIw5pel5Zyo6YeN5bqG5biC5Li+5Yqe44CCJnF1b3Q7LCZxdW90O2xpbmsmcXVvdDs6JnF1b3Q7aHR0cDovL2Nhc3RpYy54aWFveGlhb3Rvbmcub3JnJnF1b3Q7fXsmcXVvdDtkYXRlJnF1b3Q7OiZxdW90OzIwMTgtNC0xMCZxdW90OywmcXVvdDt0aXRsZSZxdW90OzomcXVvdDvnrKwzM+WxiuWFqOWbvemdkuWwkeW5tOenkeaKgOWIm+aWsOWkp+i1m+eUs+aKpSZxdW90OywmcXVvdDtpdGVtJnF1b3Q7OiZxdW90O+esrDMz5bGK5YWo5Zu96Z2S5bCR5bm056eR5oqA5Yib5paw5aSn6LWb55Sz5oqlJnF1b3Q7LCZxdW90O3RpbWUmcXVvdDs6JnF1b3Q7MjAxOC0wNC0xMOiHszIwMTgtMDUtMTAmcXVvdDssJnF1b3Q7bG9jYXRpb24mcXVvdDs6JnF1b3Q76YeN5bqG5biCJnF1b3Q7LCZxdW90O3RhcmdldCZxdW90OzomcXVvdDvkuK3lsI/lrabnlJ/jgIHnp5HmioDovoXlr7zlkZgmcXVvdDssJnF1b3Q7ZGV0YWlsJnF1b3Q7OiZxdW90O+eUseS4reWbveenkeWNj+OAgeaVmeiCsumDqOOAgeenkeaKgOmDqOOAgeeOr+Wig+S/neaKpOmDqOOAgeS9k+iCsuaAu+WxgOOAgeefpeivhuS6p+adg+WxgOOAgeiHqueEtuenkeWtpuWfuumHkeS8muOAgeWFsemdkuWbouS4reWkruOAgeWFqOWbveWmh+iBlOWSjOmHjeW6huW4guS6uuawkeaUv+W6nOWFseWQjOS4u+WKnueahOesrDMz5bGK5YWo5Zu96Z2S5bCR5bm056eR5oqA5Yib5paw5aSn6LWb77yI5Lul5LiL566A56ew4oCc5aSn6LWb4oCd77yJ6K6h5YiS5LqOMjAxOOW5tDjmnIgxNC0yMOaXpeWcqOmHjeW6huW4guS4vuWKnuOAgiZxdW90OywmcXVvdDtsaW5rJnF1b3Q7OiZxdW90O2h0dHA6Ly9jYXN0aWMueGlhb3hpYW90b25nLm9yZyZxdW90O317JnF1b3Q7ZGF0ZSZxdW90OzomcXVvdDsyMDE4LTUtNSZxdW90OywmcXVvdDt0aXRsZSZxdW90OzomcXVvdDvnrKzljYHlhavlsYrkuK3lm73pnZLlsJHlubTmnLrlmajkurrnq57otZvmmqgyMDE45LiW55WM6Z2S5bCR5bm05py65Zmo5Lq66YKA6K+36LWbJnF1b3Q7LCZxdW90O2l0ZW0mcXVvdDs6JnF1b3Q756ys5Y2B5YWr5bGK5Lit5Zu96Z2S5bCR5bm05py65Zmo5Lq656ue6LWb5pqoMjAxOOS4lueVjOmdkuWwkeW5tOacuuWZqOS6uumCgOivt+i1myZxdW90OywmcXVvdDt0aW1lJnF1b3Q7OiZxdW90OzIwMTgtMDUtMDXoh7MyMDE4LTA2LTA1JnF1b3Q7LCZxdW90O2xvY2F0aW9uJnF1b3Q7OiZxdW90O+i0teW3nuecgei0temYs+W4gui0teW3nuWkp+WtpuiKsea6quilv+agoeWMuiZxdW90OywmcXVvdDt0YXJnZXQmcXVvdDs6JnF1b3Q75Lit5bCP5a2m55SfJnF1b3Q7LCZxdW90O2RldGFpbCZxdW90OzomcXVvdDvnrKzljYHlhavlsYrkuK3lm73pnZLlsJHlubTmnLrlmajkurrnq57otZvmmqgyMDE45LiW55WM6Z2S5bCR5bm05py65Zmo5Lq66YKA6K+36LWb5bCG5LqOMjAxOOW5tDfmnIjlnKjotLXlt57nnIHotLXpmLPluILkuL7lip7jgILmnKzlsYrnq57otZvnlLHkuK3lm73np5HljY/kuLvlip7vvIzotLXlt57nnIHnp5HljY/jgIHotLXlt57lpKflrablkozkuK3lm73np5HljY/pnZLlsJHlubTnp5HmioDkuK3lv4PlhbHlkIzmib/lip7jgIImcXVvdDssJnF1b3Q7bGluayZxdW90OzomcXVvdDtodHRwOi8vcm9ib3QueGlhb3hpYW90b25nLm9yZy8mcXVvdDt9eyZxdW90O2RhdGUmcXVvdDs6JnF1b3Q7MjAxOS0xMi0yMCZxdW90OywmcXVvdDt0aXRsZSZxdW90OzomcXVvdDvnrKwzNeWxiuaxn+iLj+ecgemdkuWwkeW5tOenkeaKgOWIm+aWsOWkp+i1myZxdW90OywmcXVvdDtpdGVtJnF1b3Q7OiZxdW90O+esrDM15bGK5rGf6IuP55yB6Z2S5bCR5bm056eR5oqA5Yib5paw5aSn6LWbJnF1b3Q7LCZxdW90O3RpbWUmcXVvdDs6JnF1b3Q7MjAxOS0xMi0yMOiHszIwMjAtMDEtMjAmcXVvdDssJnF1b3Q7bG9jYXRpb24mcXVvdDs6JnF1b3Q7JnF1b3Q7LCZxdW90O3RhcmdldCZxdW90OzomcXVvdDsmcXVvdDssJnF1b3Q7ZGV0YWlsJnF1b3Q7OiZxdW90O+esrDM15bGK5rGf6IuP55yB6Z2S5bCR5bm056eR5oqA5Yib5paw5aSn6LWbJnF1b3Q7LCZxdW90O2xpbmsmcXVvdDs6JnF1b3Q7JnF1b3Q7fV1kAiUPZBYGAgEPFgIfAQICFgRmD2QWAmYPFQIWaHR0cDovL3d3dy5qc3N0ZW0ub3JnLxnmsZ/oi49TVEVN5pWZ6IKy5LqR5Lit5b+DZAIBD2QWAmYPFQIYaHR0cDovL3d3dy5jYWNzaS5vcmcuY24vJOS4reWbvemdkuWwkeW5tOenkeaKgOi+heWvvOWRmOWNj+S8mmQCAw8WAh8BAgIWBGYPZBYCZg8VAhZodHRwOi8vd3d3Lmpzc3RlbS5vcmcvGeaxn+iLj1NURU3mlZnogrLkupHkuK3lv4NkAgEPZBYCZg8VAhhodHRwOi8vd3d3LmNhY3NpLm9yZy5jbi8k5Lit5Zu96Z2S5bCR5bm056eR5oqA6L6F5a+85ZGY5Y2P5LyaZAIFDxYCHwECAhYEZg9kFgJmDxUCFmh0dHA6Ly93d3cuanNzdGVtLm9yZy8Z5rGf6IuPU1RFTeaVmeiCsuS6keS4reW/g2QCAQ9kFgJmDxUCGGh0dHA6Ly93d3cuY2Fjc2kub3JnLmNuLyTkuK3lm73pnZLlsJHlubTnp5HmioDovoXlr7zlkZjljY/kvJpkZJaZnI+yIo+HMk3tKgtste1mmnY9ot8SQQgsmIohfeI6" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="90059987" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdABOdW7nle0neUW5IRTDFyM+h/tGT9ulz+8PArVEK5RZn7lksHvq4xipDK5YyDQtTwO5rhgCKfqYoFePOf3I05caukoGSmsPzlo/A8QpySCdi/T+86cDa544I86KLO530k0C7Z+dKdOrYLEOB8HajDsKZjjcxsOnrgM8o2fXP7GNyIJBKwfBoYPHlACamet5lSxeJfQBy6aVayuFujLhrvTtamuC/MOT4S6dQkZapOLq+zmCoqkw+gjSo1RddVWD2DpGjKtVZ7OY8pgnUgeG7kD5+TOXcZ3vIZvJvJUQZBo6yCIjqwSdyPiD6HZKKAGoURvpDKHwzUjlWDWnWNF91LapIY37cJ8obWKoaq7dKZF46cipL/4zj7Q1P7SiAtHyg5Vv5EFWS7jcIrMO7S4C8KiictUflWsFs3nrsOuNCy28qgVTles7Q2P+uKJbh5ypNLKo=" />
+</div>
+    <!--头部开始-->
+    <div class="header">
+        
+<!--顶部快捷入口-->
+        <div class="shortcut">
+            <div class="container">
+                <div class="current-time">
+                    <span>2020年1月6日   星期一</span>
+                </div>   
+                
+                <div class="addfunction">
+                    <dl>
+                        <dt><a href="javascript:void(0);" onclick="SetHome(this,window.location);" >设为首页</a></dt>
+                        <dt><a  onclick="AddFavorite(window.location,document.title)">加入收藏</a></dt>
+                    </dl>
+                    <div class="search">
+                          <select name="Top1$ddlType" id="Top1_ddlType">
+	<option value="1">文章</option>
+	<option value="2">图集</option>
+	<option value="3">视频</option>
+
+</select>
+            <input name="Top1$txtInput" type="text" id="Top1_txtInput" class="keywords" />
+            <a id="Top1_btnFind" class="search-btn icon-search" href="javascript:__doPostBack(&#39;Top1$btnFind&#39;,&#39;&#39;)"></a>
+                    </div>
+                    <a class="userin" href="/Other/jiangsu/service/login.html">
+                        <span class="icon-user"></span>     
+                         会员注册                   
+                    </a>
+                </div>               
+            </div>               
+        </div>
+        <!--快捷入口结束-->
+        
+        <!--头部banner-->
+        <div class="banner">
+            <div class="container">
+                <h1><a href="#">江苏省青少年科学教育服务平台</a></h1>
+            </div>   
+        </div>               
+        <!--banner结束-->  
+        <div class="nav">
+            <ul class="navbar container">
+                <li><a href="/Other/jiangsu/index.html">首页<span class='topborder'></span></a></li>
+                <li><a href="/Other/jiangsu/aboutUs.html">关于我们<span class='topborder'></span></a></li>
+                <li><a href="/Other/jiangsu/news/notice.html">文件通知<span class='topborder'></span></a></li>
+                <li><a href="/Other/jiangsu/news/news.html">新闻报道<span class='topborder'></span></a></li>
+                <li class="down-ul"><a href="/Other/jiangsu/active/active.html">品牌活动<span class='topborder'></span></a>
+                    <div class="fullSize act">
+                          <ul class="ul_child">
+<li><a href="/Other/jiangsu/active/castic.html"><i class="ico-act-group icx">&nbsp;</i><span>青少年创新大赛</span></a>
+                        </li>
+                         <li><a href="/Other/jiangsu/active/active12.html"><i class="ico-act-group new1">&nbsp;</i><span>江苏省职业学校创新创业大赛</span></a>
+                        </li>
+                        <li><a href="/Other/jiangsu/active/robot.html"><i class="ico-act-group ijq">&nbsp;</i><span>机器人竞赛</span></a>
+                        </li>
+                        <li><a href="/Other/jiangsu/active/tomorrow.html"><i class="ico-act-group ial">&nbsp;</i><span>明天小小科学家</span></a>
+                        </li>
+                        <li><a href="/Other/jiangsu/active/camp.html"><i class="ico-act-group izy">&nbsp;</i><span>青少年高校科学营</span></a>
+                        </li>
+                        <li><a href="/Other/jiangsu/active/yingcai.html"><i class="ico-act-group iyc">&nbsp;</i><span>中学生英才计划</span></a>
+                        </li>
+                        <li><a href="/Other/jiangsu/active/casvf.html"><i class="ico-act-group ikxy">&nbsp;</i><span>全国青少年科学影像节</span></a>
+                        </li>
+                        <li><a href="/Other/jiangsu/active/scienceday.html"><i class="ico-act-group idc">&nbsp;</i><span>科学调查体验活动</span></a>
+                        </li>
+                        <li><a href="/Other/jiangsu/active/abbott.html"><i class="ico-act-group ijy">&nbsp;</i><span>雅培家庭科教公益活动</span></a>
+                        </li>
+                        <li><a href="/Other/jiangsu/active/program.html"><i class="ico-act-group iyt">&nbsp;</i><span>魔抓创意编程大赛</span></a>
+                        </li>
+                        <li><a href="/Other/jiangsu/active/active10.html"><i class="ico-act-group iyt">&nbsp;</i><span>非正规教育项目</span></a>
+                        </li>
+                        <li><a href="/Other/jiangsu/active/active14.html"><i class="ico-act-group ioly">&nbsp;</i><span>信息学奥赛</span></a>
+                        </li>
+                  </ul>
+                    </div>
+                </li>
+                <li><a href="/Other/jiangsu/service/login.html">在线服务<span class='topborder'></span></a></li>
+                <li><a href="/Other/jiangsu/record/activeImg.html">活动影像<span class='topborder'></span></a></li>
+                <li><a href="/Other/jiangsu/communicate/message.html">交流反馈<span class='topborder'></span></a></li>
+                <li><a href="http://www.jsstem.org/stem/expert.aspx">专家团队<span class='topborder'></span></a></li>
+                <li><a href="/Other/jiangsu/idol/idol.html">榜样力量<span class='topborder'></span></a></li>
+                <li><a href="http://www.jsstem.org/stem/" target="_blank">STEM教育云中心<span class='topborder'></span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="clearfix">
+    </div>
+    <!--头部结束-->
+    <!--轮播图开始-->
+    <div class="public_full slider-bg">
+        <div class="container">
+            <!--banner slider-->
+            <div id="slider_1" class="owl-carousel">
+                
+        <a class="item" href="https://jsgmkxszds.cnki.net/" target="_blank">
+            <img src="/AttachFile/2019/9/390102/637032747105419259.png" />
+            <div class="item_detail">
+                <h3>
+                    2019—2020年度江苏省全民科学素质大赛
+                </h3>
+                <p>
+                    为深入实施《江苏省全民科学素质行动计划纲要实施方案（2016—2020年）》，大力开展常态化、制度化和社会化科普活动，在全社会积极营造浓郁的科学文化氛围，促进我省全民科学素质水平不断提升，2019年继续组织开展“江苏省全民科学素质大赛”。活动时间:2019年9月7日至12月31日
+                </p>
+            </div>
+        </a>
+    
+        <a class="item" href="http://www.jsstem.org/News/ArticleView.aspx?AID=244752" target="_blank">
+            <img src="/AttachFile/2019/11/390102/637091735175831815.png" />
+            <div class="item_detail">
+                <h3>
+                    江苏选手获“明天小小科学家”称号
+                </h3>
+                <p>
+                    11月11日，由中国科协、中国科学院、中国工程院、国家自然科学基金委和周凯旋基金会共同主办的第19届“明天小小科学家”奖励活动在中国科学院大学圆满落幕，江苏选手取得骄人成绩。江苏英才计划学员、省苏州中学的卢冠宇同学以第一名的成绩，荣获“明天小小科学家”称号，全国仅有3名同学获此殊荣。
+                </p>
+            </div>
+        </a>
+    
+        <a class="item" href="http://www.jsstem.org/News/ArticleView.aspx?AID=244685" target="_blank">
+            <img src="/AttachFile/2019/11/390102/637086547530817437.jpg" />
+            <div class="item_detail">
+                <h3>
+                    2019中国青少年科技辅导员协会年会暨江苏省青少年科技教育高峰论坛在南京举行
+                </h3>
+                <p>
+                    11月1-2日，2019中国青少年科技辅导员协会年会在南京圆满举行。本次年会在中国科协科普部和中国科协青少年科技中心支持下，由中国青少年科技辅导员协会、江苏省科学技术协会联合主办，江苏省青少年科技教育协会、江苏省青少年科技中心、江苏省学会服务中心承办，南京大学、东南大学、南京航空航天大学、南京理工大学、南京师范大学、江苏省人工智能学会、江苏省工程师学会、江苏省航空航天学会、南京青少年科技教育协会共同协办。围绕“科教联合、共育英才”主题，吸引了全国各地1000余名科技教育专家、优秀科技辅导员、中小学校长参加，搭建教育与科技沟通的桥梁，凝心聚力，交流研讨如何将科技界与教育界的智慧和力量汇聚，多视角、多维度分析解读新时代科技教育，共同推进新时代青少年科技教育创新发展。
+                </p>
+            </div>
+        </a>
+    
+        <a class="item" href="http://www.jsstem.org/News/ArticleView.aspx?AID=244424" target="_blank">
+            <img src="/AttachFile/2019/10/390102/637068209405500419.png" />
+            <div class="item_detail">
+                <h3>
+                    第五届中国“互联网+”大学生创新创业大赛圆满落幕江苏队勇创佳绩
+                </h3>
+                <p>
+                    10月15日晚，第五届中国“互联网+”大学生创新创业大赛颁奖仪式在浙江大学落下帷幕，教育部副部长钟登华出席颁奖仪式。大赛共评选出61个主赛道金奖项目、15个红旅赛道金奖项目、15个职教赛道金奖项目以及20个萌芽赛道创新奖项目。经过激烈角逐，最终江苏代表队各赛道获奖总数位居全国第一，特别是在大赛新设立的萌芽版块中，我省中学生斩获5枚创新奖，以绝对优势位居全国第一。
+                </p>
+            </div>
+        </a>
+    
+
+            </div>
+            <div class="banner_plate">
+                <div class="fir">
+                    <a href="http://jsstem.org/E-Book/index.html" target="_blank">十二五科学教育特色学校汇编</a></div>
+                <div class="sec">
+                     <a href="http://www.jsstem.org/News/noticeView.aspx?AID=227686" target="_blank">江苏省公民科学素质大赛<br />
+                        </a></div>
+                <div class="trd">
+                    <a href="http://www.jsstem.org/News/noticeView.aspx?AID=240532" target="_blank">STEM教育网络培训</a></div>
+                <div class="for">
+                    <a href="http://jsstem.org/idol/idol.aspx" target="_blank">科学教育综合示范学校<br />
+                        优秀科技辅导员  优秀学生</a></div>
+                <div class="fif">
+                    <a href="http://www.jsstem.org/stemold/camp.aspx" target="_blank">江苏省STEM教育项目<br />
+                        试点学校</a></div>
+            </div>
+        </div>
+    </div>
+    <!--图片轮播结束-->
+    <div class="notice">
+        <div class="container">
+            <span class="banner text-center">公告栏</span>
+            <marquee onmouseout="this.start()" onmouseover="this.stop()" direction="left" behavior="scroll"
+                width="880" scrolldelay="-10" loop="-1" style="width: 880px; margin-left: 120px;">
+
+        <ul id="scroll-notice">
+           
+            <li class="item"><a class="text-white" href="/Other/jiangsu/news/noticeView/AID/228726.html" target="_blank" title='江苏省青少年科技创新大赛申报说明' >江苏省青少年科技创新大赛申报说明</a></li>
+           
+            <li class="item"><a class="text-white" href="/Other/jiangsu/news/noticeView/AID/228632.html" target="_blank" title='关于江苏省青少年科技中心网站的有关声明' >关于江苏省青少年科技中心网站的有关声明</a></li>
+           
+            <li class="item"><a class="text-white" href="/Other/jiangsu/news/noticeView/AID/227858.html" target="_blank" title='关于推荐“2018年秋季力翰科学实践活动”的公告' >关于推荐“2018年秋季力翰科学实践活动”的公告</a></li>
+           
+            <li class="item"><a class="text-white" href="/Other/jiangsu/news/noticeView/AID/227827.html" target="_blank" title='关于组织参加江苏省公民科学素质大赛的通知' >关于组织参加江苏省公民科学素质大赛的通知</a></li>
+           
+            <li class="item"><a class="text-white" href="/Other/jiangsu/news/noticeView/AID/202774.html" target="_blank" title='关于发布“江苏省青少年科技创新大赛申办流程”的公告' >关于发布“江苏省青少年科技创新大赛申办流程”的公告</a></li>
+           
+            <li class="item"><a class="text-white" href="/Other/jiangsu/news/noticeView/AID/34350.html" target="_blank" title='关于严防不法分子假冒省科协领导和工作人员名义进行诈骗活动的紧急通知' >关于严防不法分子假冒省科协领导和工作人员名义进行诈骗活动的紧急通知</a></li>
+           
+        </ul></marquee>
+        </div>
+    </div>
+    <!--轮播图结束-->
+    <div class="container  clearfix">
+        <div class="left-content">
+            <!--part1 工作报道-->
+            <div class="well">
+                <div class="title big">
+                    <h2 class="caption">
+                        <i class="face icon-copy"></i>工作报道
+                    </h2>
+                    <a class="more" href="/Other/jiangsu/news/news.html">/more</a>
+                </div>
+                <ul class="list list-border-3">
+                    
+                            <li class='top'><a href="/Other/jiangsu/News/ArticleView/AID/245222.html"
+                                target="_blank" title='2020年“英才计划”江苏面试及终评会在南京举行'>
+                                2020年“英才计划”江苏面试及终评会在南京举行</a><a
+                                    class="Fright text-blue font-12" href="##">[英才计划]</a>
+                            </li>
+                        
+                            <li class=''><a href="/Other/jiangsu/News/ArticleView/AID/245133.html"
+                                target="_blank" title='2019年英才论坛圆满落幕，江苏学员载誉归来'>
+                                2019年英才论坛圆满落幕，江苏学员载誉归来</a><a
+                                    class="Fright text-blue font-12" href="##">[英才计划]</a>
+                            </li>
+                        
+                            <li class=''><a href="/Other/jiangsu/News/ArticleView/AID/244973.html"
+                                target="_blank" title='南师附中严彬玮同学在第35届中国数学奥林匹克竞赛中满分夺冠'>
+                                南师附中严彬玮同学在第35届中国数学奥林匹克竞赛中满分夺冠</a><a
+                                    class="Fright text-blue font-12" href="##">[其它活动]</a>
+                            </li>
+                        
+                            <li class=''><a href="/Other/jiangsu/News/ArticleView/AID/244813.html"
+                                target="_blank" title='看科技创新，谈责任担当'>
+                                看科技创新，谈责任担当</a><a
+                                    class="Fright text-blue font-12" href="##">[其它活动]</a>
+                            </li>
+                        
+                            <li class=''><a href="/Other/jiangsu/News/ArticleView/AID/244752.html"
+                                target="_blank" title='江苏选手获“明天小小科学家”称号'>
+                                江苏选手获“明天小小科学家”称号</a><a
+                                    class="Fright text-blue font-12" href="##">[小小科学家]</a>
+                            </li>
+                        
+                            <li class=''><a href="/Other/jiangsu/News/ArticleView/AID/244685.html"
+                                target="_blank" title='2019中国青少年科技辅导员协会年会暨江苏省青少年科技教育高峰论坛在南京举行'>
+                                2019中国青少年科技辅导员协会年会暨江苏省青少年科技教育高峰论坛在南京举行</a><a
+                                    class="Fright text-blue font-12" href="##">[其它活动]</a>
+                            </li>
+                        
+                            <li class=''><a href="/Other/jiangsu/News/ArticleView/AID/244682.html"
+                                target="_blank" title='课后服务科普讲座进校园'>
+                                课后服务科普讲座进校园</a><a
+                                    class="Fright text-blue font-12" href="##">[其它活动]</a>
+                            </li>
+                        
+                            <li class=''><a href="/Other/jiangsu/News/ArticleView/AID/244680.html"
+                                target="_blank" title='第十届全国青少年科学影像节展映展评活动落幕'>
+                                第十届全国青少年科学影像节展映展评活动落幕</a><a
+                                    class="Fright text-blue font-12" href="##">[全国青少年科学影像节]</a>
+                            </li>
+                        
+                            <li class=''><a href="/Other/jiangsu/News/ArticleView/AID/244507.html"
+                                target="_blank" title='第五届全国青少年创意编程与智能设计大赛终评落幕江苏队喜获佳绩'>
+                                第五届全国青少年创意编程与智能设计大赛终评落幕江苏队喜获佳绩</a><a
+                                    class="Fright text-blue font-12" href="##">[全国青少年创意编程与智能设计大赛]</a>
+                            </li>
+                        
+                            <li class=''><a href="/Other/jiangsu/News/ArticleView/AID/244424.html"
+                                target="_blank" title='第五届中国“互联网+”大学生创新创业大赛圆满落幕江苏队勇创佳绩'>
+                                第五届中国“互联网+”大学生创新创业大赛圆满落幕江苏队勇创佳绩</a><a
+                                    class="Fright text-blue font-12" href="##">[其它活动]</a>
+                            </li>
+                        
+                </ul>
+            </div>
+            <!--part2-->
+            <div class="well">
+                <div class="title big">
+                    <h2 class="caption well-ico wj">
+                        文件通知</h2>
+                    <a href="/Other/jiangsu/news/notice.html" class="more">/more</a>
+                </div>
+                <ul class="list">
+                    
+                            <li><a href="/Other/jiangsu/News/noticeView/AID/245231.html" target="_blank"
+                                title='关于开展2020年江苏省中学生科技创新后备人才培养计划工作的函'>
+                                关于开展2020年江苏省中学生科技创新后备人才培养计划工作的函</a><span
+                                    class="Fright font-12">2019-12-27</span></li>
+                        
+                            <li><a href="/Other/jiangsu/News/noticeView/AID/245185.html" target="_blank"
+                                title='关于举办第三十一届江苏省青少年科技创新大赛的通知'>
+                                关于举办第三十一届江苏省青少年科技创新大赛的通知</a><span
+                                    class="Fright font-12">2019-12-20</span></li>
+                        
+                            <li><a href="/Other/jiangsu/News/noticeView/AID/245142.html" target="_blank"
+                                title='2019年江苏省青少年特色科学工作室暨省青少年科技创新基地名单公示'>
+                                2019年江苏省青少年特色科学工作室暨省青少年科技创新基地名单公示</a><span
+                                    class="Fright font-12">2019-12-13</span></li>
+                        
+                            <li><a href="/Other/jiangsu/News/noticeView/AID/245127.html" target="_blank"
+                                title='关于2019年非专业级软件能力认证（CSP-J/S）江苏地区获奖结果的公告'>
+                                关于2019年非专业级软件能力认证（CSP-J/S）江苏地区获奖结果的公告</a><span
+                                    class="Fright font-12">2019-12-10</span></li>
+                        
+                            <li><a href="/Other/jiangsu/News/noticeView/AID/245122.html" target="_blank"
+                                title='关于命名“十三五”省科学教育综合示范学校的通知'>
+                                关于命名“十三五”省科学教育综合示范学校的通知</a><span
+                                    class="Fright font-12">2019-12-09</span></li>
+                        
+                            <li><a href="/Other/jiangsu/News/noticeView/AID/244935.html" target="_blank"
+                                title='2019年科学课堂视频制作竞争性磋商采购公告'>
+                                2019年科学课堂视频制作竞争性磋商采购公告</a><span
+                                    class="Fright font-12">2019-12-02</span></li>
+                        
+                            <li><a href="/Other/jiangsu/News/noticeView/AID/244925.html" target="_blank"
+                                title='关于举办2020年江苏省青少年信息学冬令营的通知'>
+                                关于举办2020年江苏省青少年信息学冬令营的通知</a><span
+                                    class="Fright font-12">2019-11-28</span></li>
+                        
+                            <li><a href="/Other/jiangsu/News/noticeView/AID/244768.html" target="_blank"
+                                title='关于公开CSP-J/S第二轮认证选手程序的通知'>
+                                关于公开CSP-J/S第二轮认证选手程序的通知</a><span
+                                    class="Fright font-12">2019-11-13</span></li>
+                        
+                            <li><a href="/Other/jiangsu/News/noticeView/AID/244767.html" target="_blank"
+                                title='关于开展2020年中学生英才计划工作的函'>
+                                关于开展2020年中学生英才计划工作的函</a><span
+                                    class="Fright font-12">2019-11-13</span></li>
+                        
+                            <li><a href="/Other/jiangsu/News/noticeView/AID/244357.html" target="_blank"
+                                title='关于举办2019年江苏省青少年科技教育高峰论坛的通知(转发）'>
+                                关于举办2019年江苏省青少年科技教育高峰论坛的通知(转发）</a><span
+                                    class="Fright font-12">2019-10-10</span></li>
+                        
+                </ul>
+            </div>
+            <!--part3-->
+            <div class="well tab_group">
+                <div class="title big">
+                    <h2 class="caption well-ico dt">
+                        基层动态</h2>
+                    <a href="/Other/jiangsu/news/AreaNews.html" class="more">/more</a>
+                    <div class="Fright bar">
+                        
+                    </div>
+                </div>
+                <ul class="list tab_1">
+                    
+                            <li class="pic"><a href="/Other/jiangsu/News/ArticleView/AID/244683.html"
+                                title='“脑洞”大开 常州市青少年科技创新大赛开赛' target="_blank">
+                                <img src='/AttachFile/2019/11/39010503/637085569613799349.jpg' class="face-f" />
+                            </a>
+                                <div class="content-li">
+                                    <h3 class="font-16">
+                                        <a href="/Other/jiangsu/News/ArticleView/AID/244683.html" target="_blank">
+                                            “脑洞”大开 常州市青少年科技创新大赛开赛</a></h3>
+                                    <span class="Fright text-blue font-12">
+                                        <input type="hidden" name="repPicListRegiontop3$ctl00$hAID" id="repPicListRegiontop3_hAID_0" value="244683" />
+                                        </span>
+                                    <p class="font-12">
+                                        <a href="/Other/jiangsu/News/ArticleView/AID/244683.html" target="_blank">
+                                            </a></p>
+                                </div>
+                            </li>
+                        
+                            <li class="pic"><a href="/Other/jiangsu/News/ArticleView/AID/244128.html"
+                                title='首期“思维之夏，智创未来”公益夏令营活动成功举办' target="_blank">
+                                <img src='/AttachFile/2019/9/39010503/637030181103949032.jpg' class="face-f" />
+                            </a>
+                                <div class="content-li">
+                                    <h3 class="font-16">
+                                        <a href="/Other/jiangsu/News/ArticleView/AID/244128.html" target="_blank">
+                                            首期“思维之夏，智创未来”公益夏令营活动成功举办</a></h3>
+                                    <span class="Fright text-blue font-12">
+                                        <input type="hidden" name="repPicListRegiontop3$ctl01$hAID" id="repPicListRegiontop3_hAID_1" value="244128" />
+                                        </span>
+                                    <p class="font-12">
+                                        <a href="/Other/jiangsu/News/ArticleView/AID/244128.html" target="_blank">
+                                            由中国科协青少年科技中心资助的江苏省青少年科技中心青少年科学工作室于2019年8月19日-8月24日举办了首期“思维之夏，智创未来”公益夏令营活动。</a></p>
+                                </div>
+                            </li>
+                        
+                            <li class="pic"><a href="/Other/jiangsu/News/ArticleView/AID/239158.html"
+                                title='【地方新闻】常州市开展2019年头脑奥林匹克（OM）比赛' target="_blank">
+                                <img src='/AttachFile/2019/3/39010503/636875742925087895.jpg' class="face-f" />
+                            </a>
+                                <div class="content-li">
+                                    <h3 class="font-16">
+                                        <a href="/Other/jiangsu/News/ArticleView/AID/239158.html" target="_blank">
+                                            【地方新闻】常州市开展2019年头脑奥林匹克（OM）比赛</a></h3>
+                                    <span class="Fright text-blue font-12">
+                                        <input type="hidden" name="repPicListRegiontop3$ctl02$hAID" id="repPicListRegiontop3_hAID_2" value="239158" />
+                                        </span>
+                                    <p class="font-12">
+                                        <a href="/Other/jiangsu/News/ArticleView/AID/239158.html" target="_blank">
+                                            3月2日，第四届常州市头脑奥林匹克（OM）比赛在常州市解放路小学隆重举行，拉开了我市青少年各类科技竞赛的序幕。</a></p>
+                                </div>
+                            </li>
+                        
+                    
+                            <li><a href="/Other/jiangsu/News/ArticleView/AID/239157.html" target="_blank"
+                                title='【地方新闻】常州市召开青少年科技教育工作推进会'>
+                                【地方新闻】常州市召开青少年科技教育工作推进会<span
+                                    class="Fright text-blue font-12"><input type="hidden" name="repRegionNews$ctl00$hAID" id="repRegionNews_hAID_0" value="239157" />
+                                    </span></a> </li>
+                        
+                            <li><a href="/Other/jiangsu/News/ArticleView/AID/228315.html" target="_blank"
+                                title='【地方新闻】苏州市召开STEM教育项目现场推进会'>
+                                【地方新闻】苏州市召开STEM教育项目现场推进会<span
+                                    class="Fright text-blue font-12"><input type="hidden" name="repRegionNews$ctl01$hAID" id="repRegionNews_hAID_1" value="228315" />
+                                    </span></a> </li>
+                        
+                            <li><a href="/Other/jiangsu/News/ArticleView/AID/228265.html" target="_blank"
+                                title='宝应县“中国科协——联合国儿童基金会农村青少年校外教育项目”走进扬州市科技馆'>
+                                宝应县“中国科协——联合国儿童基金会农村青少年校外教育项目”走进扬州市科技馆<span
+                                    class="Fright text-blue font-12"><input type="hidden" name="repRegionNews$ctl02$hAID" id="repRegionNews_hAID_2" value="228265" />
+                                    </span></a> </li>
+                        
+                            <li><a href="/Other/jiangsu/News/ArticleView/AID/228266.html" target="_blank"
+                                title='宝应县开展“中国科协—联合国儿基会农村青少年校外教育项目”教师培训'>
+                                宝应县开展“中国科协—联合国儿基会农村青少年校外教育项目”教师培训<span
+                                    class="Fright text-blue font-12"><input type="hidden" name="repRegionNews$ctl03$hAID" id="repRegionNews_hAID_3" value="228266" />
+                                    </span></a> </li>
+                        
+                            <li><a href="/Other/jiangsu/News/ArticleView/AID/227847.html" target="_blank"
+                                title='常州市新北区奔牛实验小学举行科技实践活动听证会'>
+                                常州市新北区奔牛实验小学举行科技实践活动听证会<span
+                                    class="Fright text-blue font-12"><input type="hidden" name="repRegionNews$ctl04$hAID" id="repRegionNews_hAID_4" value="227847" />
+                                    </span></a> </li>
+                        
+                            <li><a href="/Other/jiangsu/News/ArticleView/AID/227738.html" target="_blank"
+                                title='“节水在我身边”昆山国际学校小学部手抄报校园征集赛圆满结束'>
+                                “节水在我身边”昆山国际学校小学部手抄报校园征集赛圆满结束<span
+                                    class="Fright text-blue font-12"><input type="hidden" name="repRegionNews$ctl05$hAID" id="repRegionNews_hAID_5" value="227738" />
+                                    </span></a> </li>
+                        
+                            <li><a href="/Other/jiangsu/News/ArticleView/AID/224958.html" target="_blank"
+                                title='2018年青少年高校科学营南京大学分营与土壤专题开营仪式在中国科学院南京土壤研究所成功举行'>
+                                2018年青少年高校科学营南京大学分营与土壤专题开营仪式在中国科学院南京土壤研究所成功举行<span
+                                    class="Fright text-blue font-12"><input type="hidden" name="repRegionNews$ctl06$hAID" id="repRegionNews_hAID_6" value="224958" />
+                                    </span></a> </li>
+                        
+                </ul>
+                <ul class="list tab_2 hidden">
+                    
+                    
+                </ul>
+                <ul class="list tab_3 hidden">
+                    
+                    
+                </ul>
+            </div>
+            <!--part4-->
+            <div class="well">
+                <div class="title big">
+                    <h2 class="caption well-ico by">
+                        榜样力量</h2>
+                    <a href="/Other/jiangsu/idol/idol.html" class="more">/more</a>
+                </div>
+                <ul class="pic-hover center list-inline">
+                    <li><a class="ico-type stu">
+                        <img src="/images/upload/student.jpg">
+                        <i></i>
+                        
+                    </a></li>
+                    <li><a class="ico-type teacher">
+                        <img src="/images/upload/teacher.jpg">
+                        <i></i>
+                        
+                    </a></li>
+                    <li><a class="ico-type school">
+                        <img src="/images/upload/school.jpg">
+                        <i></i>
+                        
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+        <!--右侧列表部分开始-->
+        <div class="right-list">
+            <div class="list-top tab_group_hover">
+                <div class="title ">
+                    <a class="cur" name="tab_1">精彩推荐</a> <a name="tab_2">活动预告</a> <a name="tab_3" class="download">
+                        文件下载</a>
+                </div>
+                <div class="content">
+                    <!--精彩推荐层-->
+                    <div class="tab_1">
+                        <ul class="rec-list">
+                            
+                                    <li><em>
+                                        1</em> <a href='/Other/castic/2017/index.html' target="_blank"><span>
+                                            第32届全国青少年科技创新大赛</span>
+                                            <img src='/AttachFile/2017/8/390107/636391694801726155.jpg' alt="" >
+                                        </a></li>
+                                
+                                    <li><em>
+                                        2</em> <a href='/2017/index.html' target="_blank"><span>
+                                            第17届中国青少年机器人竞赛</span>
+                                            <img src='/AttachFile/2017/8/390107/636391694557022159.jpg' alt="" >
+                                        </a></li>
+                                
+                                    <li><em>
+                                        3</em> <a href='http://www.scienceday.org.cn/2017/index.aspx#' target="_blank"><span>
+                                            2017年青少年科学调查体验活动
+</span>
+                                            <img src='/AttachFile/2017/5/390107/636306120236254047.jpg' alt="" >
+                                        </a></li>
+                                
+                                    <li><em>
+                                        4</em> <a href='/Other/castic/2016/index.html' target="_blank"><span>
+                                            第31届全国青少年科技创新大赛</span>
+                                            <img src='/AttachFile/2017/5/390107/636306114122494360.jpg' alt="" >
+                                        </a></li>
+                                
+                                    <li><em>
+                                        5</em> <a href='/2016/index.html' target="_blank"><span>
+                                            第16届中国青少年机器人竞赛</span>
+                                            <img src='/AttachFile/2017/5/390107/636306114390109666.jpg' alt="" >
+                                        </a></li>
+                                
+                                    <li><em>
+                                        6</em> <a href='/Other/mingtian/2016/index.html' target="_blank"><span>
+                                            第16届“明天小小科学家”奖励活动</span>
+                                            <img src='/AttachFile/2017/5/390107/636306114743879901.jpg' alt="" >
+                                        </a></li>
+                                
+                                    <li><em>
+                                        7</em> <a href='/Other/casvf/2016/index.html' target="_blank"><span>
+                                            第七届全国青少年科学影像节</span>
+                                            <img src='/AttachFile/2017/5/390107/636306115327483281.jpg' alt="" >
+                                        </a></li>
+                                
+                                    <li><em>
+                                        8</em> <a href='/Other/jiangsu/AttachFile/2017/5/39010402/636302016627774460.pdf' target="_blank"><span>
+                                             2016届“英才计划”感想集</span>
+                                            <img src='/AttachFile/2017/5/390107/636306127833778600.jpg' alt="" >
+                                        </a></li>
+                                
+                                    <li><em>
+                                        9</em> <a href='http://zn.kepuri.org/' target="_blank"><span>
+                                            2016年全国科普日活动导览</span>
+                                            <img src='/AttachFile/2017/5/390107/636306116086936719.jpg' alt="" >
+                                        </a></li>
+                                
+                                    <li><em>
+                                        10</em> <a href='http://data.kepuri.org/ranklist.aspx' target="_blank"><span>
+                                            2016年全国科普日活动排行</span>
+                                            <img src='/AttachFile/2017/5/390107/636306116433476540.jpg' alt="" >
+                                        </a></li>
+                                
+                            
+                        </ul>
+                    </div>
+                    <!--活动预告层-->
+                    <div class="tab_2 hidden">
+                        <input class="value-datepicker" type="text" value="2016-1-15" style="display: none">
+                        <div class="datepicker">
+                        </div>
+                    </div>
+                    <!--文件下载层-->
+                    <div class="tab_3 hidden">
+                        <ul class="right_file mid">
+                            
+                                    <li class="dir"><a href='/Other/jiangsu/News/FileDetail/FID/214.html' title='第十九届江苏省青少年机器人竞赛规则'>
+                                        第十九届江苏省青少年机器人竞赛规则</a> </li>
+                                
+                                    <li class="dir"><a href='/Other/jiangsu/News/FileDetail/FID/212.html' title='江苏省青少年科技创新大赛申报说明'>
+                                        江苏省青少年科技创新大赛申报说明</a> </li>
+                                
+                                    <li class="dir"><a href='/Other/jiangsu/News/FileDetail/FID/181.html' title='2016届英才计划感想集'>
+                                        2016届英才计划感想集</a> </li>
+                                
+                                    <li class="dir"><a href='/Other/jiangsu/News/FileDetail/FID/179.html' title='2017第十七届省青少年机器人竞赛活动规则'>
+                                        2017第十七届省青少年机器人竞赛活动规则</a> </li>
+                                
+                                    <li class="dir"><a href='/Other/jiangsu/News/FileDetail/FID/177.html' title='2017青少年科学调查体验活动资源包说明书'>
+                                        2017青少年科学调查体验活动资源包说明书</a> </li>
+                                
+                                    <li class="dir"><a href='/Other/jiangsu/News/FileDetail/FID/174.html' title='2016年雅培家庭科教教师手册'>
+                                        2016年雅培家庭科教教师手册</a> </li>
+                                
+                                    <li class="dir"><a href='/Other/jiangsu/News/FileDetail/FID/173.html' title='2016年青少年高校科学营网络平台操作指南（营员、带队老师）'>
+                                        2016年青少年高校科学营网络平台操作指南（营员、带队老师）</a> </li>
+                                
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="well">
+                <div class="title">
+                    <span class="caption well-ico zy">科教资源</span> <a class="more">/more</a>
+                </div>
+                <div class="content">
+                    <ul class="pic-hover center" style="width: 260px;">
+                        <li><a class="ico-type wz" href="http://www.kepuchina.cn/" target="_blank">
+                            <img src="/images/upload/kepu.png">
+                            <i></i>
+                            <div class="trans-title">
+                                <span>科普中国</span></div>
+                            <div class="shadow-big">
+                                <div class="shadow-inner">
+                                    <h1>
+                                        科普中国</h1>
+                                    <p class="font-12">
+                                        科普中国导航站提供科学、权威、准确的科普信息内容和相关资讯，主要包含科普头条•热点•要闻、科普大超市、网络互动空间等版块以及优秀科普网站、科普栏目、移动端科普...</p>
+                                </div>
+                            </div>
+                        </a></li>
+                        <li><a class="ico-type app" href="http://www.kepuchina.org/" target="_blank">
+                            <img src="/images/upload/code.png">
+                            <i></i>
+                            <div class="trans-title">
+                                <span>炫彩科普中国APP</span></div>
+                            <div class="shadow-big">
+                                <div class="shadow-inner">
+                                    <h1>
+                                        炫彩科普中国APP</h1>
+                                    <p class="font-12">
+                                        科普中国app主要传播研究范围内的科技内容、渠道及机制等理论,公众科学素养的调查、监测和分析,科普效果评估.科普中国...</p>
+                                </div>
+                            </div>
+                        </a></li>
+                        <li><a class="ico-type ts" href="http://www.kepu365.org/Res/ResDetail/616" target="_blank">
+                            <img src="/images/upload/stem.png">
+                            <i></i>
+                            <div class="trans-title">
+                                <span>《STEM项目学生研究手册》</span></div>
+                            <div class="shadow-big">
+                                <div class="shadow-inner">
+                                    <h1>
+                                        《STEM项目学生研究手册》</h1>
+                                    <p class="font-12">
+                                        《STEM项目学生研究手册》是一本针对高中学生和教师的全面而详实的学习资料。它帮助教师在科学研究过程中的不同阶段对学生进行指导，并对相应的教学步骤提供了详尽的描述，甚至如果老师从没有科学实验设计经验，也能够在本书的帮助下指导学生进行科学、技术、工程学和数学实验研究。书中“研究设计、背景研究、假设的撰写、研究方案的撰写”等章节可以有效地帮助学生构思和完成他们的研究项目。</p>
+                                </div>
+                            </div>
+                        </a></li>
+                        <li><a class="ico-type dh" href="http://www.kepu365.org/Res/ResDetail/655" target="_blank">
+                            <img src="/images/upload/animal.png">
+                            <i></i>
+                            <div class="trans-title">
+                                <span>世界珍禽——朱鹮</span></div>
+                            <div class="shadow-big">
+                                <div class="shadow-inner">
+                                    <h1>
+                                        世界珍禽——朱鹮</h1>
+                                    <p class="font-12">
+                                        陕西汉中朱鹮国家级自然保护区位于陕西秦岭南坡，朱鹮，当今世界最濒危的鸟类之一，被世界自然保护联盟（IUCN）列入极濒危物种名录，国家Ⅰ级保护动物。历史上曾广 泛分布于中国、日本、朝鲜半岛和俄罗斯东部。二十世纪初在世界范围内朱鹮的分布和数量逐渐减少，二十年代人们认为日本的朱鹮已不存在，但
+                                        后来又发现少量残存于佐渡和能登半岛的个体。</p>
+                                </div>
+                            </div>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="icon-btn-group">
+                <a class="fx" href="/Other/jiangsu/communicate/message.html">感谢分享</a> <a class="dy" href="/Other/jiangsu/communicate/question.html">
+                    问题咨询</a> <a class="fk" href="/Other/jiangsu/communicate/complaint.html">举报投诉</a> <a class="jy"
+                        href="/Other/jiangsu/communicate/advice.html">意见建议</a>
+            </div>
+        </div>
+        <!--右侧列表部分结束-->
+    </div>
+    <!--活动影像-->
+    <div class="bg-blue yx">
+        <div class="container">
+            <div class="title ">
+                活动影像<a class="more" href="/Other/jiangsu/record/activeImg.html" style="color: #f3f3f3">/more</a>
+            </div>
+            <div class="left pic-hover center list-inline">
+                <a href="/Other/jiangsu/record/videoDetail/VideoID/6311.html" id="alink" class="video">
+                    <img src="/VideoFile/2019/9/3904002402/b77c1ccf1fc24de793f0381e7fc38bd6.jpg" id="imgvideo" />
+                    <i></i>
+                    <div class="trans-title">
+                        <span>
+                            第19届江苏省青少年机器人竞赛活动掠影</span></div>
+                    <div class="shadow-big">
+                        <div class="shadow-inner">
+                            <h1>
+                                第19届江苏省青少年机器人竞赛活动掠影</h1>
+                            <p class="font-12">
+                                </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="right">
+                <ul class="pic-hover center list-inline col3">
+                    
+                            <li><a class="picture" href='/Other/jiangsu/record/galleryDetail/GalleryID/15193.html'
+                                target="_blank">
+                                <img id="repGallery_imgList_0" src="/GalleryFile/2019/7/3950000300/636995844654057443_thumbnail.JPG" style="height:100%;width:100%;" /><input type="hidden" name="repGallery$ctl00$GID" id="repGallery_GID_0" value="15193" />
+                                <i></i>
+                                <div class="trans-title">
+                                    <span>
+                                        2019年科学营-南京理工大学分营活动精彩图片</span></div>
+                                <div class="shadow-big">
+                                    <div class="shadow-inner">
+                                        <h1>
+                                            2019年科学营-南京理工大学分营活动精彩图片</h1>
+                                        <p class="font-12">
+                                            2019年高校科学营南京理工大学分营活动精彩图片</p>
+                                    </div>
+                                </div>
+                            </a>&nbsp;</li>
+                        
+                            <li><a class="picture" href='/Other/jiangsu/record/galleryDetail/GalleryID/13592.html'
+                                target="_blank">
+                                <img id="repGallery_imgList_1" src="/GalleryFile/2018/5/3902002401/636627526093615817_thumbnail.jpg" style="height:100%;width:100%;" /><input type="hidden" name="repGallery$ctl01$GID" id="repGallery_GID_1" value="13592" />
+                                <i></i>
+                                <div class="trans-title">
+                                    <span>
+                                        2018年“江苏省人民政府青少年科技创新培源奖”颁奖仪式</span></div>
+                                <div class="shadow-big">
+                                    <div class="shadow-inner">
+                                        <h1>
+                                            2018年“江苏省人民政府青少年科技创新培源奖”颁奖仪式</h1>
+                                        <p class="font-12">
+                                            培源奖</p>
+                                    </div>
+                                </div>
+                            </a>&nbsp;</li>
+                        
+                            <li><a class="picture" href='/Other/jiangsu/record/galleryDetail/GalleryID/13584.html'
+                                target="_blank">
+                                <img id="repGallery_imgList_2" src="/GalleryFile/2018/5/3904002401/636618994043265112_thumbnail.JPG" style="height:100%;width:100%;" /><input type="hidden" name="repGallery$ctl02$GID" id="repGallery_GID_2" value="13584" />
+                                <i></i>
+                                <div class="trans-title">
+                                    <span>
+                                        第十八届江苏省青少年机器人竞赛活动</span></div>
+                                <div class="shadow-big">
+                                    <div class="shadow-inner">
+                                        <h1>
+                                            第十八届江苏省青少年机器人竞赛活动</h1>
+                                        <p class="font-12">
+                                            第十八届江苏省青少年机器人竞赛活动</p>
+                                    </div>
+                                </div>
+                            </a>&nbsp;</li>
+                        
+                    
+                            <li><a class="video" href='/Other/jiangsu/record/videoDetail/VideoID/6151.html' target="_blank">
+                                <img src='/VideoFile/2019/8/3950000400/989c605591c9469da05261eaa11af204.jpg'>
+                                <i></i>
+                                <div class="trans-title">
+                                    <span>
+                                        2019年青少年科学营新闻报道选-江苏教育周刊视频报道</span></div>
+                                <div class="shadow-big">
+                                    <div class="shadow-inner">
+                                        <h1>
+                                            2019年青少年科学营新闻报道选-江苏教育周刊视频报道</h1>
+                                        <p class="font-12">
+                                            </p>
+                                    </div>
+                                </div>
+                            </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                        
+                            <li><a class="video" href='/Other/jiangsu/record/videoDetail/VideoID/6013.html' target="_blank">
+                                <img src='/VideoFile/2019/7/3950000400/3314532a1c9e43b4a5721ec806d6372b.jpg'>
+                                <i></i>
+                                <div class="trans-title">
+                                    <span>
+                                        2019年青少年高校科学营江苏科学营开营仪式</span></div>
+                                <div class="shadow-big">
+                                    <div class="shadow-inner">
+                                        <h1>
+                                            2019年青少年高校科学营江苏科学营开营仪式</h1>
+                                        <p class="font-12">
+                                            </p>
+                                    </div>
+                                </div>
+                            </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                        
+                            <li><a class="video" href='/Other/jiangsu/record/videoDetail/VideoID/5836.html' target="_blank">
+                                <img src='/VideoFile/2019/4/3902002402/b2267a53ef47473997698999e123c0c2.jpg'>
+                                <i></i>
+                                <div class="trans-title">
+                                    <span>
+                                        江苏教育风采-第30届江苏省青少年创新大赛专题片</span></div>
+                                <div class="shadow-big">
+                                    <div class="shadow-inner">
+                                        <h1>
+                                            江苏教育风采-第30届江苏省青少年创新大赛专题片</h1>
+                                        <p class="font-12">
+                                            </p>
+                                    </div>
+                                </div>
+                            </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                        
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="AnnounceList" style="display: none">[{&quot;date&quot;:&quot;2017-4-14&quot;,&quot;title&quot;:&quot;第二十八届江苏省青少年科技创新大赛&quot;,&quot;item&quot;:&quot;决赛&quot;,&quot;time&quot;:&quot;2017-04-14至2017-04-16&quot;,&quot;location&quot;:&quot;江苏常州&quot;,&quot;target&quot;:&quot;全省中小学生、科技辅导员&quot;,&quot;detail&quot;:&quot;第28届江苏省青少年科技创新大赛于2017年4月14—16日在常州市举行。通过举办丰富多彩的系列活动，展示青少年科技创新成果，放飞青少年科学梦想，开发青少年创造潜能，提升青少年科学素质，营造爱科学、学科学、用科学的良好风尚，努力培养优秀后备科技人才，为建设创新型省份和推进素质教育作出积极贡献。&quot;,&quot;link&quot;:&quot;http://jsstem.org/active/castic.aspx&quot;}{&quot;date&quot;:&quot;2018-8-14&quot;,&quot;title&quot;:&quot;第33届全国青少年科技创新大赛&quot;,&quot;item&quot;:&quot;第33届全国青少年科技创新大赛&quot;,&quot;time&quot;:&quot;2018-08-14至2018-08-20&quot;,&quot;location&quot;:&quot;重庆市&quot;,&quot;target&quot;:&quot;中小学生、科技辅导员&quot;,&quot;detail&quot;:&quot;由中国科协、教育部、科技部、环境保护部、体育总局、知识产权局、自然科学基金会、共青团中央、全国妇联和重庆市人民政府共同主办的第33届全国青少年科技创新大赛（以下简称“大赛”）计划于2018年8月14-20日在重庆市举办。&quot;,&quot;link&quot;:&quot;http://castic.&quot;}{&quot;date&quot;:&quot;2018-4-10&quot;,&quot;title&quot;:&quot;第33届全国青少年科技创新大赛申报&quot;,&quot;item&quot;:&quot;第33届全国青少年科技创新大赛申报&quot;,&quot;time&quot;:&quot;2018-04-10至2018-05-10&quot;,&quot;location&quot;:&quot;重庆市&quot;,&quot;target&quot;:&quot;中小学生、科技辅导员&quot;,&quot;detail&quot;:&quot;由中国科协、教育部、科技部、环境保护部、体育总局、知识产权局、自然科学基金会、共青团中央、全国妇联和重庆市人民政府共同主办的第33届全国青少年科技创新大赛（以下简称“大赛”）计划于2018年8月14-20日在重庆市举办。&quot;,&quot;link&quot;:&quot;http://castic.&quot;}{&quot;date&quot;:&quot;2018-5-5&quot;,&quot;title&quot;:&quot;第十八届中国青少年机器人竞赛暨2018世界青少年机器人邀请赛&quot;,&quot;item&quot;:&quot;第十八届中国青少年机器人竞赛暨2018世界青少年机器人邀请赛&quot;,&quot;time&quot;:&quot;2018-05-05至2018-06-05&quot;,&quot;location&quot;:&quot;贵州省贵阳市贵州大学花溪西校区&quot;,&quot;target&quot;:&quot;中小学生&quot;,&quot;detail&quot;:&quot;第十八届中国青少年机器人竞赛暨2018世界青少年机器人邀请赛将于2018年7月在贵州省贵阳市举办。本届竞赛由中国科协主办，贵州省科协、贵州大学和中国科协青少年科技中心共同承办。&quot;,&quot;link&quot;:&quot;http://robot./&quot;}{&quot;date&quot;:&quot;2019-12-20&quot;,&quot;title&quot;:&quot;第35届江苏省青少年科技创新大赛&quot;,&quot;item&quot;:&quot;第35届江苏省青少年科技创新大赛&quot;,&quot;time&quot;:&quot;2019-12-20至2020-01-20&quot;,&quot;location&quot;:&quot;&quot;,&quot;target&quot;:&quot;&quot;,&quot;detail&quot;:&quot;第35届江苏省青少年科技创新大赛&quot;,&quot;link&quot;:&quot;&quot;}]</div>
+    <!--活动影像结束-->
+    
+<!--底部开始-->
+<link type="text/css" href="/Other/jiangsu/css/owl.carousel.css" rel="stylesheet" />
+<link type="text/css" href="/Other/jiangsu/css/owl.theme.css" rel="stylesheet" />
+<script src="/Other/jiangsu/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="/Other/jiangsu/js/VisitCount.js"></script>
+<script type="text/javascript">
+    
+   
+    function setCount(UrlName) {
+        $.ajax({
+            url: "/stem/res/Handler/Handler1.ashx",
+            type: "post",
+
+            data: "method=Name&QID=" + UrlName,
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.log(jqXHR.responseText);
+                console.log(jqXHR.status);
+                console.log(jqXHR.statusText);
+                console.log(textStatus);
+                console.log(errorThrown);
+            },
+            success: function (data) {
+
+
+            }
+        });
+    }
+</script>
+<div class="footer">
+    <div class="container">
+        <div class="box1 font-12">
+            <div class="info" style="border: none">
+                <p>
+                    主办单位：江苏省青少年科技中心 江苏省青少年科技教育协会</p>
+                <p>
+                    建设运营：全国青少年科技教育和科普活动云服务平台发展联盟</p>
+                <p>
+                    网站备案：京ICP备11018462号-1&nbsp;&nbsp;京公安备案：110108009524号</p>
+            </div>
+            <div id="visit-num">
+                访问数量：<span class="num numCount">
+                
+                </span>
+            </div>
+            <span class="mark"><a href="##">
+                <img src="/images/footer_mark.jpg" width="53" height="66" alt="" /></a> </span>
+        </div>
+        <div class="box2 text-center">
+            <span class="face faceCity">友情链接：</span>
+            <div class="dropdown">
+                <select name="pageselect" onchange="self.location.href=/Other/jiangsu/options[selectedIndex].value">
+                    <option selected="selected" value="0">———工作网站———</option>
+                    <option value="http://www.cyscc.org">中国科协青少年科技中心</option>
+                    <option value="http://www.jskx.org.cn">江苏省科学技术协会</option>
+                    <option value="http://www.ec.js.edu.cn">江苏省教育厅</option>
+                    <option value="http://www.jstd.gov.cn">江苏省科学技术厅</option>
+                    <option value="http://www.jsip.gov.cn">江苏省知识产权局</option>
+                    <option value="http://www.sciedu.org">江苏省青少年科技教育协会</option>
+                    
+                            <option value="http://www.jsstem.org/">
+                                江苏STEM教育云中心</option>
+                        
+                            <option value="http://www.cacsi.org.cn/">
+                                中国青少年科技辅导员协会</option>
+                        
+                </select>
+            </div>
+            <div class="dropdown">
+                <select name="pageselect" onchange="self.location.href=/Other/jiangsu/options[selectedIndex].value">
+                    <option selected="selected" value="0">———活动网站 ———</option>
+                    <option value="http://castic.">全国青少年科技创新大赛</option>
+                    <option value="http://robot.">中国青少年机器人竞赛</option>
+                    <option value="http://mingtian.">“明天小小科学家”奖励活动</option>
+                    <option value="http://www.casticcy.org">全国青少年科技创意比赛</option>
+                    <option value="http://www.scienceday.org.cn/">青少年科学调查体验活动</option>
+                    <option value="http://www.kexueying.org.cn">全国青少年高校科学营</option>
+                    <option value="http://casvf./">全国青少年科学影像节</option>
+                    <option value="http://www.jsve.edu.cn">江苏职教网</option>
+                    <option value="http://www.jstve.org">江苏省职业技术教育学会网</option>
+                    
+                </select>
+            </div>
+            <div class="dropdown">
+                <select name="pageselect" onchange="self.location.href=/Other/jiangsu/options[selectedIndex].value">
+                    <option selected="selected" value="0">———科教网站 ———</option>
+                    <option value="http://www.cdstm.cn/">中国数字科技馆</option>
+                    <option value="http://www.kepu.net.cn/">中国科普博览</option>
+                    <option value="http://www.guokr.com/">果壳网</option>
+                    
+                </select>
+            </div>
+        </div>
+        <div class="box3">
+            <div class="erwei">
+                <img src="/images/erwei.jpg" width="87" height="87" alt="微信二维码" />
+                扫一扫 关注我们
+            </div>
+        </div>
+        <div class="box2" style="border: 0;">
+            <span class="face">合作单位：</span>
+            <div class="link">
+                <a onclick="setCount('QY1')" href="http://www.hg3d.cn" target="_blank"><img src="/images/QY/link1.png" /></a>
+                <a onclick="setCount('QY2')" href="http://www.mybitlab.net"  target="_blank"><img src="/images/QY/link2.png" /></a>
+                <a href="http://www.jsstem.org/stem/" target="_blank">STEM教育云中心<span class='topborder'></span></a>
+<a class="0d0c4e556991402d83b6937ab7f271ab" href="http://www.iis7.com" id="0d0c4e556991402d83b6937ab7f271ab" style="display:inline-block;background-color:;color:#fff;padding:2px 5px;font-family:arial;font-size:12px;font-weight:bold;" target="_blank">iis7站长之家</a>
+                <a onclick="setCount('QY4')" href="http://www.abilix.com/" target="_blank"><img src="/images/QY/link4.png" /></a>
+                <a onclick="setCount('QY5')" href="http://www.hmkjsb.com/" target="_blank"> <img src="/images/QY/link5.png" /></a>
+                <a onclick="setCount('QY6')" href="http://www.helloworldroom.com/ " target="_blank"> <img src="/images/QY/link6.png" /></a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/Other/jiangsu/js/getVisit.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        var pvCount = GetVisitCount("39");
+        $(".numCount").text(pvCount);       
+        getVisitCount();
+        $(".link").owlCarousel({
+            items: 1,
+            loop: true,
+            autoPlay: true,
+            slideSpeed: 300,
+            dots: true,
+            autoplayTimeout: 50,
+            nav: true
+        });
+    });
+</script>
+
+    <a href="/Other/jiangsu/service/login.html">
+        
+        <script>
+
+
+            $(document).ready(function () {
+                $.datepicker.regional["zh-CN"] = {
+                    closeText: "关闭",
+                    prevText: "&#x3c;上月",
+                    nextText: "下月&#x3e;",
+                    currentText: "今天",
+                    monthNames: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+                    monthNamesShort: ["一", "二", "三", "四", "五", "六", "七", "八", "九", "十", "十一", "十二"],
+                    dayNames: ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"],
+                    dayNamesShort: ["周日", "周一", "周二", "周三", "周四", "周五", "周六"],
+                    dayNamesMin: ["日", "一", "二", "三", "四", "五", "六"],
+                    weekHeader: "周",
+                    dateFormat: "yy-mm-dd",
+                    firstDay: 1,
+                    isRTL: !1,
+                    showMonthAfterYear: !0,
+                    yearSuffix: "年"
+                };
+                $.datepicker.setDefaults($.datepicker.regional["zh-CN"]);
+                $(".datepicker").datepicker({
+                    inline: true,
+                    dateFormat: "yy-mm-dd",
+                    onSelect: function () {
+
+                    }
+                });
+
+
+                //
+
+                var json = eval([{
+                    "date": "2016-1-14",
+                    "title": "机器人大赛",
+                    "item": "报到布展",
+                    "time": "08:00-12:00;13:30-17:30",
+                    "location": "北京市第三十五中学至诚楼",
+                    "target": "在校学生",
+                    "detail": "参赛选手请。。。",
+                    "link": "http://www.baidu.com"
+                },
+            {
+                "date": "2016-1-19",
+                "title": "机器人大赛",
+                "item": "比赛开始",
+                "time": "08:00-12:00;13:30-17:30",
+                "location": "北京市第三十楼11",
+                "target": "在校学生1",
+                "detail": "参赛选手请。。。",
+                "link": "http://www.baidu.com"
+            },
+            {
+                "date": "2016-1-16",
+                "title": "创新大赛",
+                "item": "答辩/研讨会",
+                "time": "08:00-12:00;13:30-17:30",
+                "location": "北京市十五中学至诚楼",
+                "target": "在校学生11",
+                "detail": "参赛选手请。。。",
+                "link": "http://www.baidu.com"
+            },
+            {
+                "date": "2016-1-17",
+                "title": "明天小小科学家",
+                "item": "参观浏览",
+                "time": "08:00-12:00;13:30-17:30",
+                "location": "北京市第三十五至诚楼",
+                "target": "在校学生22",
+                "detail": "参赛选手请。。。",
+                "link": "http://www.baidu.com"
+            },
+            {
+                "date": "2016-2-11",
+                "title": "辅导员实践活动",
+                "item": "总结大会",
+                "time": "08:00-12:00;13:30-17:30",
+                "location": "北京市五中学至诚楼",
+                "target": "在校学生33",
+                "detail": "参赛选手请。。。",
+                "link": "http://www.baidu.com"
+            }]);
+
+
+                for (var i = 0; i < json.length; i++) {
+                    var _date = json[i].date;
+                    $(".datepicker td a").each(function () {
+                        var day = $(this).parent().attr("data-year") + "-" + (parseInt($(this).parent().attr("data-month")) + 1) + "-" + $(this).text();
+                        if (_date == day) {
+                            $(this).addClass("cur");
+                        }
+                    })
+                }
+
+                $(".datepicker").on("mouseover", function () {
+
+                    for (var i = 0; i < json.length; i++) {
+                        var _date = json[i].date;
+                        var _title = json[i].title;
+                        var _item = json[i].item;
+                        var _time = json[i].time;
+                        var _location = json[i].location;
+                        var _target = json[i].target;
+                        var _detail = json[i].detail;
+                        var _link = json[i].link;
+                        $(".datepicker td a").each(function () {
+                            var day = $(this).parent().attr("data-year") + "-" + (parseInt($(this).parent().attr("data-month")) + 1) + "-" + $(this).text();
+                            if (_date == day) {
+                                $(this).addClass("cur");
+                                $(this).attr("data-title", _title);
+                                $(this).attr("data-link", _link);
+                                $(this).attr("title", "活动名称：" + _title + "---点击查看详情");
+                            }
+                        })
+                    }
+
+                    $(".datepicker td a.ui-state-default").off("click");
+                    $(".datepicker td a.ui-state-default").on("click", function () {
+                        if ($(this).attr("data-link").length > 1) {
+                            window.open($(this).attr("data-link"));
+                        }
+                    });
+                });
+
+
+                //        首页大图轮播
+                $("#slider_1").owlCarousel({
+                    navigation: false,
+                    slideSpeed: 300,
+                    paginationSpeed: 400,
+                    singleItem: true,
+                    rewindSpeed: 0,
+                    autoPlay: 5000
+                });
+                //        $("#scroll-notice").owlCarousel({
+                //            navigation: false,
+                //            slideSpeed: 9000,
+                //            paginationSpeed: 9000,
+                //            singleItem: true,
+                //            rewindSpeed:1000,
+                //            stopOnHover:true,
+                //            autoPlay: 9000
+                //        });
+
+                $("#slider_1 .owl-page").mouseenter(function () {
+                    $(this).mouseup();
+                })
+
+            })
+        </script>
+        <style type="text/css">
+            #img
+            {
+                position: absolute;
+                display: block;
+                background: url("/images/floatImage/ClassSelect.jpg") no-repeat;
+                width: 360px;
+                height: 200px;
+                z-index: 999;
+            }
+            #img .reset
+            {
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                font-size: 14px;
+                color: #fff;
+            }
+        </style>
+        <a href="/Other/jiangsu/ClassSelection/Intr.html" target="_blank" style="display:none"   >
+            <div id="img">
+                <div class="reset">
+                    关闭&times;</div>
+            </div>
+        </a>
+        <!--图片浮动脚本-->
+        <script language="javascript" type="text/javascript">
+            (function ($) {
+                jQuery.fn.imgFloat = function (options) {
+                    var own = this;
+                    var xD = 0;
+                    var yD = 0;
+                    var i = 1;
+                    var settings = {
+                        speed: 15,
+                        xPos: 0,
+                        yPos: 0
+                    };
+                    jQuery.extend(settings, options);
+                    var ownTop = settings.xPos;
+                    var ownLeft = settings.yPos;
+                    own.css({
+                        position: "absolute",
+                        cursor: "pointer"
+                    });
+                    function imgPosition() {
+                        var winWidth = $(window).width() - own.width();
+                        var winHeight = $(window).height() - own.height();
+                        if (xD == 0) {
+                            ownLeft += i;
+                            own.css({
+                                left: ownLeft
+                            });
+                            if (ownLeft >= winWidth) {
+                                ownLeft = winWidth;
+                                xD = 1;
+                            }
+                        }
+                        if (xD == 1) {
+                            ownLeft -= i;
+                            own.css({
+                                left: ownLeft
+                            });
+                            if (ownLeft <= 0) xD = 0;
+                        }
+                        if (yD == 0) {
+                            ownTop += i;
+                            own.css({
+                                top: ownTop
+                            });
+                            if (ownTop >= winHeight) {
+                                ownTop = winHeight;
+                                yD = 1;
+                            }
+                        }
+                        if (yD == 1) {
+                            ownTop -= i;
+                            own.css({
+                                top: ownTop
+                            });
+                            if (ownTop <= 0) yD = 0;
+                        }
+                    }
+                    var imgHover = setInterval(imgPosition, settings.speed);
+                    own.hover(function () {
+                        clearInterval(imgHover);
+                    },
+                    function () {
+                        imgHover = setInterval(imgPosition, settings.speed);
+                    });
+                }
+            })(jQuery);
+
+            $("#img").imgFloat({ speed: 30, xPos: 10, yPos: 10 });
+            $(".reset").click(function () {
+                $("#img").css("display", "none");
+                return false;
+            });
+
+        </script>
+    </form>
+</body>
+</html>
+

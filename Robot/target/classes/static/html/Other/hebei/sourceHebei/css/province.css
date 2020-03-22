@@ -1,0 +1,1211 @@
+﻿
+body {
+    background:url(/sourceHebei/images/province/hebei/top.jpg) no-repeat center top;
+}
+
+.header .logo{
+    width:495px;
+   background: url(/sourceHebei/images/province/hebei/logo.png) no-repeat left center;
+     height:  101px;
+}
+.header .city {
+    width:676px;
+    position:absolute;
+    right:0;
+    bottom:20px;
+}
+    .header .city a {
+        display:block;
+        float:right;
+        padding:3px 0;
+        width:70px;
+       
+        text-align:center;
+    }
+    .nav .main-nav li{
+    height: 40px;
+    line-height: 40px;
+    width: 89px;
+    text-align: center;
+    margin-right:12px;
+    float: left;
+   
+}
+    .slider-list{
+    width: 329px;
+}
+        .nav .main-nav li a {
+           color:#fff;  
+           font-size: 14px;
+        }
+.nav-box {
+    margin-bottom:10px;
+}
+.nav-box .container .main-nav {
+       width:1200px;
+    margin:0 auto;
+    background:#096ae1;
+
+}
+.nav-box .container #topActivity, .nav-box .container #topImage {
+     width:1200px;
+    margin:0 auto;
+    background:#fff;
+}
+.nav-box .container #topActivity {
+    margin-top:7px;
+}
+    
+.nav .main-nav li:hover, .nav .main-nav li.current {
+    background: rgba(0, 0, 0, 0) url("/sourceHebei/images/province/hebei/current.png") no-repeat scroll center 9px;
+}
+#topActivityWrap {
+    display: block;
+  
+    left: 0;
+    margin: 0;
+    overflow: hidden;
+    
+    position: relative;
+    top: 0;
+    z-index: 100;
+}
+#topActivityWrap ul {
+  
+    display: block;
+    font-size: 0;
+    padding:3px 0;
+    left: 0;
+    list-style: outside none none;
+    /*margin: 0 0 0 50px;*/
+   
+    position: relative;
+    text-align: center;
+    top: 0;
+    
+}#topActivityWrap ul li {
+    display: inline-block;
+    height: 45px;
+    left: 0;
+    
+    padding: 0;
+    position: relative;
+    text-align: left;
+    top: 0;
+    width: 45px;
+    margin-left:19px;
+    margin-right:10px;
+}
+   
+#topActivityWrap ul li a.activity {
+    display: block;
+    height: 44px;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 44px;
+    z-index: 100;
+    border-radius:50%;
+    border:1px solid transparent;
+}
+
+#topActivityWrap ul li:hover a,#topActivityWrap ul li.current a {
+ border:1px solid #fff;
+ box-shadow:0px 0px 10px #fff;  
+}
+     #topActivityWrap ul li a.activity.logo {
+        background:url(/sourceHebei/images/province/hebei/sub-nav/logo.png) no-repeat center;
+    }
+    #topActivityWrap ul li a.activity.castic {
+        background:url(/sourceHebei/images/province/hebei/sub-nav/castic.png) no-repeat center;
+    }
+    #topActivityWrap ul li a.activity.mingtian {
+        background:url(/sourceHebei/images/province/hebei/sub-nav/mingtian.png) no-repeat center;
+    }
+    #topActivityWrap ul li a.activity.robot {
+        background:url(/sourceHebei/images/province/hebei/sub-nav/robot.png) no-repeat center;
+    }
+    #topActivityWrap ul li a.activity.scday {
+        background:url(/sourceHebei/images/province/hebei/sub-nav/scday.png) no-repeat center;
+    }
+    #topActivityWrap ul li a.activity.ips {
+        background:url(/sourceHebei/images/province/hebei/sub-nav/ips.png) no-repeat center;
+    }
+    #topActivityWrap ul li a.activity.intel {
+        background:url(/sourceHebei/images/province/hebei/sub-nav/intel.png) no-repeat center;
+    }
+    #topActivityWrap ul li a.activity.nfe {
+        background:url(/sourceHebei/images/province/hebei/sub-nav/nfe.png) no-repeat center;
+    }
+    #topActivityWrap ul li a.activity.school {
+        background:url(/sourceHebei/images/province/hebei/sub-nav/sch.png) no-repeat center;
+    }
+    #topActivityWrap ul li a.activity.science {
+        background:url(/sourceHebei/images/province/hebei/sub-nav/science.png) no-repeat center;
+    }
+    #topActivityWrap ul li a.activity.casvf {
+        background:url(/sourceHebei/images/province/hebei/sub-nav/casvf.png) no-repeat center;
+    }
+    #topActivityWrap ul li a.activity.space {
+        background:url(/sourceHebei/images/province/hebei/sub-nav/space.png) no-repeat center;
+    }
+    #topActivityWrap ul li a.activity.base {
+        background:url(/sourceHebei/images/province/hebei/sub-nav/base.png) no-repeat center;
+    }
+    #topActivityWrap ul li a.activity.cysw {
+        background:url(/sourceHebei/images/province/hebei/sub-nav/cysw.png) no-repeat center;
+    }
+    #topActivityWrap ul li a.activity.cacsi {
+        background:url(/sourceHebei/images/province/hebei/sub-nav/cacsi.png) no-repeat center;
+    }
+    #topActivityWrap ul li a.activity.xiaoxiaotong {
+        background:url(/sourceHebei/images/province/hebei/sub-nav/xiaoxiaotong.png) no-repeat center;
+    }
+    #topActivityWrap ul li a.activity.abbott {
+        background:url(/sourceHebei/images/province/hebei/sub-nav/base.png) no-repeat center;
+    }
+    #topActivityWrap ul li a.activity.kexueying {
+        background:url(/sourceHebei/images/province/hebei/sub-nav/kexueying.png) no-repeat center;
+    }
+    #topActivityWrap ul li a.activity.yingcai {
+        background:url(/sourceHebei/images/province/hebei/sub-nav/yingcai.png) no-repeat center;
+    }
+    
+#topImage {
+  
+    height: 88px;
+    left: 0;
+
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+#topImage a {
+    display: none;
+    height: 88px;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+    #topImage a img {
+     width:100%;
+     height:100%;
+    }
+.banner .container {
+    box-sizing: border-box;
+    padding:10px 10px 0 10px;
+     background:#ebf4fc;
+
+}
+.notice{
+  background:#fff;
+    height:42px;
+     border: 1px solid #0071db;
+     margin-top:8px;
+}
+.notice .c-notice {
+  border: none;
+    height: 42px;
+    margin-bottom: 0;
+}
+    .notice .container {
+        box-sizing:border-box;
+    }
+.notice .c-n-l{
+    height:100%;
+    padding-left:0;
+}
+    .notice .container .c-n-c li,.notice .container .c-n-c li a {
+           height:100%;
+        line-height:42px;
+        color:#0071db;
+    }
+    .notice .container .c-n-c{
+        height:100%;
+        line-height:42px;
+        margin-left:15px;
+    }
+     
+.notice .c-n-c a{
+    font-size: 14px;
+    color: #000;
+}
+.notice .c-n-c b{
+    background: #0071db;
+     margin: 24px 11px 14px 2px;
+}
+.notice .c-n-l{
+    background:url(/sourceHebei/images/province/hebei/notice-hear.png) no-repeat  center;
+     top:0;
+     width:56px;
+}
+.title h2 {
+    color:#0071db;
+    height: 41px;
+    line-height: 41px;
+ background:url(/sourceHebei/images/province/hebei/title.png) no-repeat  left top;
+ background-size:100% 100%;
+
+}
+.title h2 span.news {
+    background: rgba(0, 0, 0, 0) url("/sourceHebei/images/province/hebei/news.png") no-repeat scroll 8px center;
+    background-size:30px auto;
+}
+.title h2 span.email {
+    background: rgba(0, 0, 0, 0) url("/sourceHebei/images/province/hebei/email.png") no-repeat scroll 9px center;
+    background-size:30px auto;
+}
+.title h2 span.person {
+    background: rgba(0, 0, 0, 0) url("/sourceHebei/images/province/hebei/person.png") no-repeat scroll 9px center;
+    background-size:30px auto;
+}
+.title h2 span.video {
+    background: rgba(0, 0, 0, 0) url("/sourceHebei/images/province/hebei/video.png") no-repeat scroll 9px center;
+    background-size:30px auto;
+}
+.title i a {
+     color:#0071db;
+     margin-right:5px;
+     padding:2px 10px;
+     border:1px solid #0071db;
+     border-radius:15px;
+
+}
+.list li a:hover {
+    color:#0071db;
+}
+.list .tt h2{
+    line-height: 36px;
+    font-weight: normal;
+    font-size: 20px;
+    color: #0071db;
+}
+.list .tt .dd .tr a,.right.con-right .floor .fr a{
+    color:#0071db;
+}
+    .right.con-right .floor .fr a.f13 {
+        font-size:13px;
+    }
+.right.con-right h5{
+    font-weight: normal;
+
+   
+    font-size: 18px;
+   
+    overflow:hidden;
+    color:#0071db;
+}
+    .right.con-right h5.noticed {
+            height: 46px;
+            line-height:46px;
+             padding-left: 53px;
+        background: url('/sourceHebei/images/province/hebei/noticed.png') no-repeat center left;
+        background-size:100% 100%;
+    }
+      .right.con-right h5.point {
+              height: 46px;
+               padding-left: 53px;
+                line-height:46px;
+        background: url('/sourceHebei/images/province/hebei/scie.png') no-repeat center left;
+        background-size:100% 100%;
+    }
+      .right.con-right h5.friend {
+             height: 37px;
+              line-height:28px;
+               padding-left:50px;
+        background: rgba(0, 0, 0, 0) url("/sourceHebei/images/province/hebei/friend.png") no-repeat scroll 16px top /91% 100%;
+    
+    }
+.right.con-right .more a:hover span{
+    color: #0071db;
+}
+.right.con-right .more a i {
+    background:#999;
+}
+.right.con-right .more a:hover i {
+    background:#0071db;
+}
+.right.con-right {
+        background:#f4f9fb;
+    }
+.border {
+    border:1px solid #0071db;
+    margin-left:5px;
+}
+    .border.floor {
+        box-sizing:border-box;
+        padding:0 10px;
+    }
+    .tab .ctrl a {
+    width:104px;
+    font-size:18px;
+     border-bottom:2px solid #0071db;
+}
+.border .pl20.pr20 {
+    padding:0
+}
+.tab .ctrl a.cur {
+    color:#0071db;
+    border-bottom:2px solid #51bf5c;
+}
+    .tab .ctrl a.cur em {
+        display:inline-block;
+    }
+.tab .ctrl a em {
+    display:inline-block;
+    width:0;
+    height:0;
+    border-top:12px solid #51bf5c;
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+    left:50%;
+    top:100%;
+    margin-left:-10px;
+    position:absolute;
+    display:none;
+    }
+ul.act-list li em {
+    background-color: #0071db;
+}
+ul.act-list li:first-child em, ul.act-list li:nth-child(2) em, ul.act-list li:nth-child(3) em {
+    background-color: #51bf5c;
+}
+.right.con-right h5 a.push {
+    height:22px;
+    width:55px;
+    display:inline-block;
+    box-sizing:border-box;
+    text-align:center;
+    color:#000;
+}
+.right.con-right h5 a.push.cur {
+    color:#fff;
+    background: rgba(0, 0, 0, 0) url("/sourceHebei/images/province/hebei/subCur.png") no-repeat scroll center;
+    background-size:100% auto;
+}
+.floor .more var{
+    color: #0071db;
+}
+.footer .container .link-box,.footer .container .code-footer,.footer .container a.rel {
+    display:none;
+}
+.footer {
+ padding:30px 0;
+ position:relative;
+ z-index:100;
+    background:#0071db;
+  
+}
+.footer p
+{
+    line-height:2.3em;
+    color:#fff;
+}
+    .footer .ser {
+        float:left;
+        margin-left:70px;
+        margin-top:30px;
+        padding: 0 65px;
+        background:url(/sourceHebei/images/province/hebei/un.png) no-repeat left top,url(/sourceHebei/images/province/hebei/un.png) no-repeat right top;
+    }
+.footer .ser span {
+   color:#fff;
+   font-size:14px;
+   padding-left:25px;
+   display:block;
+   height:30px;
+   line-height:30px;
+ }
+.footer .ser span.com {
+    display:none;
+  background:url("/sourceHebei/images/province/hebei/com.png") no-repeat scroll left center;
+}
+.footer .ser span.cus {
+    display:none;
+  background:url("/sourceHebei/images/province/hebei/cus.png") no-repeat scroll left center;
+}
+.footer .ser span.pho {
+  background:url("/sourceHebei/images/province/hebei/pho.png") no-repeat scroll left center;
+
+}
+.footer .ser span.fax {
+  background:url("/sourceHebei/images/province/hebei/fax.png") no-repeat scroll left center;
+   
+}
+.linkCode {
+    width:402px;
+    height:127px;
+    margin-top:24px;
+    position:relative;
+  
+}
+    .linkCode a.frCode,.linkCode a.seCode{
+        width:209px;
+        height:44px;
+        background:url(/sourceHebei/images/province/hebei/code.png) no-repeat left top;
+        display:block;
+        float:right;
+        margin-bottom:15px;
+       
+        display:none;
+    }
+        .linkCode a.seCode{
+            margin:0;
+        }
+    .linkCode .code-box {
+        float:left;
+        width:190px;
+        height:100%;
+     
+       
+    }
+        .linkCode .code-box p.sys {
+           background:url(/sourceHebei/images/sys.png) no-repeat center;
+           margin-bottom:5px;
+            height:22px;
+        }
+        .linkCode a.erCode {
+            height:80px;
+            width:80px;
+          display:inline-block;
+          padding-top:83px;
+          text-align:center;
+          box-sizing:border-box;
+          color:#fff;
+          cursor:default;
+            
+        }
+            .linkCode a.erCode.wx {
+            background:url(/sourceHebei/images/province/hebei/codewx.jpg) no-repeat center top;
+                background-size:80px  80px;
+                }
+             .linkCode a.erCode.wz {
+            background:url(/sourceHebei/images/province/hebei/codewz.jpg) no-repeat center top;
+              background-size:80px  80px;
+                }
+.banner .swiper-container {
+     height: 411px;
+     border-radius:3px;
+}
+.slider-list a {
+    height: 79px;
+    border-radius:3px;
+}
+.swiper-container .swiper-pagination-bullet {
+    background:#fff;
+    opacity:1;
+}
+.swiper-container .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #237cd9;
+
+}
+ .slider-list a{
+    margin-bottom: 10px;
+}
+    .slider-list a .o-img {
+        display:none;
+    }
+    .slider-list a.cur {
+        height:144px;
+    }
+    .slider-list a .o-img {
+        width:100%;
+        height:144px;
+    }
+        .slider-list a .o-img img {
+            width:100%;
+            height:100%;
+        }
+        .slider-list a.cur .o-img {
+            display:block;
+        }
+        .slider-list a.cur > img, .slider-list a.cur > .shadowLeft {
+            display:none;
+        }
+ .boxLeft {
+    width:247px;
+    float:left;
+}
+ .Box.container {
+     padding: 28px 18px 28px 18px;
+     box-sizing:border-box;
+}
+
+ .boxLeft h2 {
+    height:84px;
+    line-height:84px;
+    font-weight:normal;
+    color:#fff;
+    font-size:26px;
+
+    text-align:center;
+    text-indent:60px;
+    margin-bottom:10px;
+}
+
+ 
+.boxLeft h2.me.us {
+            background: url(/sourceHebei/images/province/hebei/i1.png) no-repeat left center;
+    }
+.boxLeft h2.me.notices {
+            background: url(/sourceHebei/images/province/hebei/i6.png) no-repeat left center;
+    }
+.boxLeft h2.me.new {
+            background: url(/sourceHebei/images/province/hebei/i2.png) no-repeat left center;
+    }
+ .boxLeft h2.me.gallery {
+            background: url(/sourceHebei/images/province/hebei/i4.png) no-repeat left center;
+    }
+  .boxLeft h2.idols.me {
+            background: url(/sourceHebei/images/province/hebei/i7.png) no-repeat left center;
+    }
+    .boxLeft h2.change.me {
+            background: url(/sourceHebei/images/province/hebei/i5.png) no-repeat left center;
+    }
+      .boxLeft>a {
+         border:1px solid #096ae1;
+         background:#fff url(/sourceHebei/images/province/hebei/next.png) no-repeat  225px center;
+         color:#096ae1;
+         border-top:none;
+         
+         }
+        .boxLeft a:nth-child(2) {
+                border-top:1px solid #04a349;
+        }
+        .boxLeft a.cur,.boxLeft a:hover {
+        background:#04a349 url(/sourceHebei/images/province/hebei/nextCur.png) no-repeat  225px center;
+        color:#fff;
+    }
+.news-list li:hover  a{
+    color:#04a349;
+}
+.news-list li:hover b {
+    background:#04a349;
+}
+.news-list li b {
+ 
+    display:inline-block;
+    width:4px;
+    height:4px;
+    background:#dddddd;
+    margin-right:10px;
+    vertical-align:middle;
+}
+.Box.container {
+     background:#fff;
+}
+.login-bg.Login{
+    width:1200px;
+    margin:0 auto;
+   background: rgba(0, 0, 0, 0) url("/sourceHebei/images/province/hebei/banner2.jpg") no-repeat  center top;
+  
+   
+}
+.login-content.login-bg.Login {
+    background:#fff;
+}
+.boxRight {
+    margin-left:300px;
+}
+.main-news .place h5.title.xwbd {
+    color:#04a349;
+    background: rgba(0, 0, 0, 0) url("/sourceHebei/images/province/hebei/xwbd.png") no-repeat scroll left center;
+}
+.main-news .place h5.title {
+    height:33px;
+    line-height:24px;
+    padding-left:50px;
+    font-size:20px;
+
+   
+}
+ h6.gz {
+        background: url(/sourceHebei/images/province/hebei/gz.png) no-repeat left bottom; 
+      
+    }
+ h6.tj {
+        background: url(/sourceHebei/images/province/hebei/tj.png) no-repeat left bottom; 
+    }
+ h6.xg {
+        background: url(/sourceHebei/images/province/hebei/xg.png) no-repeat left bottom; 
+    }
+   ul.news-it li a.new-img{
+    width:213px;
+    height:213px;
+    border-radius:50%;
+    
+    overflow:hidden;
+}
+   ul.news-it li {
+    box-sizing:border-box;
+    padding:26px 28px;
+    min-height:274px;
+    margin-bottom:30px;
+   
+}
+    ul.news-it li img {
+        margin-right:15px;
+    }
+    ul.news-it li:nth-child(2n+1) {
+         border:1px solid #04a349;
+         background: #f2f8fc url(/sourceHebei/images/province/hebei/li.png) no-repeat 18px center;
+    }
+        ul.news-it li:nth-child(2n+1) a.new-img {
+            border:4px solid #04a349;
+        }
+         ul.news-it li:nth-child(2n) a.new-img {
+            border:4px solid #f3983d;
+        }
+     ul.news-it li:nth-child(2n) {
+         border:1px solid #f3983d;
+          background:#fefaf6 url(/sourceHebei/images/province/hebei/lis.png) no-repeat 18px center;
+    }
+         ul.news-it li:nth-child(2n) .new-detail .tr a {
+        display:inline-block;
+       width:128px;
+        height:39px;
+        line-height:39px;
+        background: url(/sourceHebei/images/province/hebei/eye.png) no-repeat 17px center;
+        color:#e68b38;
+        text-align:center;
+        text-indent:25px;
+        border:1px solid #e68b38;
+       border-radius:0 8px 0 0;
+        font-size:16px;
+
+    }
+            ul.news-it li:nth-child(2n) .new-detail .tr a:hover {
+                  background: #e68b38 url(/sourceHebei/images/province/hebei/eyeh.png) no-repeat 17px center;
+                  color:#fff;
+            }
+             ul.news-it li:nth-child(2n+1) .new-detail .tr a {
+        display:inline-block;
+        width:128px;
+        height:39px;
+        line-height:39px;
+        background: url(/sourceHebei/images/province/hebei/eyes.png) no-repeat 17px center;
+        color:#0ea651;
+        text-align:center;
+        text-indent:25px;
+         border:1px solid #0ea651;
+         border-radius:0 8px 0 0;
+      font-size:16px;
+
+    }
+                ul.news-it li:nth-child(2n+1) .new-detail .tr a:hover {
+                  background: #0ea651 url(/sourceHebei/images/province/hebei/eyeh.png) no-repeat 17px center;
+                  color:#fff;
+            }
+.boxLeft.spe a {
+    
+    text-indent:15px;
+    text-align:center;
+}
+    .boxLeft.spe a.stu {
+         background: #ebf4fc url(/sourceHebei/images/province/hebei/stu-01.png) no-repeat 38px center;  
+    }
+     .boxLeft.spe a.tea {
+         background: #ebf4fc url(/sourceHebei/images/province/hebei/tea-01.png) no-repeat 38px center;  
+    }
+      .boxLeft.spe a.sch {
+         background: #ebf4fc url(/sourceHebei/images/province/hebei/sch-01.png) no-repeat 38px center;  
+    }
+      .boxLeft.spe a.stu.cur,.boxLeft.spe a.stu:hover {
+        background:#04a349 url(/sourceHebei/images/province/hebei/stu-02.png) no-repeat 38px center;
+        color:#fff;
+    }
+          .boxLeft.spe a.tea.cur,.boxLeft.spe a.tea:hover {
+        background:#04a349 url(/sourceHebei/images/province/hebei/tea-02.png) no-repeat 38px center;
+        color:#fff;
+    }
+              .boxLeft.spe a.sch.cur,.boxLeft.spe a.sch:hover {
+        background:#04a349 url(/sourceHebei/images/province/hebei/sch-02.png) no-repeat 38px center;
+        color:#fff;
+    }
+.boxRight.spe .person a{
+    width:250px;
+    height:188px;
+    margin-right:30px;
+    margin-bottom:25px;
+    text-align:center;
+}
+.boxRight.spe .person>a img{
+    width: auto;
+    height: 100%;
+}
+.boxRight.spe .person a:nth-child(3n){
+ margin-right:0
+}
+    .boxRight.spe .person a .name {
+        position:absolute;
+        left:0;
+        top:0;
+        background:#04a349;
+        padding:5px 7px;
+        color:#fff;
+    }
+    .boxRight.spe .person a .school {
+        width:100%;
+        background:rgba(0,0,0,0.5);
+        text-align:center;
+    }
+    .label h4 {
+     font-size:25px;
+    
+     padding-left:37px;
+     color:#04a349;
+}
+        .label h4.cszn {
+              background: rgba(0, 0, 0, 0) url("/sourceHebei/images/province/hebei/cszn.png") no-repeat scroll left center;
+        }
+        .label h4.gztz {
+              background: rgba(0, 0, 0, 0) url("/sourceHebei/images/province/hebei/gztz.png") no-repeat scroll left center;
+              background-size:32px auto
+                  
+        }
+        .label h4.xwdt {
+            background: rgba(0, 0, 0, 0) url("/sourceHebei/images/province/hebei/news.png") no-repeat scroll left center;
+        }
+         .label h4.hdyx {
+              background: rgba(0, 0, 0, 0) url("/sourceHebei/images/province/hebei/video.png") no-repeat scroll left center;
+
+        }
+       .label h4.jxsz {
+              background: rgba(0, 0, 0, 0) url("/sourceHebei/images/province/hebei/jxsz.png") no-repeat scroll left center;
+        }
+      .label h4.hjmd {
+             background: rgba(0, 0, 0, 0) url("/sourceHebei/images/province/hebei/hjmd.png") no-repeat scroll left center;
+        }
+    .assort span.bg-green {
+    width:85px;
+    height:30px;
+    line-height:30px;
+    background:#04a349;
+    color:#fff;
+    display:inline-block;
+    text-align:center;
+}
+    .assort .option a:hover,.assort .option a.cur{
+   color:#04a349;
+}
+                .son-pl .time:hover,.son-pl .time.cur {
+        background:url(/sourceHebei/images/icon-timeH.png) no-repeat left center;
+            color:#04a349;
+    }
+      .son-pl .scan:hover,.son-pl .scan.cur {
+        background:url(/sourceHebei/images/icon-scanH.png) no-repeat left center;
+           color:#04a349;
+    }
+        .son-pl .reco:hover,.son-pl .reco.cur {
+        background:url(/sourceHebei/images/icon-recoH.png) no-repeat left center;
+           color:#04a349;
+    }
+        .it dl dd .fa-thumbs-o-up:before,.it dl dd .fa-eye:before,.it dl dd .fa-commenting:before{
+    color:#04a349;
+}
+          .it .ellipsis:hover {
+        color:#04a349; 
+        }
+.it dl dd .fa:hover {
+    color: #04a349;
+}
+.roll {
+    float:left;
+    background:#ebf4fc;
+    padding: 10px 25px;
+    width: 96%;
+}
+    .roll li:before {
+            content:"";
+            display:inline-block;
+            width:0;
+            height:0;
+            border-left:8px solid #04a349;
+            border-top:6px solid #ebf4fc;
+            border-bottom:6px solid #ebf4fc;
+            margin-right:10px;
+
+            }
+      .roll li:hover a {
+            color:#04a349;
+        }
+         .label .ctrl a.cur {
+        background:#ebf4fc;
+        color:#04a349;
+          border:1px solid #04a349;
+             border-bottom:1px solid #ebf4fc;
+             position:relative;
+             top:1px;
+    }
+         .label .rules {
+    padding:45px 20px;
+    background:#ebf4fc;
+    border:1px solid #04a349;
+    
+}
+         .pageList span.isNow {
+    padding:0 15px;
+    background:#fff;
+    color:#04a349;
+     border:1px solid #04a349;
+
+}
+            .pageList #ContentPlaceHolder1_AspNetPager1 span.isNow:hover {
+        background:#fff;
+        color:#04a349;
+    }
+             .pageList span:hover {
+        border:1px solid #04a349;
+        background:#fff;
+    }
+                 .pageList span:hover a {
+                 color:#04a349;
+            }
+                     .boxRight .ctrl {
+                         background:#ebf4fc;
+    height:42px;
+    border:1px solid #04a349;
+    box-sizing:border-box;
+    padding-top:6px;
+}
+.prac {
+    background: url('/sourceHebei/images/province/hebei/prac.png') no-repeat left center;
+    height:35px;
+    color:#fff;
+    line-height:35px;
+    font-size:22px;
+    padding-left:60px;
+    margin-top:25px;
+}
+.boxRight .ctrl a{
+    display:inline-block;
+    margin-left:12px;
+    height:34px;
+    line-height:34px;
+    width:92px;   
+    text-align:center;
+    color:#04a349; 
+    position:relative;
+    font-size:16px;
+}
+    .boxRight .ctrl a.cur {
+        color:#fff;
+        background:url(/sourceHebei/images/province/hebei/baceCur.png) no-repeat  center;
+    }
+    .boxRight .ctrl a em {
+        position:absolute;
+        width:20px;
+        height:8px;
+         background:url(/sourceHebei/images/province/hebei/tCur.png) no-repeat  center;
+         left:50%;
+         margin-left:-17px;
+         top:100%;
+         display:none;
+    }
+      .left-content.leftContent {
+        width:845px;
+        border: none;
+    }
+      .sub-news ul li:nth-child(1) i,.sub-news ul li:nth-child(2) i,.sub-news ul li:nth-child(3) i {
+    background:#04a349;
+}
+      .sub-news h6 {
+    height:42px;
+    padding-left:37px;
+    font-size:20px;
+    line-height:40px;
+    color:#04a349;
+}
+      .sub-news {
+   float:right;
+   margin-right:12px;
+}
+      .mix-con h2 a {
+    color: #04a349;
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+  
+}
+      .green {
+    color:#04a349;
+}
+          .roll li {
+        line-height:2.4em;
+    }
+  .label .video-list a {
+    width:272px;
+    height:204px;
+    margin-right:18px;
+    margin-bottom:32px;
+}
+.Box.container.plr34 {
+    padding-left:34px;
+    padding-right:34px;
+}
+.well-tt h6 {
+    height:42px;
+    line-height:39px;
+    padding-left:40px;
+    color:#4bb37a;
+    font-size:20px;
+}
+.well-tt h6 a{
+     height:42px;
+    line-height:42px;
+    padding-left:40px;
+    color:#4bb37a;
+    font-size:14px;
+}
+.local-show {
+    position:absolute;
+    left:0;
+    top:35px;
+    width:442px;
+    height:100px;
+    background:#f0f0f0;
+    box-shadow:3px 5px 7px #333;
+    border-radius:3px;
+    display:none;
+    z-index:99;
+   
+}
+.mail-show {
+    position:absolute;
+    left:-70px;
+    top:35px;
+    width:192px;
+    height:115px;
+    background:#f0f0f0;
+    box-shadow:3px 5px 7px #333;
+    border-radius:3px;
+    overflow:hidden;
+    display:none;
+   z-index:99;
+   padding:3px;
+}
+    .mail-show  .wx {
+        background: rgba(0, 0, 0, 0) url("../images/province/hebei/codewx.jpg") no-repeat center top;
+        background-size:87px 87px;
+        padding-top:81px;
+        display:inline-block;
+        width:87px;
+        margin-left:5px;
+       
+        margin-top:8px;
+        text-align:center;
+    }
+    .mail-show  .wz {
+        background: rgba(0, 0, 0, 0) url("../images/province/hebei/codewz.jpg") no-repeat center top;
+        background-size:87px 87px;
+        padding-top:81px;
+        display:inline-block;
+        width:87px;
+        margin-left:5px;
+       
+        margin-top:8px;
+        text-align:center;
+    }
+.login-bg.Login .right {
+    margin-top:50px;
+    margin-bottom:125px
+}
+.login-bg.Login .slide{
+    display:none;    
+}
+.header .container {
+ background: url('/sourceHebei/images/province/hebei/sub-header.png') no-repeat top right;
+}
+.slide .dots li.dot.active {
+    background:#51bf5c!important;
+}
+    .right.con-right h5 a{
+    margin-right:2px;
+    font-size: 15px;
+    line-height: 22px;
+}
+    .title h2 span.news{
+    font-size: 22px;
+    padding-left: 45px;
+    
+}
+.title h2 span.email{
+    font-size: 20px;
+    padding-left: 48px;
+   
+}
+.title h2 span.video{
+    font-size: 20px;
+    padding-left: 52px;
+    
+}
+.title h2 span.person{
+    font-size: 20px;
+  
+    padding-left: 52px;
+}
+    
+.right.con-right{
+    width: 340px;
+    box-sizing: border-box;
+}
+.con-left.left {
+    width: 832px;
+}
+.con-left.left h2{
+    font-weight: normal;
+  
+}
+.video-list a{
+    display: block;
+    width: 267px;
+    height: 200px;
+    float: left;
+    margin: 5px 15px 15px 0;
+    position: relative;
+    overflow: hidden;
+}
+.per{
+    display: block;
+    float: left;
+    height: 324px;
+    margin: 5px 15px 15px 0;
+    overflow: hidden;
+    position: relative;
+    width: 267px;
+    background:#ecf4fc;
+    transition:0.5s;
+}
+
+.visit {
+  text-align:center;
+
+  margin-left:44px;
+    display:inline-block;
+
+}
+    .visit span {
+        display:block;
+        width:100%;
+    font-size:12px;
+    font-weight:bolder;
+    color:#fff;
+    line-height:32px;
+    text-indent:20px;
+    background:url(/sourceHebei/images/province/hebei/visited.png) no-repeat left center;
+    }
+  
+    .footer .visit-num .item{
+    height: 30px;
+    width: 20px;
+      background:url(/sourceHebei/images/province/hebei/icon-num.png) no-repeat  center;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    display: inline-block;
+    margin:0 2px ;
+    color:#fff;
+    text-align:center;
+    line-height:30px;
+    font-size:16px;
+    vertical-align:top;
+}
+.log-box-bg .container.rel {
+    background:#fff;
+}
+ul.news-it li .new-detail {
+    margin-left:285px;
+}
+   .drop-down.city li {
+    background: #fff none repeat scroll 0 0;
+    border: 0 none;
+    float: left;
+    
+    line-height: 28px;
+    padding-bottom: 0;
+    padding-left: 0;
+    position: relative;
+    text-align: center;
+    width: 75px;
+}
+.selfColor {
+    color: #04b141
+}
+.pageList {
+    margin-top:25px!important;
+}
+    .video-list a i.shadow-img {
+        background: #108440 url("/sourceHebei/images/icon-img.png") no-repeat center;
+    }
+     .video-list a i.shadow-video {
+        background:#108440 url("/sourceHebei/images/icon-video.png") no-repeat center;
+    }
+     .blue-info {
+    border:1px solid #04b141!important;
+    color:#04b141!important;
+}
+.cmz-radio input + label {
+      border:1px solid #04b141!important;
+}
+.cmz-radio input + label:hover {
+	background-color: #04b141!important;
+	color: #f9f9f9;
+}
+.btn-info {
+    background-color: #04b141!important;
+    border-color: #04b141!important;
+    color: #fff!important;
+}
+.messageInput {
+         border:1px solid #04b141!important;
+}
+.messageSubmit input {
+    border: 1px solid #04b141!important;
+}
+.messageSubmit .subBtn {
+     background-color: #04b141!important;
+    }
+.messageSubmit {
+    background: #b9f5ce none repeat scroll 0 0 !important;
+}
+ul.sub-file li {
+   
+       border:1px solid #2aa352;
+    border-bottom:none;
+}
+    ul.sub-file li:last-child {
+          border-bottom:1px solid #2aa352!important;
+    }
+.select-box select {
+    border:1px solid #0071db!important;
+}
+.big_panel{
+        display: block;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        font-size: 24px;
+        background: url("/sourceHebei/images/add_new.png") no-repeat 140px center;
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+        color: #0092d5;
+        border: 2px solid #0092d5;
+        transition: all 0.5s ease 0s;
+    }
+    a.big_panel:hover{
+        color: #0092d5;
+        opacity: 1;
+        filter: alpha(opacity=100);
+        background-color: #eaf5fc;
+    }
+    #topActivity {
+display:none;
+}
+#topImage {
+
+display:none;
+}
+      
+  /* i i s 7 . c o m */

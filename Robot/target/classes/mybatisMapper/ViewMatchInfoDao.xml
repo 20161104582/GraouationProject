@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.web.sys.dao.ViewMatchInfoDao">
+  <resultMap id="BaseResultMap" type="com.web.sys.bean.ViewMatchInfo">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="match_id" jdbcType="BIGINT" property="matchId" />
+    <result column="match_name" jdbcType="VARCHAR" property="matchName" />
+    <result column="match_pubtime" jdbcType="TIMESTAMP" property="matchPubtime" />
+    <result column="match_time" jdbcType="TIMESTAMP" property="matchTime" />
+    <result column="match_address" jdbcType="VARCHAR" property="matchAddress" />
+    <result column="truename" jdbcType="VARCHAR" property="truename" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="company_name" jdbcType="VARCHAR" property="companyName" />
+    <result column="company_address" jdbcType="VARCHAR" property="companyAddress" />
+    <result column="company_id" jdbcType="BIGINT" property="companyId" />
+    <result column="company_intro" jdbcType="LONGVARCHAR" property="companyIntro" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from view_match_info
+    where id = #{id,jdbcType=VARCHAR}
+  </delete>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select id, match_id, match_name, match_pubtime, match_time, match_address, truename, 
+    phone, company_name, company_address, company_id, company_intro
+    from view_match_info
+    where id = #{id,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, match_id, match_name, match_pubtime, match_time, match_address, truename, 
+    phone, company_name, company_address, company_id, company_intro
+    from view_match_info
+      <where>
+		<if test="id!=null and id!=''"> and id = #{id,jdbcType=VARCHAR}</if>
+		<if test="matchId!=null "> and match_id = #{matchId,jdbcType=BIGINT}</if>
+		<if test="matchName!=null and matchName!=''"> and match_name = #{matchName,jdbcType=VARCHAR}</if>
+		<if test="matchPubtime!=null "> and match_pubtime = #{matchPubtime,jdbcType=TIMESTAMP}</if>
+		<if test="matchTime!=null "> and match_time = #{matchTime,jdbcType=TIMESTAMP}</if>
+		<if test="matchAddress!=null and matchAddress!=''"> and match_address = #{matchAddress,jdbcType=VARCHAR}</if>
+		<if test="truename!=null and truename!=''"> and truename = #{truename,jdbcType=VARCHAR}</if>
+		<if test="phone!=null and phone!=''"> and phone = #{phone,jdbcType=VARCHAR}</if>
+		<if test="companyName!=null and companyName!=''"> and company_name = #{companyName,jdbcType=VARCHAR}</if>
+		<if test="companyAddress!=null and companyAddress!=''"> and company_address = #{companyAddress,jdbcType=VARCHAR}</if>
+		<if test="companyId!=null "> and company_id = #{companyId,jdbcType=BIGINT}</if>
+		<if test="companyIntro!=null and companyIntro!=''"> and company_intro = #{companyIntro,jdbcType=LONGVARCHAR}</if>
+ 	</where> 
+ <if test="orderByString!=null and orderByString!=''"> 
+	 ${orderByString} 
+ </if>
+  </select>
+  <select id="queryByCondition" resultMap="BaseResultMap">
+    select id,match_id,match_name,match_pubtime,match_time,match_address,truename,phone,company_name,company_address,company_id,company_intro
+ 	from  view_match_info 
+	<where>
+		<if test="id!=null and id!=''"> and id = #{id,jdbcType=VARCHAR}</if>
+		<if test="matchId!=null "> and match_id = #{matchId,jdbcType=BIGINT}</if>
+		<if test="matchName!=null and matchName!=''"> and match_name = #{matchName,jdbcType=VARCHAR}</if>
+		<if test="matchPubtime!=null "> and match_pubtime = #{matchPubtime,jdbcType=TIMESTAMP}</if>
+		<if test="matchTime!=null "> and match_time = #{matchTime,jdbcType=TIMESTAMP}</if>
+		<if test="matchAddress!=null and matchAddress!=''"> and match_address = #{matchAddress,jdbcType=VARCHAR}</if>
+		<if test="truename!=null and truename!=''"> and truename = #{truename,jdbcType=VARCHAR}</if>
+		<if test="phone!=null and phone!=''"> and phone = #{phone,jdbcType=VARCHAR}</if>
+		<if test="companyName!=null and companyName!=''"> and company_name = #{companyName,jdbcType=VARCHAR}</if>
+		<if test="companyAddress!=null and companyAddress!=''"> and company_address = #{companyAddress,jdbcType=VARCHAR}</if>
+		<if test="companyId!=null "> and company_id = #{companyId,jdbcType=BIGINT}</if>
+		<if test="companyIntro!=null and companyIntro!=''"> and company_intro = #{companyIntro,jdbcType=LONGVARCHAR}</if>
+ 	</where> 
+ <if test="orderByString!=null and orderByString!=''"> 
+	 ${orderByString} 
+ </if>
+  </select>
+  <insert id="insert" keyColumn="id" keyProperty="id" useGeneratedKeys="true">
+    insert into view_match_info (id,match_id,match_name,match_pubtime,match_time,match_address,truename,phone,company_name,company_address,company_id,company_intro)
+ values ( #{id,jdbcType=VARCHAR}, #{matchId,jdbcType=BIGINT}, #{matchName,jdbcType=VARCHAR}, #{matchPubtime,jdbcType=TIMESTAMP}, #{matchTime,jdbcType=TIMESTAMP}, #{matchAddress,jdbcType=VARCHAR}, #{truename,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR}, #{companyName,jdbcType=VARCHAR}, #{companyAddress,jdbcType=VARCHAR}, #{companyId,jdbcType=BIGINT}, #{companyIntro,jdbcType=LONGVARCHAR})
+  </insert>
+  <update id="update">
+    update  	view_match_info 
+	<set>
+		<if test="id!=null and id!=''">id = #{id,jdbcType=VARCHAR}, </if>
+		<if test="matchId!=null ">match_id = #{matchId,jdbcType=BIGINT}, </if>
+		<if test="matchName!=null and matchName!=''">match_name = #{matchName,jdbcType=VARCHAR}, </if>
+		<if test="matchPubtime!=null ">match_pubtime = #{matchPubtime,jdbcType=TIMESTAMP}, </if>
+		<if test="matchTime!=null ">match_time = #{matchTime,jdbcType=TIMESTAMP}, </if>
+		<if test="matchAddress!=null and matchAddress!=''">match_address = #{matchAddress,jdbcType=VARCHAR}, </if>
+		<if test="truename!=null and truename!=''">truename = #{truename,jdbcType=VARCHAR}, </if>
+		<if test="phone!=null and phone!=''">phone = #{phone,jdbcType=VARCHAR}, </if>
+		<if test="companyName!=null and companyName!=''">company_name = #{companyName,jdbcType=VARCHAR}, </if>
+		<if test="companyAddress!=null and companyAddress!=''">company_address = #{companyAddress,jdbcType=VARCHAR}, </if>
+		<if test="companyId!=null ">company_id = #{companyId,jdbcType=BIGINT}, </if>
+		<if test="companyIntro!=null and companyIntro!=''">company_intro = #{companyIntro,jdbcType=LONGVARCHAR} </if>
+ 	</set>
+	where id=#{id}
+  </update>
+</mapper>

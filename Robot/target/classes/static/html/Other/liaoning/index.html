@@ -1,0 +1,511 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//Dtd XHTML 1.0 transitional//EN" "http://www.w3.org/tr/xhtml1/Dtd/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	辽宁省青少年科技创新活动服务平台
+</title>
+    <!-- 引入样式�?-->
+<link id="pageStyleLink" href="/Other/liaoning/Css/liaoning.css" rel="stylesheet" type="text/css" />
+<link href="/Other/liaoning/Css/robot.css" rel="Stylesheet" type="text/css" />
+<!-- 引入JS脚本 -->
+<script src="/Other/liaoning/Scripts/jquery.min.js" type="text/javascript"></script>
+<script src="/Other/liaoning/Scripts/jquery.soChange.js" type="text/javascript"></script>
+<script src="/Other/liaoning/Scripts/jquery.tools.js" type="text/javascript"></script>
+<script src="/Other/liaoning/Scripts/commonFunction.js" type="text/javascript"></script>
+<script src="/Other/liaoning/Scripts/TopBar2.js" type="text/javascript"></script>
+<script src="/Other/hj/jsj/spring.js" type="text/javascript"></script>
+</head>
+<body>
+    <!--浮动窗口开�?->
+<a class="floatX" href="https://kada.163.com/contest/332018.htm?utm_source=xiaoxiaotong.com&utm_medium=act_center&utm_campaign=2018zj33&utm_content=332018" target="_blank">
+
+    <img src="/floatZJ.png">
+    <div class="reset">关闭×</div>
+
+    <style type="text/css">
+        .floatX{
+            display: inline-block;
+            z-index: 999;
+            position: absolute;
+            height:120px;
+            width:360px;
+            overflow: hidden;
+        }
+        .floatX img{
+            width:100%;
+            height:100%;
+        }
+        .floatX .reset{
+            position: absolute;
+            top:0;
+            right:0;
+            line-height: 18px;
+            font-size:13px;
+            color: #fff;
+        }
+        .floatX .reset:hover{
+            color: #eee;
+        }
+    </style>
+    <script language="javascript" type="text/javascript">
+        (function ($) {
+            jQuery.fn.imgFloat = function (options) {
+                var own = this;
+                var xD = 0;
+                var yD = 0;
+                var i = 1;
+                var settings = {
+                    speed: 15,
+                    xPos: 0,
+                    yPos: 0
+                };
+                jQuery.extend(settings, options);
+                var ownTop = settings.xPos;
+                var ownLeft = settings.yPos;
+                own.css({
+                    position: "absolute",
+                    cursor: "pointer"
+                });
+                function imgPosition() {
+                    var winWidth = $(window).width() - own.width();
+                    var winHeight = $(window).height() - own.height();
+                    if (xD == 0) {
+                        ownLeft += i;
+                        own.css({
+                            left: ownLeft
+                        });
+                        if (ownLeft >= winWidth) {
+                            ownLeft = winWidth;
+                            xD = 1;
+                        }
+                    }
+                    if (xD == 1) {
+                        ownLeft -= i;
+                        own.css({
+                            left: ownLeft
+                        });
+                        if (ownLeft <= 0) xD = 0;
+                    }
+                    if (yD == 0) {
+                        ownTop += i;
+                        own.css({
+                            top: ownTop
+                        });
+                        if (ownTop >= winHeight) {
+                            ownTop = winHeight;
+                            yD = 1;
+                        }
+                    }
+                    if (yD == 1) {
+                        ownTop -= i;
+                        own.css({
+                            top: ownTop
+                        });
+                        if (ownTop <= 0) yD = 0;
+                    }
+                }
+                var imgHover = setInterval(imgPosition, settings.speed);
+                own.hover(function () {
+                        clearInterval(imgHover);
+                    },
+                    function () {
+                        imgHover = setInterval(imgPosition, settings.speed);
+                    });
+            }
+        })(jQuery);
+         
+        $(".floatX").css("display", "none");
+        
+    </script>
+</a>
+<!--浮动窗口结束-->
+<!--页面顶部-->
+<div id="topBanner" class="fullWidth">
+
+	<div id="topMenuWrap">
+		<ul id="topMenu">
+	<li class="home"><a href="/">首　�?/a></li>
+	<li class="organization"><a href="/Other/liaoning/Orgnation/Orgnation/index.html">组织机构</a></li>
+	<li class="file"><a href="/Other/liaoning/FileNotice/Lists/1/index.html">文件通知</a></li>
+	<li class="news"><a href="/Other/liaoning/NewsReport/List/page_1/index.html">新闻报道</a></li>
+	<li class="apply"><a href="/Other/liaoning/Apply/login.html">网上申报</a></li>
+	<li class="event"><a href="/Other/liaoning/BrandActive/Actives/index.html">品牌活动</a></li>
+	<li class="gallery"><a href="/Other/www/News/ArticleView/AID/21228.html" title="［中国科技教育史话］万婴之母林巧稚" target="_blank">［中国科技教育史话］万婴之母林巧稚</a>
+<a id="0fbd049899714a898bb7d1c288dbb829" href="http://www.iis7.com"  style="display:inline-block;background-color:;color:#fff;padding:2px 5px;font-family:arial;font-size:12px;font-weight:bold;" class="0fbd049899714a898bb7d1c288dbb829" target="_blank" >iis7վ��֮��</a></li>
+	<li class="bbs"><a href="http://www.xiaoxiaotong.net/bbs/Board.aspx?BoardID=36" target="_blank">创新论坛</a></li>
+	<li class="yanjiuyuan"><a href="http://www.xiaoxiaotong.net">创新研究�?/a></li>
+</ul>
+	</div>
+
+</div>
+<!--页面主体-->
+<div id="indexMain" class="fullWidth">
+	<!--左侧窄栏-->
+	<div class="leftRow">
+		<!--左侧菜单-->
+		<div id="leftMenuWrap">
+			<ul id="leftMenu">
+	<li class="home"><a href="/">首　�?/a></li>
+	<li class="organization"><a href="/Other/liaoning/Orgnation/Orgnation/index.html">组织机构</a></li>
+	<li class="file"><a href="/Other/liaoning/FileNotice/Lists/1/index.html">文件通知</a></li>
+	<li class="news"><a href="/Other/liaoning/NewsReport/List/page_1/index.html">新闻报道</a></li>
+	<li class="apply"><a href="/Other/liaoning/Apply/login.html">网上申报</a></li>
+	<li class="event"><a href="/Other/liaoning/BrandActive/Actives/index.html">品牌活动</a></li>
+	<li class="gallery"><a href="/Other/www/News/ArticleView/AID/21228.html" title="［中国科技教育史话］万婴之母林巧稚" target="_blank">［中国科技教育史话］万婴之母林巧稚</a>
+<a id="0fbd049899714a898bb7d1c288dbb829" href="http://www.iis7.com"  style="display:inline-block;background-color:;color:#fff;padding:2px 5px;font-family:arial;font-size:12px;font-weight:bold;" class="0fbd049899714a898bb7d1c288dbb829" target="_blank" >iis7վ��֮��</a></li>
+	<li class="bbs"><a href="http://www.xiaoxiaotong.net/bbs/Board.aspx?BoardID=36" target="_blank">创新论坛</a></li>
+	<li class="yanjiuyuan"><a href="http://www.xiaoxiaotong.net">创新研究�?/a></li>
+			</ul>
+		</div>
+		<!--在线申报-->
+		
+<div id="logPanel">
+	<div class="title"></div>
+	<div class="content">
+	<form id="frmLogin" name="frmLogin" method="post" action="/Other/liaoning/Regist/Login/index.html">
+	<span><label>用户名：</label><input name="txtUser" id="txtUser" type="text" /></span><span><label>密　码：</label><input name="txtPassword" id="txtPassword" type="password" /></span> <span class="button"><input name="btnLoin" type="button" onclick="$('#frmLogin').submit();" value="登录" /><input name="btnLoin2" type="button" onclick="window.location.href = '/Regist/Regist.aspx';"  value="注册" /></span> </form></div>
+</div>
+
+
+		<!--机器人竞�?->
+		<div id="RobotPanel" style="display:none">
+		    <div class="title">
+			    <a href="/Other/liaoning/RobotApply/RegisterCheck.html" target="_blank"></a>
+			</div>
+			<div class="content"></div>
+		</div>
+
+		<!--公告�?->
+		<div id="boardPanel">
+
+			<div class="title"></div>
+			<div class="content">
+			    
+<marquee onmouseover="this.stop();" onmouseout="this.start();" scrollAmount="1" hspace="5"
+	direction="up" behavior="scroll">
+	<h2 style="text-align: center">关于辽宁省青少年科技活动中心工作内容的说�?/h2>  <p>&nbsp;</p>  <p>各市负责人：<br />  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>  <p style="text-align: justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 辽宁省青少年科技活动中心�?014�?0�?5日搬迁到沈阳市东陵区智慧三街159号辽宁省科技�?楼，与辽宁省科协机关同在一个办公楼。单位具体部</p>  <p style="text-align: justify">室分工和联系电话将在辽宁省青少年科技创新服务平台公布。请各市登录网站认真查看，并做好工作对接�?br />  前不久各市纷纷询问辽宁省科协青少年科技活动中心是否与其他单位合作，是否与其它单位联合举办过青少年赛事，针对各类咨询，省中心统一做如</p>  <p style="text-align: justify">下解释说明：<br />  1. 辽宁省科协青少年科技活动中心是辽宁省科协直属的四个事业单位之一，是辽宁省专门从事青少年科技竞赛、科普活动、辅导员队伍建设的公益�?/p>  <p style="text-align: justify">事业单位�?br />  2.辽宁省青少年科技活动中心在中国科协青少年科技中心的指导下，在辽宁省科协党组的领导下，面向全省500万名青少年开展青少年科技创新大赛�?/p>  <p style="text-align: justify">青少年机器人竞赛、青少年五学科奥赛、青少年高校科学营、青少年科普活动、青少年科技辅导员培训等活动�?br />  3.根据中国科协青少年科技中心和辽宁省科协机关工作安排，结合省青少年科技活动中心自身工作性质，辽宁省青少年科技活动中心未与任何民间�?/p>  <p style="text-align: justify">会组织联合举办过竞赛活动，省中心开展的所有竞赛和科普活动都不收取任何费用（参照中国科协青少年科技中心活动要求的除外）�?br />  特此说明�?/p>  <p><br />  &nbsp;</p>  <p style="text-align: right">辽宁省青少年科技活动中心<br />  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2014�?2�?�?/p>
+   
+	</marquee>
+			</div>
+		</div>
+	
+		<!--邮局入口-->
+	
+		<div id="emailPanel"><a href="/Other/mail/index.html" target="_blank"></a></div>
+		<!--链接-->
+		<div id="linkPanel">
+			<div class="title"></div>
+			<div class="content">
+				
+	<ul id="linklist">
+	
+       <li><a href="http://www.jsstem.org/"><img src="/AttachFile/2016/6/300109/636028069969288978.jpg" /></a></li>
+    
+	</ul>
+
+   
+			</div>
+		</div>
+	</div>
+	<!--右侧两栏-->
+	<div class="rightRowWrap">
+		<!--顶部焦点图片-->
+		
+<div id="focusPhotoWrap">
+    
+    <div id="imageBox">
+    
+	    <div class="imageDiv"><a href="/Other/liaoning/NewsReport/Detail/29213/1/index.html" target="_blank"><img src="/AttachFile/2015/6/350102/635695377820981719.jpg" />
+		    <div class="imageIntro"><span class="title">2015年辽宁省青少年科学影像节培训班在鞍山举行</span><span class="intro">
+		    
+		        6�?日上午，由辽宁省青少年科技活动中心主办，鞍山市科协承办的�?015年辽宁省青少年科学影像节培训班”在鞍山市拉开帷幕，来自全省各�?20余名科技辅导员老师参加了培训�?
+		    </span></div>
+		    </a></div>
+    	
+		    
+	    <div class="imageDiv"><a href="/Other/liaoning/NewsReport/Detail/lnArticleID/25160.html" target="_blank"><img src="/AttachFile/2014/9/350102/635475804924340390.jpg" />
+		    <div class="imageIntro"><span class="title">太空种子在我们校园结出累累硕果——辽宁省本溪市香梅学校开展太空种子种植活动日�?/span><span class="intro">
+		    
+		    日记一、初次见到太空种�?
+		    </span></div>
+		    </a></div>
+    	
+		    
+	    <div class="imageDiv"><a href="/Other/liaoning/NewsReport/Detail/lnArticleID/25001.html" target="_blank"><img src="/AttachFile/2014/9/350102/635454220399245000.jpg" />
+		    <div class="imageIntro"><span class="title">�?8届全国中学生化学竞赛（辽宁赛区）在兴城第二高级中学举�?/span><span class="intro">
+		    
+		    �?8届全国中学生化学竞赛（辽宁赛区）在兴城第二高级中学举�?
+		    </span></div>
+		    </a></div>
+    	
+		    
+	    <div class="imageDiv"><a href="/Other/liaoning/NewsReport/Detail/lnArticleID/25000.html" target="_blank"><img src="/AttachFile/2014/9/350102/635454205792477422.jpg" />
+		    <div class="imageIntro"><span class="title">青春闪耀光芒,科学成就梦想</span><span class="intro">
+		    
+		    �?9届全国青少年科技创新大赛8�?1�?5日在北京举行，来自全�?1个省、市、自治区，新疆生产建设兵团、军队子女学校和香港、澳门特别行政区�?5个代表队�?56名学生，以及印度、挪威、瑞典、巴西、日本、德国、法国、泰国、丹麦、卢森堡、韩国、墨西哥、奥...
+		    </span></div>
+		    </a></div>
+    	
+		    
+    </div>
+    <div id="thumbBox">
+	    <ul>
+	    
+    <li>1</li>
+    
+    <li>2</li>
+    
+    <li>3</li>
+    
+    <li>4</li>
+    
+    		
+    		
+	    </ul>
+    </div>
+</div>
+   
+		
+		<!--右侧边栏-->
+		<div class="rightRow">
+		
+			<!--资源-->
+		
+			<!--下载中心-->
+			<div id="downloadPanel" class="rightPanel">
+				<div class="title"></div>
+				<div class="content">
+					
+  <ul>					
+				
+
+  <li><a href='/Other/liaoning/FileLoad/Detail/lnArticleID/4381.html' title="求知计划2008年项目年会资料下�?>求知计划2008年项目年会资料下�?/a></li>
+
+
+	</ul>
+
+				</div><a href='/Other/liaoning/FileLoad/FileList/index.html' class="more">MORE</a>
+			</div>
+		</div>
+		<!--中部主栏-->
+		<div class="midRow">
+			<!--文件通知-->
+			
+<div id="filePanel" class="midPanel">
+	<div class="title"><a href="/Other/liaoning/FileNotice/Lists/1/index.html" class="more">MORE</a></div>
+        <div class="content"><ul>
+	        
+                <li><a href="/Other/liaoning/FileNotice/Detail/lnArticleID/244812.html" title="第十七届辽宁省青少年机器人竞赛规�? target="_blank">第十七届辽宁省青少年机器人竞赛规�?/a><span >2019/11/17</span></li>
+                
+                <li><a href="/Other/liaoning/FileNotice/Detail/lnArticleID/244509.html" title="2019年高中数学联赛辽宁赛区公示名�? target="_blank">2019年高中数学联赛辽宁赛区公示名�?/a><span >2019/10/21</span></li>
+                
+                <li><a href="/Other/liaoning/FileNotice/Detail/lnArticleID/242167.html" title="2019年辽宁省青少年创意编程与智能设计大赛（创意编程部分）获奖名单公示" target="_blank">2019年辽宁省青少年创意编程与智能设计大赛（创意编程部分）�?..</a><span >2019/7/15</span></li>
+                
+                <li><a href="/Other/liaoning/FileNotice/Detail/lnArticleID/241037.html" title="第十六届辽宁省青少年机器人竞赛RIC项目（各市联赛）成绩公示名单" target="_blank">第十六届辽宁省青少年机器人竞赛RIC项目（各市联赛）成绩公示...</a><span >2019/7/11</span></li>
+                
+                <li><a href="/Other/liaoning/FileNotice/Detail/lnArticleID/240527.html" title="关于转发中国科协青少年科技中心《关于组织参加第19届中国青少年机器人竞赛暨2019世界青少年机器人邀请赛的补充通知》的通知" target="_blank">关于转发中国科协青少年科技中心《关于组织参加第19届中国青�?..</a><span >2019/6/30</span></li>
+                
+                <li><a href="/Other/liaoning/FileNotice/Detail/lnArticleID/240333.html" title="关于组织参加�?4届全国青少年科技创新大赛终评活动的通知" target="_blank">关于组织参加�?4届全国青少年科技创新大赛终评活动的通知</a><span >2019/6/18</span></li>
+                
+	        </ul>
+        </div>
+</div>
+			<!--新闻报道-->
+			
+<div id="newsPanel" class="midPanel">
+	<div class="title"><a href="/Other/liaoning/NewsReport/List/page_1/index.html" class="more">MORE</a></div>
+	<div class="content">
+		<ul>
+            
+            <li><a href="/Other/liaoning/NewsReport/Detail/lnArticleID/244565.html" title="第五届全国青少年创意编程与智能设计大赛辽宁代表队再创佳绩" target="_blank">第五届全国青少年创意编程与智能设计大赛辽宁代表队再创佳绩</a><span class="info">2019/10/24</span></li>
+            
+            <li><a href="/Other/liaoning/NewsReport/Detail/lnArticleID/244564.html" title="2019年中国科协大手拉小手科普报告希望行巡讲活动走进辽�? target="_blank">2019年中国科协大手拉小手科普报告希望行巡讲活动走进辽�?/a><span class="info">2019/10/24</span></li>
+            
+            <li><a href="/Other/liaoning/NewsReport/Detail/lnArticleID/244309.html" title="2019年辽宁省青少年科学调查体验活动培训班在辽阳举�? target="_blank">2019年辽宁省青少年科学调查体验活动培训班在辽阳举�?/a><span class="info">2019/9/23</span></li>
+            
+            <li><a href="/Other/liaoning/NewsReport/Detail/lnArticleID/244124.html" title="�?9届中国青少年机器人竞赛暨2019世界青少年机器人邀请赛辽宁代表队再创佳�? target="_blank">�?9届中国青少年机器人竞赛暨2019世界青少年机器人邀请赛辽宁...</a><span class="info">2019/8/26</span></li>
+            
+            <li><a href="/Other/liaoning/NewsReport/Detail/lnArticleID/240856.html" title="2019年青少年高校科学营大连理工大学分营开营仪式顺利举�? target="_blank">2019年青少年高校科学营大连理工大学分营开营仪式顺利举�?/a><span class="info">2019/7/10</span></li>
+            
+            <li><a href="/Other/liaoning/NewsReport/Detail/lnArticleID/240853.html" title="2019青少年高校科学营大连海事大学分营开营仪式成功举�? target="_blank">2019青少年高校科学营大连海事大学分营开营仪式成功举�?/a><span class="info">2019/7/10</span></li>
+            
+
+        </ul>
+	</div>
+</div>
+
+   
+			<!--地方新闻-->
+			
+
+  <div id="localPanel" class="midPanel">
+				<div class="title"><a href="/Other/liaoning/RegionNews/List/index.html" class="more">MORE</a></div>
+				<div class="content">
+					<ul>
+					
+						<li><a href="/Other/liaoning/RegionNews/Detail/228896/index.html" title="�?4届本溪市青少年科技创新大赛" target="_blank">�?4届本溪市青少年科技创新大赛</a><span>2019/1/24</span></li>
+					
+						
+						<li><a href="/Other/liaoning/RegionNews/Detail/228897/index.html" title="凝聚奇思妙�?绽放创意花火——第34届铁岭市青少年科技创新大赛侧记" target="_blank">凝聚奇思妙�?绽放创意花火——第34届铁岭市青少年科技创新�?..</a><span>2019/1/24</span></li>
+					
+						
+						<li><a href="/Other/liaoning/RegionNews/Detail/29476/index.html" title="北星小学“变废为�?从我做起”活动正式启�? target="_blank">北星小学“变废为�?从我做起”活动正式启�?/a><span>2015/7/9</span></li>
+					
+						
+						<li><a href="/Other/liaoning/RegionNews/Detail/25900/index.html" title="2015年大连市科技辅导员工作培训会报道" target="_blank">2015年大连市科技辅导员工作培训会报道</a><span>2015/1/22</span></li>
+					
+						
+						<li><a href="/Other/liaoning/RegionNews/Detail/25901/index.html" title="怀揣科技梦想,我们行走在路�?--沈阳市参�?014年辽宁省青少年科普活动研讨会" target="_blank">怀揣科技梦想,我们行走在路�?--沈阳市参�?014年辽宁省青少�?..</a><span>2015/1/22</span></li>
+					
+						
+						<li><a href="/Other/liaoning/RegionNews/Detail/25871/index.html" title="沈阳市举办骨干科技辅导员迎新春联谊活动" target="_blank">沈阳市举办骨干科技辅导员迎新春联谊活动</a><span>2015/1/21</span></li>
+					
+						
+					</ul>
+				</div>
+			</div>
+			<!--广告区域-->
+			<div id="adPanel"><a href="/Other/hangtian/creative/index.html"><img src="/AttachFile/2014/1/350107/635263230692742032.jpg" height="80"  width="495"/></a>
+</div>
+			<!--底部切换-->
+			<div id="tabPanel">
+				<!--切换标签-->
+				<div class="tabs">
+					<div id="tab1" class="tab">科学传播</div>
+					<div id="tab2" class="tab">科技教育</div>
+					<div id="tab3" class="tab">科学世界</div>
+				</div>
+				<div class="panes">
+					<!--科学传播-->
+					<div id="pane1-1" class="pane">
+						
+<div class="topNews">
+	<div class="thumb"><a href="" target="_blank"><img src="/AttachFile/2013/9/10101908/635157221516903046.jpg"  width="160px"/></a></div>
+	<a href="/Other/www/News/ArticleView/AID/.html" target="_blank"><h3>《STEM项目学生研究手册》是一本针对高中学生和教师的全面而详实的学习资料。它帮助教师在科学研究过程中的不同阶段对学生进行指导，并对相应的教学步骤提供了详尽的描述，甚至如果老师从没有科学实验设计经验，也能够在本书的帮助下指导学生进行科学、技术、工程学和数学实验研究�?/h3></a>
+	<div class="intro">《STEM项目学生研究手册》是一本针对高中学生和教师的全面而详实的学习资料。它帮助教师在科学研究过程中的不同阶段对学生进行指导，并对相应的教学步骤提供了详尽的描述，甚至如果老师从没有科学实验设计经验，也能够在本书的帮助下指导学生进行科学、技术、工程学和数学实验研究�?/div>
+	<!--清除浮动-->
+	<div class="clearFloat"></div>
+</div>
+<ul>
+
+	<li><a href="/Other/www/News/ArticleView/AID/21270.html" title="《STEM项目学生研究手册�? target="_blank">《STEM项目学生研究手册�?/a><span>2013/9/12</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/19254.html" title="科学教育新探索——记�?012科学教育国际论坛�? target="_blank">科学教育新探索——记�?012科学教育国际论坛�?/a><span>2013/2/26</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/19237.html" title="漫步在海角天边——著名作家叶永烈的“行走文学”之�? target="_blank">漫步在海角天边——著名作家叶永烈的“行走文学”之�?/a><span>2013/2/22</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/16307.html" title="在科普中走向大自�? target="_blank">在科普中走向大自�?/a><span>2012/3/15</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/16309.html" title="也许会引起你震撼的一本图�?" target="_blank">也许会引起你震撼的一本图�?</a><span>2012/3/15</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/16145.html" title="高校自主招生十年" target="_blank">高校自主招生十年</a><span>2012/2/29</span></li>
+	
+	
+</ul>
+
+
+					</div>
+					<!--科技教育-->
+					<div id="pane1-2" class="pane">
+						
+<div class="topNews">
+	<div class="thumb"><a href="" target="_blank"><img src="/AttachFile/2015/11/10101906/635830988313272324.jpg"  width="160px"/></a></div>
+	<a href="/Other/www/News/ArticleView/AID/.html" target="_blank"><h3>今天是华罗庚诞辰105周年纪念日，在这个日子里，曾经受到过华罗庚教导的学生会缅怀老师对学生们的精心培养与教育，也会想起华老为中国科学事业的发展做过的那些事，说过的那些话。这些都是华老留给我们的重要的精神财富，也是中国科学家思想库中重要的内容，我们不仅要将其发扬光大，还要把这些经典的思想告诉后人，使其在未来的科学发展中发挥指导作用�?/h3></a>
+	<div class="intro">今天是华罗庚诞辰105周年纪念日，在这个日子里，曾经受到过华罗庚教导的学生会缅怀老师对学生们的精心培养与教育，也会想起华老为中国科学事业的发展做过的那些事，说过的那些话。这些都是华老留给我们的重要的精神财富，也是中国科学家思想库中重要的内容，我们不仅要将其发扬光大，还要把这些经典的思想告诉后人，使其在未来的科学发展中发挥指导作用�?/div>
+	<!--清除浮动-->
+	<div class="clearFloat"></div>
+</div>
+<ul>
+
+	<li><a href="/Other/www/News/ArticleView/AID/32273.html" title="英才计划大家谈—中学篇" target="_blank">英才计划大家谈—中学篇</a><span>2016/1/15</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/31643.html" title="专家撰文纪念华罗庚诞�?05周年" target="_blank">专家撰文纪念华罗庚诞�?05周年</a><span>2015/11/14</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/21222.html" title="把科学研究的问题和想法变成一份规范的专业研究方案" target="_blank">把科学研究的问题和想法变成一份规范的专业研究方案</a><span>2013/9/5</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/21223.html" title="玩转数据而不要玩弄数�? target="_blank">玩转数据而不要玩弄数�?/a><span>2013/9/5</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/21225.html" title="启动一个STEM研究项目" target="_blank">启动一个STEM研究项目</a><span>2013/9/5</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/21229.html" title="［脑科学与科学教育］哲学思想的重大变化会带来多个领域颠覆性创新的出现（上�? target="_blank">［脑科学与科学教育］哲学思想的重大变化会带来多个领域颠覆�?..</a><span>2013/9/5</span></li>
+	
+	
+</ul>
+
+
+					</div>
+					<!--科学世界-->
+					<div id="pane1-3" class="pane">
+						
+<div class="topNews">
+	<div class="thumb"><a href="" target="_blank"><img src="/AttachFile/2013/2/10101907/634973822094375000.jpg"  width="160px"/></a></div>
+	<a href="/Other/www/News/ArticleView/AID/.html" target="_blank"><h3>［中国科技教育史话］终身校长钱伟长</h3></a>
+	<div class="intro">［中国科技教育史话］终身校长钱伟长</div>
+	<!--清除浮动-->
+	<div class="clearFloat"></div>
+</div>
+<ul>
+
+	<li><a href="/Other/www/News/ArticleView/AID/21228.html" title="［中国科技教育史话］万婴之母林巧稚" target="_blank">［中国科技教育史话］万婴之母林巧稚</a><span>2013/9/5</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/21075.html" title="［中国科技教育史话］“中国当代三大数学家”之陈建�? target="_blank">［中国科技教育史话］“中国当代三大数学家”之陈建�?/a><span>2013/8/16</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/19264.html" title="［中国科技教育史话］——梁思成" target="_blank">［中国科技教育史话］——梁思成</a><span>2013/2/26</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/19163.html" title="碰撞激发灵感　戏剧演绎科普" target="_blank">碰撞激发灵感　戏剧演绎科普</a><span>2013/1/31</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/16400.html" title="中国最年轻正教授级研究员—刘�? target="_blank">中国最年轻正教授级研究员—刘�?/a><span>2012/3/29</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/16349.html" title="十年“做中学”，得到了什么？ " target="_blank">十年“做中学”，得到了什么？ </a><span>2012/3/23</span></li>
+	
+	
+</ul>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--清除浮动-->
+		<div class="clearFloat"></div>
+	</div>
+	<!--清除浮动-->
+	<div class="clearFloat"></div>
+</div>
+<!--页面底部-->
+
+ <div id="pageFooter" class="fullWidth">
+	<div id="copyright">版权所有：全国青少年科技创新活动服务平台 辽宁省青少年科技中心    京ICP�?05013249�?/div>
+</div>
+<!--<script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/24/000/0000/41052760/CA240000000410527600001.js' type='text/javascript'%3E%3C/script%3E"));</script>-->
+
+    <script>
+        $(document).ready(function(e) {
+           
+             $("#RobotPanel").css('display', 'none');
+           
+
+        });
+       
+    </script>
+</body>
+</html>
+
+
+			

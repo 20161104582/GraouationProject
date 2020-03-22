@@ -1,0 +1,5574 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//Dtd XHTML 1.0 transitional//EN" "http://www.w3.org/tr/xhtml1/Dtd/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	海南省青少年科技创新活动服务平台
+</title>
+    <!-- 引入样式�?-->
+<link id="pageStyleLink" href="/Other/hainan/Css/hainan.css" rel="stylesheet" type="text/css" />
+<link href="/Other/hainan/Css/robot.css" rel="Stylesheet" type="text/css" />
+<!-- 引入JS脚本 -->
+<script src="/Other/hainan/Scripts/jquery.min.js" type="text/javascript"></script>
+<script src="/Other/hainan/Scripts/jquery.soChange.js" type="text/javascript"></script>
+<script src="/Other/hainan/Scripts/jquery.tools.js" type="text/javascript"></script>
+<script src="/Other/hainan/Scripts/commonFunction.js" type="text/javascript"></script>
+<script src="/Other/hainan/Scripts/TopBar2.js" type="text/javascript"></script>
+<script src="/Other/hj/jsj/spring.js" type="text/javascript"></script>
+</head>
+<body>
+    <!--浮动窗口开�?->
+<a class="floatX" href="https://kada.163.com/contest/332018.htm?utm_source=xiaoxiaotong.com&utm_medium=act_center&utm_campaign=2018zj33&utm_content=332018" target="_blank">
+
+    <img src="/floatZJ.png">
+    <div class="reset">关闭×</div>
+
+    <style type="text/css">
+        .floatX{
+            display: inline-block;
+            z-index: 999;
+            position: absolute;
+            height:120px;
+            width:360px;
+            overflow: hidden;
+        }
+        .floatX img{
+            width:100%;
+            height:100%;
+        }
+        .floatX .reset{
+            position: absolute;
+            top:0;
+            right:0;
+            line-height: 18px;
+            font-size:13px;
+            color: #fff;
+        }
+        .floatX .reset:hover{
+            color: #eee;
+        }
+    </style>
+    <script language="javascript" type="text/javascript">
+        (function ($) {
+            jQuery.fn.imgFloat = function (options) {
+                var own = this;
+                var xD = 0;
+                var yD = 0;
+                var i = 1;
+                var settings = {
+                    speed: 15,
+                    xPos: 0,
+                    yPos: 0
+                };
+                jQuery.extend(settings, options);
+                var ownTop = settings.xPos;
+                var ownLeft = settings.yPos;
+                own.css({
+                    position: "absolute",
+                    cursor: "pointer"
+                });
+                function imgPosition() {
+                    var winWidth = $(window).width() - own.width();
+                    var winHeight = $(window).height() - own.height();
+                    if (xD == 0) {
+                        ownLeft += i;
+                        own.css({
+                            left: ownLeft
+                        });
+                        if (ownLeft >= winWidth) {
+                            ownLeft = winWidth;
+                            xD = 1;
+                        }
+                    }
+                    if (xD == 1) {
+                        ownLeft -= i;
+                        own.css({
+                            left: ownLeft
+                        });
+                        if (ownLeft <= 0) xD = 0;
+                    }
+                    if (yD == 0) {
+                        ownTop += i;
+                        own.css({
+                            top: ownTop
+                        });
+                        if (ownTop >= winHeight) {
+                            ownTop = winHeight;
+                            yD = 1;
+                        }
+                    }
+                    if (yD == 1) {
+                        ownTop -= i;
+                        own.css({
+                            top: ownTop
+                        });
+                        if (ownTop <= 0) yD = 0;
+                    }
+                }
+                var imgHover = setInterval(imgPosition, settings.speed);
+                own.hover(function () {
+                        clearInterval(imgHover);
+                    },
+                    function () {
+                        imgHover = setInterval(imgPosition, settings.speed);
+                    });
+            }
+        })(jQuery);
+         
+        $(".floatX").css("display", "none");
+        
+    </script>
+</a>
+<!--浮动窗口结束-->
+<!--页面顶部-->
+<div id="topBanner" class="fullWidth">
+
+	<div id="topMenuWrap">
+		<ul id="topMenu">
+	<li class="home"><a href="/">首　�?/a></li>
+	<li class="organization"><a href="/Other/hainan/Orgnation/Orgnation/index.html">组织机构</a></li>
+	<li class="file"><a href="/Other/hainan/FileNotice/Lists/1/index.html">文件通知</a></li>
+	<li class="news"><a href="/Other/hainan/NewsReport/List/page_1/index.html">新闻报道</a></li>
+	<li class="apply"><a href="/Other/hainan/Apply/login.html">网上申报</a></li>
+	<li class="event"><a href="/Other/hainan/BrandActive/Actives/index.html">品牌活动</a></li>
+	<li class="gallery"><a href="/Other/hainan/PictrueLibrary/AlbumList/0/1/index.html">科普图库</a></li>
+	<li class="bbs"><a href="http://www.xiaoxiaotong.net/bbs/Board.aspx?BoardID=36" target="_blank">创新论坛</a></li>
+	<li class="yanjiuyuan"><a href="http://www.xiaoxiaotong.net">创新研究�?/a></li>
+</ul>
+	</div>
+
+</div>
+<!--页面主体-->
+<div id="indexMain" class="fullWidth">
+	<!--左侧窄栏-->
+	<div class="leftRow">
+		<!--左侧菜单-->
+		<div id="leftMenuWrap">
+			<ul id="leftMenu">
+	<li class="home"><a href="/">首　�?/a></li>
+	<li class="organization"><a href="/Other/hainan/Orgnation/Orgnation/index.html">组织机构</a></li>
+	<li class="file"><a href="/Other/hainan/FileNotice/Lists/1/index.html">文件通知</a></li>
+	<li class="news"><a href="/Other/hainan/NewsReport/List/page_1/index.html">新闻报道</a></li>
+	<li class="apply"><a href="/Other/hainan/Apply/login.html">网上申报</a></li>
+	<li class="event"><a href="/Other/hainan/BrandActive/Actives/index.html">品牌活动</a></li>
+	<li class="gallery"><a href="/Other/hainan/PictrueLibrary/AlbumList/0/1/index.html">科普图库</a></li>
+	<li class="bbs"><a href="http://www.xiaoxiaotong.net/bbs/Board.aspx?BoardID=36" target="_blank">创新论坛</a></li>
+	<li class="yanjiuyuan"><a href="http://www.xiaoxiaotong.net">创新研究�?/a></li>
+			</ul>
+		</div>
+		<!--在线申报-->
+		
+<div id="logPanel">
+	<div class="title"></div>
+	<div class="content">
+	<form id="frmLogin" name="frmLogin" method="post" action="/Other/hainan/Regist/Login/index.html">
+	<span><label>用户名：</label><input name="txtUser" id="txtUser" type="text" /></span><span><label>密　码：</label><input name="txtPassword" id="txtPassword" type="password" /></span> <span class="button"><input name="btnLoin" type="button" onclick="$('#frmLogin').submit();" value="登录" /><input name="btnLoin2" type="button" onclick="window.location.href = '/Regist/Regist.aspx';"  value="注册" /></span> </form></div>
+</div>
+
+
+		<!--机器人竞�?->
+		<div id="RobotPanel" style="display:none">
+		    <div class="title">
+			    <a href="/Other/hainan/RobotApply/RegisterCheck.html" target="_blank"></a>
+			</div>
+			<div class="content"></div>
+		</div>
+
+		<!--公告�?->
+		<div id="boardPanel">
+
+			<div class="title"></div>
+			<div class="content">
+			    
+<marquee onmouseover="this.stop();" onmouseout="this.start();" scrollAmount="1" hspace="5"
+	direction="up" behavior="scroll">
+	<p>各市、县、自治县科协、教育（教科）局，洋浦经济开发区社会发展局，省教育厅直属中学：</p>
+
+<p>由海南省科协和海南省教育厅联合主办的第八届海南省青少�?ldquo;七巧科技&rdquo;比赛活动已圆满结束，现将获奖结果予以通报�?/p>
+
+<p>本届青少�?ldquo;七巧科技&rdquo;比赛有来自全省各市县中小学校和校外教育机构共38个代表队参加。经评审，评出团体比赛一等奖10个队，二等奖12个队，三等奖16个队�?ldquo;智力七巧板多幅组�?rdquo;创新作品一等奖14幅，二等�?0幅，三等�?5幅�?D创意科技赛桥梁项目一等奖5个，二等�?，三等奖11个。螺旋桨汽车项目一等奖4，二等奖6，三等奖8个。投石器项目一等奖6个，二等�?0个，三等�?4个。无动力汽车项目一等奖7个，二等�?0个，三等�?4个�?/p>
+
+<p>希望获奖的学生、指导教师和学校继续发扬成绩，再接再厉，争取新的提高与突破。同时，各学校要积极深入开展青少年科普教育活动，努力营造一个学科学、爱科学、用科学的良好氛围�?/p>
+
+<p>&nbsp;</p>
+
+<p>附件�?、第八届海南省青少年&ldquo;七巧科技&rdquo;团体赛获奖名�?/p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;2、第八届海南省青少年&ldquo;七巧科技&rdquo;智力七巧板多幅组合创新作品获奖名�?/p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3、第八届海南省青少年&ldquo;七巧科技&rdquo;4D创意科技赛获奖名�?/p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 海南省科学技术协�?nbsp;&nbsp;&nbsp; 海南省教育厅</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2016�?0�?6�?/p>
+
+<p>附件1</p>
+
+<p align="center"><strong>�?/strong><strong>�?/strong><strong>届海南省</strong><strong>青少�?/strong><strong>&ldquo;七巧科技&rdquo;</strong><strong>团体赛获奖名�?/strong></p>
+
+<table align="center" border="1" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td style="width: 84px">
+			<p align="center"><strong>�?�?/strong></p>
+			</td>
+			<td style="width: 182px">
+			<p align="center"><strong>�?�?�?�?/strong></p>
+			</td>
+			<td style="width: 413px">
+			<p align="center"><strong>�?/strong>&nbsp;&nbsp;&nbsp; <strong>�?/strong></p>
+			</td>
+			<td style="width: 88px">
+			<p align="center"><strong>�?/strong>&nbsp; <strong>�?/strong></p>
+			</td>
+			<td style="width: 178px">
+			<p align="center"><strong>�?�?�?�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 84px">
+			<p align="center">1</p>
+			</td>
+			<td style="width: 182px">
+			<p align="center">昌江县一�?/p>
+			</td>
+			<td style="width: 413px">
+			<p align="center">潘岑玉、罗玖理、邢家豪、云涵悦</p>
+			</td>
+			<td style="width: 88px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+			<td style="width: 178px">
+			<p align="center">许琼�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 84px">
+			<p align="center">2</p>
+			</td>
+			<td style="width: 182px">
+			<p align="center">东方市队</p>
+			</td>
+			<td style="width: 413px">
+			<p align="center">董爵源、符李方、陈赵庄、陈智辉</p>
+			</td>
+			<td style="width: 88px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+			<td style="width: 178px">
+			<p align="center">黄东�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 84px">
+			<p align="center">3</p>
+			</td>
+			<td style="width: 182px">
+			<p align="center">海口市六�?/p>
+			</td>
+			<td style="width: 413px">
+			<p align="center">张紫旖、王舟伊、黄伊彬、唐&nbsp; �?/p>
+			</td>
+			<td style="width: 88px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+			<td style="width: 178px">
+			<p align="center">吴坤�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 84px">
+			<p align="center">4</p>
+			</td>
+			<td style="width: 182px">
+			<p align="center">海口市七�?/p>
+			</td>
+			<td style="width: 413px">
+			<p align="center">王艺欣、刘俊汝、伍昕润、陈宇曜</p>
+			</td>
+			<td style="width: 88px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+			<td style="width: 178px">
+			<p align="center">吴荣�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 84px">
+			<p align="center">5</p>
+			</td>
+			<td style="width: 182px">
+			<p align="center">琼海市一�?/p>
+			</td>
+			<td style="width: 413px">
+			<p align="center">陈章婷、刘怡芳、张开旗、符芳钰</p>
+			</td>
+			<td style="width: 88px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+			<td style="width: 178px">
+			<p align="center">�?喜、陈文星</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 84px">
+			<p align="center">6</p>
+			</td>
+			<td style="width: 182px">
+			<p align="center">澄迈县队</p>
+			</td>
+			<td style="width: 413px">
+			<p align="center">黄婉洁、王希敏、郑香茹、王&nbsp; �?/p>
+			</td>
+			<td style="width: 88px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+			<td style="width: 178px">
+			<p align="center">林明觉、成水兰</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 84px">
+			<p align="center">7</p>
+			</td>
+			<td style="width: 182px">
+			<p align="center">儋州市四�?/p>
+			</td>
+			<td style="width: 413px">
+			<p align="center">符家豪、刘秋玲、何善善、范明佳</p>
+			</td>
+			<td style="width: 88px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+			<td style="width: 178px">
+			<p align="center">魏秀丽、潭望萍</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 84px">
+			<p align="center">8</p>
+			</td>
+			<td style="width: 182px">
+			<p align="center">白沙县队</p>
+			</td>
+			<td style="width: 413px">
+			<p align="center">符志乐、成桥思、陈盛英、符桤圣</p>
+			</td>
+			<td style="width: 88px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+			<td style="width: 178px">
+			<p align="center">�?nbsp;&nbsp; �?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 84px">
+			<p align="center">9</p>
+			</td>
+			<td style="width: 182px">
+			<p align="center">海南师范大学</p>
+
+			<p align="center">附属中学</p>
+			</td>
+			<td style="width: 413px">
+			<p align="center">符志乐、成桥思、陈盛英、符桤圣</p>
+			</td>
+			<td style="width: 88px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+			<td style="width: 178px">
+			<p align="center">�?nbsp; 霞、王盛友</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 84px">
+			<p align="center">10</p>
+			</td>
+			<td style="width: 182px">
+			<p align="center">海南省农垦实验中�?/p>
+			</td>
+			<td style="width: 413px">
+			<p align="center">王皓天、黄文泽、游哲苏、曾维勇</p>
+			</td>
+			<td style="width: 88px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+			<td style="width: 178px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 84px">
+			<p align="center">11</p>
+			</td>
+			<td style="width: 182px">
+			<p align="center">昌江县二�?/p>
+			</td>
+			<td style="width: 413px">
+			<p align="center">吴婧涵、陈思颖、陈鲁贝、陈俊辉</p>
+			</td>
+			<td style="width: 88px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 178px">
+			<p align="center">许琼�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 84px">
+			<p align="center">12</p>
+			</td>
+			<td style="width: 182px">
+			<p align="center">儋州市二�?/p>
+			</td>
+			<td style="width: 413px">
+			<p align="center">�?nbsp; 韵、陈岳强、曾诗雨、张&nbsp; �?/p>
+			</td>
+			<td style="width: 88px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 178px">
+			<p align="center">魏秀丽、薛小丹</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 84px">
+			<p align="center">13</p>
+			</td>
+			<td style="width: 182px">
+			<p align="center">海口市三�?/p>
+			</td>
+			<td style="width: 413px">
+			<p align="center">黄子欣、张圆月、冯人丰、张&nbsp; �?/p>
+			</td>
+			<td style="width: 88px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 178px">
+			<p align="center">王洪�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 84px">
+			<p align="center">14</p>
+			</td>
+			<td style="width: 182px">
+			<p align="center">临高县队</p>
+			</td>
+			<td style="width: 413px">
+			<p align="center">何思漫、杨慧欣、黄钰原、薛依晴</p>
+			</td>
+			<td style="width: 88px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 178px">
+			<p align="center">颜小�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 84px">
+			<p align="center">15</p>
+			</td>
+			<td style="width: 182px">
+			<p align="center">琼海市三�?/p>
+			</td>
+			<td style="width: 413px">
+			<p align="center">王艺颖、颜伶伊、符文菁、何俊儒</p>
+			</td>
+			<td style="width: 88px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 178px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 84px">
+			<p align="center">16</p>
+			</td>
+			<td style="width: 182px">
+			<p>中国热带农业科学院附属中小学</p>
+			</td>
+			<td style="width: 413px">
+			<p align="center">吴易凌、杨煜琪、张尤亮、陈润标</p>
+			</td>
+			<td style="width: 88px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 178px">
+			<p align="center">麦贤�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 84px">
+			<p align="center">17</p>
+			</td>
+			<td style="width: 182px">
+			<p align="center">文昌市一�?/p>
+			</td>
+			<td style="width: 413px">
+			<p align="center">符诗语、黄炜荏、郑芊芊、姚 �?/p>
+			</td>
+			<td style="width: 88px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 178px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 84px">
+			<p align="center">18</p>
+			</td>
+			<td style="width: 182px">
+			<p align="center">文昌市二�?/p>
+			</td>
+			<td style="width: 413px">
+			<p align="center">林诗凯、庄恢舜、卢俊亦、傅子芮</p>
+			</td>
+			<td style="width: 88px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 178px">
+			<p align="center">李文�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 84px">
+			<p align="center">19</p>
+			</td>
+			<td style="width: 182px">
+			<p align="center">定安县队</p>
+			</td>
+			<td style="width: 413px">
+			<p align="center">曾洲文、符贻娜、刘泽邦、冯婷婷</p>
+			</td>
+			<td style="width: 88px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 178px">
+			<p align="center">�?&nbsp;锐、韩会英</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 84px">
+			<p align="center">20</p>
+			</td>
+			<td style="width: 182px">
+			<p align="center">三亚市一�?/p>
+			</td>
+			<td style="width: 413px">
+			<p align="center">苏子雯、陈伊曼、文奇伟、黄伟峰</p>
+			</td>
+			<td style="width: 88px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 178px">
+			<p align="center">纪明容、黎克科</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 84px">
+			<p align="center">21</p>
+			</td>
+			<td style="width: 182px">
+			<p align="center">保亭县队</p>
+			</td>
+			<td style="width: 413px">
+			<p align="center">杨寒前、葛仪冉、郑子彬、李嘉详</p>
+			</td>
+			<td style="width: 88px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 178px">
+			<p>黄成莉、胡小灵</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 84px">
+			<p align="center">22</p>
+			</td>
+			<td style="width: 182px">
+			<p align="center">海口市五�?/p>
+			</td>
+			<td style="width: 413px">
+			<p align="center">陈苏南、徐向东、苏应鹏、王艺睿</p>
+			</td>
+			<td style="width: 88px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 178px">
+			<p align="center">吴坤�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 84px">
+			<p align="center">23</p>
+			</td>
+			<td style="width: 182px">
+			<p align="center">儋州市一�?/p>
+			</td>
+			<td style="width: 413px">
+			<p align="center">�?nbsp; 颖、周宏鹏、陈廷枢、林雅涵</p>
+			</td>
+			<td style="width: 88px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 178px">
+			<p align="center">魏秀丽、汤坤媛</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 84px">
+			<p align="center">24</p>
+			</td>
+			<td style="width: 182px">
+			<p align="center">儋州市三�?/p>
+			</td>
+			<td style="width: 413px">
+			<p align="center">周秀莹、杨富昌、袁发强、符可一</p>
+			</td>
+			<td style="width: 88px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 178px">
+			<p align="center">魏秀丽、薛小丹</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 84px">
+			<p align="center">25</p>
+			</td>
+			<td style="width: 182px">
+			<p align="center">海口市一�?/p>
+			</td>
+			<td style="width: 413px">
+			<p align="center">陈骏友、张裕清、陈欣雨、杨善翔</p>
+			</td>
+			<td style="width: 88px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 178px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 84px">
+			<p align="center">26</p>
+			</td>
+			<td style="width: 182px">
+			<p align="center">海口市二�?/p>
+			</td>
+			<td style="width: 413px">
+			<p align="center">王晨阳、陈柏舟、吴秉恒、甘文欣</p>
+			</td>
+			<td style="width: 88px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 178px">
+			<p align="center">吴昌�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 84px">
+			<p align="center">27</p>
+			</td>
+			<td style="width: 182px">
+			<p align="center">海口市四�?/p>
+			</td>
+			<td style="width: 413px">
+			<p align="center">张宗宽、梁轩铭、郭云雁、陈芊儒</p>
+			</td>
+			<td style="width: 88px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 178px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 84px">
+			<p align="center">28</p>
+			</td>
+			<td style="width: 182px">
+			<p align="center">乐东县一�?/p>
+			</td>
+			<td style="width: 413px">
+			<p align="center">孙慧馨、容碧晴、杜向南、王柳燕</p>
+			</td>
+			<td style="width: 88px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 178px">
+			<p align="center">莫庆�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 84px">
+			<p align="center">29</p>
+			</td>
+			<td style="width: 182px">
+			<p align="center">乐东县二�?/p>
+			</td>
+			<td style="width: 413px">
+			<p align="center">林英树、容&nbsp; 席、张昀浩、麦咏斌</p>
+			</td>
+			<td style="width: 88px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 178px">
+			<p align="center">�?&nbsp;�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 84px">
+			<p align="center">30</p>
+			</td>
+			<td style="width: 182px">
+			<p align="center">琼中县队</p>
+			</td>
+			<td style="width: 413px">
+			<p align="center">吴紫盈、王志超、陈书梁、吕伟锋</p>
+			</td>
+			<td style="width: 88px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 178px">
+			<p align="center">黄海秀</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 84px">
+			<p align="center">31</p>
+			</td>
+			<td style="width: 182px">
+			<p align="center">万宁市一�?/p>
+			</td>
+			<td style="width: 413px">
+			<p align="center">卓上凯、林明杰、崔信合、张骏铭</p>
+			</td>
+			<td style="width: 88px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 178px">
+			<p align="center">裴英志、朱小芳</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 84px">
+			<p align="center">32</p>
+			</td>
+			<td style="width: 182px">
+			<p align="center">万宁市二�?/p>
+			</td>
+			<td style="width: 413px">
+			<p align="center">蔡凯程、倪瑞喆、符&nbsp; 旭、崔欣欣</p>
+			</td>
+			<td style="width: 88px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 178px">
+			<p>裴英志、羊重荣</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 84px">
+			<p align="center">33</p>
+			</td>
+			<td style="width: 182px">
+			<p align="center">琼海市二�?/p>
+			</td>
+			<td style="width: 413px">
+			<p align="center">覃琳惜、陈子瑜、林芳仁、林子琳</p>
+			</td>
+			<td style="width: 88px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 178px">
+			<p align="center">符永�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 84px">
+			<p align="center">34</p>
+			</td>
+			<td style="width: 182px">
+			<p align="center">屯昌县队</p>
+			</td>
+			<td style="width: 413px">
+			<p align="center">邓美治、王语馨、李欣妍、王&nbsp; �?/p>
+			</td>
+			<td style="width: 88px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 178px">
+			<p align="center">孙乐�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 84px">
+			<p align="center">35</p>
+			</td>
+			<td style="width: 182px">
+			<p align="center">陵水县队</p>
+			</td>
+			<td style="width: 413px">
+			<p align="center">陈朝熙、符策志、周运清、王林欣</p>
+			</td>
+			<td style="width: 88px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 178px">
+			<p align="center">黄秋�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 84px">
+			<p align="center">36</p>
+			</td>
+			<td style="width: 182px">
+			<p align="center">五指山市�?/p>
+			</td>
+			<td style="width: 413px">
+			<p align="center">�?nbsp; 韵、陈红宇、符万杰、郭江一</p>
+			</td>
+			<td style="width: 88px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 178px">
+			<p align="center">赵英�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 84px">
+			<p align="center">37</p>
+			</td>
+			<td style="width: 182px">
+			<p align="center">三亚市二�?/p>
+			</td>
+			<td style="width: 413px">
+			<p align="center">黄俊杰、许潇桐、农枔唐、蔡浩宇</p>
+			</td>
+			<td style="width: 88px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 178px">
+			<p align="center">纪明容、黎克科</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 84px">
+			<p align="center">38</p>
+			</td>
+			<td style="width: 182px">
+			<p align="center">海口军安�?/p>
+			</td>
+			<td style="width: 413px">
+			<p align="center">黄兹立、陈&nbsp; 林、李新诚、王可润</p>
+			</td>
+			<td style="width: 88px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 178px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<div style="clear: both">&nbsp;</div>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>附件2</p>
+
+<p align="center"><strong>�?/strong><strong>�?/strong><strong>届海南省</strong><strong>青少�?/strong><strong>&ldquo;七巧科技</strong><strong>&rdquo;</strong><strong>智力七巧板多幅组合创新作�?/strong><strong>获奖名单</strong></p>
+
+<table align="center" border="1" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td style="width: 43px">
+			<p><strong>序号</strong></p>
+			</td>
+			<td style="width: 180px">
+			<p align="center"><strong>作品名称</strong></p>
+			</td>
+			<td style="width: 156px">
+			<p align="center"><strong>申报�?/strong></p>
+			</td>
+			<td style="width: 228px">
+			<p align="center"><strong>所在学�?/strong></p>
+			</td>
+			<td style="width: 108px">
+			<p align="center"><strong>�?nbsp; �?/strong></p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>等次</strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center"><strong>辅导教师</strong></p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>备注</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">1</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">祖国美丽的南�?/p>
+			</td>
+			<td style="width: 156px">
+			<p>陈朝熙、符策志</p>
+
+			<p>王林欣、周运清</p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">陵水县校外活动中�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">黄秋�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">25�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">2</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">卫戌南海</p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">农枔�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">三亚市第九小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">纪明�?/p>
+
+			<p align="center">周静�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">32�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">3</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">南沙如鱼</p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">黄炜荏、姚 &nbsp;�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">文昌市文昌中�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">25�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">4</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">南沙是我国土�?/p>
+
+			<p align="center">神圣不可侵犯</p>
+			</td>
+			<td style="width: 156px">
+			<p>�?�?符万杰郭江一 赵雨�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">五指山市第一小学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">赵英�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">25�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">5</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">南沙之乐</p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">王希�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">澄迈县澄迈中�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">林明�?/p>
+
+			<p>�?nbsp; �?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">10�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">6</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">祖国美丽的南�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">梁轩�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">海口市琼山第三小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">吴英�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">27�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">7</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">科技创造未�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">崔欣�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">万宁市第二中�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">朱小�?/p>
+
+			<p align="center">裴英�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">17�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">8</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">美丽的南�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">倪瑞�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">北京师范大学万宁</p>
+
+			<p align="center">附属中学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">裴英�?/p>
+
+			<p align="center">羊重�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">15�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">9</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">筑梦天宫</p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">张峻�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">万宁市后朗小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">裴英�?/p>
+
+			<p align="center">朱小�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">13�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">10</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">美丽南沙</p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">�?&nbsp;�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">定安县仙沟思源</p>
+
+			<p align="center">实验学校</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">韩会�?/p>
+
+			<p align="center">陈菊�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">9�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">11</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">美丽的南�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">邓美治、王语馨 李欣妍、王&nbsp; �?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">屯昌县屯昌小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">孙乐�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">25�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">12</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">我爱南沙</p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">陈章�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">琼海市嘉积第二中�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">陈文�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">17�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">13</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">美丽的南沙学�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">儋州市青少年学生校外活动中心</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">汤坤�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">25�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">14</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">美丽的南�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">陈岳�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">儋州市那大实验小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">刘水�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">25�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">15</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">祖国美丽的南�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">陈柏�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">海口市琼山第一小学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">吴英�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">5�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">16</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">美丽的南�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">冯人�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">海口市海瑞学�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">王洪�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">5�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">17</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">富强�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">蔡凯�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">北京师范大学万宁</p>
+
+			<p align="center">附属中学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">裴英�?/p>
+
+			<p align="center">羊重�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">16�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">18</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">共筑中国�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">北京师范大学</p>
+
+			<p align="center">万宁附属中学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">裴英�?/p>
+
+			<p align="center">羊重�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">18�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">19</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">圆梦之路</p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">林明�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">万宁市第二小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">裴英�?/p>
+
+			<p align="center">朱小�?/p>
+
+			<p align="center">&nbsp;</p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">15�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">20</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">美丽家乡</p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">崔信�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">万宁市中心学�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">裴英�?/p>
+
+			<p align="center">朱小�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">13�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">21</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">强国�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">卓上�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">万宁市后朗小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">朱小�?/p>
+
+			<p align="center">裴英�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">14�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">22</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">南沙油井&mdash;&mdash;我为祖国献石�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">琼海市嘉积第二中�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">10�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">23</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">请到美丽�?/p>
+
+			<p align="center">南沙�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">儋州市那大实验小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">薛小�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">25�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">24</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">科技走进美丽的南�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">杨富�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">儋州市青少年活动中心</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">魏秀�?/p>
+
+			<p align="center">汤坤�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">25�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">25</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">守卫边疆</p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">符诗语、郑芊芊</p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">文昌市文昌中�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">20�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">26</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">南沙是我们的</p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">卢俊亦、林诗凯</p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">文昌市第三小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">罗彩�?/p>
+
+			<p align="center">李文�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">14�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">27</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">我爱美丽的南�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">庄恢舜、傅子芮</p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">文昌市第三小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">罗彩�?/p>
+
+			<p align="center">李文�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">11�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">28</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">南沙卫士</p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">三亚市第九小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">黎克�?/p>
+
+			<p align="center">谢晓�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">25�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">29</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">南沙新象</p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">苏子�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">三亚市第九小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">黎克�?/p>
+
+			<p align="center">纪明�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">23�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">30</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">纯净的宝�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">邓美治、王语馨李欣妍、王 �?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">屯昌县屯昌小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">孙乐�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">25�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">31</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">祖国美丽的南�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">何思漫</p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">临高县青少年活动中心</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">颜小�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">15�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">32</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">祖国美丽的南�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">邢家�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">昌江县第四小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">许琼�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">13�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">33</p>
+			</td>
+			<td style="width: 180px">
+			<p>中国南海发射基地</p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">王河�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">海口市军安队</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">王洪�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">5�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">34</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">南沙是我国土�?/p>
+
+			<p align="center">神圣不可侵犯</p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">陈韵符、万 �?/p>
+
+			<p align="center">郭江一、赵雨萱</p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">五指山市第一小学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">赵英�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">25�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">35</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">祖国美丽的南�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">云涵�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">昌江青少年活动中�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">许琼�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">5�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">36</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">祖国美丽的南�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">陈思颖</p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">昌江青少年活动中�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">许琼�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">5�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">37</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">祖国美丽的南�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">邢家�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">昌江县第四小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">许琼�?/p>
+			</td>
+			<td style="width: 65px">
+			<p>13�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">38</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">祖国美丽的南�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">吴婧�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">昌江县第四小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">朱玉�?/p>
+
+			<p align="center">许琼�?/p>
+			</td>
+			<td style="width: 65px">
+			<p>7�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">39</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">南沙&mdash;&mdash;我的�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">李娜、林树森</p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">澄迈县第三中�?/p>
+			</td>
+			<td style="width: 108px">
+			<p>小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">黄克�?/p>
+
+			<p align="center">�?�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">5�?/p>
+
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">40</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">美丽南沙�?/p>
+
+			<p align="center">旅游胜地</p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">蔡亦�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">澄迈县第三中�?/p>
+
+			<p align="center">&nbsp;</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">�?nbsp; �?/p>
+
+			<p align="center">黄克�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">7�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">41</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">南沙，谜之美�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">黄婉�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">澄迈中学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">成水�?/p>
+
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">15�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">42</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">伍慧�?/p>
+			</td>
+			<td style="width: 228px">
+			<p>定安仙沟思源实验学校</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">韩会�?nbsp; 陈菊�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">6�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">43</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">保护南海</p>
+
+			<p align="center">丰富海产</p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">海口市海瑞学�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">王洪�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">7�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">44</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">保卫我们蓝色国土一一南海</p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">黄子�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">海口市海瑞学�?/p>
+			</td>
+			<td style="width: 108px">
+			<p>小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">王洪�?/p>
+
+			<p align="center">胡岸�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">45</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">祖国美丽的南�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">陈骏友、张裕清</p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">&nbsp;</p>
+			</td>
+			<td style="width: 108px">
+			<p>小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">&nbsp;</p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">46</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">祖国美丽的南�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">陈欣雨、杨善翔</p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">&nbsp;</p>
+			</td>
+			<td style="width: 108px">
+			<p>小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">&nbsp;</p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">47</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">中国南海</p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">黄兹�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">海口军安�?/p>
+			</td>
+			<td style="width: 108px">
+			<p>小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">王洪�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">5�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">48</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">美丽的南�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">海口军安�?/p>
+			</td>
+			<td style="width: 108px">
+			<p>小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">王洪�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">5�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">49</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">南海钻井平台</p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">李新�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">海口军安�?/p>
+			</td>
+			<td style="width: 108px">
+			<p>小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">王洪�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">50</p>
+			</td>
+			<td style="width: 180px">
+			<p>中国南海发射基地</p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">王河�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">海口军安�?/p>
+			</td>
+			<td style="width: 108px">
+			<p>小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">王洪�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">5�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px; height: 47px">
+			<p align="center">51</p>
+			</td>
+			<td style="width: 180px; height: 47px">
+			<p align="center">美丽的南�?/p>
+			</td>
+			<td style="width: 156px; height: 47px">
+			<p align="center">甘文�?/p>
+			</td>
+			<td style="width: 228px; height: 47px">
+			<p align="center">海口市琼山第一小学</p>
+			</td>
+			<td style="width: 108px; height: 47px">
+			<p>小学�?/p>
+			</td>
+			<td style="width: 48px; height: 47px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px; height: 47px">
+			<p align="center">陈运�?/p>
+			</td>
+			<td style="width: 65px; height: 47px">
+			<p align="center">6�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">52</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">守护南海</p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">张圆�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">海口海瑞学校</p>
+			</td>
+			<td style="width: 108px">
+			<p>小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">王洪�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">53</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">美丽的南�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">冯人�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">海口市海瑞学�?/p>
+			</td>
+			<td style="width: 108px">
+			<p>小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">胡岸�?/p>
+
+			<p align="center">王洪�?/p>
+
+			<p align="center">&nbsp;</p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">5�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">54</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">美丽的南�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">林彦�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">海口市琼山第一小学</p>
+			</td>
+			<td style="width: 108px">
+			<p>小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">王传�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">6�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">55</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">祖国美丽的南�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">吴秉�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">海口市琼山第一小学</p>
+			</td>
+			<td style="width: 108px">
+			<p>小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">吴英�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">7�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">56</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">祖国美丽的南�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">陈柏�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">海口市琼山第一小学</p>
+			</td>
+			<td style="width: 108px">
+			<p>小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">吴英�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">5�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">57</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">祖国美丽的南�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">王晨�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">海口市琼山第一小学</p>
+			</td>
+			<td style="width: 108px">
+			<p>小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">吴英�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">5�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">58</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">祖国美丽的南�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">张宗�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">海口市琼山第一小学</p>
+			</td>
+			<td style="width: 108px">
+			<p>小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">吴英�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">8�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">59</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">祖国美丽的南�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">梁轩�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">海口市琼山第一小学</p>
+			</td>
+			<td style="width: 108px">
+			<p>小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">吴英�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">27�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">60</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">屹立的红�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">黄钰�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">临高县青少年活动</p>
+
+			<p align="center">中心</p>
+			</td>
+			<td style="width: 108px">
+			<p>小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">颜小�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">7�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">61</p>
+			</td>
+			<td style="width: 180px">
+			<p>美丽的南沙_我的�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">薛依�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">临高县青少年活动</p>
+
+			<p align="center">中心</p>
+			</td>
+			<td style="width: 108px">
+			<p>小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">薛依�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">10�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">62</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">永不褪色的美</p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">杨慧�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">临高县青少年活动中心</p>
+			</td>
+			<td style="width: 108px">
+			<p>小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">颜小�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">6�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">63</p>
+			</td>
+			<td style="width: 180px">
+			<p>美丽南沙�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">刘怡芳、张开�?/p>
+			</td>
+			<td style="width: 228px">
+			<p>琼海市嘉积第二中�?/p>
+			</td>
+			<td style="width: 108px">
+			<p>中学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">陈文�?/p>
+			</td>
+			<td style="width: 65px">
+			<p>10�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">64</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">南沙之乐</p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">王希�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">澄迈县澄迈中�?/p>
+			</td>
+			<td style="width: 108px">
+			<p>中学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">林明�?/p>
+
+			<p align="center">�?&nbsp;�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">10�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">65</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">我们来到了美丽的南沙</p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">袁发�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">儋州市活动中�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">谭望�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">25�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">66</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">歌颂祖国美丽的南�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">周宏�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">儋州市那大实验小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">魏秀�?/p>
+
+			<p align="center">&nbsp;</p>
+
+			<p>&nbsp;</p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">25�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">67</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">送给祖国的祝�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">周秀�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">儋州市那大第一中学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">魏秀�?/p>
+
+			<p align="center">谭望�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">25�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">68</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">美丽的南沙学�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">符家�?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">儋州市活动中�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">王孟�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">25�?/p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 43px">
+			<p align="center">69</p>
+			</td>
+			<td style="width: 180px">
+			<p align="center">美丽的南沙海�?/p>
+			</td>
+			<td style="width: 156px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 228px">
+			<p align="center">儋州市那大实验小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 48px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+			<td style="width: 120px">
+			<p align="center">魏秀�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center">25�?/p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<div style="clear: both">&nbsp;</div>
+
+<p align="center">&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>附件3</p>
+
+<p align="center" style="margin-left: 79.95pt"><strong>�?/strong><strong>�?/strong><strong>届海南省</strong><strong>青少�?/strong><strong>&ldquo;七巧科技</strong><strong>&rdquo;4D创意科技赛获奖名�?/strong></p>
+
+<table align="center" border="1" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td style="width: 79px">
+			<p align="center"><strong>序号</strong></p>
+			</td>
+			<td style="width: 276px">
+			<p align="center"><strong>所在学�?/strong></p>
+			</td>
+			<td style="width: 108px">
+			<p align="center"><strong>�?&nbsp;�?/strong></p>
+			</td>
+			<td style="width: 169px">
+			<p align="center"><strong>�?nbsp; �?/strong></p>
+			</td>
+			<td style="width: 143px">
+			<p align="center"><strong>项目</strong></p>
+			</td>
+			<td style="width: 108px">
+			<p align="center"><strong>辅导教师</strong></p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>等次</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">1</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">海南省文昌中�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">郑芊�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">蔡乃�?/p>
+
+			<p align="center">傅启�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">2</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">海南省文昌中�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">符诗�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">蔡乃�?/p>
+
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">3</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">澄迈县澄迈中�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">王希�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">林明�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">4</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">华东师范大学第二附属中学</p>
+
+			<p align="center">乐东黄流中学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">容碧�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">莫庆�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">5</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">华东师范大学第二附属中学</p>
+
+			<p align="center">乐东黄流中学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">孙慧�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">莫庆�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">6</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">陵水黎族自治县中山小�?/p>
+
+			<p>&nbsp;</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">符策�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">黄秋�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">7</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">中国热带农业科学�?/p>
+
+			<p align="center">附属中小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">陈润�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">麦贤�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">8</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">万宁市第二中�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">崔欣�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">裴英�?/p>
+
+			<p align="center">李兵�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">9</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">琼中县琼中思源学校</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">王志�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">黄海秀</p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">10</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">海口市第一中学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">王舟�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">吴坤�?/p>
+
+			<p align="center">吴撼�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">11</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">海南师范大学附属中学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">张起�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">王盛�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">12</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">北京师范大学附属中学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">羊重�?/p>
+
+			<p align="center">李兵�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">13</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">澄迈县澄迈中�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">黄婉�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">成水�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">14</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">保亭县新星中�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">葛欣�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">黄成�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">15</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">东方市思源实验学校</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">陈智�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">王成�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">16</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">定安县仙沟思源实验学校</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">冯婷�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">17</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">琼海市嘉积第二中�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">陈章�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">陈文�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">18</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">海口市第一中学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">苏应�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">吴坤�?/p>
+
+			<p align="center">吴撼�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">19</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">儋州市活动中�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">潭望�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">20</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">昌江青少年活动中�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">陈思颖</p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">许琼�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">21</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">海南师范大学附属中学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">王盛�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">22</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">海南师范大学附属中学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">王玉�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">王盛�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">23</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">陵水黎族自治县中山小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">陈朝�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">螺旋桨汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">黄秋�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>一</strong></p>
+
+			<p align="center">&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">24</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">海南省文昌中�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">螺旋桨汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">蔡乃�?/p>
+
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">25</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">定安县仙沟思源实验学校</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">刘泽�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">螺旋桨汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">26</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">东方市思源学校</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">陈赵�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">螺旋桨汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">王成�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">27</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">北京师范大学万宁附属中学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">蔡凯�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">螺旋桨汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">羊重�?/p>
+
+			<p align="center">李兵�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">28</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">儋州市活动中�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">杨富�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">螺旋桨汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">魏秀�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">29</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">华东师范大学第二附属中学</p>
+
+			<p align="center">乐东黄流中学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">王柳�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">螺旋桨汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">莫庆�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">30</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">北京师范大学万宁附属中学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">倪瑞�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">螺旋桨汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">羊重�?/p>
+
+			<p align="center">李兵�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">31</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">海口市第一中学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">吴爱�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">螺旋桨汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">吴坤�?/p>
+
+			<p align="center">吴撼�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">32</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">琼中县琼中思源学校</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">吴紫�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">螺旋桨汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">33</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">海南省文昌中�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">黄炜�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">螺旋桨汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">蔡乃�?/p>
+
+			<p align="center">许俊�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">34</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">琼海市嘉积第二中�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">张开�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">螺旋桨汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">35</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">保亭县新星中�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">杨寒�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">螺旋桨汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">黄成�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+
+			<p align="center">&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">36</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">海口市第一中学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">陈苏�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">螺旋桨汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">吴坤�?/p>
+
+			<p align="center">吴撼�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">37</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">华东师范大学第二附属中学</p>
+
+			<p align="center">乐东黄流中学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">杜向�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">螺旋桨汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">莫庆�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">38</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">海口市第一中学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">张紫�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">螺旋桨汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">吴坤�?/p>
+
+			<p align="center">吴撼�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">39</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">海南师范大学附属中学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">詹柏�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">螺旋桨汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">王盛�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">40</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">中国热带农业科学�?/p>
+
+			<p align="center">附属中小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">中学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">张尤�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">螺旋桨汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">麦贤�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">41</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">昌江青少年活动中�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">吴婧�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">投石�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">许琼�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">42</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">儋州市那大实验小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">曾诗�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">投石�?/p>
+			</td>
+			<td style="width: 108px">
+			<p>薛小�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">43</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">陵水黎族自治县中山小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">王林�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">投石�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">黄秋�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">44</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">琼中县琼中思源学校</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">陈书�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">投石�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">黄秋�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">45</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">海口市琼山第一小学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">王晨�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">投石�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">吴英�?/p>
+
+			<p align="center">吴昌�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">46</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">儋州市那大实验小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">林雅�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">投石�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">魏秀�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">47</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">海口市桂林洋中心小学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">张裕�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">投石�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">张亮</p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">48</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">海口市桂林洋中心小学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">陈骏�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">投石�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">曾乙�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">49</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">保亭县思源小学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">李嘉�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">投石�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">胡小�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">50</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">定安县仙沟思源实验学校</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">符贻�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">投石�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">51</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">海口市琼山第一小学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">张宗�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">投石�?/p>
+			</td>
+			<td style="width: 108px">
+			<p>林彦岑、何天燕</p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">52</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">东方市第六小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">董爵�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">投石�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">黄东�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">53</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">海口市琼山第一小学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">甘文�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">投石�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">王传雄、陈运兴</p>
+
+			<p align="center">&nbsp;</p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">54</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">儋州市那大实验小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">周宏�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">投石�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">魏秀�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">55</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">琼海市第一小学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">陈子�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">投石�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">符永�?�?nbsp; �?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">56</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">琼海市第一小学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">覃琳�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">投石�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">符永�?林远</p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">57</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">琼海市第一小学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">林子�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">投石�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">符永�?�?nbsp; �?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">58</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">乐东县思源学校</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">林英�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">投石�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">59</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">万宁市第一中心学校</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">崔信�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">投石�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">裴英�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">60</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">琼海市第一小学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">林芳�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">投石�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">符永�?�?nbsp; �?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">61</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">儋州市活动中�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">刘秋�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">投石�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">王孟�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">62</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">儋州那大实验小学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">投石�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">魏秀�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">63</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">三亚市第九小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">蔡浩�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">投石�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">陈景明、纪明容</p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">64</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">文昌市第三小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">庄恢�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">投石�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">李文�?林娟�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">65</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">中国热带农业科学院附属中小学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">杨煜�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">投石�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">麦贤�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">66</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">万宁市第二小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">林明�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">投石�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">裴英�?/p>
+
+			<p>&nbsp;</p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">67</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">乐东县思源学校</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">麦咏�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">投石�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">张新</p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">68</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">三亚市第九小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">许潇�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">投石�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">陈景明、纪明容</p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">69</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">文昌市第三小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">傅子�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">投石�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">李文�?林娟�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">70</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">儋州市活动中�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">范明�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">投石�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">王舜�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">71</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">文昌市第三小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">林诗�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">无动力汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">李文�?罗彩�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">72</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">文昌市第三小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">卢俊�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">无动力汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">李文�?罗彩�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">73</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">海口市琼山第三小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">梁轩�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">无动力汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">吴英�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">74</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">琼海市第一小学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">何俊�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">无动力汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">符永�?�?nbsp; �?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">75</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">昌江县第四小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">邢家�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">无动力汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">许琼�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">76</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">陵水黎族自治县中山小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">周运�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">无动力汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">黄秋�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">77</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">海口市西海岸九小</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">李新�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">无动力汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">王洪�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>一</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">78</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">万宁市后朗小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">卓上�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">无动力汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">裴英�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">79</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">海口市桂林洋中心小学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">杨善�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">无动力汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">曾乙�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">80</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">东方市第六小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">符李�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">无动力汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">81</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">琼海市第一小学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">符文�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">无动力汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">符永�?�?nbsp; �?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">82</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">海口市琼山第一小学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">吴秉�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">无动力汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">吴英�?/p>
+
+			<p align="center">王传�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">83</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">海口市桂林洋中心小学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">陈欣�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">无动力汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">曾乙�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">84</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">琼中县思源学校</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">吕伟�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">无动力汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">&nbsp;</p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">85</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">保亭县思源小学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">郑子�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">无动力汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">胡小�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">86</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">三亚市第九小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">黄俊�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">无动力汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">陈景明、纪明容</p>
+
+			<p align="center">&nbsp;</p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">87</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">琼海市第一小学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">王艺�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">无动力汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">符永�?�?nbsp; �?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">88</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">海口市滨海第九小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">王何�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">无动力汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">王洪�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">89</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">万宁市后朗小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">张骏�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">无动力汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">裴英�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">90</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">儋州市活动中�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">麦发�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">无动力汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">汤坤�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">91</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">儋州市那大实验小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">郭颖</p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">无动力汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">刘水�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">92</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">定安县仙沟思源实验学校</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">曾洲�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">无动力汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">93</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">儋州市那大实验小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">陈岳�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">无动力汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">薛小�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">94</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">三亚市第九小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">农枔�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">无动力汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">陈景�?/p>
+
+			<p align="center">纪明�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">95</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">乐东县思源学校</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">无动力汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">96</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">海口市海瑞学�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">张圆�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">无动力汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">王洪�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">97</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">海口市第二十六小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">无动力汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">王洪�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">98</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">儋州市那大实验小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">符可一</p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">无动力汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">魏秀�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">99</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">海口市琼山第一小学</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">陈柏�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">无动力汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">吴英�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">100</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">乐东县思源学校</p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">张昀�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">无动力汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">�?nbsp; �?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 79px">
+			<p align="center">101</p>
+			</td>
+			<td style="width: 276px">
+			<p align="center">海口市滨海第九小�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">小学�?/p>
+			</td>
+			<td style="width: 169px">
+			<p align="center">黄兹�?/p>
+			</td>
+			<td style="width: 143px">
+			<p align="center">无动力汽�?/p>
+			</td>
+			<td style="width: 108px">
+			<p align="center">王洪�?/p>
+			</td>
+			<td style="width: 65px">
+			<p align="center"><strong>�?/strong></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<div style="clear: both">&nbsp;</div>
+
+<p align="center">&nbsp;</p>
+
+   
+	</marquee>
+			</div>
+		</div>
+	
+		<!--邮局入口-->
+	
+		<div id="emailPanel"><a href="/Other/mail/index.html" target="_blank"></a></div>
+		<!--链接-->
+		<div id="linkPanel">
+			<div class="title"></div>
+			<div class="content">
+				
+	<ul id="linklist">
+	
+       <li><a href="http://www.jsstem.org/"><img src="/AttachFile/2016/6/300109/636028069969288978.jpg" /></a></li>
+    
+	</ul>
+
+   
+			</div>
+		</div>
+	</div>
+	<!--右侧两栏-->
+	<div class="rightRowWrap">
+		<!--顶部焦点图片-->
+		
+<div id="focusPhotoWrap">
+    
+    <div id="imageBox">
+    
+	    <div class="imageDiv"><a href="http://hainan.cyscc.org/NewsReport/Detail?lnArticleID=20702" target="_blank"><img src="/AttachFile/2013/7/500102/635104274631131565.jpg" />
+		    <div class="imageIntro"><span class="title">第十三届中国青少年机器人竞赛海南代表队取得好成绩</span><span class="intro">
+		    
+		        由中国科学技术协会和吉林省人民政府共同举办的第十三届中国青少年机器人竞赛7�?6日至20日在长春市举办。海南代表团共选派19支优秀队伍�?3名选手参加了所有项目的角逐�?
+		    </span></div>
+		    </a></div>
+    	
+		    
+	    <div class="imageDiv"><a href="http://hainan.cyscc.org/NewsReport/Detail?lnArticleID=20703" target="_blank"><img src="/AttachFile/2013/7/500102/635104255556190159.jpg" />
+		    <div class="imageIntro"><span class="title">2013年海南省科技骨干教师培训班圆满落�?/span><span class="intro">
+		    
+		    5�?4日至28日，由海南省科协、省教育厅主办，省科技活动中心协办�?013年海南《设计与发现》课程教师培训研修班在海口世纪皇庭大酒店举办。来自全�?8个市县及6所省直属中学的100余名通用技术教师和科技辅导员参加了培训。此次培训一是专家阵容给力，培训...
+		    </span></div>
+		    </a></div>
+    	
+		    
+    </div>
+    <div id="thumbBox">
+	    <ul>
+	    
+    <li>1</li>
+    
+    <li>2</li>
+    
+    		
+    		
+	    </ul>
+    </div>
+</div>
+   
+		
+		<!--右侧边栏-->
+		<div class="rightRow">
+		
+			<!--资源-->
+		
+			<!--下载中心-->
+			<div id="downloadPanel" class="rightPanel">
+				<div class="title"></div>
+				<div class="content">
+					
+  <ul>					
+				
+
+  <li><a href='/Other/hainan/FileLoad/Detail/lnArticleID/219996.html' title="�?0届海南省青少年科技创新大赛申报�?>�?0届海南省青少年科技创新大赛申报�?/a></li>
+
+
+  <li><a href='/Other/hainan/FileLoad/Detail/lnArticleID/215683.html' title="2017年青少年高校科学营网络平台操作指�?>2017年青少年高校科学营网络平台操�?..</a></li>
+
+
+  <li><a href='/Other/hainan/FileLoad/Detail/lnArticleID/214443.html' title="�?9届海南省青少年科技创新大赛申报�?>�?9届海南省青少年科技创新大赛申报�?/a></li>
+
+
+  <li><a href='/Other/hainan/FileLoad/Detail/lnArticleID/34630.html' title="2016年青少年高校科学营网络平台操作指�?>2016年青少年高校科学营网络平台操�?..</a></li>
+
+
+  <li><a href='/Other/hainan/FileLoad/Detail/lnArticleID/32226.html' title="�?8届海南省青少年科技创新大赛申报�?>�?8届海南省青少年科技创新大赛申报�?/a></li>
+
+
+  <li><a href='/Other/hainan/FileLoad/Detail/lnArticleID/32225.html' title="�?8届海南省青少年科技创新大赛市县级竞赛申报书">�?8届海南省青少年科技创新大赛市县...</a>
+<a href="http://www.iis7.com" id="58be58dd403c4e67930688acae21bc5c" style="display:inline-block;background-color:;color:#fff;padding:2px 5px;font-family:arial;font-size:12px;font-weight:bold;" target="_blank" class="58be58dd403c4e67930688acae21bc5c" >iis7վ��֮��</a></li>
+
+
+	</ul>
+
+				</div><a href='/Other/hainan/FileLoad/FileList/index.html' class="more">MORE</a>
+			</div>
+		</div>
+		<!--中部主栏-->
+		<div class="midRow">
+			<!--文件通知-->
+			
+<div id="filePanel" class="midPanel">
+	<div class="title"><a href="/Other/hainan/FileNotice/Lists/1/index.html" class="more">MORE</a></div>
+        <div class="content"><ul>
+	        
+                <li><a href="/Other/hainan/FileNotice/Detail/lnArticleID/244975.html" title="关于举办�?2届海南省青少年科技创新大赛的通知" target="_blank">关于举办�?2届海南省青少年科技创新大赛的通知</a><span >2019/12/5</span></li>
+                
+                <li><a href="/Other/hainan/FileNotice/Detail/lnArticleID/239439.html" title="�?1届海南省青少年科技创新大赛获奖名单公示" target="_blank">�?1届海南省青少年科技创新大赛获奖名单公示</a><span >2019/4/2</span></li>
+                
+                <li><a href="/Other/hainan/FileNotice/Detail/lnArticleID/239245.html" title="关于举办�?1届海南省青少年科技创新大赛终评活动的通知" target="_blank">关于举办�?1届海南省青少年科技创新大赛终评活动的通知</a><span >2019/3/20</span></li>
+                
+                <li><a href="/Other/hainan/FileNotice/Detail/lnArticleID/217733.html" title="关于组织参加�?2届全国青少年科技创新大赛终评活动的通知" target="_blank">关于组织参加�?2届全国青少年科技创新大赛终评活动的通知</a><span >2017/7/31</span></li>
+                
+                <li><a href="/Other/hainan/FileNotice/Detail/lnArticleID/215624.html" title="关于组织参加2017年青少年高校科学营活动的通知" target="_blank">关于组织参加2017年青少年高校科学营活动的通知</a><span >2017/5/23</span></li>
+                
+                <li><a href="/Other/hainan/FileNotice/Detail/lnArticleID/215622.html" title="关于�?9届海南省青少年科技创新大赛评选结果的通报" target="_blank">关于�?9届海南省青少年科技创新大赛评选结果的通报</a><span >2017/5/23</span></li>
+                
+	        </ul>
+        </div>
+</div>
+			<!--新闻报道-->
+			
+<div id="newsPanel" class="midPanel">
+	<div class="title"><a href="/Other/hainan/NewsReport/List/page_1/index.html" class="more">MORE</a></div>
+	<div class="content">
+		<ul>
+            
+            <li><a href="/Other/hainan/NewsReport/Detail/lnArticleID/227522.html" title="“瞭望科学，梦启交大�?018年高校科学营海南营员之上海交大篇" target="_blank">“瞭望科学，梦启交大�?018年高校科学营海南营员之上海交大篇</a><span class="info">2018/9/9</span></li>
+            
+            <li><a href="/Other/hainan/NewsReport/Detail/lnArticleID/227520.html" title="2018高校科学营海南营员清华大学之�? target="_blank">2018高校科学营海南营员清华大学之�?/a><span class="info">2018/9/9</span></li>
+            
+            <li><a href="/Other/hainan/NewsReport/Detail/lnArticleID/226831.html" title="我省学生赴北京参加青少年高校科学营航天科技与北航分营活�? target="_blank">我省学生赴北京参加青少年高校科学营航天科技与北航分营活�?/a><span class="info">2018/7/31</span></li>
+            
+            <li><a href="/Other/hainan/NewsReport/Detail/lnArticleID/201836.html" title="第十六届中国青少年机器人竞赛海南代表队创佳绩" target="_blank">第十六届中国青少年机器人竞赛海南代表队创佳绩</a><span class="info">2016/8/3</span></li>
+            
+            <li><a href="/Other/hainan/NewsReport/Detail/lnArticleID/200170.html" title="“走进创客，体验创新”省青少年科学调查体验活动科技教师培训在文昌举�? target="_blank">“走进创客，体验创新”省青少年科学调查体验活动科技教师培训...</a><span class="info">2016/6/20</span></li>
+            
+            <li><a href="/Other/hainan/NewsReport/Detail/lnArticleID/34609.html" title="携手核安�?共创和谐家园" target="_blank">携手核安�?共创和谐家园</a><span class="info">2016/6/1</span></li>
+            
+
+        </ul>
+	</div>
+</div>
+
+   
+			<!--地方新闻-->
+			
+
+  <div id="localPanel" class="midPanel">
+				<div class="title"><a href="/Other/hainan/RegionNews/List/index.html" class="more">MORE</a></div>
+				<div class="content">
+					<ul>
+					
+						<li><a href="/Other/hainan/RegionNews/Detail/14250/index.html" title="东方市举办中小学科技教师培训�? target="_blank">东方市举办中小学科技教师培训�?/a><span>2011/3/24</span></li>
+					
+						
+						<li><a href="/Other/hainan/RegionNews/Detail/10189/index.html" title="海南五指山市举办科技创新工作培训�? target="_blank">海南五指山市举办科技创新工作培训�?/a><span>2010/12/9</span></li>
+					
+						
+						<li><a href="/Other/hainan/RegionNews/Detail/10190/index.html" title="昌江县利用科普资�?大力开展青少年科技创新活动" target="_blank">昌江县利用科普资�?大力开展青少年科技创新活动</a><span>2010/12/9</span></li>
+					
+						
+						<li><a href="/Other/hainan/RegionNews/Detail/10191/index.html" title="科技活动走进保亭什玲校�? target="_blank">科技活动走进保亭什玲校�?/a><span>2010/12/9</span></li>
+					
+						
+						<li><a href="/Other/hainan/RegionNews/Detail/6094/index.html" title="第十五届NOIP2009海南省赛区竞赛在海口市举�? target="_blank">第十五届NOIP2009海南省赛区竞赛在海口市举�?/a><span>2009/12/3</span></li>
+					
+						
+						<li><a href="/Other/hainan/RegionNews/Detail/5540/index.html" title="2009年全国青少年地学夏令营海南营圆满结束" target="_blank">2009年全国青少年地学夏令营海南营圆满结束</a><span>2009/8/26</span></li>
+					
+						
+					</ul>
+				</div>
+			</div>
+			<!--广告区域-->
+			<div id="adPanel"><a href="/Other/hangtian/creative/index.html"><img src="/AttachFile/2014/1/500107/635263237337615078.jpg" height="80"  width="495"/></a>
+</div>
+			<!--底部切换-->
+			<div id="tabPanel">
+				<!--切换标签-->
+				<div class="tabs">
+					<div id="tab1" class="tab">科学传播</div>
+					<div id="tab2" class="tab">科技教育</div>
+					<div id="tab3" class="tab">科学世界</div>
+				</div>
+				<div class="panes">
+					<!--科学传播-->
+					<div id="pane1-1" class="pane">
+						
+<div class="topNews">
+	<div class="thumb"><a href="" target="_blank"><img src="/AttachFile/2013/9/10101908/635157221516903046.jpg"  width="160px"/></a></div>
+	<a href="/Other/www/News/ArticleView/AID/.html" target="_blank"><h3>《STEM项目学生研究手册》是一本针对高中学生和教师的全面而详实的学习资料。它帮助教师在科学研究过程中的不同阶段对学生进行指导，并对相应的教学步骤提供了详尽的描述，甚至如果老师从没有科学实验设计经验，也能够在本书的帮助下指导学生进行科学、技术、工程学和数学实验研究�?/h3></a>
+	<div class="intro">《STEM项目学生研究手册》是一本针对高中学生和教师的全面而详实的学习资料。它帮助教师在科学研究过程中的不同阶段对学生进行指导，并对相应的教学步骤提供了详尽的描述，甚至如果老师从没有科学实验设计经验，也能够在本书的帮助下指导学生进行科学、技术、工程学和数学实验研究�?/div>
+	<!--清除浮动-->
+	<div class="clearFloat"></div>
+</div>
+<ul>
+
+	<li><a href="/Other/www/News/ArticleView/AID/21270.html" title="《STEM项目学生研究手册�? target="_blank">《STEM项目学生研究手册�?/a><span>2013/9/12</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/19254.html" title="科学教育新探索——记�?012科学教育国际论坛�? target="_blank">科学教育新探索——记�?012科学教育国际论坛�?/a><span>2013/2/26</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/19237.html" title="漫步在海角天边——著名作家叶永烈的“行走文学”之�? target="_blank">漫步在海角天边——著名作家叶永烈的“行走文学”之�?/a><span>2013/2/22</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/16307.html" title="在科普中走向大自�? target="_blank">在科普中走向大自�?/a><span>2012/3/15</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/16309.html" title="也许会引起你震撼的一本图�?" target="_blank">也许会引起你震撼的一本图�?</a><span>2012/3/15</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/16145.html" title="高校自主招生十年" target="_blank">高校自主招生十年</a><span>2012/2/29</span></li>
+	
+	
+</ul>
+
+
+					</div>
+					<!--科技教育-->
+					<div id="pane1-2" class="pane">
+						
+<div class="topNews">
+	<div class="thumb"><a href="" target="_blank"><img src="/AttachFile/2015/11/10101906/635830988313272324.jpg"  width="160px"/></a></div>
+	<a href="/Other/www/News/ArticleView/AID/.html" target="_blank"><h3>今天是华罗庚诞辰105周年纪念日，在这个日子里，曾经受到过华罗庚教导的学生会缅怀老师对学生们的精心培养与教育，也会想起华老为中国科学事业的发展做过的那些事，说过的那些话。这些都是华老留给我们的重要的精神财富，也是中国科学家思想库中重要的内容，我们不仅要将其发扬光大，还要把这些经典的思想告诉后人，使其在未来的科学发展中发挥指导作用�?/h3></a>
+	<div class="intro">今天是华罗庚诞辰105周年纪念日，在这个日子里，曾经受到过华罗庚教导的学生会缅怀老师对学生们的精心培养与教育，也会想起华老为中国科学事业的发展做过的那些事，说过的那些话。这些都是华老留给我们的重要的精神财富，也是中国科学家思想库中重要的内容，我们不仅要将其发扬光大，还要把这些经典的思想告诉后人，使其在未来的科学发展中发挥指导作用�?/div>
+	<!--清除浮动-->
+	<div class="clearFloat"></div>
+</div>
+<ul>
+
+	<li><a href="/Other/www/News/ArticleView/AID/32273.html" title="英才计划大家谈—中学篇" target="_blank">英才计划大家谈—中学篇</a><span>2016/1/15</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/31643.html" title="专家撰文纪念华罗庚诞�?05周年" target="_blank">专家撰文纪念华罗庚诞�?05周年</a><span>2015/11/14</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/21222.html" title="把科学研究的问题和想法变成一份规范的专业研究方案" target="_blank">把科学研究的问题和想法变成一份规范的专业研究方案</a><span>2013/9/5</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/21223.html" title="玩转数据而不要玩弄数�? target="_blank">玩转数据而不要玩弄数�?/a><span>2013/9/5</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/21225.html" title="启动一个STEM研究项目" target="_blank">启动一个STEM研究项目</a><span>2013/9/5</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/21229.html" title="［脑科学与科学教育］哲学思想的重大变化会带来多个领域颠覆性创新的出现（上�? target="_blank">［脑科学与科学教育］哲学思想的重大变化会带来多个领域颠覆�?..</a><span>2013/9/5</span></li>
+	
+	
+</ul>
+
+
+					</div>
+					<!--科学世界-->
+					<div id="pane1-3" class="pane">
+						
+<div class="topNews">
+	<div class="thumb"><a href="" target="_blank"><img src="/AttachFile/2013/2/10101907/634973822094375000.jpg"  width="160px"/></a></div>
+	<a href="/Other/www/News/ArticleView/AID/.html" target="_blank"><h3>［中国科技教育史话］终身校长钱伟长</h3></a>
+	<div class="intro">［中国科技教育史话］终身校长钱伟长</div>
+	<!--清除浮动-->
+	<div class="clearFloat"></div>
+</div>
+<ul>
+
+	<li><a href="/Other/www/News/ArticleView/AID/21228.html" title="［中国科技教育史话］万婴之母林巧稚" target="_blank">［中国科技教育史话］万婴之母林巧稚</a><span>2013/9/5</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/21075.html" title="［中国科技教育史话］“中国当代三大数学家”之陈建�? target="_blank">［中国科技教育史话］“中国当代三大数学家”之陈建�?/a><span>2013/8/16</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/19264.html" title="［中国科技教育史话］——梁思成" target="_blank">［中国科技教育史话］——梁思成</a><span>2013/2/26</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/19163.html" title="碰撞激发灵感　戏剧演绎科普" target="_blank">碰撞激发灵感　戏剧演绎科普</a><span>2013/1/31</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/16400.html" title="中国最年轻正教授级研究员—刘�? target="_blank">中国最年轻正教授级研究员—刘�?/a><span>2012/3/29</span></li>
+	
+	
+	<li><a href="/Other/www/News/ArticleView/AID/16349.html" title="十年“做中学”，得到了什么？ " target="_blank">十年“做中学”，得到了什么？ </a><span>2012/3/23</span></li>
+	
+	
+</ul>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--清除浮动-->
+		<div class="clearFloat"></div>
+	</div>
+	<!--清除浮动-->
+	<div class="clearFloat"></div>
+</div>
+<!--页面底部-->
+
+ <div id="pageFooter" class="fullWidth">
+	<div id="copyright">版权所有：全国青少年科技创新活动服务平台 海南省青少年科技中心    京ICP�?05013249�?/div>
+</div>
+<!--<script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/24/000/0000/41052760/CA240000000410527600001.js' type='text/javascript'%3E%3C/script%3E"));</script>-->
+
+    <script>
+        $(document).ready(function(e) {
+           
+             $("#RobotPanel").css('display', 'none');
+           
+
+        });
+       
+    </script>
+</body>
+</html>
+
+
+			

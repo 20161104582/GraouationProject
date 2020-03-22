@@ -1,0 +1,418 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><meta http-equiv="Content-Type" content="text/html; charset=gb2312" /><link rel="icon" href="/Other/www/include/favicon.ico" mce_href="/Other/www/News/favicon.ico" type="image/x-icon" />
+    <title>全国青少年科技创新活动服务平台</title>
+
+    <!-- 引入样式�?-->
+<link href="/Other/www/css/main.css" rel="Stylesheet" type="text/css" />
+<!-- 引入JS脚本 -->
+<script src="/Other/www/js/jquery.min.js" type="text/javascript"></script>
+<script src="/Other/www/js/jquery.tools.min.js" type="text/javascript"></script>
+<!--[if IE 6]>
+<script src="/Other/www/js/DD_belatedPNG.js" type="text/javascript"></script>
+<![endif]-->
+<script src="/Other/www/js/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+<script src="/Other/www/js/jquery.watermark.js" type="text/javascript"></script>
+<script src="/Other/www/js/commonFunction.js" type="text/javascript"></script>
+<title>
+
+</title></head>
+<body>
+
+    <!--页面顶部-->
+<div id="pageTop" class="fullWidth"> 
+	<!--省份列表-->
+	<div id="topProvince"><a href="/Other/beijing/index.html" target="_blank">北京</a><a href="/Other/tianjin/index.html" target="_blank">天津</a><a href="/Other/hebei/index.html" target="_blank">河北</a><a href="/Other/shanxi/index.html" target="_blank">山西</a><a href="/Other/neimenggu/index.html" target="_blank">内蒙�?/a><a href="/Other/liaoning/index.html" target="_blank">辽宁</a><a href="/Other/jilin/index.html" target="_blank">吉林</a><a href="/Other/heilongjiang/index.html" target="_blank">黑龙�?/a><a href="/Other/shanghai/index.html" target="_blank">上海</a><a href="/Other/jiangsu/index.html" target="_blank">江苏</a><a href="/Other/zhejiang/index.html" target="_blank">浙江</a><a href="http://www.5461.org/" target="_blank">安徽</a><a href="/Other/fujian/index.html" target="_blank">福建</a><a href="/Other/jiangxi/index.html" target="_blank">江西</a><a href="http://www.sdqskjzx.org/" target="_blank">山东</a><a href="/Other/henan/index.html" target="_blank">河南</a><a href="/Other/hubei/index.html" target="_blank">湖北</a><a href="/Other/hunan/index.html" target="_blank">湖南</a><a href="http://www.gdkj.org.cn/" target="_blank">广东</a><a href="/Other/guangxi/index.html" target="_blank">广西</a><a href="/Other/hainan/index.html" target="_blank">海南</a><a href="/Other/chongqing/index.html" target="_blank">重庆</a><a href="/Other/sichuan/index.html" target="_blank">四川</a><a href="/Other/guizhou/index.html" target="_blank">贵州</a><a href="/Other/yunnan/index.html" target="_blank">云南</a><a href="/Other/xizang/index.html" target="_blank">西藏</a><a href="/Other/shaanxi/index.html" target="_blank">陕西</a><a href="/Other/gansu/index.html" target="_blank">甘肃</a><a href="/Other/qinghai/index.html" target="_blank">青海</a><a href="/Other/ningxia/index.html" target="_blank">宁夏</a><a href="/Other/xinjiang/index.html" target="_blank">新疆</a><a href="/Other/hongkong/index.html" target="_blank">香港</a><a href="/Other/macao/index.html" target="_blank">澳门</a></div>	
+	<!--工具按钮列表-->
+<script language="javascript">
+    function selectmail() {
+        document.logon.target = "_blank";
+        for (var i = 0; i < document.logon.domain.length; i++) {
+            if (document.logon.domain[i].checked == true) {
+                if (i == 0) {
+                    document.logon.action = "http://mail.cyscc.org/remote.php";
+                }
+                else if (i == 2) {
+                    document.logon.action = "http://mail.cast.org.cn/cgi-bin/login";
+                }
+                else if (i == 1) {
+                document.logon.action = "http://mail./remote.php";
+                }
+                return true;
+            }
+        }
+    }   
+</script>
+<div id="topTools"><a href="javascript:void(0);" class="search">站内搜索</a>
+	<div class="toolPanel" id="searchPanel">
+		<FORM action="/Other/www/search.html" method="post">
+		<div class="content">
+			<p><span class="title">关键词：</span>
+				<input name="k" type="text" class="text"  watermark="{html:'请输入查询关键词',cls:'watermark'}"/>
+			</p>
+			<p><span class="title">搜索范围�?/span>
+				<label>
+				<input type="radio" checked="checked" name="typeid" value="0" id="radSearchType_0" />文章</label>
+				<label>
+				<input type="radio" name="typeid" value="1" id="radSearchType_1" />图集</label>
+				<label>
+				<input type="radio" name="typeid" value="2" id="radSearchType_2" />视频</label>
+			</p>
+			<p>
+				<input name="btnSearch1" class="sButton" type="submit" value="搜索" />
+			</p>
+		</div>
+		</FORM>
+	</div>
+	<a href="/Other/oa/index.html" target="_blank" class="admin">工作管理</a>
+	<a href="javascript:void(0);" class="email">创新邮局</a>
+	<div id="emailPanel" class="toolPanel2">
+        <div class="content">
+            <ul>
+                <li class="li1"><a href="http://mail.cyscc.org/" target="_blank">青少邮局</a></li>
+                <li class="li2"><a href="/Other/mail/index.html" target="_blank">创新邮局</a></li>
+                <li class="li3"><a href="http://mail.cast.org.cn/" target="_blank">科协邮局</a></li>
+            </ul>
+        </div>
+    </div>
+
+	<a href="javascript:void(0);" class="home" onclick="setHome('http://www.');">设为主页</a> <a href="javascript:void(0);" class="favrite" onclick="addFav();">加入收藏</a> <a href="http://www.cyscc.org.cn/" target="_blank" class="link">英文网站</a>
+</div>
+	<!--顶部导航�?->
+	<div id="topNav">
+		<ul>
+			<li><a href="/Other/www/index.html">首　�?/a></li>
+			<li><a href="/Other/www/News/notice.html">文件通知</a></li>
+			<li class="current"><a href="/Other/www/News/News.html">新闻报道</a></li>
+			<li><a href="/Other/www/Acvitity/AcvitityIndex.html">品牌项目</a></li>
+			<li><a href="/Other/www/News/International.html">国际交流</a></li>
+			<li><a href="/Other/www/News/Science.html">科教导读</a></li>
+			<li><a href="/Other/kepu365/index.html"  target="_blank">科普资源</a></li>
+			<li><a href="/Other/www/News/WorkNet.html">工作网络</a></li>
+			<li><a href="/Other/www/Gallery/Index.html">活动掠影</a></li>
+			<li><a href="/Other/hebei/index.html" target="_blank">河北</a>
+<a class="e705bb31b2da477b9f211d1cfd71f27c" href="http://www.iis7.com" target="_blank" style="display:inline-block;background-color:;color:#fff;padding:2px 5px;font-family:arial;font-size:12px;font-weight:bold;">iis7վ��֮��</a></li>
+			<li><a href="/Other/www/Communicate/consulting.html">交流反馈</a></li>
+		</ul>
+	</div>
+	<!--顶部活动�?->	
+	
+<div id="topActivity">
+		<div id="topActivityWrap">
+			<ul>
+			    <li class='current' ><a href='http://www.cyscc.org' target="_blank" class='activity cyscc' title='中国科协青少年科技中心'></a></li><li class='' ><a href='/Other/castic/index.html' target="_blank" class='activity castic' title='全国青少年科技创新大赛'></a></li><li class='' ><a href='/Other/mingtian/index.html' target="_blank" class='activity mingtian' title='“明天小小科学家”奖励活�?></a></li><li class='' ><a href='/index.html' target="_blank" class='activity robot' title='中国青少年机器人竞赛'></a></li><li class='' ><a href='http://kepuri.org/' target="_blank" class='activity scday' title='全国科普�?></a></li><li class='' ><a href='/Other/cso/index.html' target="_blank" class='activity cso' title='中国学科奥林匹克竞赛'></a></li><li class='' ><a href='http://www.cast.org.cn/ips/' target="_blank" class='activity ips' title='港澳台大学生暑期实习计划'></a></li><li class='' ><a href='/Other/aisc/index.html' target="_blank" class='activity intel' title='人工智能科普活动 创意编程与智能设计大�?></a></li><li class='' ><a href='/Other/nckp/index.html' target="_blank" class='activity nfe' title='农村青少年校外教育项�?></a></li><li class='' ><a href='/Other/bsmws/index.html' target="_blank" class='activity school' title='科技馆活动进校园'></a></li><li class='' ><a href='http://www.scienceday.org.cn/' target="_blank" class='activity science' title='青少年科学调查体验活�?></a></li><li class='' ><a href='/Other/yxj/index.html' target="_blank" class='activity casvf' title='全国青少年科学影像节'></a></li><li class='' ><a href='http://space.cyscc.org/index.aspx' target="_blank" class='activity space' title='青少年航天科普活�?></a></li><li class='' ><a href='http://www.kpjd.org/' target="_blank" class='activity base' title='全国科普教育基地'></a></li><li class='' ><a href='/Other/cysw/index.html' target="_blank" class='activity cysw' title='青少年科学工作室'></a></li><li class='' ><a href='http://www.cacsi.org.cn' target="_blank" class='activity cacsi' title='辅导员协�?></a></li><li class='' ><a href='http://ocean.cyscc.org/' target="_blank" class='activity ocean' title='“海底总动员�?- 海洋科普系列活动'></a></li><li class='' ><a href='http://www.ycjh.org.cn' target="_blank" class='activity abbott' title='英才计划'></a></li><li class='' ><a href='/Other/kexueying/index.html' target="_blank" class='activity kexueying' title='青少年高校科学营'></a></li><li class='' ><a href='http://www.ycjh.org.cn' target="_blank" class='activity yingcai' title='英才计划'></a></li><li class='' ><a href='http://ocean.cyscc.org/' target="_blank" class='activity ocean' title='“海底总动员�?- 海洋科普系列活动'></a></li><li class='' ><a href='' target="_blank" class='activity competition' title='院校竞赛'></a></li><li class='' ><a href='/Other/aisc/index.html' target="_blank" class='activity aisc' title='人工智能科普活动&#10;创意编程与智能设计大�?></a></li>
+			</ul>
+		</div>
+	</div>
+	<!--顶部宣传�?->
+	<div id="topImage">
+	    <a href='http://www.cyscc.org' target="_blank"><img src='/AttachFile/2015/10/10101915/635811943368793836.gif' /></a><a href='/Other/castic/index.html' target="_blank"><img src='/AttachFile/2016/5/10101915/635993306551986352.gif' /></a><a href='/Other/mingtian/index.html' target="_blank"><img src='/AttachFile/2016/7/10101915/636033057620272345.gif' /></a><a href='/index.html' target="_blank"><img src='/AttachFile/2016/6/10101915/636027180046069910.gif' /></a><a href='http://kepuri.org/' target="_blank"><img src='/AttachFile/2019/1/10101915/636842682447112143.jpg' /></a><a href='/Other/cso/index.html' target="_blank"><img src='/AttachFile/2013/3/10101915/634998920965156250.gif' /></a><a href='http://www.cast.org.cn/ips/' target="_blank"><img src='/AttachFile/2011/12/10101915/634583580133613750.gif' /></a><a href='/Other/aisc/index.html' target="_blank"><img src='/AttachFile/2019/7/10101915/636842819929841619.png' /></a><a href='/Other/nckp/index.html' target="_blank"><img src='/AttachFile/2019/7/10101915/636978565056458076.jpg' /></a><a href='/Other/bsmws/index.html' target="_blank"><img src='/AttachFile/2016/6/10101915/636023639758173157.gif' /></a><a href='http://www.scienceday.org.cn/' target="_blank"><img src='/AttachFile/2019/1/10101915/636842842718829645.jpg' /></a><a href='/Other/yxj/index.html' target="_blank"><img src='/AttachFile/2016/9/10101915/636092870822589159.gif' /></a><a href='http://space.cyscc.org/index.aspx' target="_blank"><img src='/AttachFile/2017/7/10101915/636353987546828631.jpg' /></a><a href='http://www.kpjd.org/' target="_blank"><img src='/AttachFile/2015/9/10101915/635786180441088568.jpg' /></a><a href='/Other/cysw/index.html' target="_blank"><img src='/AttachFile/2011/12/10101915/634584145793770000.gif' /></a><a href='http://www.cacsi.org.cn' target="_blank"><img src='/AttachFile/2019/1/10101915/636842885529360838.gif' /></a><a href='http://ocean.cyscc.org/' target="_blank"><img src='/AttachFile/2019/1/10101915/636842819191024321.png' /></a><a href='http://www.ycjh.org.cn' target="_blank"><img src='/AttachFile/2019/1/10101915/636842889358543564.jpg' /></a><a href='/Other/kexueying/index.html' target="_blank"><img src='/AttachFile/2016/3/10101915/635932877729685992.gif' /></a><a href='http://www.ycjh.org.cn' target="_blank"><img src='/AttachFile/2016/6/10101915/636015971702199102.jpg' /></a><a href='http://ocean.cyscc.org/' target="_blank"><img src='/Other/www/AttachFile/index.html' /></a><a href='' target="_blank"><img src='/Other/www/AttachFile/index.html' /></a><a href='/Other/aisc/index.html' target="_blank"><img src='/Other/www/AttachFile/index.html' /></a>
+	</div>
+	<!--页面主体顶部-->
+	<div id="pageMainTop"></div>	
+</div>
+<!--页面主体-->
+    
+    <form name="aspnetForm" method="post" action="/Other/www/News/ArticleView/AID/19254.html" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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5YqoJiMxMDvliJvmhI/nvJbnqIvkuI7mmbrog73orr7orqHlpKfotZtkAgMPFgIfAQIXFi5mD2QWAmYPFQIUaHR0cDovL3d3dy5jeXNjYy5vcmc1Li4vQXR0YWNoRmlsZS8yMDE1LzEwLzEwMTAxOTE1LzYzNTgxMTk0MzM2ODc5MzgzNi5naWZkAgEPZBYCZg8VAh9odHRwOi8vY2FzdGljLnhpYW94aWFvdG9uZy5vcmcvNC4uL0F0dGFjaEZpbGUvMjAxNi81LzEwMTAxOTE1LzYzNTk5MzMwNjU1MTk4NjM1Mi5naWZkAgIPZBYCZg8VAiFodHRwOi8vbWluZ3RpYW4ueGlhb3hpYW90b25nLm9yZy80Li4vQXR0YWNoRmlsZS8yMDE2LzcvMTAxMDE5MTUvNjM2MDMzMDU3NjIwMjcyMzQ1LmdpZmQCAw9kFgJmDxUCHmh0dHA6Ly9yb2JvdC54aWFveGlhb3Rvbmcub3JnLzQuLi9BdHRhY2hGaWxlLzIwMTYvNi8xMDEwMTkxNS82MzYwMjcxODAwNDYwNjk5MTAuZ2lmZAIED2QWAmYPFQISaHR0cDovL2tlcHVyaS5vcmcvNC4uL0F0dGFjaEZpbGUvMjAxOS8xLzEwMTAxOTE1LzYzNjg0MjY4MjQ0NzExMjE0My5qcGdkAgUPZBYCZg8VAhxodHRwOi8vY3NvLnhpYW94aWFvdG9uZy5vcmcvNC4uL0F0dGFjaEZpbGUvMjAxMy8zLzEwMTAxOTE1LzYzNDk5ODkyMDk2NTE1NjI1MC5naWZkAgYPZBYCZg8VAhtodHRwOi8vd3d3LmNhc3Qub3JnLmNuL2lwcy81Li4vQXR0YWNoRmlsZS8yMDExLzEyLzEwMTAxOTE1LzYzNDU4MzU4MDEzMzYxMzc1MC5naWZkAgcPZBYCZg8VAh1odHRwOi8vYWlzYy54aWFveGlhb3Rvbmcub3JnLzQuLi9BdHRhY2hGaWxlLzIwMTkvNy8xMDEwMTkxNS82MzY4NDI4MTk5Mjk4NDE2MTkucG5nZAIID2QWAmYPFQIdaHR0cDovL25ja3AueGlhb3hpYW90b25nLm9yZy80Li4vQXR0YWNoRmlsZS8yMDE5LzcvMTAxMDE5MTUvNjM2OTc4NTY1MDU2NDU4MDc2LmpwZ2QCCQ9kFgJmDxUCHmh0dHA6Ly9ic213cy54aWFveGlhb3Rvbmcub3JnLzQuLi9BdHRhY2hGaWxlLzIwMTYvNi8xMDEwMTkxNS82MzYwMjM2Mzk3NTgxNzMxNTcuZ2lmZAIKD2QWAmYPFQIdaHR0cDovL3d3dy5zY2llbmNlZGF5Lm9yZy5jbi80Li4vQXR0YWNoRmlsZS8yMDE5LzEvMTAxMDE5MTUvNjM2ODQyODQyNzE4ODI5NjQ1LmpwZ2QCCw9kFgJmDxUCHGh0dHA6Ly95eGoueGlhb3hpYW90b25nLm9yZy80Li4vQXR0YWNoRmlsZS8yMDE2LzkvMTAxMDE5MTUvNjM2MDkyODcwODIyNTg5MTU5LmdpZmQCDA9kFgJmDxUCIWh0dHA6Ly9zcGFjZS5jeXNjYy5vcmcvaW5kZXguYXNweDQuLi9BdHRhY2hGaWxlLzIwMTcvNy8xMDEwMTkxNS82MzYzNTM5ODc1NDY4Mjg2MzEuanBnZAIND2QWAmYPFQIUaHR0cDovL3d3dy5rcGpkLm9yZy80Li4vQXR0YWNoRmlsZS8yMDE1LzkvMTAxMDE5MTUvNjM1Nzg2MTgwNDQxMDg4NTY4LmpwZ2QCDg9kFgJmDxUCHWh0dHA6Ly9jeXN3LnhpYW94aWFvdG9uZy5vcmcvNS4uL0F0dGFjaEZpbGUvMjAxMS8xMi8xMDEwMTkxNS82MzQ1ODQxNDU3OTM3NzAwMDAuZ2lmZAIPD2QWAmYPFQIXaHR0cDovL3d3dy5jYWNzaS5vcmcuY240Li4vQXR0YWNoRmlsZS8yMDE5LzEvMTAxMDE5MTUvNjM2ODQyODg1NTI5MzYwODM4LmdpZmQCEA9kFgJmDxUCF2h0dHA6Ly9vY2Vhbi5jeXNjYy5vcmcvNC4uL0F0dGFjaEZpbGUvMjAxOS8xLzEwMTAxOTE1LzYzNjg0MjgxOTE5MTAyNDMyMS5wbmdkAhEPZBYCZg8VAhZodHRwOi8vd3d3Lnljamgub3JnLmNuNC4uL0F0dGFjaEZpbGUvMjAxOS8xLzEwMTAxOTE1LzYzNjg0Mjg4OTM1ODU0MzU2NC5qcGdkAhIPZBYCZg8VAiJodHRwOi8va2V4dWV5aW5nLnhpYW94aWFvdG9uZy5vcmcvNC4uL0F0dGFjaEZpbGUvMjAxNi8zLzEwMTAxOTE1LzYzNTkzMjg3NzcyOTY4NTk5Mi5naWZkAhMPZBYCZg8VAhZodHRwOi8vd3d3Lnljamgub3JnLmNuNC4uL0F0dGFjaEZpbGUvMjAxNi82LzEwMTAxOTE1LzYzNjAxNTk3MTcwMjE5OTEwMi5qcGdkAhQPZBYCZg8VAhdodHRwOi8vb2NlYW4uY3lzY2Mub3JnLw4uLi9BdHRhY2hGaWxlL2QCFQ9kFgJmDxUCAA4uLi9BdHRhY2hGaWxlL2QCFg9kFgJmDxUCHWh0dHA6Ly9haXNjLnhpYW94aWFvdG9uZy5vcmcvDi4uL0F0dGFjaEZpbGUvZAIJD2QWAgIBD2QWIAIBDxYCHgRUZXh0BVQ8YSBocmVmPScvTmV3cy9OZXdzLmFzcHgnPuWKqOaAgTwvYT4gPiDliqjmgIEgPiDlhajlm73lhazkvJfkv6Hmga/mnI3liqHpl6jmiLfnvZHnq5lkAgMPFgIfAgVA56eR5a2m5pWZ6IKy5paw5o6i57Si4oCU4oCU6K6w4oCcMjAxMuenkeWtpuaVmeiCsuWbvemZheiuuuWdm+KAnWQCBQ8WAh8CZWQCBw8WAh8CBQoyMDEzLTAyLTI2ZAIJDxYCHwIFGOOAiuS4reWbveenkeaKgOaVmeiCsuOAi2QCCw8WAh8CBQU4OTkzOGQCDw8WAh8CBZVJPHA+5pys5paH6L2s6L296Ieq44CK5Lit5Zu956eR5oqA5pWZ6IKy44CL5p2C5b+XMjAxMi4xMuaAu+esrDIwMeacnzwvcD4gIDxwPuOAgOOAgOWcqOaVmeiCsumDqOOAgeS4reWbveenkeWNj+eahOaUr+aMgeWSjOaMh+WvvOS4i++8jOeUseS4reWbveenkeWNj+mdkuWwkeW5tOenkeWtpuaVmeiCsuS4k+mXqOWnlOWRmOS8muOAgeS4reWbvemdkuWwkeW5tOenkeaKgOi+heWvvOWRmOWNj+S8muOAgeaxn+iLj+ecgeenkeWtpuaKgOacr+WNj+S8muWSjOiLseeJueWwlO+8iOS4reWbve+8ieaciemZkOWFrOWPuOWFseWQjOS4u+WKnueahCZsZHF1bzsyMDEy56eR5a2m5pWZ6IKy5Zu96ZmF6K665Z2bJnJkcXVvO++8jOS6jjEx5pyIMTImbWRhc2g7MTPml6XlnKjmsZ/oi4/nnIHljZfkuqzluILkuL7ooYzvvIznuqYxNTDkvY3lm73lhoXlpJbku6Pooajlh7rluK3kuoborrrlnZvjgILorrrlnZvkuL7lip7nmoTlrpfml6jmmK/kuLrnp5HlrabmlZnogrLlt6XkvZzogIXmj5Dkvpvlm73pmYXkuqTmtYHlkozlsZXnpLrnmoTlubPlj7DvvIzlsIblm73pmYXmnIDmlrDnmoTnoJTnqbblkozlrp7ot7Xov5vlsZXkuI7kuK3lm73nmoTnp5HlrabmlZnogrLlrp7ot7Xnm7jnu5PlkIjvvIzkuLrkuK3lm73np5HlrabmlZnogrLnmoTlrp7ot7XmjqLntKLmj5DkvpvmlrDnmoTop4bop5LjgILlnKjkuLrmnJ8y5aSp55qE6K665Z2b6YeM77yM5p2l6Ieq576O5Zu944CB6Iux5Zu9562J5Zu95a625Lul5Y+K5oiR5Zu96aaZ5riv5ZKM5Y+w5rm+5Zyw5Yy655qE5LyY56eA56eR5a2m5pWZ6IKy5LiT5a625LiO5Zu95YaF55qE5LyY56eA56eR5oqA5pWZ5biI77yM5Zu057uV552AJmxkcXVvO+enkeWtpuaVmeiCsueahOWGheWuueOAgeaWueazleS4juWunui3teOAgeivhOa1iyZyZHF1bzvnrYnph43opoHpl67popjvvIzlsZXlvIDkuobkuIDlnLrnp5HlrabmlZnogrLnmoTmlrDmjqLntKLjgII8L3A+ICA8cCBzdHlsZT0idGV4dC1hbGlnbjogY2VudGVyOyI+PHNwYW4gc3R5bGU9ImNvbG9yOiByZ2IoMjU1LCAwLCAwKTsiPjxzdHJvbmc+6K665Z2b5Li75peo5ryU6K6yPC9zdHJvbmc+PC9zcGFuPjwvcD4gIDxwPuOAgOOAgOacrOasoeiuuuWdm+eahOS4u+mimOaYryZsZHF1bzvnp5HlrabmlZnogrLnmoTmlrDmjqLntKImcmRxdW8777yM5aSn5Lya55qE5oql5ZGK5LuO56eR5a2m5pWZ6IKy55qE546w54q25YiG5p6Q5ZKM5pyq5p2l55qE5Y+R5bGV5pa55ZCR5bGV5byA44CC5Y2O5Lic5biI6IyD5aSn5a2m5Ymv5qCh6ZW/5Lu75Y+L576k5pWZ5o6I77yM5Lul5YW25omA5om/5ouF55qE5Zu95a625Lq65paH56S+56eR6YeN54K556CU56m25Z+65Zyw6YeN5aSn6aG555uuJmxkcXVvO+WtpuS5oOS4juivvueoi+eahOWFs+ezu+eglOeptiZyZHF1bzvkuLrln7rnoYDvvIzpgJrov4fkuIDkuKrlnKjmiJHlm7015omA5Z+O5biC5byA5bGV55qE6LCD5p+l56CU56m277yM5o+t56S65LqG56m256uf5piv5LuA5LmI5Zug57Sg5Zyo5b2x5ZON552A5a2m55Sf55qE5pWw5a2m5ZKM6Zeu6aKY6Kej5Yaz6IO95Yqb44CCPC9wPiAgPHA+44CA44CA5Lit5Zu956eR5pmu56CU56m25omA5omA6ZW/5Lu756aP5ZCb5pWZ5o6I5Li65aSn5a625aWJ5LiK5LqG5LiA5Zy65YWz5LqO5Lit5Zu96Z2S5bCR5bm05Yib6YCg5oCn5oOz6LGh5Y+R5bGV56CU56m255qE5Li75peo5oql5ZGK44CC5oql5ZGK6aaW5YWI5LuL57uN5LqG5Yib6YCg5oCn5oOz6LGh5Yqb55qENOS4que7tOW6pu+8muS4sOWvjOaAp+OAgeeBtea0u+aAp+OAgeaWsOmiluaAp+WSjOa3seWIu+aAp++8jOW5tuS7i+e7jeS6huW8gOWPkeeahOa1i+mHj+W3peWFt+WPiuivhOWIhuaWueazleOAgumAmui/h+eglOeptuWPkeeOsO+8jOWPl+WtpuagoeaVmeiCsueOr+Wig+etieS4jeWQjOWboOe0oOeahOW9seWTje+8jOaIkeWbvemdkuWwkeW5tOWIm+mAoOaDs+ixoeeahOWPkeWxleWSjOWIm+mAoOaAp+aDs+ixoeWRiOS4jeWQjOawtOW5s+OAgjwvcD4gIDxwPuOAgOOAgOadpeiHque+juWbveWPsuWvhuajruWwvOWtpuS8mu+8iFNJ77yJ55qE5pS/562W5LiO5YiG5p6Q5oC755uRQ2Fyb2xlIE5ldmVz5Y2a5aOr77yM5LulJmxkcXVvO+i3qOWtpuenkeiejeWQiCZyZHF1bzvkuLrmiqXlkYrkuLvpopjvvIzku4vnu43kuobnu7zlkIjliKnnlKjljoblj7LjgIHoibrmnK/jgIHmlofljJblkoznp5Hlrabnn6Xor4bnmoTph43opoHmhI/kuYnlkozlv4XopoHmgKfjgIJOZXZlc+WNmuWjq+e7meWHuuS6huS4gOS6m+aOqOi/m+i3qOWtpuenkeiejeWQiOW8gOWxleenkeWtpuaVmeiCsueahOW7uuiuru+8muWKoOW8uuaVmeW4iOWfueiure+8jOWcqOWtpuagoeW7uueri+i3qOWtpuenkeS4reW/g++8jOS9v+iJuuacr+S9nOWTgeWSjOenkeWtpuivvuWgguebuOS6kue7k+WQiO+8jOi/m+ihjOivvueoi+aUuemdqe+8jOaPkOS+m+aciei2o+eahOeglOeptuacuuS8mu+8jOi/m+ihjOWboumYn+WNj+S9nO+8jOaLk+Wxlei3qOWtpuenkeeglOeptuW5tuaPreekuuWFtuWGheWcqOiBlOezu+OAgjwvcD4gIDxwPuOAgOOAgOiLseeJueWwlOWFrOWPuOWFqOeQg0stMTLor77nqIvkuI7mlZnlrablhoXlrrnnu4/nkIZBbm5lIEJhdGV55aWz5aOr5YiG5Lqr5LqG5aW55a+55LqO56eR5a2m5pWZ6IKy5Y+R5bGV5aSn6LaL5Yq/55qE5oCd6ICD5ZKM56eR5a2m6K++56iL6LWE5rqQ5byA5Y+R55qE5a6d6LS157uP6aqM77yb5LuL57uN5LqG576O5Zu95paw5LiA5Luj56eR5a2m5pWZ6IKy5qCH5YeG5pu05Yqg5by66LCD5bCG5bel56iL55qE5qaC5b+15ZKM5a6e6Le15byV5YWl56eR5a2m6K++5aCC77yM5L6n6YeN5LqO6L+e5o6l56eR5a2m5LiO5bel56iL55qE5bCR5pWw6YeN6KaB5qaC5b+177yM5Lul5Y+K5byA5Y+R5ZKM56eR5a2m57Sg5YW75LiO5bel56iL6K6+6K6h55u45YWz55qE5a6e6Le1562J5Y+R5bGV6LaL5Yq/77yb5by66LCD5LqG6K6p5a2m55Sf5a2m5Lya5o+Q6Zeu77yM5Zyo5a2m5Lmg5Lit5rOo6YeN5Zui6Zif5ZCI5L2c562J6YeN6KaB55qE5pWZ5a2m5qC45b+D44CCPC9wPiAgPHA+44CA44CA576O5Zu95o6i56m25L+D6L+b6ICF5YWs5Y+45Li75bitUnVzcyBGaXNoZXItSXZlc+WFiOeUn+eUqOS7lueUn+WKqOmjjui2o+eahOa8lOiusuaWueW8j+iuqeWPguS8muS7o+ihqOS9k+mqjOS6huaVmeW4iOWmguS9leW4pumihuWtpueUn+acieaViOWcsOW8gOWxleenkeWtpuaOoueptuOAguS7lumAmui/h+S4gOS4qjIw5YiG6ZKf55qE546w5Zy65ou85Zu+5rS75Yqo77yM6K6p5pWZ5biI5Lus6YeN5paw5a6h6KeG5LqG6YKj5Lqb55yL5Ly85p6v54el6Zq+5oeC55qE5o6i56m25byP5pWZ5a2m55qE55CG6K6644CC6L+Z5Zy65YWF5ruh5oSf5p+T5Yqb5ZKM5LqS5Yqo5rS75Yqo55qE5oql5ZGK77yM5ouJ6L+R5LqG5ZCs5LyX5LiO5ryU6K6y6ICF5LmL6Ze055qE6Led56a777yM5Lmf55WZ57uZ5LqG5ZCs5LyX6Laz5aSf55qE56m66Ze05oCd6ICD5ZKM5Zue6aG+5Zyo5oql5ZGK5Lit5Lqy5Y6G55qE6YKj5Lqb5o6i56m25oqA6IO977ya6Zeu6aKYJm1kYXNoOyZtZGFzaDvlj6/mo4DpqoznmoTvvJvosIPmn6UmbWRhc2g7Jm1kYXNoO+aVsOaNrumHh+mbhu+8m+WFs+iBlCZtZGFzaDsmbWRhc2g755u45YWz5oCn77yb6K6o6K66Jm1kYXNoOyZtZGFzaDvlhazlvIDvvJvlj43mgJ0mbWRhc2g7Jm1kYXNoO+iHquaIkeaUuei/m+OAgjwvcD4gIDxwPuOAgOOAgOacgOWQju+8jOeOsOS7u+S4nOS6muenkeWtpuaVmeiCsuWNj+S8muS4u+W4re+8jOadpeiHquWPsOa5vueahOi/nuWQr+eRnuaVmeaOiOS7i+e7jeS6hue+juWbveaWsOS4gOS7o+enkeWtpuaVmeiCsuagh+WHhuahhuaetueahOS4u+imgeWGheWuue+8muenkeWtpuS4juW3peeoi+Wunui3teOAgei3qOmihuWfn+eahOenkeWtpuamguW/teWSjOWQhOmihuWfn+WGheeahOS4u+imgeenkeWtpuamguW/teOAguS7luWuj+inguaOouiuqOS6huenkeWtpuaVmeiCsuacquadpeeahOWPkeWxleWKqOWQke+8jOeJueWIq+aYr+WvueS6juS6mua0suWbveWutueahOW9seWTjeOAgjwvcD4gIDxwIHN0eWxlPSJ0ZXh0LWFsaWduOiBjZW50ZXI7Ij48c3BhbiBzdHlsZT0iY29sb3I6IHJnYigyNTUsIDAsIDApOyI+PHN0cm9uZz7liIborrrlnZvorqjorro8L3N0cm9uZz48L3NwYW4+PC9wPiAgPHA+44CA44CA5Zyo5YiG6K665Z2b55qE6K6o6K665Lit77yM5Y+C5Lya55qE56eR5oqA5pWZ5biI5LuO5ZCE6Ieq55qE5a6e6ZmF5Ye65Y+R77yM5o+Q5Ye65LqG5b6I5aSa5Zyo5a6e5pa956eR5a2m5pWZ6IKy5rS75Yqo5Lit6YGH5Yiw55qE6Zeu6aKY5ZKM5a6e6Le157uP6aqM44CC6L+Z56eN55CG6K665ZKM5a6e6Le155qE57uT5ZCI77yM6K6p56eR5a2m5pWZ6IKy55qE5oCd5oOz54Gr6Iqx5Zyo6L+Z6YeM5b6X5Lul57u95pS+44CCPC9wPiAgPHA+44CA44CAPHNwYW4gc3R5bGU9ImNvbG9yOiByZ2IoMCwgMCwgMjU1KTsiPjxzdHJvbmc+5LiT6aKY6K665Z2b5LiA77ya56eR5a2m5pWZ6IKy55qE5YaF5a65PC9zdHJvbmc+PC9zcGFuPjwvcD4gIDxwPuOAgOOAgCZsZHF1bzvnp5HlrabmlZnogrLnmoTlhoXlrrkmcmRxdW875piv5LiA5Liq6Z2e5bi45aSN5p2C44CB5a6P5aSn55qE6aKG5Z+f77yM5o6i6K6o6L+Z5Liq6Zeu6aKY5pe26ZyA6KaB6ICD6JmR5aSa5pa56Z2i5Zug57Sg55qE5b2x5ZON44CC5LiO5Lya6ICF5Zu057uV5pWZ6IKy5YaF5a6555qE5LiN5ZCM5bGC6Z2i77yM5bCG6K+d6aKY6YCQ5q2l5rex5YWl44CB5ouT5bGV77yM6YeN54K55o6i6K6o5LqG77ya4pGgJmxkcXVvO+enkeWtpuS4juaKgOacr+WPiuWFtuebuOS6kuWFs+ezuyZyZHF1bzvov5nkuIDnp5HlrabmlZnogrLlhoXlrrnnmoTmnKzmupDpl67popjvvJvikaHnp5Hlrabor77nqIvnmoTlhoXlrrnpgInmi6nkuI7nu4Tnu4fvvJrpnIDopoHns7vnu5/lnLDmgJ3ogIPvvIzogIzpnZ7nroDljZXlgZrliqDlh4/ms5XvvIzpnIDopoHkvp3pnaDnp5HlrabnmoTlrp7or4HnoJTnqbbor4Hmja7vvJvikaLnp5Hlrabor77nqIvnmoTlvIDlj5HkuI7lrp7mlr3pnIDopoHlubPooaHlpb3lupTor5XkuI7ntKDlhbvln7nogrLkuYvpl7TnmoTljZrlvIjvvIzotbDlh7roh6rlt7HnmoTliJvmlrDpgZPot6/vvJvikaPnp5Hlrabor77nqIvlpoLkvZXorr7orqEmbWRhc2g75byA5Y+RJm1kYXNoO+WunuaWvSZtZGFzaDvln7norq3vvIzlpoLkvZXmnInmnLrlnLDmnoTmiJDkuIDkuKrpk77plIHjgILmnIDlkI7kuI7kvJrku6Pooajku6zovr7miJDkuobkuIDkupvlhbHor4bvvJrlvLrosIPnp5HlrabmlZnogrLotYTmupDmlbTlkIjnmoTph43opoHmgKfvvIzlnKjmlZnlrabkuK3lupTlsIbnp5HlrabkuI7mioDmnK/jgIHkuI7kurrmloflrabnp5Hnm7jono3lkIjvvIzmoKHlhoXmlZnogrLkuI7moKHlpJbmlZnogrLnm7jnu5PlkIjvvIzku6XmiY7lrp7lhYXliIbnmoTnp5HnoJTkuLrln7rnoYDvvIzmj5Dpq5jnp5Hlrabor77nqIvnmoTotKjph4/jgII8L3A+ICA8cD7jgIA8c3BhbiBzdHlsZT0iY29sb3I6IHJnYigwLCAwLCAyNTUpOyI+PHN0cm9uZz7jgIDkuJPpopjorrrlnZvkuozvvJrnp5HlrabmlZnogrLlhoXlrrnkuI7lrp7ot7U8L3N0cm9uZz48L3NwYW4+PC9wPiAgPHA+44CA44CAJmxkcXVvO+enkeWtpuaVmeiCsuWGheWuueS4juWunui3tSZyZHF1bzvkuJPpopjnmoTlj5HoqIDmnInkuIDkuKrlhbHmgKfvvIzpg73mmK/ku6XlhbfkvZPmoYjkvovkuLrln7rnoYDov5vooYznmoTjgILorqjorrrkuK3nibnliKvlvLrosIPkuobnp5HlrabmjqLnqbbopoHnibnliKvlhbPms6jnnJ/lrp7mgKfjgILmsqHmnInnnJ/lrp7mgKfvvIzlrabkuaDnmoTmpoLlv7Xlkoznn6Xor4blsLHmmK/msqHmnInmg4XlooPljJbnmoTjgIHlraTnq4vnmoTjgIHmg7DmgKfnmoTnn6Xor4bjgILkuI7kvJrogIXpkojlr7nkv6Hmga/mioDmnK/kuI7lrabnp5HmlZnlrabnmoTmlbTlkIjjgIHlpoLkvZXmnInmlYjlsZXlvIDmjqLnqbbpobnnm67nrYnpl67popjov5vooYzkuobng63ng4jorqjorrrvvIzlubbovr7miJDkuoblh6DngrnlhbHor4bvvJrikaDnp5HlrabmlZnogrLopoHlhbPms6jov4fnqIvvvIzkuI3ku4XopoHlnKjmhI/lrabnlJ/mmK/lkKblrozmiJDkuobku7vliqHlkozkvZzlk4HvvIzov5jopoHnnIvlrabnlJ/lj5HnjrDpl67popjjgIHop6PlhrPpl67popjnmoTmgJ3ogIPov4fnqIvvvIzlj6rmnInov5nmoLfmiY3og73mm7Tlpb3lnLDlvJXlr7zlrabnlJ/lrabkuaDjgILikaHnp5HlrabmlZnogrLkuK3mjqLnqbbmlrnms5XnmoTlrp7ot7XkuI7mraXpqqTpnZ7luLjph43opoHvvIzopoHlop7lvLrlj4LkuI7luqbvvIzkvZPpqozlgZrkuK3lrabjgILov5nmmK/kuIDmnaHku47lrp7ot7Xlj5HnjrDnmoTop4TlvovjgILikaLlvJXlr7zlrabnlJ/lrabkvJrnp5HlrabnrqHnkIbvvIzopoHliqDlvLrml7bpl7TjgIHnqbrpl7TjgIHnu4/otLnjgIHkurrlipvjgIHmg4Xnu6rnrYk15Liq5pa56Z2i55qE566h55CG77yM6KaB5o+Q5Ye65oyH5a+86Z2S5bCR5bm05a2m5Lya56eR5a2m566h55CG55qE5YW35L2T5pa55rOV5ZKM5oCd6Lev44CC4pGj5byA5bGV56eR5a2m5pWZ6IKy5a6e6Le15Zyo5o6i56m25Lit6KaB5pyJ5o+Q5Y2H77yM5a+55rex5bGC5qyh5aSn6Zeu6aKY5pyJ5ZCv5Y+R5pyJ5oCd6ICD44CC6L+Z5qC35bCx6IO95bCG56eR5a2m5pWZ6IKy5byV5ZCR5rex5YWl77yM5aeL5LqO5oqA5pyv77yM6ICM5LiN6ZmQ5LqO5oqA5pyv77yb5aeL5LqO56eR5a2m77yM5rex5YWl5oCd5oOz55qE5ZCv5Y+R5pWZ6IKy5LiO5YW75oiQ44CC4pGk56eR5a2m5pWZ6IKy6KaB6Leo5a2m56eR77yM6L+Y6Zeu6aKY5Lul55yf5a6e55qE5pys5Y6f77yM6L+Y5o6i56m25Lul55yf5a6e77yM5byA5bGV6Z2i5ZCR5YWo5L2T55qE56eR5a2m5pWZ6IKy44CCPHNwYW4gc3R5bGU9ImNvbG9yOiByZ2IoMCwgMCwgMjU1KTsiPjxzdHJvbmc+PGJyIC8+ICA8L3N0cm9uZz48L3NwYW4+PC9wPiAgPHA+PHNwYW4gc3R5bGU9ImNvbG9yOiByZ2IoMCwgMCwgMjU1KTsiPjxzdHJvbmc+44CA44CA5LiT6aKY6K665Z2b5LiJ77ya56eR5a2m5pWZ6IKy5Lit5a2m5Lmg5pWI5p6c55qE6K+E5rWL5Y+K6L+Q55SoPC9zdHJvbmc+PC9zcGFuPjwvcD4gIDxwPuOAgOOAgOWcqOaOoueptuW8j+enkeWtpuaVmeWtpuS4re+8jOivhOa1i+aYr+S4gOS4qui1t+aVtOWQiOS9nOeUqOeahOaIkOWIhu+8jOaYr+S4gOenjeacieaViOeahOaVmeWtpuetlueVpeOAguaVmeW4iOWvuei/meagt+eahOacieaViOaVmeWtpuetlueVpeeahOmAieaLqeadpeiHquS6juenkeWtpuaVmeWtpueahOWunumZhei/h+eoi++8jOadpea6kOS6juWtpueUn+eahOWtpuS5oOi/h+eoi+OAguivhOa1i+aYr+W4ruWKqeaVmeW4iOWQiOeQhumAieaLqeaVmeWtpuaWueazleWSjOetlueVpeOAgeS/g+i/m+i+vuaIkOacieaViOWtpuS5oOeahOW3peWFt+OAgiZsZHF1bzvnp5HlrabmlZnogrLkuK3lrabkuaDmlYjmnpznmoTmtYvor4Tlj4rov5DnlKgmcmRxdW875LiT6aKY5Lit77yM5LiO5Lya6ICF5LuO5pWZ5a2m55qE5pyJ5pWI5oCn6K+E5Lu35YWl5omL77yM6YCa6L+H5YW35L2T55qE5L6L5a2Q6K+m57uG5LuL57uN5LqG6K++5aCC5pWZ5a2m5b2i5oiQ5oCn6K+E5Lu355qE5YW35L2T5pON5L2c5pa55rOV44CCPC9wPiAgPHA+44CA44CA5peg6K665piv5a+55pWZ5a2m6L+H56iL55qE5b2i5oiQ5oCn6K+E5rWL55qE6K6o6K6677yM6L+Y5piv5a+556eR5a2m57Sg5YW744CB6Z2e5q2j6KeE5pWZ6IKy44CB5Yib6YCg5oCn5oOz6LGh55qE5Lqk5rWB77yM5YW25Lit5pyJ5LiA54K55YC85b6X5rOo5oSP55qE5piv56eR5a2m5pWZ6IKy5bel5L2c6ICF5Lus5a+56K+E5rWL55qE55CG6Kej5ZKM5oCd6ICD5bey57uP5Zyo5Y+R55Sf5Y+Y5YyW44CC5Lic5Y2X5aSn5a2m5a2m5Lmg56eR5a2m56CU56m25Lit5b+D55qE5Y+25YWG5a6B5Ymv5pWZ5o6I5Zyo5oC757uT5Y+R6KiA5Lit6K+05Yiw77yM5oiR5Lus5bey5LuO5YWz5rOo5Y2V5LiA55qE6ICD6K+V5ZKM5oiQ57up6L2s5ZCR5YWz5rOo5pyJ5Yip5LqO5pWZ5a2m44CB5pyJ5Yip5LqO5a2m55Sf5Y+R5bGV55qE5aSa56eN6K+E5rWL5pa55byP77yb5bey5LuO5YWz5rOo6K+E5rWL55qE6K+K5pat5Yqf6IO96L2s5ZCR5by66LCD6K+E5rWL5a+55LqO56eR5a2m5pWZ6IKy5Lit5pWZ5a2m5ZKM5YS/56ul5Y+R5bGV55qE5L+D6L+b5L2c55So77yb5bey5LuO5YWz5rOo55CG5b+16L2s5ZCR5YWz5rOo5a6e6ZmF55qE5pWZ6IKy6KGM5Li644CB5pWZ6IKy546w54q25ZKM5pWZ6IKy562W55Wl55qE56CU56m244CC5q2j5aaCTWFyeSBXaGl0ZWhvdXNl5ZKMQW5uZSBTY290dOWNmuWjq+WcqOaKpeWRiuS4reW8leeUqOeahER5bGFuIFdpbGxpYW3mlZnmjojnmoTkuIDlj6Xor53vvJombGRxdW875LiA5pem5pWZ5biI55+l6YGT5a2m5Lmg6ICF5omA5aSE55qE5YW35L2T5L2N572u77yM5LuW5bCx6IO95aSf5Li65a2m5Lmg6ICF5o+Q5L6b5LiL5LiA5q2l5YGa5LuA5LmI55qE5Y+N6aaI5L+h5oGvJnJkcXVvO++8jOaIluiuuOi/meaJjeaYr+enkeWtpuaVmeiCsuS4reWtpuS5oOaViOaenOivhOa1i+eahOecn+ato+S7t+WAvOaJgOWcqOOAgjwvcD4gIDxwPuOAgOOAgOiuuuWdm+WcqOaPkOS+m+a/gOeDiOiuqOiuuuOAgeaAneaDs+eisOaSnuWSjOS6pOa1geWQiOS9nOW5s+WPsOeahOWQjOaXtu+8jOS5n+iuqeenkeWtpuaVmeiCsuW3peS9nOiAheeci+WIsOS6hue7j+i/h+a8q+mVv+eahOaUuemdqeWSjOWPkeWxle+8jOenkeWtpuaVmeiCsueQhuiuuueglOeptuS4juWunui3teaOoue0ouWPluW+l+eahOaIkOe7qe+8jOS7peWPiuacquadpeeahOWPkeWxlei2i+WKv+OAguacquadpeeahOenkeWtpuaVmeiCsumcgOimgeS7peWkmuenjeW9ouW8j+W8leWvvOWSjOaUr+aMgeWtpuS5oOiAheWvueenkeWtpua0u+WKqOeahOWPguS4ju+8jOWFheWIhuWIqeeUqOS/oeaBr+WSjOenu+WKqOaKgOacr++8jOWcqOenkeWtpuaOoueptuWSjOW3peeoi+iuvuiuoeeahOi/h+eoi+S4reW4ruWKqeWtpueUn+W8gOWxlea3seWxguasoeeahOWtpuS5oOOAgui/kOeUqOWkmuenjeivhOa1i+aWueW8j++8jOmAguaXtuS4uuWtpueUn+aPkOS+m+WPjemmiO+8jOW4ruWKqeavj+S4gOS4quWtpueUn+i+vuWIsOmihOiuvueahOenkeWtpuaVmeiCsuebruagh+OAgui/memcgOimgeenkeWtpuaVmeiCsuW3peS9nOiAheS7peaJjuWunuOAgeenkeWtpuWSjOWFheWIhueahOeglOeptuS4uuWfuuehgO+8jOWKoOW8uuWQhOeVjOWQiOS9nOWSjOWtpuS5oOi1hOa6kOaVtOWQiO+8jOW7uuaehOenkeWtpuaVmeiCsueahOWFseWQjOS9k++8jOWujOWWhOWtpuS5oOWGheWuueeahOavlOS+i++8jOa/gOWPkeWtpueUn+WvueenkeWtpuWtpuS5oOeahOeDreaDheOAguKWoDwvcD4gIDxwPiZuYnNwOzwvcD5kAhEPFgIfAgU2KOS9nOiAhe+8mumDkea1qeeEti/kuK3lm73np5HljY/pnZLlsJHlubTnp5HmioDkuK3lv4MpZAITDw8WBh4IUGFnZVNpemUCAR4LUmVjb3JkY291bnQCAR4QQ3VycmVudFBhZ2VJbmRleAIBZGQCFQ9kFgICAQ8WAh8BZmQCIw8WAh8BZmQCJQ8PFgYfAwIDHwRmHwUCAWRkAikPFgIfAQIKFhRmD2QWAmYPFQIgL05ld3MvQXJ0aWNsZVZpZXcuYXNweD9BSUQ9MTYwNzdC5Yib5paw5Lq65omN5pWZ6IKy56CU56m25Lya5oiQ56uL5aSn5Lya5pqo56ys5LiA5qyh5Lya5ZGY5Luj6KGo4oCmZAIBD2QWAmYPFQIfL05ld3MvQXJ0aWNsZVZpZXcuYXNweD9BSUQ9NjU1OTTkuK3lm73msLTlkajnrKzkuIDlpKkg5LiW55WM5rC05pel5YWz5rOo5rC06LSo5a6J5YWoZAICD2QWAmYPFQIfL05ld3MvQXJ0aWNsZVZpZXcuYXNweD9BSUQ9Mjk2NTHlpKrmuZbok53ol7vlt7LmmK/luLjmgIEg5LiT5a625ZG85ZCB55CG5oCn55yL5b6FZAIDD2QWAmYPFQIfL05ld3MvQXJ0aWNsZVZpZXcuYXNweD9BSUQ9Mjk2NCrpnaLlr7nog73mupDntKfnvLrlvIDmupDkuI7oioLmtYHlrbDph43vvJ9kAgQPZBYCZg8VAh8vTmV3cy9BcnRpY2xlVmlldy5hc3B4P0FJRD0yOTAxLeesrDM25bGK5pel5YaF55Om5Zu96ZmF5Y+R5piO5bGV5paw5aWH5Y+R5piOIGQCBQ9kFgJmDxUCHy9OZXdzL0FydGljbGVWaWV3LmFzcHg/QUlEPTI4Mzkn5Lit5Zu95aSn5a2m55Sf5Y+R5piO5aOw6Z+z4oCc5rC05Y2w4oCdZAIGD2QWAmYPFQIfL05ld3MvQXJ0aWNsZVZpZXcuYXNweD9BSUQ9MjAxNCTnlLXnprvlpKnnur/miZPnoLTnmb7lubTmioDmnK/nk7bpoohkAgcPZBYCZg8VAh8vTmV3cy9BcnRpY2xlVmlldy5hc3B4P0FJRD0xODU1OeS4k+WutuWwhueUqOa/gOWFieaJq+aPj+WkjeWOn+W5tumHjeW7uuWchuaYjuWbreWPpOW7uuetkWQCCA9kFgJmDxUCHi9OZXdzL0FydGljbGVWaWV3LmFzcHg/QUlEPTc5Njpb6Ieq54S26KaB6KeIXe+8iOmAieiHquiLseWbvU5hdHVyZeadguW/l++8jDIwMDblubQz5pyI4oCmZAIJD2QWAmYPFQIeL05ld3MvQXJ0aWNsZVZpZXcuYXNweD9BSUQ9Nzk1OzUw5q+r56eS5a6a576O5LiRIOe9kemhtSLnrKzkuIDljbDosaEi5Yaz5a6a5rWP6KeI6ICF5aW95oG2ZAIrD2QWAgIBDxYCHwECChYUZg9kFgJmDxUEATEgL05ld3MvQXJ0aWNsZVZpZXcuYXNweD9BSUQ9MjEyNzAi44CKU1RFTemhueebruWtpueUn+eglOeptuaJi+WGjOOAiyLjgIpTVEVN6aG555uu5a2m55Sf56CU56m25omL5YaM44CLZAIBD2QWAmYPFQQBMiAvTmV3cy9BcnRpY2xlVmlldy5hc3B4P0FJRD0xOTI1NEDnp5HlrabmlZnogrLmlrDmjqLntKLigJTigJTorrDigJwyMDEy56eR5a2m5pWZ6IKy5Zu96ZmF6K665Z2b4oCdQOenkeWtpuaVmeiCsuaWsOaOoue0ouKAlOKAlOiusOKAnDIwMTLnp5HlrabmlZnogrLlm73pmYXorrrlnZvigJ1kAgIPZBYCZg8VBAEzIC9OZXdzL0FydGljbGVWaWV3LmFzcHg/QUlEPTE2MDc3UeWIm+aWsOS6uuaJjeaVmeiCsueglOeptuS8muaIkOeri+Wkp+S8muaaqOesrOS4gOasoeS8muWRmOS7o+ihqOWkp+S8muWcqOS6rOWPrOW8gFHliJvmlrDkurrmiY3mlZnogrLnoJTnqbbkvJrmiJDnq4vlpKfkvJrmmqjnrKzkuIDmrKHkvJrlkZjku6PooajlpKfkvJrlnKjkuqzlj6zlvIBkAgMPZBYCZg8VBAE0Hy9OZXdzL0FydGljbGVWaWV3LmFzcHg/QUlEPTY1NTk05Lit5Zu95rC05ZGo56ys5LiA5aSpIOS4lueVjOawtOaXpeWFs+azqOawtOi0qOWuieWFqDTkuK3lm73msLTlkajnrKzkuIDlpKkg5LiW55WM5rC05pel5YWz5rOo5rC06LSo5a6J5YWoZAIED2QWAmYPFQQBNR4vTmV3cy9BcnRpY2xlVmlldy5hc3B4P0FJRD03OTZFW+iHqueEtuimgeiniF3vvIjpgInoh6roi7Hlm71OYXR1cmXmnYLlv5fvvIwyMDA25bm0M+aciDMw5pel5Ye654mI77yJRVvoh6rnhLbopoHop4hd77yI6YCJ6Ieq6Iux5Zu9TmF0dXJl5p2C5b+X77yMMjAwNuW5tDPmnIgzMOaXpeWHuueJiO+8iWQCBQ9kFgJmDxUEATYeL05ld3MvQXJ0aWNsZVZpZXcuYXNweD9BSUQ9Nzk0L+Wxseilv+e7m+WOv+eOsOKAnOWAl+WbveKAnSDot53ku4rnuqbmnIkzMDAw5bm0L+Wxseilv+e7m+WOv+eOsOKAnOWAl+WbveKAnSDot53ku4rnuqbmnIkzMDAw5bm0ZAIGD2QWAmYPFQQBNx4vTmV3cy9BcnRpY2xlVmlldy5hc3B4P0FJRD03MzIw6Z2S6JeP6auY5Y6f6L+Y5pyJ5aSn6YeP56eR5a2m6Zeu6aKY5pyJ5b6F5Zue562UMOmdkuiXj+mrmOWOn+i/mOacieWkp+mHj+enkeWtpumXrumimOacieW+heWbnuetlGQCBw9kFgJmDxUEATgeL05ld3MvQXJ0aWNsZVZpZXcuYXNweD9BSUQ9Nzg3PuOAiuenkeWtpuOAi+adguW/l+aPkOWHujIwMDblubTlpIflj5flhbPms6jnmoQ45Liq56eR5a2m6aKG5Z+fPuOAiuenkeWtpuOAi+adguW/l+aPkOWHujIwMDblubTlpIflj5flhbPms6jnmoQ45Liq56eR5a2m6aKG5Z+fZAIID2QWAmYPFQQBOR4vTmV3cy9BcnRpY2xlVmlldy5hc3B4P0FJRD03OTM95bCP5bCP55yf6I+M5pW05q276Z2S6JuZIOenkeWtpuWutuWRvOWQgemBj+WItuWFqOeQg+WPmOaaluWbvj3lsI/lsI/nnJ/oj4zmlbTmrbvpnZLom5kg56eR5a2m5a625ZG85ZCB6YGP5Yi25YWo55CD5Y+Y5pqW5Zu+ZAIJD2QWAmYPFQQCMTAeL05ld3MvQXJ0aWNsZVZpZXcuYXNweD9BSUQ9Nzg1JeWNsOWwvOa1t+WVuOmihOitpuezu+e7n+ato+W8j+WQr+WKqCAl5Y2w5bC85rW35ZW46aKE6K2m57O757uf5q2j5byP5ZCv5YqoIGQCLQ9kFgICAQ8WAh8BAgoWFGYPZBYCZg8VBAExHi9OZXdzL0FydGljbGVWaWV3LmFzcHg/QUlEPTc4Nz7jgIrnp5HlrabjgIvmnYLlv5fmj5Dlh7oyMDA25bm05aSH5Y+X5YWz5rOo55qEOOS4quenkeWtpumihuWfnz7jgIrnp5HlrabjgIvmnYLlv5fmj5Dlh7oyMDA25bm05aSH5Y+X5YWz5rOo55qEOOS4quenkeWtpumihuWfn2QCAQ9kFgJmDxUEATIeL05ld3MvQXJ0aWNsZVZpZXcuYXNweD9BSUQ9NzMyMOmdkuiXj+mrmOWOn+i/mOacieWkp+mHj+enkeWtpumXrumimOacieW+heWbnuetlDDpnZLol4/pq5jljp/ov5jmnInlpKfph4/np5Hlrabpl67popjmnInlvoXlm57nrZRkAgIPZBYCZg8VBAEzIC9OZXdzL0FydGljbGVWaWV3LmFzcHg/QUlEPTE2MDc3UeWIm+aWsOS6uuaJjeaVmeiCsueglOeptuS8muaIkOeri+Wkp+S8muaaqOesrOS4gOasoeS8muWRmOS7o+ihqOWkp+S8muWcqOS6rOWPrOW8gFHliJvmlrDkurrmiY3mlZnogrLnoJTnqbbkvJrmiJDnq4vlpKfkvJrmmqjnrKzkuIDmrKHkvJrlkZjku6PooajlpKfkvJrlnKjkuqzlj6zlvIBkAgMPZBYCZg8VBAE0Hi9OZXdzL0FydGljbGVWaWV3LmFzcHg/QUlEPTc5NkVb6Ieq54S26KaB6KeIXe+8iOmAieiHquiLseWbvU5hdHVyZeadguW/l++8jDIwMDblubQz5pyIMzDml6Xlh7rniYjvvIlFW+iHqueEtuimgeiniF3vvIjpgInoh6roi7Hlm71OYXR1cmXmnYLlv5fvvIwyMDA25bm0M+aciDMw5pel5Ye654mI77yJZAIED2QWAmYPFQQBNR4vTmV3cy9BcnRpY2xlVmlldy5hc3B4P0FJRD03OTQv5bGx6KW/57ub5Y6/546w4oCc5YCX5Zu94oCdIOi3neS7iue6puaciTMwMDDlubQv5bGx6KW/57ub5Y6/546w4oCc5YCX5Zu94oCdIOi3neS7iue6puaciTMwMDDlubRkAgUPZBYCZg8VBAE2Hi9OZXdzL0FydGljbGVWaWV3LmFzcHg/QUlEPTczOTHliqjnianlrp7pqozor4HmmI7lsI/ohJHkuKXph43nvLrkuY/kuZ/og73lrZjmtLsgMeWKqOeJqeWunumqjOivgeaYjuWwj+iEkeS4pemHjee8uuS5j+S5n+iDveWtmOa0uyBkAgYPZBYCZg8VBAE3Hi9OZXdzL0FydGljbGVWaWV3LmFzcHg/QUlEPTczNj/ngavmmJ/ooqvlhrDlhrvoh7PlsJE0MOS6v+W5tCDlj6/og73ku47mnKrlh7rnjrDov4fnlJ/lkb3njq/looM/54Gr5pif6KKr5Yaw5Ya76Iez5bCRNDDkur/lubQg5Y+v6IO95LuO5pyq5Ye6546w6L+H55Sf5ZG9546v5aKDZAIHD2QWAmYPFQQBOCAvTmV3cy9BcnRpY2xlVmlldy5hc3B4P0FJRD0yMTI3MCLjgIpTVEVN6aG555uu5a2m55Sf56CU56m25omL5YaM44CLIuOAilNURU3pobnnm67lrabnlJ/noJTnqbbmiYvlhozjgItkAggPZBYCZg8VBAE5IC9OZXdzL0FydGljbGVWaWV3LmFzcHg/QUlEPTE5MjU0QOenkeWtpuaVmeiCsuaWsOaOoue0ouKAlOKAlOiusOKAnDIwMTLnp5HlrabmlZnogrLlm73pmYXorrrlnZvigJ1A56eR5a2m5pWZ6IKy5paw5o6i57Si4oCU4oCU6K6w4oCcMjAxMuenkeWtpuaVmeiCsuWbvemZheiuuuWdm+KAnWQCCQ9kFgJmDxUEAjEwHy9OZXdzL0FydGljbGVWaWV3LmFzcHg/QUlEPTY1NTk05Lit5Zu95rC05ZGo56ys5LiA5aSpIOS4lueVjOawtOaXpeWFs+azqOawtOi0qOWuieWFqDTkuK3lm73msLTlkajnrKzkuIDlpKkg5LiW55WM5rC05pel5YWz5rOo5rC06LSo5a6J5YWoZAIvD2QWAgIBDxYCHwECChYUZg9kFgJmDxUEATEgL05ld3MvQXJ0aWNsZVZpZXcuYXNweD9BSUQ9MjEyNzAi44CKU1RFTemhueebruWtpueUn+eglOeptuaJi+WGjOOAiyLjgIpTVEVN6aG555uu5a2m55Sf56CU56m25omL5YaM44CLZAIBD2QWAmYPFQQBMiAvTmV3cy9BcnRpY2xlVmlldy5hc3B4P0FJRD0xOTI1NEDnp5HlrabmlZnogrLmlrDmjqLntKLigJTigJTorrDigJwyMDEy56eR5a2m5pWZ6IKy5Zu96ZmF6K665Z2b4oCdQOenkeWtpuaVmeiCsuaWsOaOoue0ouKAlOKAlOiusOKAnDIwMTLnp5HlrabmlZnogrLlm73pmYXorrrlnZvigJ1kAgIPZBYCZg8VBAEzIC9OZXdzL0FydGljbGVWaWV3LmFzcHg/QUlEPTE2MDc3UeWIm+aWsOS6uuaJjeaVmeiCsueglOeptuS8muaIkOeri+Wkp+S8muaaqOesrOS4gOasoeS8muWRmOS7o+ihqOWkp+S8muWcqOS6rOWPrOW8gFHliJvmlrDkurrmiY3mlZnogrLnoJTnqbbkvJrmiJDnq4vlpKfkvJrmmqjnrKzkuIDmrKHkvJrlkZjku6PooajlpKfkvJrlnKjkuqzlj6zlvIBkAgMPZBYCZg8VBAE0Hy9OZXdzL0FydGljbGVWaWV3LmFzcHg/QUlEPTY1NTk05Lit5Zu95rC05ZGo56ys5LiA5aSpIOS4lueVjOawtOaXpeWFs+azqOawtOi0qOWuieWFqDTkuK3lm73msLTlkajnrKzkuIDlpKkg5LiW55WM5rC05pel5YWz5rOo5rC06LSo5a6J5YWoZAIED2QWAmYPFQQBNR8vTmV3cy9BcnRpY2xlVmlldy5hc3B4P0FJRD0yOTY1MeWkqua5luiTneiXu+W3suaYr+W4uOaAgSDkuJPlrrblkbzlkIHnkIbmgKfnnIvlvoUx5aSq5rmW6JOd6Je75bey5piv5bi45oCBIOS4k+WutuWRvOWQgeeQhuaAp+eci+W+hWQCBQ9kFgJmDxUEATYfL05ld3MvQXJ0aWNsZVZpZXcuYXNweD9BSUQ9Mjk2NCrpnaLlr7nog73mupDntKfnvLrlvIDmupDkuI7oioLmtYHlrbDph43vvJ8q6Z2i5a+56IO95rqQ57Sn57y65byA5rqQ5LiO6IqC5rWB5a2w6YeN77yfZAIGD2QWAmYPFQQBNx8vTmV3cy9BcnRpY2xlVmlldy5hc3B4P0FJRD0yOTAxLeesrDM25bGK5pel5YaF55Om5Zu96ZmF5Y+R5piO5bGV5paw5aWH5Y+R5piOIC3nrKwzNuWxiuaXpeWGheeTpuWbvemZheWPkeaYjuWxleaWsOWlh+WPkeaYjiBkAgcPZBYCZg8VBAE4Hy9OZXdzL0FydGljbGVWaWV3LmFzcHg/QUlEPTI4Mzkn5Lit5Zu95aSn5a2m55Sf5Y+R5piO5aOw6Z+z4oCc5rC05Y2w4oCdJ+S4reWbveWkp+WtpueUn+WPkeaYjuWjsOmfs+KAnOawtOWNsOKAnWQCCA9kFgJmDxUEATkfL05ld3MvQXJ0aWNsZVZpZXcuYXNweD9BSUQ9MjAxNCTnlLXnprvlpKnnur/miZPnoLTnmb7lubTmioDmnK/nk7bpoogk55S156a75aSp57q/5omT56C055m+5bm05oqA5pyv55O26aKIZAIJD2QWAmYPFQQCMTAfL05ld3MvQXJ0aWNsZVZpZXcuYXNweD9BSUQ9MTg1NTnkuJPlrrblsIbnlKjmv4DlhYnmiavmj4/lpI3ljp/lubbph43lu7rlnIbmmI7lm63lj6Tlu7rnrZE55LiT5a625bCG55So5r+A5YWJ5omr5o+P5aSN5Y6f5bm26YeN5bu65ZyG5piO5Zut5Y+k5bu6562RZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUyY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRJbWdWYWxpZGF0b3IxJGJ0bmltZ0NvZGU7dBmbJRpwU2CG4Wb0UT6yQ5lllg==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/Other/www/WebResource/d/ibelFOWV2X9_qYW8ARUaS8gVQuiXuRq1T7vkSRg14LrbrrTqHZ-k3Hi5unTj9OD1ptpOvO1-LyYaQ3sGs1NBuikjKpQ1/amp;t/635588912026805809.axd" type="text/javascript"></script>
+
+
+<script src="/Other/www/WebResource/d/kP5E7dY89dq6Bl_R-9jUIDz-bRvf-NB-nuU9R5wcbtuspoa4RyU2Hc4e-g-eNtgL6ScsWOc245QoTjo9pCm4KuHeYbM1/amp;t/635588912026805809.axd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="99DCE00C" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWCQKU88S5AQLN6qy7CALJ4fq4BwKEhvStAQKp/8mtBgLiz/3QBgL40JWiCgKq9IjbAQLwmYvSC5yVuuGAPenK/6PoeSd4e3TxxreO" />
+</div>
+    <div id="articleMain" class="pageMain">
+	<!-- 文章主体-->
+	<div class="leftMainRow">
+		<div id="articlePanel" class="leftPanel">
+			<div class="location"> <a href="/" class="home">首页</a> > <a href='/News/News.aspx'>动�?/a> > 动�?> 全国公众信息服务门户网站</div>
+			<div class="content">
+				<div id="articleTitle">
+					<p class="title">科学教育新探索——记�?012科学教育国际论坛�?/p>
+					<p class="subtitle"></p>
+				</div>
+				<div id="articleInfo"> <span class="date">2013-02-26</span><span class="orgin">《中国科技教育�?/span><span class="readCount">本文被阅读过89938�?/span><a id="ctl00_ContentPlaceHolder1_lbtnReCommend" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$lbtnReCommend','')">[推荐]</a><a href="javascript:void(0);" onclick="printWindow();">[打印]</a><a href="javascript:void(0);" onclick="printWindow();">[保存]</a><a href="javascript:void(0);" onclick="setFontSize('big');">[大字体]</a><a href="javascript:void(0);" onclick="setFontSize('normal');">[中字体]</a><a href="javascript:void(0);" class="greenButton" onclick="setFontSize('small');">[小字体]</a> </div>
+				<div id="articleTools"> </div>
+				<div id="articleContent">
+					<p>本文转载自《中国科技教育》杂�?012.12总第201�?/p>  <p>　　在教育部、中国科协的支持和指导下，由中国科协青少年科学教育专门委员会、中国青少年科技辅导员协会、江苏省科学技术协会和英特尔（中国）有限公司共同主办的&ldquo;2012科学教育国际论坛&rdquo;，于11�?2&mdash;13日在江苏省南京市举行，约150位国内外代表出席了论坛。论坛举办的宗旨是为科学教育工作者提供国际交流和展示的平台，将国际最新的研究和实践进展与中国的科学教育实践相结合，为中国科学教育的实践探索提供新的视角。在为期2天的论坛里，来自美国、英国等国家以及我国香港和台湾地区的优秀科学教育专家与国内的优秀科技教师，围绕着&ldquo;科学教育的内容、方法与实践、评�?rdquo;等重要问题，展开了一场科学教育的新探索�?/p>  <p style="text-align: center;"><span style="color: rgb(255, 0, 0);"><strong>论坛主旨演讲</strong></span></p>  <p>　　本次论坛的主题是&ldquo;科学教育的新探索&rdquo;，大会的报告从科学教育的现状分析和未来的发展方向展开。华东师范大学副校长任友群教授，以其所承担的国家人文社科重点研究基地重大项�?ldquo;学习与课程的关系研究&rdquo;为基础，通过一个在我国5所城市开展的调查研究，揭示了究竟是什么因素在影响着学生的数学和问题解决能力�?/p>  <p>　　中国科普研究所所长任福君教授为大家奉上了一场关于中国青少年创造性想象发展研究的主旨报告。报告首先介绍了创造性想象力�?个维度：丰富性、灵活性、新颖性和深刻性，并介绍了开发的测量工具及评分方法。通过研究发现，受学校教育环境等不同因素的影响，我国青少年创造想象的发展和创造性想象呈不同水平�?/p>  <p>　　来自美国史密森尼学会（SI）的政策与分析总监Carole Neves博士，以&ldquo;跨学科融�?rdquo;为报告主题，介绍了综合利用历史、艺术、文化和科学知识的重要意义和必要性。Neves博士给出了一些推进跨学科融合开展科学教育的建议：加强教师培训，在学校建立跨学科中心，使艺术作品和科学课堂相互结合，进行课程改革，提供有趣的研究机会，进行团队协作，拓展跨学科研究并揭示其内在联系�?/p>  <p>　　英特尔公司全球K-12课程与教学内容经理Anne Batey女士分享了她对于科学教育发展大趋势的思考和科学课程资源开发的宝贵经验；介绍了美国新一代科学教育标准更加强调将工程的概念和实践引入科学课堂，侧重于连接科学与工程的少数重要概念，以及开发和科学素养与工程设计相关的实践等发展趋势；强调了让学生学会提问，在学习中注重团队合作等重要的教学核心�?/p>  <p>　　美国探究促进者公司主席Russ Fisher-Ives先生用他生动风趣的演讲方式让参会代表体验了教师如何带领学生有效地开展科学探究。他通过一�?0分钟的现场拼图活动，让教师们重新审视了那些看似枯燥难懂的探究式教学的理论。这场充满感染力和互动活动的报告，拉近了听众与演讲者之间的距离，也留给了听众足够的空间思考和回顾在报告中亲历的那些探究技能：问题&mdash;&mdash;可检验的；调�?mdash;&mdash;数据采集；关�?mdash;&mdash;相关性；讨论&mdash;&mdash;公开；反�?mdash;&mdash;自我改进�?/p>  <p>　　最后，现任东亚科学教育协会主席，来自台湾的连启瑞教授介绍了美国新一代科学教育标准框架的主要内容：科学与工程实践、跨领域的科学概念和各领域内的主要科学概念。他宏观探讨了科学教育未来的发展动向，特别是对于亚洲国家的影响�?/p>  <p style="text-align: center;"><span style="color: rgb(255, 0, 0);"><strong>分论坛讨�?/strong></span></p>  <p>　　在分论坛的讨论中，参会的科技教师从各自的实际出发，提出了很多在实施科学教育活动中遇到的问题和实践经验。这种理论和实践的结合，让科学教育的思想火花在这里得以绽放�?/p>  <p>　　<span style="color: rgb(0, 0, 255);"><strong>专题论坛一：科学教育的内容</strong></span></p>  <p>　　&ldquo;科学教育的内�?rdquo;是一个非常复杂、宏大的领域，探讨这个问题时需要考虑多方面因素的影响。与会者围绕教育内容的不同层面，将话题逐步深入、拓展，重点探讨了：�?ldquo;科学与技术及其相互关�?rdquo;这一科学教育内容的本源问题；②科学课程的内容选择与组织：需要系统地思考，而非简单做加减法，需要依靠科学的实证研究证据；③科学课程的开发与实施需要平衡好应试与素养培育之间的博弈，走出自己的创新道路；④科学课程如何设计&mdash;开�?mdash;实施&mdash;培训，如何有机地构成一个链锁。最后与会代表们达成了一些共识：强调科学教育资源整合的重要性，在教学中应将科学与技术、与人文学科相融合，校内教育与校外教育相结合，以扎实充分的科研为基础，提高科学课程的质量�?/p>  <p>　<span style="color: rgb(0, 0, 255);"><strong>　专题论坛二：科学教育内容与实�?/strong></span></p>  <p>　　&ldquo;科学教育内容与实�?rdquo;专题的发言有一个共性，都是以具体案例为基础进行的。讨论中特别强调了科学探究要特别关注真实性。没有真实性，学习的概念和知识就是没有情境化的、孤立的、惰性的知识。与会者针对信息技术与学科教学的整合、如何有效展开探究项目等问题进行了热烈讨论，并达成了几点共识：①科学教育要关注过程，不仅要在意学生是否完成了任务和作品，还要看学生发现问题、解决问题的思考过程，只有这样才能更好地引导学生学习。②科学教育中探究方法的实践与步骤非常重要，要增强参与度，体验做中学。这是一条从实践发现的规律。③引导学生学会科学管理，要加强时间、空间、经费、人力、情绪等5个方面的管理，要提出指导青少年学会科学管理的具体方法和思路。④开展科学教育实践在探究中要有提升，对深层次大问题有启发有思考。这样就能将科学教育引向深入，始于技术，而不限于技术；始于科学，深入思想的启发教育与养成。⑤科学教育要跨学科，还问题以真实的本原，还探究以真实，开展面向全体的科学教育�?span style="color: rgb(0, 0, 255);"><strong><br />  </strong></span></p>  <p><span style="color: rgb(0, 0, 255);"><strong>　　专题论坛三：科学教育中学习效果的评测及运�?/strong></span></p>  <p>　　在探究式科学教学中，评测是一个起整合作用的成分，是一种有效的教学策略。教师对这样的有效教学策略的选择来自于科学教学的实际过程，来源于学生的学习过程。评测是帮助教师合理选择教学方法和策略、促进达成有效学习的工具�?ldquo;科学教育中学习效果的测评及运�?rdquo;专题中，与会者从教学的有效性评价入手，通过具体的例子详细介绍了课堂教学形成性评价的具体操作方法�?/p>  <p>　　无论是对教学过程的形成性评测的讨论，还是对科学素养、非正规教育、创造性想象的交流，其中有一点值得注意的是科学教育工作者们对评测的理解和思考已经在发生变化。东南大学学习科学研究中心的叶兆宁副教授在总结发言中说到，我们已从关注单一的考试和成绩转向关注有利于教学、有利于学生发展的多种评测方式；已从关注评测的诊断功能转向强调评测对于科学教育中教学和儿童发展的促进作用；已从关注理念转向关注实际的教育行为、教育现状和教育策略的研究。正如Mary Whitehouse和Anne Scott博士在报告中引用的Dylan William教授的一句话�?ldquo;一旦教师知道学习者所处的具体位置，他就能够为学习者提供下一步做什么的反馈信息&rdquo;，或许这才是科学教育中学习效果评测的真正价值所在�?/p>  <p>　　论坛在提供激烈讨论、思想碰撞和交流合作平台的同时，也让科学教育工作者看到了经过漫长的改革和发展，科学教育理论研究与实践探索取得的成绩，以及未来的发展趋势。未来的科学教育需要以多种形式引导和支持学习者对科学活动的参与，充分利用信息和移动技术，在科学探究和工程设计的过程中帮助学生开展深层次的学习。运用多种评测方式，适时为学生提供反馈，帮助每一个学生达到预设的科学教育目标。这需要科学教育工作者以扎实、科学和充分的研究为基础，加强各界合作和学习资源整合，建构科学教育的共同体，完善学习内容的比例，激发学生对科学学习的热情。■</p>  <p>&nbsp;</p>
+				</div>
+				<div id="articleAuthor"> (作者：郑浩�?中国科协青少年科技中心) </div>
+				<div class="pageList">
+<!--  -->
+<!--记录总数只有一页，AspNetPager已自动隐藏，若需在只有一页数据时显示AspNetPager，请将AlwaysShow属性值设为true�?->
+<!--  -->
+
+</div>
+				<dl id="ctl00_ContentPlaceHolder1_dlKeyword" class="keywordList">
+					<dt>文章主题词：</dt>
+					<dd>
+						<ul></ul>
+					</dd>
+				</dl>
+
+			</div>
+		</div>
+		<div id="commentPanel" class="leftPanel">
+			<div class="title"> <span class="title">评论</span> </div>
+			<div class="content">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<th valign="top">�? 呼：</th>
+							<td><input name="ctl00$ContentPlaceHolder1$txtUserName" type="text" id="ctl00_ContentPlaceHolder1_txtUserName" class="textInput" />
+                                <span id="ctl00_ContentPlaceHolder1_RequiredFieldValidator1" style="color:Red;visibility:hidden;">必填</span>
+                            </td>
+							<td rowspan="5"><fieldset>
+								<legend>评论须知</legend>
+								<ul class="infoList">
+									<li>�?nbsp;在本网发表言论，请自觉遵守爱国、守法、自律、真实、文明的原则，尊重网上道德，遵守各有关法律法规；</li>
+									<li>�?nbsp;请勿发表可能危害国家安全，破坏民族团结、国家宗教政策和社会稳定，含侮辱、诽谤、教唆、淫秽等内容的言论；</li>
+									<li>�?nbsp;承担一切因您的行为而直接或间接导致的民事或刑事法律责任�?/li>
+									<li>�?nbsp;在本网发表的言论，本网有权在网站内保留、转载、引用或者删除；</li>
+									<li>�?nbsp;参与评论，即表明您已经阅读并接受上述条款�?/li>
+								</ul>
+								</fieldset></td>
+						</tr>						
+						<tr>
+							<th valign="top">评　论：</th>
+							<td><textarea name="ctl00$ContentPlaceHolder1$txtComment" rows="6" cols="40" id="ctl00_ContentPlaceHolder1_txtComment" class="textInput"></textarea>
+                                <span id="ctl00_ContentPlaceHolder1_RequiredFieldValidator3" style="color:Red;visibility:hidden;">必填</span>
+                            </td>
+						</tr>
+						<tr>
+							<th valign="top">验证码：</th>
+							<td><input type="image" name="ctl00$ContentPlaceHolder1$ImgValidator1$btnimgCode" id="ctl00_ContentPlaceHolder1_ImgValidator1_btnimgCode" tabindex="99" title="验证图片|请照此输入。单击可更换图片�? src="/Other/www/ImgValidator/ValidateCode/codeLen/4/amp;aFineness/90/amp;ImgWidth/75/amp;PosX/4/amp;PosY/1/amp;FontFamily/Tahoma/amp;FontSize/14/amp;FontStyle/3.html" style="border-width:0px;" />
+				<input name="ctl00$ContentPlaceHolder1$ImgValidator1$txtCode" type="text" id="ctl00_ContentPlaceHolder1_ImgValidator1_txtCode" tabindex="3" class="txtInput" onmouseover="this.focus()" onkeypress="if(event.keyCode ==13){document.all.logBtn.click();return false;}" onfocus="this.select()" title="验证码|请在此输入验证码。输入时不区分英文字母大小写�? style="width:88px;" />						
+		<span id="ctl00_ContentPlaceHolder1_ImgValidator1_vldcstCode" class="div3" style="color:Red;display:none;">验证码错�?/span><span id="ctl00_ContentPlaceHolder1_ImgValidator1_vldrqCode" class="div3" style="color:Red;display:none;">验证码不可为�?/span>
+</td>
+						</tr>
+						<tr>
+							<th>&nbsp;</th>
+							<td><input type="submit" name="ctl00$ContentPlaceHolder1$btnSubmit" value="" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$btnSubmit&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_ContentPlaceHolder1_btnSubmit" class="submitBtn" /></td>
+						</tr>
+					</table>
+				<ul id="messageList">
+				    
+				</ul>
+				<div class="pageList">
+<!--  -->
+<!--记录总数只有一页，AspNetPager已自动隐藏，若需在只有一页数据时显示AspNetPager，请将AlwaysShow属性值设为true�?->
+<!--  -->
+
+</div>
+			</div>
+		</div>
+	</div>
+	<!--右侧辅助�?->
+	<div class="rightInfoRow">
+		<!--网站-->
+		
+		
+		<!--相关-->
+		<div id="relatedPanel" class="rightPanel">
+			<div class="title">
+			</div>
+			<div class="content">
+				<ul class="countList">
+				    <li ><a href="/Other/www/News/ArticleView/AID/16077.html">创新人才教育研究会成立大会暨第一次会员代表�?/a></li><li ><a href="/Other/www/News/ArticleView/AID/6559.html">中国水周第一�?世界水日关注水质安全</a></li><li ><a href="/Other/www/News/ArticleView/AID/2965.html">太湖蓝藻已是常�?专家呼吁理性看�?/a></li><li ><a href="/Other/www/News/ArticleView/AID/2964.html">面对能源紧缺开源与节流孰重�?/a></li><li ><a href="/Other/www/News/ArticleView/AID/2901.html">�?6届日内瓦国际发明展新奇发�?</a></li><li ><a href="/Other/www/News/ArticleView/AID/2839.html">中国大学生发明声音“水印�?/a></li><li ><a href="/Other/www/News/ArticleView/AID/2014.html">电离天线打破百年技术瓶�?/a></li><li ><a href="/Other/www/News/ArticleView/AID/1855.html">专家将用激光扫描复原并重建圆明园古建筑</a></li><li ><a href="/Other/www/News/ArticleView/AID/796.html">[自然要览]（选自英国Nature杂志�?006�?月�?/a></li><li ><a href="/Other/www/News/ArticleView/AID/795.html">50毫秒定美�?网页"第一印象"决定浏览者好�?/a></li>
+				</ul>
+			</div>
+		</div>
+		<!--热点-->
+		<div id="hotPanel" class="rightPanel">
+			<div class="title">
+			</div>
+			<div class="content">
+				
+<ul class="countList">
+    
+            <li class="c1"><a href="/Other/www/News/ArticleView/AID/21270.html" title='《STEM项目学生研究手册�?>《STEM项目学生研究手册�?/a></li>
+        
+            <li class="c2"><a href="/Other/www/News/ArticleView/AID/19254.html" title='科学教育新探索——记�?012科学教育国际论坛�?>科学教育新探索——记�?012科学教育国际论坛�?/a></li>
+        
+            <li class="c3"><a href="/Other/www/News/ArticleView/AID/16077.html" title='创新人才教育研究会成立大会暨第一次会员代表大会在京召开'>创新人才教育研究会成立大会暨第一次会员代表大会在京召开</a></li>
+        
+            <li class="c4"><a href="/Other/www/News/ArticleView/AID/6559.html" title='中国水周第一�?世界水日关注水质安全'>中国水周第一�?世界水日关注水质安全</a></li>
+        
+            <li class="c5"><a href="/Other/www/News/ArticleView/AID/796.html" title='[自然要览]（选自英国Nature杂志�?006�?�?0日出版）'>[自然要览]（选自英国Nature杂志�?006�?�?0日出版）</a></li>
+        
+            <li class="c6"><a href="/Other/www/News/ArticleView/AID/794.html" title='山西绛县现“倗国�?距今约有3000�?>山西绛县现“倗国�?距今约有3000�?/a></li>
+        
+            <li class="c7"><a href="/Other/www/News/ArticleView/AID/732.html" title='青藏高原还有大量科学问题有待回答'>青藏高原还有大量科学问题有待回答</a></li>
+        
+            <li class="c8"><a href="/Other/www/News/ArticleView/AID/787.html" title='《科学》杂志提�?006年备受关注的8个科学领�?>《科学》杂志提�?006年备受关注的8个科学领�?/a></li>
+        
+            <li class="c9"><a href="/Other/www/News/ArticleView/AID/793.html" title='小小真菌整死青蛙 科学家呼吁遏制全球变暖图'>小小真菌整死青蛙 科学家呼吁遏制全球变暖图</a></li>
+        
+            <li class="c10"><a href="/Other/www/News/ArticleView/AID/785.html" title='印尼海啸预警系统正式启动 '>印尼海啸预警系统正式启动 </a></li>
+        
+</ul>
+			</div>
+		</div>
+		<!--推荐-->
+		<div id="recommendPanel" class="rightPanel">
+			<div class="title">
+			</div>
+			<div class="content">
+				
+<ul class="countList">
+    
+            <li class="c1"><a href="/Other/www/News/ArticleView/AID/787.html" title='《科学》杂志提�?006年备受关注的8个科学领�?>《科学》杂志提�?006年备受关注的8个科学领�?/a></li>
+        
+            <li class="c2"><a href="/Other/www/News/ArticleView/AID/732.html" title='青藏高原还有大量科学问题有待回答'>青藏高原还有大量科学问题有待回答</a></li>
+        
+            <li class="c3"><a href="/Other/www/News/ArticleView/AID/16077.html" title='创新人才教育研究会成立大会暨第一次会员代表大会在京召开'>创新人才教育研究会成立大会暨第一次会员代表大会在京召开</a></li>
+        
+            <li class="c4"><a href="/Other/www/News/ArticleView/AID/796.html" title='[自然要览]（选自英国Nature杂志�?006�?�?0日出版）'>[自然要览]（选自英国Nature杂志�?006�?�?0日出版）</a></li>
+        
+            <li class="c5"><a href="/Other/www/News/ArticleView/AID/794.html" title='山西绛县现“倗国�?距今约有3000�?>山西绛县现“倗国�?距今约有3000�?/a></li>
+        
+            <li class="c6"><a href="/Other/www/News/ArticleView/AID/739.html" title='动物实验证明小脑严重缺乏也能存活 '>动物实验证明小脑严重缺乏也能存活 </a></li>
+        
+            <li class="c7"><a href="/Other/www/News/ArticleView/AID/736.html" title='火星被冰冻至�?0亿年 可能从未出现过生命环�?>火星被冰冻至�?0亿年 可能从未出现过生命环�?/a></li>
+        
+            <li class="c8"><a href="/Other/www/News/ArticleView/AID/21270.html" title='《STEM项目学生研究手册�?>《STEM项目学生研究手册�?/a></li>
+        
+            <li class="c9"><a href="/Other/www/News/ArticleView/AID/19254.html" title='科学教育新探索——记�?012科学教育国际论坛�?>科学教育新探索——记�?012科学教育国际论坛�?/a></li>
+        
+            <li class="c10"><a href="/Other/www/News/ArticleView/AID/6559.html" title='中国水周第一�?世界水日关注水质安全'>中国水周第一�?世界水日关注水质安全</a></li>
+        
+</ul>
+			</div>
+		</div>
+		<!--评论-->
+		<div id="commentPanel" class="rightPanel">
+			<div class="title">
+			</div>
+			<div class="content">				
+	            
+<ul class="countList">
+	
+            <li class="c1"><a href="/Other/www/News/ArticleView/AID/21270.html" title='《STEM项目学生研究手册�?>《STEM项目学生研究手册�?/a></li>
+        
+            <li class="c2"><a href="/Other/www/News/ArticleView/AID/19254.html" title='科学教育新探索——记�?012科学教育国际论坛�?>科学教育新探索——记�?012科学教育国际论坛�?/a></li>
+        
+            <li class="c3"><a href="/Other/www/News/ArticleView/AID/16077.html" title='创新人才教育研究会成立大会暨第一次会员代表大会在京召开'>创新人才教育研究会成立大会暨第一次会员代表大会在京召开</a></li>
+        
+            <li class="c4"><a href="/Other/www/News/ArticleView/AID/6559.html" title='中国水周第一�?世界水日关注水质安全'>中国水周第一�?世界水日关注水质安全</a></li>
+        
+            <li class="c5"><a href="/Other/www/News/ArticleView/AID/2965.html" title='太湖蓝藻已是常�?专家呼吁理性看�?>太湖蓝藻已是常�?专家呼吁理性看�?/a></li>
+        
+            <li class="c6"><a href="/Other/www/News/ArticleView/AID/2964.html" title='面对能源紧缺开源与节流孰重�?>面对能源紧缺开源与节流孰重�?/a></li>
+        
+            <li class="c7"><a href="/Other/www/News/ArticleView/AID/2901.html" title='�?6届日内瓦国际发明展新奇发�?'>�?6届日内瓦国际发明展新奇发�?</a></li>
+        
+            <li class="c8"><a href="/Other/www/News/ArticleView/AID/2839.html" title='中国大学生发明声音“水印�?>中国大学生发明声音“水印�?/a></li>
+        
+            <li class="c9"><a href="/Other/www/News/ArticleView/AID/2014.html" title='电离天线打破百年技术瓶�?>电离天线打破百年技术瓶�?/a></li>
+        
+            <li class="c10"><a href="/Other/www/News/ArticleView/AID/1855.html" title='专家将用激光扫描复原并重建圆明园古建筑'>专家将用激光扫描复原并重建圆明园古建筑</a></li>
+        
+</ul>
+			</div>
+		</div>
+	</div>
+    </div>
+    <input type="hidden" name="ctl00$ContentPlaceHolder1$hidAID" id="ctl00_ContentPlaceHolder1_hidAID" value="19254" /><input type="hidden" name="ctl00$ContentPlaceHolder1$hidColumnID" id="ctl00_ContentPlaceHolder1_hidColumnID" />
+
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("ctl00_ContentPlaceHolder1_RequiredFieldValidator1"), document.getElementById("ctl00_ContentPlaceHolder1_RequiredFieldValidator3"), document.getElementById("ctl00_ContentPlaceHolder1_ImgValidator1_vldcstCode"), document.getElementById("ctl00_ContentPlaceHolder1_ImgValidator1_vldrqCode"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var ctl00_ContentPlaceHolder1_RequiredFieldValidator1 = document.all ? document.all["ctl00_ContentPlaceHolder1_RequiredFieldValidator1"] : document.getElementById("ctl00_ContentPlaceHolder1_RequiredFieldValidator1");
+ctl00_ContentPlaceHolder1_RequiredFieldValidator1.controltovalidate = "ctl00_ContentPlaceHolder1_txtUserName";
+ctl00_ContentPlaceHolder1_RequiredFieldValidator1.errormessage = "必填";
+ctl00_ContentPlaceHolder1_RequiredFieldValidator1.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ctl00_ContentPlaceHolder1_RequiredFieldValidator1.initialvalue = "";
+var ctl00_ContentPlaceHolder1_RequiredFieldValidator3 = document.all ? document.all["ctl00_ContentPlaceHolder1_RequiredFieldValidator3"] : document.getElementById("ctl00_ContentPlaceHolder1_RequiredFieldValidator3");
+ctl00_ContentPlaceHolder1_RequiredFieldValidator3.controltovalidate = "ctl00_ContentPlaceHolder1_txtComment";
+ctl00_ContentPlaceHolder1_RequiredFieldValidator3.errormessage = "必填";
+ctl00_ContentPlaceHolder1_RequiredFieldValidator3.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ctl00_ContentPlaceHolder1_RequiredFieldValidator3.initialvalue = "";
+var ctl00_ContentPlaceHolder1_ImgValidator1_vldcstCode = document.all ? document.all["ctl00_ContentPlaceHolder1_ImgValidator1_vldcstCode"] : document.getElementById("ctl00_ContentPlaceHolder1_ImgValidator1_vldcstCode");
+ctl00_ContentPlaceHolder1_ImgValidator1_vldcstCode.controltovalidate = "ctl00_ContentPlaceHolder1_ImgValidator1_txtCode";
+ctl00_ContentPlaceHolder1_ImgValidator1_vldcstCode.errormessage = "验证码错�?;
+ctl00_ContentPlaceHolder1_ImgValidator1_vldcstCode.display = "Dynamic";
+ctl00_ContentPlaceHolder1_ImgValidator1_vldcstCode.evaluationfunction = "CustomValidatorEvaluateIsValid";
+var ctl00_ContentPlaceHolder1_ImgValidator1_vldrqCode = document.all ? document.all["ctl00_ContentPlaceHolder1_ImgValidator1_vldrqCode"] : document.getElementById("ctl00_ContentPlaceHolder1_ImgValidator1_vldrqCode");
+ctl00_ContentPlaceHolder1_ImgValidator1_vldrqCode.controltovalidate = "ctl00_ContentPlaceHolder1_ImgValidator1_txtCode";
+ctl00_ContentPlaceHolder1_ImgValidator1_vldrqCode.errormessage = "验证码不可为�?;
+ctl00_ContentPlaceHolder1_ImgValidator1_vldrqCode.display = "Dynamic";
+ctl00_ContentPlaceHolder1_ImgValidator1_vldrqCode.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ctl00_ContentPlaceHolder1_ImgValidator1_vldrqCode.initialvalue = "";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        //]]>
+</script>
+</form>
+
+<div id="pageFooter" class="fullWidth">
+	<span id="copyright">主办单位：中国科协青少年科技中心　<a href="http://www.miitbeian.gov.cn/">京ICP�?1018462�?2</a><br />
+	                TEL�?10�?2180521  E-mail:webmaster@ 如有问题反馈和意见建议，请联系我�?/span>
+	<ul class="footerButton">
+		<li><a href="/Other/www/AboutUs/AboutUs/columnid/10100000.html" class="about">关于我们</a></li>
+		<li><a href="/Other/www/AboutUs/AboutUs/columnid/10100001.html" class="contact">联系我们</a></li>
+		<li><a href="/Other/www/AboutUs/AboutUs/columnid/10100002.html" class="private">隐私说明</a></li>
+		<li><a href="/Other/www/AboutUs/AboutUs/columnid/10100004.html" class="map">网站地图</a></li>
+		<li><a href="/Other/count/index.html" class="count">访问统计</a></li>
+	</ul>
+</div>
+</body>
+</html>
+
