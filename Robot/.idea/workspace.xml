@@ -41,7 +41,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="20" />
-    <option name="width" value="604" />
+    <option name="width" value="605" />
     <option name="height" value="940" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -146,16 +146,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584869689869</updated>
-      <workItem from="1584869691351" duration="300000" />
+      <workItem from="1584869691351" duration="375000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="300000" />
+    <option name="totallyTimeSpent" value="375000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
