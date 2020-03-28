@@ -1,9 +1,6 @@
 package com.web.sys.bean;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.web.common.bean.Page;
-import com.web.common.utils.DateUtils;
-import org.springframework.util.StringUtils;
 
 /**
 * 

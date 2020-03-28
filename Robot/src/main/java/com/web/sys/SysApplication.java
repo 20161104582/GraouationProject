@@ -1,25 +1,14 @@
 package com.web.sys;
 
-import com.spring4all.swagger.EnableSwagger2Doc;
-import com.web.sys.utils.HttpClient4;
 import com.web.sys.utils.T;
-import org.apache.http.client.HttpClient;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.convert.converter.Converter;
-import sun.misc.BASE64Encoder;
 
-import javax.crypto.Mac;
-import javax.crypto.spec.SecretKeySpec;
-import java.io.BufferedReader;
-import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
 
 @SpringBootApplication
 //@EnableSwagger2             //启动swagger注解
@@ -28,6 +17,7 @@ import java.util.Map;
 @MapperScan("com.web.sys.dao")
 public class SysApplication {
     public static void main(String[] args) {
+        //spring应用启动起来
       SpringApplication.run(SysApplication.class, args);
     }
 

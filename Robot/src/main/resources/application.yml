@@ -8,7 +8,7 @@ spring:
   boot:
     admin:
       client:
-        url: http://www.jinchengwriting.com:8001
+        url: http://www.baidu.com:8001
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3308/rebot?useUnicode=true&amp;characterEncoding=utf8&amp;serverTimezone=GMT%2B8&amp;useSSL=true

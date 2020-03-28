@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8" addBOMForNewFiles="with NO BOM">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/web/sys/config/MyQuartz.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/web/sys/controller/FrontController.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/web/sys/controller/LoginController.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/web/sys/controller/SysUserController.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/web/sys/pcontroller/SystemController.java" charset="GBK" />
+    <file url="PROJECT" charset="GBK" />
   </component>
 </project>
